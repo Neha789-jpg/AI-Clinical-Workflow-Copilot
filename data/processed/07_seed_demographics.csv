@@ -1,0 +1,173 @@
+consultation_id,patient_id,age,gender,source_type
+C01759,P01759,50.0,female,public_aci_bench
+C01760,P01760,62.0,male,public_aci_bench
+C01761,P01761,61.0,male,public_aci_bench
+C01762,P01762,57.0,male,public_aci_bench
+C01763,P01763,41.0,female,public_aci_bench
+C01764,P01764,44.0,female,public_aci_bench
+C01765,P01765,27.0,female,public_aci_bench
+C01766,P01766,49.0,female,public_aci_bench
+C01767,P01767,55.0,male,public_aci_bench
+C01768,P01768,58.0,male,public_aci_bench
+C01769,P01769,62.0,male,public_aci_bench
+C01770,P01770,59.0,male,public_aci_bench
+C01771,P01771,55.0,male,public_aci_bench
+C01772,P01772,58.0,male,public_aci_bench
+C01773,P01773,48.0,female,public_aci_bench
+C01774,P01774,59.0,male,public_aci_bench
+C01775,P01775,43.0,female,public_aci_bench
+C01776,P01776,39.0,female,public_aci_bench
+C01777,P01777,48.0,female,public_aci_bench
+C01778,P01778,56.0,male,public_aci_bench
+C01779,P01779,39.0,female ,public_aci_bench
+C01780,P01780,50.0,male ,public_aci_bench
+C01781,P01781,59.0,male,public_aci_bench
+C01782,P01782,36.0,female ,public_aci_bench
+C01783,P01783,71.0,female ,public_aci_bench
+C01785,P01785,61.0,male ,public_aci_bench
+C01786,P01786,42.0,male ,public_aci_bench
+C01787,P01787,57.0,female ,public_aci_bench
+C01788,P01788,40.0,female ,public_aci_bench
+C01789,P01789,75.0,female ,public_aci_bench
+C01790,P01790,56.0,female ,public_aci_bench
+C01792,P01792,69.0,male,public_aci_bench
+C01794,P01794,57.0,male,public_aci_bench
+C01795,P01795,53.0,male,public_aci_bench
+C01796,P01796,60.0,male,public_aci_bench
+C01798,P01798,34.0,female,public_aci_bench
+C01800,P01800,38.0,female,public_aci_bench
+C01801,P01801,44.0,male,public_aci_bench
+C01806,P01806,76.0,female,public_aci_bench
+C01808,P01808,80.0,male,public_aci_bench
+C01809,P01809,79.0,male,public_aci_bench
+C01810,P01810,29.0,female,public_aci_bench
+C01812,P01812,45.0,male,public_aci_bench
+C01813,P01813,3.0,female,public_aci_bench
+C01815,P01815,58.0,male,public_aci_bench
+C01816,P01816,45.0,male,public_aci_bench
+C01818,P01818,27.0,female,public_aci_bench
+C01819,P01819,53.0,female,public_aci_bench
+C01820,P01820,67.0,male,public_aci_bench
+C01821,P01821,46.0,female,public_aci_bench
+C01822,P01822,20.0,male,public_aci_bench
+C01823,P01823,31.0,female,public_aci_bench
+C01824,P01824,43.0,male,public_aci_bench
+C01825,P01825,91.0,female,public_aci_bench
+C01826,P01826,58,male,public_aci_bench
+C01827,P01827,43,female,public_aci_bench
+C01828,P01828,58,male,public_aci_bench
+C01829,P01829,62,male,public_aci_bench
+C01830,P01830,48,female,public_aci_bench
+C01831,P01831,65,female ,public_aci_bench
+C01832,P01832,52,male ,public_aci_bench
+C01833,P01833,53,female ,public_aci_bench
+C01834,P01834,22-month,female ,public_aci_bench
+C01835,P01835,61.0,female,public_aci_bench
+C01837,P01837,66.0,male,public_aci_bench
+C01838,P01838,34.0,female,public_aci_bench
+C01839,P01839,53.0,female,public_aci_bench
+C01840,P01840,46.0,male,public_aci_bench
+C01841,P01841,45.0,male,public_aci_bench
+C01844,P01844,45.0,male,public_aci_bench
+C01846,P01846,59,male,public_aci_bench
+C01847,P01847,52,female,public_aci_bench
+C01848,P01848,62,male,public_aci_bench
+C01849,P01849,54,male,public_aci_bench
+C01850,P01850,43,female,public_aci_bench
+C01851,P01851,62,male,public_aci_bench
+C01852,P01852,42,female,public_aci_bench
+C01853,P01853,34,female,public_aci_bench
+C01854,P01854,44,female,public_aci_bench
+C01855,P01855,66,female,public_aci_bench
+C01856,P01856,64,male ,public_aci_bench
+C01857,P01857,9-month,male ,public_aci_bench
+C01858,P01858,15,female ,public_aci_bench
+C01859,P01859,25,female ,public_aci_bench
+C01860,P01860,41,female,public_aci_bench
+C01861,P01861,58,female ,public_aci_bench
+C01862,P01862,61,female ,public_aci_bench
+C01863,P01863,100,female ,public_aci_bench
+C01864,P01864,45.0,male,public_aci_bench
+C01865,P01865,39.0,male,public_aci_bench
+C01866,P01866,40.0,male,public_aci_bench
+C01867,P01867,36.0,female,public_aci_bench
+C01868,P01868,43.0,male,public_aci_bench
+C01869,P01869,57.0,male,public_aci_bench
+C01870,P01870,44.0,male,public_aci_bench
+C01872,P01872,33.0,female,public_aci_bench
+C01873,P01873,40.0,male,public_aci_bench
+C01874,P01874,56.0,male,public_aci_bench
+C01875,P01875,45.0,male,public_aci_bench
+C01878,P01878,41.0,male,public_aci_bench
+C01881,P01881,56.0,male,public_aci_bench
+C01882,P01882,45.0,male,public_aci_bench
+C01883,P01883,54.0,male,public_aci_bench
+C01884,P01884,44.0,female,public_aci_bench
+C01885,P01885,46.0,male,public_aci_bench
+C01886,P01886,29.0,female,public_aci_bench
+C01887,P01887,24.0,female,public_aci_bench
+C01888,P01888,26.0,female,public_aci_bench
+C01889,P01889,26.0,female,public_aci_bench
+C01890,P01890,40.0,female,public_aci_bench
+C01891,P01891,27.0,female,public_aci_bench
+C01892,P01892,31.0,female,public_aci_bench
+C01893,P01893,52.0,female,public_aci_bench
+C01894,P01894,33.0,female,public_aci_bench
+C01895,P01895,63.0,female,public_aci_bench
+C01896,P01896,20.0,female ,public_aci_bench
+C01897,P01897,49.0,male ,public_aci_bench
+C01898,P01898,32.0,female ,public_aci_bench
+C01899,P01899,86.0,male ,public_aci_bench
+C01900,P01900,72.0,female ,public_aci_bench
+C01901,P01901,23.0,female ,public_aci_bench
+C01902,P01902,72.0,male ,public_aci_bench
+C01903,P01903,40.0,female ,public_aci_bench
+C01905,P01905,67.0,male,public_aci_bench
+C01906,P01906,57.0,male,public_aci_bench
+C01907,P01907,57.0,male,public_aci_bench
+C01908,P01908,36.0,male,public_aci_bench
+C01909,P01909,33.0,female,public_aci_bench
+C01911,P01911,68.0,male,public_aci_bench
+C01912,P01912,46.0,male,public_aci_bench
+C01913,P01913,77.0,female,public_aci_bench
+C01916,P01916,31.0,female,public_aci_bench
+C01917,P01917,33.0,female,public_aci_bench
+C01919,P01919,82.0,male,public_aci_bench
+C01920,P01920,42.0,male,public_aci_bench
+C01921,P01921,17.0,female,public_aci_bench
+C01922,P01922,53.0,female,public_aci_bench
+C01923,P01923,30.0,female,public_aci_bench
+C01924,P01924,58.0,male,public_aci_bench
+C01925,P01925,81.0,female,public_aci_bench
+C01926,P01926,28.0,female,public_aci_bench
+C01927,P01927,61.0,male,public_aci_bench
+C01928,P01928,50.0,female,public_aci_bench
+C01929,P01929,56.0,female,public_aci_bench
+C01930,P01930,50.0,male,public_aci_bench
+C01931,P01931,57.0,male,public_aci_bench
+C01932,P01932,57.0,male,public_aci_bench
+C01933,P01933,39.0,female,public_aci_bench
+C01934,P01934,62.0,male,public_aci_bench
+C01935,P01935,60.0,male,public_aci_bench
+C01936,P01936,75.0,female ,public_aci_bench
+C01937,P01937,60.0,male ,public_aci_bench
+C01938,P01938,60.0,female ,public_aci_bench
+C01939,P01939,35.0,female ,public_aci_bench
+C01940,P01940,39.0,female ,public_aci_bench
+C01941,P01941,14.0,male ,public_aci_bench
+C01942,P01942,44.0,female ,public_aci_bench
+C01943,P01943,14.0,female ,public_aci_bench
+C01944,P01944,35.0,male,public_aci_bench
+C01946,P01946,28.0,male,public_aci_bench
+C01948,P01948,35.0,female,public_aci_bench
+C01949,P01949,45.0,male,public_aci_bench
+C01950,P01950,34.0,female,public_aci_bench
+C01952,P01952,50.0,female,public_aci_bench
+C01953,P01953,40.0,male,public_aci_bench
+C01954,P01954,67.0,male,public_aci_bench
+C01955,P01955,37.0,female,public_aci_bench
+C01957,P01957,74.0,male,public_aci_bench
+C01959,P01959,60.0,male,public_aci_bench
+C01960,P01960,36.0,female,public_aci_bench
+C01962,P01962,42.0,male,public_aci_bench
+C01964,P01964,18.0,male,public_aci_bench
