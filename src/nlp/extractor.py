@@ -1,5 +1,13 @@
 import re
+import os
+import json
+from dotenv import load_dotenv
 
+load_dotenv()
+
+# ---------------------------------------------------------------------------
+# Vocabulary lists (rule-based engine)
+# ---------------------------------------------------------------------------
 SYMPTOM_VOCAB = ["headache", "dizziness", "vertigo", "nausea", "vomiting", "diarrhea",
                  "fever", "cough", "chest pain", "back pain", "knee pain", "sore throat",
                  "shortness of breath", "palpitations", "fatigue", "rash", "swelling",
@@ -21,6 +29,9 @@ HISTORY_VOCAB = ["asthma", "hypertension", "diabetes", "heart failure", "stroke"
                  "cancer", "depression", "epilepsy", "arthritis", "kidney stones"]
 
 
+# ---------------------------------------------------------------------------
+# Rule-based helpers
+# ---------------------------------------------------------------------------
 def find_terms(text, vocab):
     """Return every word from vocab that appears in text (longest first)."""
     found = []
@@ -63,14 +74,17 @@ def find_patient_info(text):
     return {"age": int(age.group(1)) if age else None, "gender": gender}
 
 
-def extract_entities(transcript):
+# ---------------------------------------------------------------------------
+# Engine 1: rule-based (offline fallback)
+# ---------------------------------------------------------------------------
+def extract_with_rules(transcript):
     low = transcript.lower()
 
     symptoms = [{"text": s, "duration": find_duration(transcript, s)}
                 for s in find_terms(transcript, SYMPTOM_VOCAB)]
 
     history = [h for h in find_terms(transcript, HISTORY_VOCAB)
-               if re.search(r"(history|previous|past|diagnosed with|known|have had|i have)\W{0,60}" + re.escape(h), low)]
+               if re.search(r"(history|previous|past|diagnosed with|known|have had|i have|i've got)\W{0,60}" + re.escape(h), low)]
 
     diagnoses = []
     for d in find_terms(transcript, DIAGNOSIS_VOCAB):
@@ -93,9 +107,6 @@ def extract_entities(transcript):
         if not allergies and re.search(r"no known|nkda|no allergies", low):
             allergies = ["none known"]
 
-    history = [h for h in find_terms(transcript, HISTORY_VOCAB)
-               if re.search(r"(history|previous|past|diagnosed with|known|have had|i have)\W{0,60}" + re.escape(h), low)]
-
     return {
         "patient_info": find_patient_info(transcript),
         "symptoms": symptoms,
@@ -107,8 +118,60 @@ def extract_entities(transcript):
     }
 
 
+# ---------------------------------------------------------------------------
+# Engine 2: LLM (Groq / OpenAI-compatible)
+# ---------------------------------------------------------------------------
+PROMPT = """You are a clinical information extraction system.
+Read the doctor-patient transcript and return ONLY a JSON object with exactly these keys:
+{
+  "patient_info": {"age": null, "gender": null},
+  "symptoms": [{"text": "...", "duration": null}],
+  "diagnoses": [{"text": "...", "status": "confirmed|suspected"}],
+  "medications": [{"name": "...", "dose": null, "frequency": null}],
+  "allergies": ["..."],
+  "vitals": {"bp": null, "pulse": null, "temperature": null, "spo2": null},
+  "history": ["..."]
+}
+Only include things actually stated in the transcript. Set gender only if it is
+explicitly stated or unambiguous from context (e.g. menstruation or pregnancy means
+female); if there is no evidence, gender must be null. Use null or empty lists if not
+mentioned. Do not invent values. No markdown, no explanation."""
+
+def extract_with_llm(transcript):
+    from openai import OpenAI
+    client = OpenAI(api_key=os.getenv("GROQ_API_KEY"),
+                    base_url="https://api.groq.com/openai/v1")
+    response = client.chat.completions.create(
+        model="openai/gpt-oss-120b",
+        temperature=0,
+        response_format={"type": "json_object"},
+        messages=[{"role": "system", "content": PROMPT},
+                  {"role": "user", "content": transcript}],
+    )
+    return json.loads(response.choices[0].message.content)
+
+
+# ---------------------------------------------------------------------------
+# Public API
+# ---------------------------------------------------------------------------
+def extract_entities(transcript, engine="auto"):
+    """
+    engine = "auto"  -> LLM if GROQ_API_KEY exists, else rules
+             "llm"   -> force LLM
+             "rules" -> force rule-based
+    """
+    if not transcript or not transcript.strip():
+        return extract_with_rules("")
+    if engine == "rules" or (engine == "auto" and not os.getenv("GROQ_API_KEY")):
+        return extract_with_rules(transcript)
+    try:
+        return extract_with_llm(transcript)
+    except Exception as e:
+        print(f"[extractor] LLM failed ({e}), using rules")
+        return extract_with_rules(transcript)
+
+
 if __name__ == "__main__":
-    import json
     sample = ("Doctor: How can I help? Patient: I'm a 34 year old woman, I've had really bad "
               "diarrhea for the last 3 days and some stomach pain, and a fever on the first day. "
               "I have asthma and use salbutamol. No known allergies. "
