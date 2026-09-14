@@ -17,7 +17,7 @@ for i in range(5):
     transcript = row["transcript"]
 
     # Extract clinical information using the NLP module
-    entities = extract_entities(transcript)
+    entities = extract_entities(transcript, engine="llm")
 
     # Generate SOAP note using our documentation module
     soap = generate_soap(transcript, entities)
@@ -33,4 +33,15 @@ for i in range(5):
     print(row["subjective"])
 
     print("\n--- GENERATED SOAP ---")
-    print(json.dumps(soap, indent=2))
+
+    print("\nSUBJECTIVE")
+    print(soap["subjective"])
+
+    print("\nOBJECTIVE")
+    print(soap["objective"])
+
+    print("\nASSESSMENT")
+    print(soap["assessment"])
+
+    print("\nPLAN")
+    print(soap["plan"])
