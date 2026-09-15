@@ -114,7 +114,9 @@ def extract_with_rules(transcript):
         "medications": medications,
         "allergies": allergies,
         "vitals": find_vitals(transcript),
-        "history": history,
+        "medical_history": history,
+        "family_history": [],
+        "social_history": [],
     }
 
 
@@ -127,15 +129,29 @@ Read the doctor-patient transcript and return ONLY a JSON object with exactly th
   "patient_info": {"age": null, "gender": null},
   "symptoms": [{"text": "...", "duration": null}],
   "diagnoses": [{"text": "...", "status": "confirmed|suspected"}],
-  "medications": [{"name": "...", "dose": null, "frequency": null}],
+  "current_medications": [{"name": "...", "dose": null, "frequency": null}],
+  "prescribed": [{"name": "...", "dose": null, "frequency": null}],
   "allergies": ["..."],
   "vitals": {"bp": null, "pulse": null, "temperature": null, "spo2": null},
-  "history": ["..."]
+  "medical_history": ["..."],
+  "family_history": ["..."],
+  "social_history": ["..."]
 }
-Only include things actually stated in the transcript. Set gender only if it is
-explicitly stated or unambiguous from context (e.g. menstruation or pregnancy means
-female); if there is no evidence, gender must be null. Use null or empty lists if not
-mentioned. Do not invent values. No markdown, no explanation."""
+
+Rules:
+- diagnoses: include ONLY a diagnosis the DOCTOR states or suggests in the transcript.
+  Never infer a diagnosis yourself from the symptoms. If the doctor gives none, return [].
+  "suspected" if the doctor hedges (think, possibly, likely, query); "confirmed" if stated as fact.
+- current_medications: medicines the patient was already taking before this visit.
+- prescribed: medicines, tests or treatments the doctor gives, starts or orders in this visit.
+  A medicine goes in only one of the two lists.
+- medical_history: past illnesses, operations, previous similar episodes.
+- family_history: illnesses in relatives.
+- social_history: smoking, alcohol, occupation, living situation, sexual health if relevant.
+- allergies: if the patient says no allergies / NKDA, return ["none known"].
+- gender: only if explicitly stated or unambiguous (menstruation or pregnancy means female); else null.
+- Only include things actually stated. Use null or empty lists if not mentioned. Do not invent values.
+- No markdown, no explanation."""
 
 def extract_with_llm(transcript):
     from openai import OpenAI
