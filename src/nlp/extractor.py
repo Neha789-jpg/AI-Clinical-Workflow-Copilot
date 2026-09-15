@@ -153,18 +153,25 @@ Rules:
 - Only include things actually stated. Use null or empty lists if not mentioned. Do not invent values.
 - No markdown, no explanation."""
 
-def extract_with_llm(transcript):
+def extract_with_llm(transcript, retries=2):
     from openai import OpenAI
     client = OpenAI(api_key=os.getenv("GROQ_API_KEY"),
                     base_url="https://api.groq.com/openai/v1")
-    response = client.chat.completions.create(
-        model="openai/gpt-oss-120b",
-        temperature=0,
-        response_format={"type": "json_object"},
-        messages=[{"role": "system", "content": PROMPT},
-                  {"role": "user", "content": transcript}],
-    )
-    return json.loads(response.choices[0].message.content)
+    last_error = None
+    for attempt in range(retries):
+        try:
+            response = client.chat.completions.create(
+                model="openai/gpt-oss-120b",
+                temperature=0,
+                response_format={"type": "json_object"},
+                messages=[{"role": "system", "content": PROMPT},
+                          {"role": "user", "content": transcript}],
+            )
+            return json.loads(response.choices[0].message.content)
+        except Exception as e:
+            last_error = e
+            print(f"[extractor] attempt {attempt + 1} failed, retrying...")
+    raise last_error
 
 
 # ---------------------------------------------------------------------------
