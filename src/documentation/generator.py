@@ -5,7 +5,9 @@ def generate_subjective(entities):
     """
 
     symptoms = entities.get("symptoms", [])
-    history = entities.get("history", [])
+    history = (entities.get("medical_history", [])
+               + entities.get("family_history", [])
+               + entities.get("social_history", []))
 
     lines = []
 
@@ -108,7 +110,7 @@ def generate_plan(entities):
     Generate the Plan section from extracted medications.
     """
 
-    medications = entities.get("medications", [])
+    medications = entities.get("prescribed", [])
 
     plan_parts = []
 
