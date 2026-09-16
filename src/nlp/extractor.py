@@ -130,7 +130,15 @@ Read the doctor-patient transcript and return ONLY a JSON object with exactly th
   "symptoms": [{"text": "...", "duration": null}],
   "diagnoses": [{"text": "...", "status": "confirmed|suspected"}],
   "current_medications": [{"name": "...", "dose": null, "frequency": null}],
+
   "prescribed": [{"name": "...", "dose": null, "frequency": null}],
+
+  "investigations": ["..."],
+
+  "follow_up": ["..."],
+
+  "advice": ["..."],
+
   "allergies": ["..."],
   "vitals": {"bp": null, "pulse": null, "temperature": null, "spo2": null},
   "medical_history": ["..."],
@@ -139,18 +147,45 @@ Read the doctor-patient transcript and return ONLY a JSON object with exactly th
 }
 
 Rules:
-- diagnoses: include ONLY a diagnosis the DOCTOR states or suggests in the transcript.
-  Never infer a diagnosis yourself from the symptoms. If the doctor gives none, return [].
-  "suspected" if the doctor hedges (think, possibly, likely, query); "confirmed" if stated as fact.
-- current_medications: medicines the patient was already taking before this visit.
-- prescribed: medicines, tests or treatments the doctor gives, starts or orders in this visit.
-  A medicine goes in only one of the two lists.
-- medical_history: past illnesses, operations, previous similar episodes.
-- family_history: illnesses in relatives.
-- social_history: smoking, alcohol, occupation, living situation, sexual health if relevant.
-- allergies: if the patient says no allergies / NKDA, return ["none known"].
-- gender: only if explicitly stated or unambiguous (menstruation or pregnancy means female); else null.
-- Only include things actually stated. Use null or empty lists if not mentioned. Do not invent values.
+
+- diagnoses: Include ONLY diagnoses explicitly stated or suggested by the DOCTOR in the transcript.
+- Never infer a diagnosis from symptoms alone. If the doctor does not provide a diagnosis, return [].
+- Use "suspected" when the doctor hedges (e.g., think, possibly, likely, query).
+- Use "confirmed" only when the doctor states the diagnosis as a fact.
+- Do not classify a condition as a diagnosis when it is mentioned only as a possible cause, differential consideration, or reason for ordering a test.
+- Do not include investigations, tests, test orders, medications, or treatments in the diagnoses list.
+- Pregnancy must not be recorded as a diagnosis when it is only mentioned as a possibility, differential consideration, or reason for ordering a pregnancy test.
+- Record pregnancy as a diagnosis only when the doctor explicitly identifies it as a suspected or confirmed diagnosis.
+- Record "pregnancy test" only under investigations.
+
+- current_medications: Medicines the patient was already taking before this visit.
+- prescribed: Medicines the doctor explicitly prescribes, starts, or confirms during this visit.
+- A medicine must appear in only one medication list.
+- Extract medication names, doses, frequencies, and durations exactly as stated by the doctor.
+- Do not change, calculate, round, or assume medication dosages.
+- If the dosage is unclear or contradictory, preserve the uncertainty rather than guessing.
+- If the doctor corrects, revises, or clarifies a medication instruction, use the final corrected instruction.
+- Ignore earlier medication instructions that are subsequently corrected.
+- Never combine conflicting dosage statements.
+- If the final dosage remains ambiguous, mark it as unclear rather than guessing.
+- Medicines mentioned only as general options, examples, or suggestions must not be added to "prescribed"; record them under "advice" instead.
+
+- investigations: Tests or investigations the doctor recommends or orders, such as blood tests, stool tests, pregnancy tests, or scans.
+- Keep investigations and tests ONLY in the "investigations" list.
+- A test mentioned to rule out a possible condition must be recorded under "investigations", not "diagnoses".
+
+- follow_up: Follow-up instructions explicitly mentioned by the doctor, such as returning after a few days or coming back if symptoms worsen.
+- advice: Instructions explicitly given to the patient, such as rest, hydration, diet, or lifestyle advice.
+- Keep medicines in "prescribed", tests in "investigations", and patient instructions in "advice" or "follow_up".
+
+- medical_history: Past illnesses, operations, and previous similar episodes.
+- family_history: Illnesses in relatives.
+- social_history: Smoking, alcohol, occupation, living situation, and sexual health if relevant.
+- allergies: If the patient explicitly denies allergies or says "no allergies" / "NKDA", return ["none known"]. Use [] only when allergies are not mentioned.
+- gender: Include only if explicitly stated or unambiguous. Menstruation or pregnancy indicates female; otherwise return null.
+- Only include information actually stated in the transcript.
+- Do not invent, assume, calculate, or infer information.
+- Use null for missing single values and [] for missing lists.
 - No markdown, no explanation."""
 
 def extract_with_llm(transcript, retries=2):
@@ -167,7 +202,26 @@ def extract_with_llm(transcript, retries=2):
                 messages=[{"role": "system", "content": PROMPT},
                           {"role": "user", "content": transcript}],
             )
-            return json.loads(response.choices[0].message.content)
+            data = json.loads(response.choices[0].message.content)
+
+# Safety check: prevent pregnancy test from becoming
+# an inferred pregnancy diagnosis.
+            prescribed_items = data.get("prescribed", [])
+
+            has_pregnancy_test = any(
+               "pregnancy test" in str(item).lower()
+               for item in prescribed_items
+)
+
+            if has_pregnancy_test:
+
+               data["diagnoses"] = [
+                   diagnosis
+                   for diagnosis in data.get("diagnoses", [])
+                   if diagnosis.get("text", "").lower() != "pregnancy"
+    ]
+
+            return data
         except Exception as e:
             last_error = e
             print(f"[extractor] attempt {attempt + 1} failed, retrying...")

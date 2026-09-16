@@ -1,42 +1,59 @@
 def generate_subjective(entities):
     """
     Generate the Subjective section from extracted clinical information.
-    Includes symptoms, their duration, and relevant history.
+    Includes symptoms and separate medical, family, and social history.
     """
 
     symptoms = entities.get("symptoms", [])
-    history = (entities.get("medical_history", [])
-               + entities.get("family_history", [])
-               + entities.get("social_history", []))
+    medical_history = entities.get("medical_history", [])
+    family_history = entities.get("family_history", [])
+    social_history = entities.get("social_history", [])
 
     lines = []
 
     # Add symptoms
     if symptoms:
         lines.append("Symptoms:")
-        
+
         for symptom in symptoms:
-            text = symptom.get("text")
-            duration = symptom.get("duration")
+
+    # Handle symptoms returned as dictionaries
+            if isinstance(symptom, dict):
+               text = symptom.get("text")
+               duration = symptom.get("duration")
+
+    # Handle symptoms returned as strings
+            else:
+              text = symptom
+              duration = None
 
             if not text:
-                continue
+              continue
 
             if duration:
-                lines.append(f"- {text} for {duration}")
+              lines.append(f"- {text} for {duration}")
             else:
-                lines.append(f"- {text}")
+              lines.append(f"- {text}")
 
     else:
         lines.append("Symptoms: None documented.")
 
-    # Add relevant history
-    if history:
-        lines.append("")
-        lines.append("Relevant History:")
+    # Add separate history sections
+    history_sections = [
+        ("Medical History", medical_history),
+        ("Family History", family_history),
+        ("Social History", social_history)
+    ]
 
-        for item in history:
-            lines.append(f"- {item}")
+    for title, items in history_sections:
+        lines.append("")
+        lines.append(f"{title}:")
+
+        if items:
+            for item in items:
+                lines.append(f"- {item}")
+        else:
+            lines.append("- None documented.")
 
     return "\n".join(lines)
 
@@ -93,50 +110,119 @@ def generate_assessment(entities):
     assessment_parts = []
 
     for diagnosis in diagnoses:
-        text = diagnosis.get("text")
-        status = diagnosis.get("status")
+
+        if isinstance(diagnosis, dict):
+            text = diagnosis.get("text")
+            status = diagnosis.get("status")
+        else:
+            text = diagnosis
+            status = None
 
         if text:
             if status == "suspected":
+               if text.lower() == "pregnancy":
+                assessment_parts.append("Pregnancy to be excluded")
+               else:
                 assessment_parts.append(f"Possible {text}")
+
             else:
                 assessment_parts.append(text)
+
+    if not assessment_parts:
+        return "No diagnosis documented."
 
     return "Assessment: " + ", ".join(assessment_parts) + "."
 
 
 def generate_plan(entities):
     """
-    Generate the Plan section from extracted medications.
+    Generate the Plan section from extracted medications,
+    investigations, follow-up instructions, and advice.
     """
 
     medications = entities.get("prescribed", [])
+    investigations = entities.get("investigations", [])
+    follow_up = entities.get("follow_up", [])
+    advice = entities.get("advice", [])
 
-    plan_parts = []
+    lines = []
 
-    for medication in medications:
-        name = medication.get("name")
-        dose = medication.get("dose")
-        frequency = medication.get("frequency")
+    # --------------------------------------------------
+    # Medications
+    # --------------------------------------------------
 
-        if not name:
-            continue
+    if medications:
+        medication_lines = []
 
-        medication_text = name
+        for medication in medications:
 
-        if dose:
-            medication_text += f" {dose}"
+            if isinstance(medication, dict):
+                name = medication.get("name")
+                dose = medication.get("dose")
+                frequency = medication.get("frequency")
+            else:
+                name = medication
+                dose = None
+                frequency = None
 
-        if frequency:
-            medication_text += f", {frequency}"
+            if not name:
+                continue
 
-        plan_parts.append(medication_text)
+            medication_text = name
 
-    if plan_parts:
-        return "Medications: " + "; ".join(plan_parts) + "."
+            if dose:
+                medication_text += f" - {dose}"
 
-    return "No medications documented."
+            if frequency:
+                medication_text += f", {frequency}"
 
+            medication_lines.append(f"- {medication_text}")
+
+        if medication_lines:
+            lines.append("Medications:")
+            lines.extend(medication_lines)
+
+    # --------------------------------------------------
+    # Investigations / Tests
+    # --------------------------------------------------
+
+    if investigations:
+        lines.append("Investigations/Tests:")
+
+        for test in investigations:
+            if test:
+                lines.append(f"- {test}")
+
+    # --------------------------------------------------
+    # Follow-up
+    # --------------------------------------------------
+
+    if follow_up:
+        lines.append("Follow-up:")
+
+        for instruction in follow_up:
+            if instruction:
+                lines.append(f"- {instruction}")
+
+    # --------------------------------------------------
+    # Advice
+    # --------------------------------------------------
+
+    if advice:
+        lines.append("Advice:")
+
+        for instruction in advice:
+            if instruction:
+                lines.append(f"- {instruction}")
+
+    # --------------------------------------------------
+    # Final output
+    # --------------------------------------------------
+
+    if lines:
+        return "\n".join(lines)
+
+    return "No plan documented."
 
 def generate_soap(transcript, entities):
     """

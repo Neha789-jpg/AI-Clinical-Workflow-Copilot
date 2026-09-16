@@ -19,6 +19,12 @@ for i in range(5):
     # Extract clinical information using the NLP module
     entities = extract_entities(transcript, engine="llm")
 
+    print("\nRAW DIAGNOSES:")
+    print(repr(entities.get("diagnoses", [])))
+
+    print("\nPRESCRIBED DATA:")
+    print(repr(entities.get("prescribed")))
+
     # Generate SOAP note using our documentation module
     soap = generate_soap(transcript, entities)
 
