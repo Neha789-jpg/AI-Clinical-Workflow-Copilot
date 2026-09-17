@@ -10,7 +10,7 @@ df = pd.read_excel("data/processed/03_SOAP_Clinical_Documentation.xlsx")
 
 
 # Test first 5 consultations
-for i in range(5):
+for i in range(11,15):
 
     row = df.iloc[i]
 
