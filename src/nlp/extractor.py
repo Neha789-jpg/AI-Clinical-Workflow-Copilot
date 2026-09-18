@@ -157,18 +157,32 @@ Rules:
 - Pregnancy must not be recorded as a diagnosis when it is only mentioned as a possibility, differential consideration, or reason for ordering a pregnancy test.
 - Record pregnancy as a diagnosis only when the doctor explicitly identifies it as a suspected or confirmed diagnosis.
 - Record "pregnancy test" only under investigations.
+- Carefully identify negations and denied symptoms.
+- If the patient says "no", "denies", or "without" a symptom,
+  DO NOT include that symptom in the symptoms list.
+- Do not extract symptoms from negative statements.
+  Example: "No neck pain or stiffness" → do not include neck pain/stiffness.
+- Distinguish between present symptoms and explicitly denied symptoms.
+- Include a symptom only when the patient currently experiences it
+  or clearly reports having experienced it.
+- Do not treat a question or possibility as a confirmed symptom.
+NEGATION EXAMPLES:
+- "No neck pain/stiffness" → symptoms must not contain neck pain/stiffness.
+- "No vomiting" → do not include vomiting.
+- "Denies fever" → do not include fever.
+- "Initial diarrhea, now resolved" → do not include diarrhea as a current symptom.
 
 - current_medications: Medicines the patient was already taking before this visit.
 - prescribed: Medicines the doctor explicitly prescribes, starts, or confirms during this visit.
-- A medicine must appear in only one medication list.
-- Extract medication names, doses, frequencies, and durations exactly as stated by the doctor.
-- Do not change, calculate, round, or assume medication dosages.
-- If the dosage is unclear or contradictory, preserve the uncertainty rather than guessing.
-- If the doctor corrects, revises, or clarifies a medication instruction, use the final corrected instruction.
-- Ignore earlier medication instructions that are subsequently corrected.
-- Never combine conflicting dosage statements.
-- If the final dosage remains ambiguous, mark it as unclear rather than guessing.
-- Medicines mentioned only as general options, examples, or suggestions must not be added to "prescribed"; record them under "advice" instead.
+  - A medicine must appear in only one medication list.
+  - Extract medication names, doses, frequencies, and durations exactly as stated by the doctor.
+  - Do not change, calculate, round, or assume medication dosages.
+  - If the dosage is unclear or contradictory, preserve the uncertainty rather than guessing.
+  - If the doctor corrects, revises, or clarifies a medication instruction, use the final corrected instruction.
+  - Ignore earlier medication instructions that are subsequently corrected.
+  - Never combine conflicting dosage statements.
+  - If the final dosage remains ambiguous, mark it as unclear rather than guessing.
+  - Medicines mentioned only as general options, examples, or suggestions must not be added to "prescribed"; record them under "advice" instead.
 
 - investigations: Tests or investigations the doctor recommends or orders, such as blood tests, stool tests, pregnancy tests, or scans.
 - Keep investigations and tests ONLY in the "investigations" list.
@@ -186,7 +200,8 @@ Rules:
 - Only include information actually stated in the transcript.
 - Do not invent, assume, calculate, or infer information.
 - Use null for missing single values and [] for missing lists.
-- No markdown, no explanation."""
+- No markdown, no explanation.
+"""
 
 def extract_with_llm(transcript, retries=2):
     from openai import OpenAI

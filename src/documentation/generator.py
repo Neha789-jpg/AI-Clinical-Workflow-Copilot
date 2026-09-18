@@ -8,6 +8,7 @@ def generate_subjective(entities):
     medical_history = entities.get("medical_history", [])
     family_history = entities.get("family_history", [])
     social_history = entities.get("social_history", [])
+    current_medications = entities.get("current_medications", [])
 
     lines = []
 
@@ -54,6 +55,33 @@ def generate_subjective(entities):
                 lines.append(f"- {item}")
         else:
             lines.append("- None documented.")
+
+    lines.append("")
+    lines.append("Current Medications:")
+
+    if current_medications:
+        for medication in current_medications:
+            if isinstance(medication, dict):
+                name = medication.get("name")
+                dose = medication.get("dose")
+                frequency = medication.get("frequency")
+
+                if not name:
+                    continue
+
+                medication_text = name
+
+                if dose:
+                    medication_text += f" - {dose}"
+
+                if frequency:
+                    medication_text += f", {frequency}"
+
+                lines.append(f"- {medication_text}")
+            else:
+                lines.append(f"- {medication}")
+    else:
+        lines.append("- None documented.")
 
     return "\n".join(lines)
 

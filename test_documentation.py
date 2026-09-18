@@ -19,6 +19,11 @@ for i in range(11,15):
     # Extract clinical information using the NLP module
     entities = extract_entities(transcript, engine="llm")
 
+    import json
+
+    print("\nRAW ENTITIES:")
+    print(json.dumps(entities, indent=2))
+
     print("\nRAW DIAGNOSES:")
     print(repr(entities.get("diagnoses", [])))
 
