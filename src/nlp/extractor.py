@@ -127,7 +127,14 @@ PROMPT = """You are a clinical information extraction system.
 Read the doctor-patient transcript and return ONLY a JSON object with exactly these keys:
 {
   "patient_info": {"age": null, "gender": null},
-  "symptoms": [{"text": "...", "duration": null}],
+  "symptoms": [
+  {
+    "text": "...",
+    "duration": null,
+    "severity": null,
+    "status": "current"
+  }
+],
   "diagnoses": [{"text": "...", "status": "confirmed|suspected"}],
   "current_medications": [{"name": "...", "dose": null, "frequency": null}],
 
@@ -172,6 +179,11 @@ NEGATION EXAMPLES:
 - "Denies fever" → do not include fever.
 - "Initial diarrhea, now resolved" → do not include diarrhea as a current symptom.
 
+- For symptoms, include severity when explicitly stated,
+  such as pain rated 8/10.
+- Use "current" for ongoing symptoms and "resolved" when
+  the transcript explicitly states that a symptom has resolved.
+- Do not guess severity or symptom status.
 - current_medications: Medicines the patient was already taking before this visit.
 - prescribed: Medicines the doctor explicitly prescribes, starts, or confirms during this visit.
   - A medicine must appear in only one medication list.
@@ -198,7 +210,38 @@ NEGATION EXAMPLES:
 - allergies: If the patient explicitly denies allergies or says "no allergies" / "NKDA", return ["none known"]. Use [] only when allergies are not mentioned.
 - gender: Include only if explicitly stated or unambiguous. Menstruation or pregnancy indicates female; otherwise return null.
 - Only include information actually stated in the transcript.
+
 - Do not invent, assume, calculate, or infer information.
+
+- Preserve clinically relevant details such as:
+  pain severity, location, duration, progression,
+  associated symptoms, and important negative symptoms.
+
+- If the patient reports a symptom that later improves or resolves,
+  record its status accurately. For example:
+  "Constipation for one week, now resolved."
+
+- Do not exaggerate or strengthen the patient's wording.
+  For example:
+  "I probably drink quite a lot" must not become
+  "heavy alcohol use" unless explicitly stated.
+
+- Do not create contradictory entries.
+  If the patient denies alcohol use, do not record alcohol consumption
+  unless the patient separately confirms it.
+
+- For allergies, record a specific allergy only when the allergen
+  is clearly stated.
+  If the patient says they have an allergy but does not name it,
+  record ["unspecified allergy"] rather than ["allergy"].
+
+- Do not treat unclear speech-recognition output as confirmed information.
+  If a detail is ambiguous, omit it or preserve it as uncertain.
+
+- Do not invent a diagnosis when the doctor has not provided one.
+  When a diagnosis is absent, the assessment may describe the
+  documented clinical concern and recommended evaluation without
+  assigning a diagnosis.
 - Use null for missing single values and [] for missing lists.
 - No markdown, no explanation.
 """

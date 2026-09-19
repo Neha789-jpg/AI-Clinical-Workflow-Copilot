@@ -3,7 +3,7 @@ from src.nlp.extractor import extract_entities
 from src.documentation.generator import generate_soap
 
 
-audio_path = "data/primock57/extracted/day5_consultation02.wav"
+audio_path = "data/primock57/extracted/day5_consultation04.wav"
 
 # Step 1: Audio → Transcript
 transcript = transcribe_audio(audio_path)
@@ -15,7 +15,10 @@ print(transcript)
 entities = extract_entities(transcript)
 
 print("\n--- EXTRACTED CLINICAL INFORMATION ---")
-print(entities)
+import json
+
+print("\n--- EXTRACTED CLINICAL INFORMATION ---")
+print(json.dumps(entities, indent=2))
 
 # Step 3: Clinical Information → SOAP Documentation
 soap_note = generate_soap(transcript, entities)

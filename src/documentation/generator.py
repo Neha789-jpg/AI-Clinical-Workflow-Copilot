@@ -22,6 +22,8 @@ def generate_subjective(entities):
             if isinstance(symptom, dict):
                text = symptom.get("text")
                duration = symptom.get("duration")
+               severity = symptom.get("severity")
+               status = symptom.get("status")
 
     # Handle symptoms returned as strings
             else:
@@ -31,10 +33,18 @@ def generate_subjective(entities):
             if not text:
               continue
 
+            symptom_text = f"- {text}"
+
             if duration:
-              lines.append(f"- {text} for {duration}")
-            else:
-              lines.append(f"- {text}")
+                symptom_text += f" for {duration}"
+
+            if severity:
+                symptom_text += f" (Severity: {severity})"
+
+            if status == "resolved":
+                symptom_text += " (Resolved)"
+
+            lines.append(symptom_text)
 
     else:
         lines.append("Symptoms: None documented.")
@@ -159,8 +169,26 @@ def generate_assessment(entities):
     if not assessment_parts:
         return "No diagnosis documented."
 
-    return "Assessment: " + ", ".join(assessment_parts) + "."
+    return ", ".join(assessment_parts) + "."
 
+def is_duplicate_advice(advice_item, follow_up):
+    """
+    Check whether an advice instruction is already covered
+    by a follow-up instruction.
+    """
+
+    advice_lower = advice_item.lower()
+
+    for instruction in follow_up:
+        instruction_lower = instruction.lower()
+
+        if "urgent care" in advice_lower and "urgent care" in instruction_lower:
+            return True
+
+        if "keep fluids down" in advice_lower and "keep fluids down" in instruction_lower:
+            return True
+
+    return False
 
 def generate_plan(entities):
     """
@@ -237,10 +265,16 @@ def generate_plan(entities):
     # --------------------------------------------------
 
     if advice:
-        lines.append("Advice:")
+        filtered_advice = []
 
         for instruction in advice:
-            if instruction:
+            if instruction and not is_duplicate_advice(instruction, follow_up):
+               filtered_advice.append(instruction)
+
+        if filtered_advice:
+            lines.append("Advice:")
+
+            for instruction in filtered_advice:
                 lines.append(f"- {instruction}")
 
     # --------------------------------------------------
