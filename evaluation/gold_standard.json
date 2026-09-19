@@ -1,0 +1,183 @@
+{
+    "C00001": {
+        "patient_info": {
+            "age": null,
+            "gender": null
+        },
+        "symptoms": [
+            {
+                "text": "diarrhea",
+                "duration": "3 days",
+                "status": "current"
+            },
+            {
+                "text": "loose and watery stools",
+                "frequency": "6-7 times per day",
+                "status": "current"
+            },
+            {
+                "text": "lower left abdominal cramp-like pain",
+                "duration": "3 days",
+                "pattern": "intermittent",
+                "status": "current"
+            },
+            {
+                "text": "weakness and shakiness",
+                "duration": "3 days",
+                "status": "current"
+            },
+            {
+                "text": "feeling feverish",
+                "duration": "approximately 3-4 days ago",
+                "status": "resolved"
+            },
+            {
+                "text": "vomiting",
+                "duration": "at symptom onset",
+                "status": "resolved"
+            },
+            {
+                "text": "loss of appetite",
+                "duration": "3 days",
+                "status": "current"
+            }
+        ],
+        "diagnoses": [
+            {
+                "text": "gastroenteritis",
+                "status": "suspected"
+            }
+        ],
+        "current_medications": [
+            {
+                "name": "inhaler"
+            }
+        ],
+        "prescribed": [
+            {
+                "name": "Dioralyte"
+            },
+            {
+                "name": "paracetamol",
+                "dose": "two tablets",
+                "frequency": "up to four times a day"
+            }
+        ],
+        "investigations": [
+            "stool sample if symptoms persist"
+        ],
+        "follow_up": [
+            "return for review in 3-4 days if symptoms do not improve"
+        ],
+        "medical_history": [
+            "asthma"
+        ],
+        "allergies": [],
+        "vitals": {},
+        "social_history": [
+            "non-smoker",
+            "does not drink alcohol",
+            "accountant",
+            "lives with wife and two children"
+        ],
+        "exposure_history": [
+            "ate takeaway at a Chinese restaurant approximately 4 days ago",
+            "child had vomiting but no diarrhea"
+        ],
+        "advice": [
+            "stay hydrated",
+            "drink fluids",
+            "use Dioralyte",
+            "take paracetamol for feverishness and weakness",
+            "rest and take 2-3 days off work"
+        ]
+    },
+  
+
+"C00002": {
+    "patient_info": {
+        "age": 31,
+        "gender": null
+    },
+
+    "symptoms": [
+  {
+      "text": "itchy skin",
+      "duration": "4 days",
+      "status": "current"
+  },
+  {
+      "text": "sore skin",
+      "duration": "4 days",
+      "status": "current"
+  },
+  {
+      "text": "red skin",
+      "duration": "4 days",
+      "status": "current"
+  },
+  {
+      "text": "cracked skin",
+      "duration": "4 days",
+      "status": "current"
+  }
+]
+    ,
+
+    "diagnoses": [
+        {
+            "text": "eczema flare-up",
+            "status": "suspected"
+        }
+    ],
+
+    "current_medications": [],
+
+    "prescribed": [
+        {
+            "name": "stronger steroid cream"
+        },
+        {
+            "name": "emollients"
+        },
+        {
+            "name": "fexofenadine"
+        }
+    ],
+
+    "investigations": [],
+
+    "follow_up": [
+        "return next week if symptoms do not improve"
+    ],
+
+    "medical_history": [
+        "eczema",
+        "asthma (previously, not currently)"
+    ],
+
+    "allergies": [],
+
+    "vitals": {},
+
+    "social_history": [
+        "project manager at a pharmaceutical company",
+        "lives with flatmates",
+        "non-smoker",
+        "drinks a few beers per week"
+    ],
+
+    "exposure_history": [
+        "no known changes to shower gel or clothing",
+        "advised to track potential triggers"
+    ],
+
+    "advice": [
+        "use steroid cream regularly for 7-10 days",
+        "use emollients in the bath and shower",
+        "try antihistamines for itching",
+        "keep a diary of possible triggers",
+        "return next week if symptoms do not improve"
+    ]
+}
+}

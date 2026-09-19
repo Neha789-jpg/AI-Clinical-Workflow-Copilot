@@ -1,0 +1,3371 @@
+{
+  "C00001": {
+    "patient_info": {
+      "age": null,
+      "gender": "male"
+    },
+    "symptoms": [
+      {
+        "text": "diarrhea (loose watery stool)",
+        "duration": "3 days",
+        "severity": null,
+        "status": "current"
+      },
+      {
+        "text": "abdominal pain (cramp-like, left lower abdomen)",
+        "duration": "3 days",
+        "severity": null,
+        "status": "current"
+      },
+      {
+        "text": "weakness and shakiness",
+        "duration": "3 days",
+        "severity": null,
+        "status": "current"
+      },
+      {
+        "text": "feverish feeling / mild temperature",
+        "duration": null,
+        "severity": null,
+        "status": "resolved"
+      },
+      {
+        "text": "vomiting",
+        "duration": null,
+        "severity": null,
+        "status": "resolved"
+      },
+      {
+        "text": "loss of appetite",
+        "duration": "3 days",
+        "severity": null,
+        "status": "current"
+      }
+    ],
+    "diagnoses": [
+      {
+        "text": "gastroenteritis",
+        "status": "suspected"
+      }
+    ],
+    "current_medications": [
+      "asthma inhaler"
+    ],
+    "prescribed": [
+      {
+        "name": "Dioralyte (oral rehydration solution)",
+        "dose": null,
+        "frequency": null
+      },
+      {
+        "name": "paracetamol",
+        "dose": "2 tablets",
+        "frequency": "up to 4 times a day"
+      }
+    ],
+    "investigations": [
+      "stool sample for testing"
+    ],
+    "follow_up": [
+      "review if symptoms persist beyond 3-4 days"
+    ],
+    "advice": [
+      "stay hydrated",
+      "use oral rehydration solution (Dioralyte)",
+      "take paracetamol 2 tablets up to 4 times daily if feverish",
+      "take time off work for 2-3 days",
+      "seek medical review if symptoms do not improve within 3-4 days"
+    ],
+    "allergies": [],
+    "vitals": {
+      "bp": null,
+      "pulse": null,
+      "temperature": null,
+      "spo2": null
+    },
+    "medical_history": [
+      "asthma"
+    ],
+    "family_history": [],
+    "social_history": [
+      "non-smoker",
+      "no alcohol",
+      "accountant"
+    ],
+    "exposure_history": [
+      "ate Chinese takeaway 4 days ago"
+    ]
+  },
+  "C00002": {
+    "patient_info": {
+      "age": 31,
+      "gender": "male"
+    },
+    "symptoms": [
+      {
+        "text": "itchy skin",
+        "duration": "4 days",
+        "severity": null,
+        "status": "current"
+      },
+      {
+        "text": "sore skin",
+        "duration": "4 days",
+        "severity": null,
+        "status": "current"
+      },
+      {
+        "text": "cracked skin",
+        "duration": "4 days",
+        "severity": null,
+        "status": "current"
+      }
+    ],
+    "diagnoses": [
+      {
+        "text": "eczema flare-up",
+        "status": "suspected"
+      }
+    ],
+    "current_medications": [],
+    "prescribed": [
+      {
+        "name": "topical steroid (stronger prescription)",
+        "dose": null,
+        "frequency": null
+      },
+      {
+        "name": "emollient (for bath and shower)",
+        "dose": null,
+        "frequency": null
+      },
+      {
+        "name": "Fexofenadine",
+        "dose": null,
+        "frequency": null
+      }
+    ],
+    "investigations": [],
+    "follow_up": [
+      "follow-up appointment next week if symptoms do not improve"
+    ],
+    "advice": [
+      "use emollient in bath and shower for 7-10 days",
+      "keep a diary of potential triggers such as clothing or shower gels",
+      "consider over‑the‑counter antihistamines (e.g., loratadine or Piriton) for itch",
+      "apply prescribed steroid cream regularly",
+      "avoid scratching and maintain skin moisturisation"
+    ],
+    "allergies": [],
+    "vitals": {
+      "bp": null,
+      "pulse": null,
+      "temperature": null,
+      "spo2": null
+    },
+    "medical_history": [
+      "eczema",
+      "asthma (resolved)"
+    ],
+    "family_history": [],
+    "social_history": [
+      "lives with flatmates",
+      "project manager at a pharmaceutical company",
+      "non‑smoker",
+      "drinks a few beers per week"
+    ],
+    "exposure_history": []
+  },
+  "C00003": {
+    "patient_info": {
+      "age": null,
+      "gender": "female"
+    },
+    "symptoms": [
+      {
+        "text": "headache (left-sided, throbbing, worsens with movement)",
+        "duration": "since mid‑day (a few hours)",
+        "severity": "severe",
+        "status": "current"
+      },
+      {
+        "text": "nausea",
+        "duration": "present now",
+        "severity": null,
+        "status": "current"
+      },
+      {
+        "text": "vomiting (2 episodes)",
+        "duration": "present now",
+        "severity": null,
+        "status": "current"
+      },
+      {
+        "text": "visual disturbances (zig‑zag lines, blurred vision, photophobia)",
+        "duration": "present now",
+        "severity": null,
+        "status": "current"
+      }
+    ],
+    "diagnoses": [
+      {
+        "text": "migraine",
+        "status": "suspected"
+      }
+    ],
+    "current_medications": [
+      "Microgynon"
+    ],
+    "prescribed": [
+      {
+        "name": "Paracetamol",
+        "dose": null,
+        "frequency": null
+      },
+      {
+        "name": "Co-codamol",
+        "dose": null,
+        "frequency": null
+      },
+      {
+        "name": "Ibuprofen",
+        "dose": null,
+        "frequency": null
+      },
+      {
+        "name": "Naproxen",
+        "dose": null,
+        "frequency": null
+      }
+    ],
+    "investigations": [],
+    "follow_up": [
+      "follow‑up appointment next week",
+      "return sooner if symptoms worsen or new neurological signs develop"
+    ],
+    "advice": [
+      "keep a headache diary",
+      "take strong painkillers as advised",
+      "seek urgent care if headache worsens, neck pain worsens, weakness develops, or vision changes"
+    ],
+    "allergies": [],
+    "vitals": {
+      "bp": null,
+      "pulse": null,
+      "temperature": null,
+      "spo2": null
+    },
+    "medical_history": [],
+    "family_history": [
+      "mother has migraines",
+      "mother has underactive thyroid"
+    ],
+    "social_history": [
+      "works in fashion industry (stressful)",
+      "lives alone",
+      "does not smoke",
+      "does not drink alcohol",
+      "does not exercise"
+    ],
+    "exposure_history": []
+  },
+  "C00004": {
+    "patient_info": {
+      "age": null,
+      "gender": "male"
+    },
+    "symptoms": [
+      {
+        "text": "sore throat",
+        "duration": "4 days",
+        "severity": "painful",
+        "status": "current"
+      },
+      {
+        "text": "runny nose",
+        "duration": "4 days",
+        "severity": null,
+        "status": "current"
+      },
+      {
+        "text": "nasal congestion",
+        "duration": "4 days",
+        "severity": null,
+        "status": "current"
+      },
+      {
+        "text": "dry cough",
+        "duration": "1 day",
+        "severity": null,
+        "status": "current"
+      },
+      {
+        "text": "night sweats",
+        "duration": "4 days",
+        "severity": null,
+        "status": "current"
+      },
+      {
+        "text": "fatigue/tiredness",
+        "duration": "4 days",
+        "severity": null,
+        "status": "current"
+      },
+      {
+        "text": "fever",
+        "duration": "4 days",
+        "severity": null,
+        "status": "resolved"
+      },
+      {
+        "text": "muscle pain",
+        "duration": "2 days",
+        "severity": null,
+        "status": "current"
+      },
+      {
+        "text": "headache",
+        "duration": "4 days",
+        "severity": null,
+        "status": "current"
+      },
+      {
+        "text": "shortness of breath on exertion",
+        "duration": "4 days",
+        "severity": null,
+        "status": "current"
+      },
+      {
+        "text": "decreased appetite",
+        "duration": "4 days",
+        "severity": null,
+        "status": "current"
+      },
+      {
+        "text": "joint pain",
+        "duration": "2 days",
+        "severity": null,
+        "status": "current"
+      }
+    ],
+    "diagnoses": [
+      {
+        "text": "viral upper respiratory tract infection",
+        "status": "provisional"
+      }
+    ],
+    "current_medications": [
+      "Paracetamol",
+      "Ibuprofen"
+    ],
+    "prescribed": [],
+    "investigations": [],
+    "follow_up": [
+      "return in one week if symptoms have not improved",
+      "call sooner if high fever develops or breathing becomes more labored or chest pain occurs"
+    ],
+    "advice": [
+      "rest and take a couple of days off work",
+      "stay well hydrated and continue taking Paracetamol and Ibuprofen as needed"
+    ],
+    "allergies": [],
+    "vitals": {
+      "bp": null,
+      "pulse": null,
+      "temperature": null,
+      "spo2": null
+    },
+    "medical_history": [],
+    "family_history": [
+      {
+        "relation": "grandmother",
+        "condition": "type 2 diabetes"
+      },
+      {
+        "relation": "great-grandfather",
+        "condition": "eczema"
+      }
+    ],
+    "social_history": [
+      "lives alone",
+      "works as an accountant",
+      "occasionally smokes cigars at company parties",
+      "occasionally consumes alcohol, not a heavy drinker"
+    ],
+    "exposure_history": [
+      "colleague with frequent sneezing and possible infection from children’s kindergarten"
+    ]
+  },
+  "C00005": {
+    "patient_info": {
+      "age": null,
+      "gender": null
+    },
+    "symptoms": [
+      {
+        "text": "lower abdominal pain below the belly button, burning, constant and getting worse",
+        "duration": "2 days",
+        "severity": null,
+        "status": "current"
+      },
+      {
+        "text": "feeling hot and sweaty",
+        "duration": null,
+        "severity": null,
+        "status": "current"
+      },
+      {
+        "text": "constipation",
+        "duration": "since last week",
+        "severity": null,
+        "status": "resolved"
+      },
+      {
+        "text": "pink urine",
+        "duration": null,
+        "severity": null,
+        "status": "current"
+      },
+      {
+        "text": "increased urinary frequency",
+        "duration": null,
+        "severity": null,
+        "status": "current"
+      },
+      {
+        "text": "nausea",
+        "duration": null,
+        "severity": null,
+        "status": "current"
+      }
+    ],
+    "diagnoses": [],
+    "current_medications": [
+      "Implanon"
+    ],
+    "prescribed": [
+      {
+        "name": "Trimethoprim",
+        "dose": "1 tablet",
+        "frequency": "twice daily for 3 days"
+      }
+    ],
+    "investigations": [
+      "urine test",
+      "pregnancy test"
+    ],
+    "follow_up": [
+      "return in a few days for review if symptoms do not improve or worsen"
+    ],
+    "advice": [
+      "drink plenty of fluids",
+      "try cranberry juice",
+      "use paracetamol for pain",
+      "monitor for worsening pain, fever, vomiting",
+      "take prescribed antibiotics as directed",
+      "perform a pregnancy test"
+    ],
+    "allergies": [],
+    "vitals": {
+      "bp": null,
+      "pulse": null,
+      "temperature": null,
+      "spo2": null
+    },
+    "medical_history": [],
+    "family_history": [],
+    "social_history": [
+      "lives in a share house with two roommates",
+      "works as an accountant",
+      "does not smoke",
+      "drinks socially"
+    ],
+    "exposure_history": []
+  },
+  "C00006": {
+    "patient_info": {
+      "age": null,
+      "gender": "male"
+    },
+    "symptoms": [
+      {
+        "text": "shortness of breath",
+        "duration": "last couple of weeks, worsening in the last few days",
+        "severity": null,
+        "status": "current"
+      },
+      {
+        "text": "dry cough",
+        "duration": null,
+        "severity": null,
+        "status": "current"
+      },
+      {
+        "text": "bilateral ankle swelling",
+        "duration": "last few days",
+        "severity": null,
+        "status": "current"
+      },
+      {
+        "text": "feeling run-down",
+        "duration": null,
+        "severity": null,
+        "status": "current"
+      },
+      {
+        "text": "increased urinary frequency",
+        "duration": null,
+        "severity": null,
+        "status": "current"
+      }
+    ],
+    "diagnoses": [
+      {
+        "text": "heart failure",
+        "status": "known"
+      },
+      {
+        "text": "small myocardial infarction (heart attack) 5 years ago",
+        "status": "past"
+      },
+      {
+        "text": "possible acute decompensation of heart failure",
+        "status": "suspected"
+      }
+    ],
+    "current_medications": [
+      "Furosemide",
+      "Aspirin",
+      "Bisoprolol"
+    ],
+    "prescribed": [
+      {
+        "name": "Furosemide",
+        "dose": null,
+        "frequency": "twice daily"
+      }
+    ],
+    "investigations": [
+      "blood test (full blood count, kidney function)",
+      "echocardiogram"
+    ],
+    "follow_up": [
+      "review in about one week"
+    ],
+    "advice": [
+      "increase Furosemide dose to two tablets daily for a few days",
+      "obtain blood tests and echocardiogram",
+      "call the doctor sooner if symptoms worsen (more breathlessness, chest pain, palpitations, dizziness)"
+    ],
+    "allergies": [],
+    "vitals": {
+      "bp": null,
+      "pulse": null,
+      "temperature": null,
+      "spo2": null
+    },
+    "medical_history": [
+      "heart failure",
+      "small myocardial infarction (heart attack) 5 years ago"
+    ],
+    "family_history": [
+      "father died of heart attack in early sixties",
+      "mother has osteoporosis"
+    ],
+    "social_history": [
+      "lives alone with two cats",
+      "part‑time lorry driver, day shifts only",
+      "former smoker (≈1 pack/day for 25 years, quit)",
+      "does not drink alcohol",
+      "walks to the shop daily, limited exercise"
+    ],
+    "exposure_history": []
+  },
+  "C00007": {
+    "patient_info": {
+      "age": 50,
+      "gender": "male"
+    },
+    "symptoms": [
+      {
+        "text": "run-down feeling",
+        "duration": "5 days",
+        "severity": null,
+        "status": "current"
+      },
+      {
+        "text": "dry cough, worse in the morning",
+        "duration": "5 days",
+        "severity": null,
+        "status": "current"
+      },
+      {
+        "text": "runny nose (sniffles)",
+        "duration": "5 days",
+        "severity": null,
+        "status": "current"
+      },
+      {
+        "text": "sore throat",
+        "duration": "5 days",
+        "severity": null,
+        "status": "current"
+      },
+      {
+        "text": "hoarseness/rough voice",
+        "duration": "5 days",
+        "severity": null,
+        "status": "current"
+      },
+      {
+        "text": "shortness of breath",
+        "duration": "5 days",
+        "severity": null,
+        "status": "current"
+      },
+      {
+        "text": "feeling hot and cold, sweaty (feverish sensations)",
+        "duration": "5 days",
+        "severity": null,
+        "status": "current"
+      },
+      {
+        "text": "diarrhoea",
+        "duration": "1 day",
+        "severity": null,
+        "status": "resolved"
+      },
+      {
+        "text": "muscle and joint stiffness (elbows and knees)",
+        "duration": "5 days",
+        "severity": null,
+        "status": "current"
+      }
+    ],
+    "diagnoses": [
+      {
+        "text": "viral upper respiratory infection",
+        "status": "suspected"
+      },
+      {
+        "text": "early influenza",
+        "status": "suspected"
+      },
+      {
+        "text": "type 2 diabetes mellitus",
+        "status": "known"
+      },
+      {
+        "text": "hypertension",
+        "status": "known"
+      }
+    ],
+    "current_medications": [
+      "Metformin",
+      "Lisinopril",
+      "Aspirin (as needed)"
+    ],
+    "prescribed": [
+      {
+        "name": "Paracetamol",
+        "dose": null,
+        "frequency": null
+      },
+      {
+        "name": "Amoxicillin",
+        "dose": "1 tablet",
+        "frequency": "three times a day"
+      }
+    ],
+    "investigations": [],
+    "follow_up": [
+      "Return if symptoms not improved within 1 week"
+    ],
+    "advice": [
+      "Rest and stay rested",
+      "Drink plenty of fluids",
+      "Take regular Paracetamol for feverish symptoms",
+      "If not better in 24-48 hours, start Amoxicillin as prescribed",
+      "Monitor symptoms and seek care if worsening"
+    ],
+    "allergies": [],
+    "vitals": {
+      "bp": null,
+      "pulse": null,
+      "temperature": null,
+      "spo2": null
+    },
+    "medical_history": [
+      "type 2 diabetes mellitus",
+      "hypertension"
+    ],
+    "family_history": [],
+    "social_history": [
+      "Lives with wife, no children at home",
+      "Works in steel parts manufacturing factory",
+      "Consumes about 9 pints of alcohol per week",
+      "Occasional smoking, using vaporizer to reduce"
+    ],
+    "exposure_history": [
+      "Recent dinner at a restaurant 5 days ago, no known contaminated food"
+    ]
+  },
+  "C00008": {
+    "patient_info": {
+      "age": 26,
+      "gender": null
+    },
+    "symptoms": [
+      {
+        "text": "dry itchy skin on arms and hands",
+        "duration": "few days",
+        "severity": null,
+        "status": "current"
+      },
+      {
+        "text": "red skin on affected areas",
+        "duration": "few days",
+        "severity": null,
+        "status": "current"
+      }
+    ],
+    "diagnoses": [
+      {
+        "text": "dermatitis",
+        "status": "provisional"
+      }
+    ],
+    "current_medications": [
+      "Microgynon"
+    ],
+    "prescribed": [
+      {
+        "name": "topical steroid cream",
+        "dose": null,
+        "frequency": null
+      },
+      {
+        "name": "emollient",
+        "dose": null,
+        "frequency": null
+      },
+      {
+        "name": "Piriton (antihistamine)",
+        "dose": null,
+        "frequency": null
+      },
+      {
+        "name": "Loratadine (antihistamine)",
+        "dose": null,
+        "frequency": null
+      }
+    ],
+    "investigations": [],
+    "follow_up": [
+      "return for review next week if symptoms persist"
+    ],
+    "advice": [
+      "apply emollient throughout the day",
+      "use prescribed steroid cream as directed",
+      "consider over‑the‑counter antihistamines for itch",
+      "avoid potential triggers such as swimming gear or soaps",
+      "manage work‑related stress"
+    ],
+    "allergies": [
+      "lactose intolerance"
+    ],
+    "vitals": {
+      "bp": null,
+      "pulse": null,
+      "temperature": null,
+      "spo2": null
+    },
+    "medical_history": [],
+    "family_history": [
+      "father has asthma",
+      "mother has hay fever"
+    ],
+    "social_history": [
+      "primary school teacher",
+      "lives alone",
+      "non‑smoker",
+      "non‑drinker",
+      "no recreational drug use"
+    ],
+    "exposure_history": [
+      "swimming a few days ago",
+      "work stress"
+    ]
+  },
+  "C00009": {
+    "patient_info": {
+      "age": 19,
+      "gender": "female"
+    },
+    "symptoms": [
+      {
+        "text": "burning/stinging pain when urinating",
+        "duration": "a few days",
+        "severity": null,
+        "status": "current"
+      },
+      {
+        "text": "crampy lower abdominal pain when urinating",
+        "duration": "a few days",
+        "severity": null,
+        "status": "current"
+      },
+      {
+        "text": "visible blood in urine",
+        "duration": "today",
+        "severity": null,
+        "status": "current"
+      },
+      {
+        "text": "unusual urine odor",
+        "duration": null,
+        "severity": null,
+        "status": "current"
+      }
+    ],
+    "diagnoses": [
+      {
+        "text": "simple urinary tract infection (bladder infection)",
+        "status": "suspected"
+      }
+    ],
+    "current_medications": [],
+    "prescribed": [
+      {
+        "name": "Nitrofurantoin",
+        "dose": "1 tablet",
+        "frequency": "twice a day"
+      },
+      {
+        "name": "Trimethoprim",
+        "dose": "1 tablet",
+        "frequency": "twice a day"
+      }
+    ],
+    "investigations": [],
+    "follow_up": [
+      "Call or return if symptoms do not improve after three days or develop fever, back pain, or feeling unwell"
+    ],
+    "advice": [
+      "Drink plenty of fluids",
+      "Try cranberry juice",
+      "Avoid sexual intercourse while symptoms are present",
+      "Continue using barrier contraception (condoms)"
+    ],
+    "allergies": [
+      {
+        "substance": "Clindamycin",
+        "reaction": "swelling"
+      }
+    ],
+    "vitals": {
+      "bp": null,
+      "pulse": null,
+      "temperature": null,
+      "spo2": null
+    },
+    "medical_history": [
+      "irritable bowel syndrome (IBS)"
+    ],
+    "family_history": [],
+    "social_history": [
+      "student",
+      "lives with friends in a flat",
+      "drinks alcohol on weekends",
+      "non-smoker"
+    ],
+    "exposure_history": [
+      "sexually active with boyfriend, uses condoms",
+      "no prior STD screening"
+    ]
+  },
+  "C00010": {
+    "patient_info": {
+      "age": 19,
+      "gender": null
+    },
+    "symptoms": [
+      {
+        "text": "burning pain when urinating",
+        "duration": "just under a week",
+        "severity": null,
+        "status": "current"
+      },
+      {
+        "text": "increased urinary frequency",
+        "duration": "just under a week",
+        "severity": null,
+        "status": "current"
+      },
+      {
+        "text": "lower abdominal ache associated with urination",
+        "duration": "just under a week",
+        "severity": null,
+        "status": "current"
+      },
+      {
+        "text": "pink discoloration of urine",
+        "duration": "today",
+        "severity": null,
+        "status": "current"
+      }
+    ],
+    "diagnoses": [
+      {
+        "text": "urinary tract infection / cystitis (bladder infection)",
+        "status": "suspected"
+      }
+    ],
+    "current_medications": [
+      "combined oral contraceptive pill",
+      "IBS medication (unspecified, starts with M)"
+    ],
+    "prescribed": [
+      {
+        "name": "Trimethoprim",
+        "dose": null,
+        "frequency": null
+      },
+      {
+        "name": "Nitrofurantoin",
+        "dose": null,
+        "frequency": null
+      },
+      {
+        "name": "Paracetamol",
+        "dose": null,
+        "frequency": null
+      }
+    ],
+    "investigations": [
+      "urine sample for laboratory analysis"
+    ],
+    "follow_up": [
+      "return if symptoms have not improved within one week",
+      "call if fever, back pain, or vomiting develop"
+    ],
+    "advice": [
+      "stay well hydrated and drink plenty of fluids",
+      "take paracetamol for pain as needed",
+      "avoid regular cannabis use",
+      "avoid smoking",
+      "monitor for fever, back pain, or vomiting"
+    ],
+    "allergies": [
+      "Clindamycin"
+    ],
+    "vitals": {
+      "bp": null,
+      "pulse": null,
+      "temperature": null,
+      "spo2": null
+    },
+    "medical_history": [
+      "irritable bowel syndrome (IBS)"
+    ],
+    "family_history": [],
+    "social_history": [
+      "living in university halls with a flatmate",
+      "studying English at university",
+      "occasional social alcohol consumption",
+      "tried cannabis once about 1.5 weeks ago",
+      "does not smoke cigarettes"
+    ],
+    "exposure_history": [
+      "recent unprotected sexual intercourse approximately one week ago",
+      "recent cannabis use (first joint) about 1.5 weeks ago"
+    ]
+  },
+  "C00011": {
+    "patient_info": {
+      "age": 27,
+      "gender": null
+    },
+    "symptoms": [
+      {
+        "text": "watery diarrhoea (frequent watery stools)",
+        "duration": "3 days",
+        "severity": null,
+        "status": "current"
+      },
+      {
+        "text": "abdominal crampy pain in the middle of the abdomen",
+        "duration": "3 days",
+        "severity": "6-7/10",
+        "status": "current"
+      },
+      {
+        "text": "nausea",
+        "duration": "3 days",
+        "severity": null,
+        "status": "current"
+      },
+      {
+        "text": "vomiting (after milk)",
+        "duration": "3 days",
+        "severity": null,
+        "status": "current"
+      },
+      {
+        "text": "feeling hot / feverish",
+        "duration": "3 days",
+        "severity": null,
+        "status": "current"
+      },
+      {
+        "text": "reduced urine frequency",
+        "duration": "3 days",
+        "severity": null,
+        "status": "current"
+      }
+    ],
+    "diagnoses": [
+      {
+        "text": "gastroenteritis",
+        "status": "suggestive"
+      }
+    ],
+    "current_medications": [
+      "Paracetamol"
+    ],
+    "prescribed": [
+      {
+        "name": "Diarolyte (oral rehydration solution)",
+        "dose": null,
+        "frequency": null
+      }
+    ],
+    "investigations": [],
+    "follow_up": [
+      "Call back if symptoms not settled in 48 hours",
+      "Follow up in 1-2 days"
+    ],
+    "advice": [
+      "Drink plenty of fluids",
+      "Use oral rehydration solution (Diarolyte) over the counter",
+      "Continue Paracetamol if feverish or abdominal pain",
+      "Consume clear fluids and a soft diet (soup, mash) and gradually return to normal foods",
+      "Avoid alcohol while symptomatic",
+      "Seek further medical attention if signs of dehydration develop"
+    ],
+    "allergies": [],
+    "vitals": {
+      "bp": null,
+      "pulse": null,
+      "temperature": null,
+      "spo2": null
+    },
+    "medical_history": [],
+    "family_history": [
+      "Father has colon cancer (stage III)"
+    ],
+    "social_history": [
+      "Lives with sister and mother",
+      "Works in a government office in Central London",
+      "Social smoker (occasionally on Fridays)",
+      "Alcohol use: occasional beer on weekdays, more on Fridays, 1-2 times per month"
+    ],
+    "exposure_history": [
+      "Brother has similar diarrhoeal illness for five days"
+    ]
+  },
+  "C00012": {
+    "patient_info": {
+      "age": 48,
+      "gender": null
+    },
+    "symptoms": [
+      {
+        "text": "diarrhoea",
+        "duration": "3 days",
+        "severity": "very bad",
+        "status": "current"
+      },
+      {
+        "text": "vomiting",
+        "duration": null,
+        "severity": null,
+        "status": "resolved"
+      },
+      {
+        "text": "dehydration",
+        "duration": "3 days",
+        "severity": null,
+        "status": "current"
+      },
+      {
+        "text": "weakness",
+        "duration": "3 days",
+        "severity": null,
+        "status": "current"
+      },
+      {
+        "text": "feverish feeling / mild temperature",
+        "duration": null,
+        "severity": null,
+        "status": "resolved"
+      },
+      {
+        "text": "nausea",
+        "duration": null,
+        "severity": null,
+        "status": "resolved"
+      }
+    ],
+    "diagnoses": [
+      {
+        "text": "gastroenteritis",
+        "status": "suspected"
+      }
+    ],
+    "current_medications": [
+      "asthma inhaler"
+    ],
+    "prescribed": [
+      {
+        "name": "Dioralyte",
+        "dose": null,
+        "frequency": null
+      },
+      {
+        "name": "Paracetamol",
+        "dose": null,
+        "frequency": null
+      }
+    ],
+    "investigations": [],
+    "follow_up": [
+      "If symptoms persist next week, return for review"
+    ],
+    "advice": [
+      "Drink plenty of fluids",
+      "Take Dioralyte oral rehydration solution",
+      "Take Paracetamol if feverish or feeling weak",
+      "Continue taking time off work until symptom free for 24-48 hours"
+    ],
+    "allergies": [],
+    "vitals": {
+      "bp": null,
+      "pulse": null,
+      "temperature": null,
+      "spo2": null
+    },
+    "medical_history": [
+      "asthma"
+    ],
+    "family_history": [
+      "father: high blood pressure, bowel cancer (deceased)",
+      "mother: type 2 diabetes"
+    ],
+    "social_history": [
+      "lives alone",
+      "software engineer",
+      "does not smoke",
+      "drinks alcohol infrequently socially"
+    ],
+    "exposure_history": [
+      "no known recent exposure to ill persons",
+      "no recent consumption of takeaway or restaurant food"
+    ]
+  },
+  "C00013": {
+    "patient_info": {
+      "age": 26,
+      "gender": null
+    },
+    "symptoms": [
+      {
+        "text": "headache",
+        "duration": "3 days",
+        "severity": "8",
+        "status": "current"
+      },
+      {
+        "text": "photophobia (sensitivity to light)",
+        "duration": "3 days",
+        "severity": null,
+        "status": "current"
+      },
+      {
+        "text": "nausea",
+        "duration": "3 days",
+        "severity": null,
+        "status": "current"
+      },
+      {
+        "text": "difficulty focusing",
+        "duration": "3 days",
+        "severity": null,
+        "status": "current"
+      }
+    ],
+    "diagnoses": [
+      {
+        "text": "possible migraine",
+        "status": "suspected"
+      }
+    ],
+    "current_medications": [],
+    "prescribed": [
+      {
+        "name": "Naproxen",
+        "dose": null,
+        "frequency": null
+      }
+    ],
+    "investigations": [],
+    "follow_up": [
+      "return in 1-2 weeks"
+    ],
+    "advice": [
+      "keep a headache diary to identify triggers",
+      "reduce screen brightness",
+      "consider an eye test if eyes feel strained",
+      "call or return sooner if headaches worsen or new symptoms develop"
+    ],
+    "allergies": [],
+    "vitals": {
+      "bp": null,
+      "pulse": null,
+      "temperature": null,
+      "spo2": null
+    },
+    "medical_history": [
+      "previous headaches"
+    ],
+    "family_history": [
+      "mother has migraines",
+      "sister has migraines"
+    ],
+    "social_history": [
+      "lives with three housemates",
+      "works in IT",
+      "social smoker",
+      "social drinker",
+      "wears glasses"
+    ],
+    "exposure_history": []
+  },
+  "C00014": {
+    "patient_info": {
+      "age": 50,
+      "gender": null
+    },
+    "symptoms": [
+      {
+        "text": "dry cough",
+        "duration": "5-6 days",
+        "severity": null,
+        "status": "current"
+      },
+      {
+        "text": "runny nose",
+        "duration": "5-6 days",
+        "severity": null,
+        "status": "current"
+      },
+      {
+        "text": "sore throat (irritated from coughing)",
+        "duration": "5-6 days",
+        "severity": null,
+        "status": "current"
+      },
+      {
+        "text": "shivering/feverish feeling",
+        "duration": "5-6 days",
+        "severity": null,
+        "status": "current"
+      },
+      {
+        "text": "chills",
+        "duration": "5-6 days",
+        "severity": null,
+        "status": "current"
+      },
+      {
+        "text": "muscle aches",
+        "duration": "5-6 days",
+        "severity": null,
+        "status": "current"
+      },
+      {
+        "text": "fatigue/lethargy",
+        "duration": "5-6 days",
+        "severity": null,
+        "status": "current"
+      },
+      {
+        "text": "diarrhea",
+        "duration": "5-6 days",
+        "severity": null,
+        "status": "resolved"
+      }
+    ],
+    "diagnoses": [
+      {
+        "text": "viral upper respiratory infection",
+        "status": "suspected"
+      }
+    ],
+    "current_medications": [
+      "Metformin",
+      "Lisinopril"
+    ],
+    "prescribed": [],
+    "investigations": [],
+    "follow_up": [
+      "Return for review if no improvement in 2-3 days, if fever persists, or if cough/breathing worsens."
+    ],
+    "advice": [
+      "Rest and get plenty of fluids.",
+      "Take regular Paracetamol for symptom relief.",
+      "Consider reducing alcohol intake.",
+      "Take a day or two off work while symptomatic."
+    ],
+    "allergies": [],
+    "vitals": {
+      "bp": null,
+      "pulse": null,
+      "temperature": null,
+      "spo2": null
+    },
+    "medical_history": [
+      "type 2 diabetes",
+      "high blood pressure"
+    ],
+    "family_history": [
+      "father has type 2 diabetes"
+    ],
+    "social_history": [
+      "Lives with partner",
+      "Works as a developer (IT field)",
+      "Stopped smoking 6 months ago",
+      "Drinks wine 2-3 glasses on up to three evenings per week"
+    ],
+    "exposure_history": []
+  },
+  "C00015": {
+    "patient_info": {
+      "age": 45,
+      "gender": null
+    },
+    "symptoms": [
+      {
+        "text": "Soreness and cracking of skin on hands (palms and fingers)",
+        "duration": "3-4 months",
+        "severity": null,
+        "status": "current"
+      },
+      {
+        "text": "Dryness of skin on hands and legs",
+        "duration": "3-4 months",
+        "severity": null,
+        "status": "current"
+      },
+      {
+        "text": "Itching of palms",
+        "duration": "3-4 months",
+        "severity": null,
+        "status": "current"
+      },
+      {
+        "text": "Bleeding when scratched",
+        "duration": "3-4 months",
+        "severity": null,
+        "status": "current"
+      }
+    ],
+    "diagnoses": [
+      {
+        "text": "contact dermatitis",
+        "status": "suspected"
+      }
+    ],
+    "current_medications": [
+      "Metformin"
+    ],
+    "prescribed": [
+      {
+        "name": "topical steroid cream",
+        "dose": null,
+        "frequency": null
+      },
+      {
+        "name": "emollient cream",
+        "dose": null,
+        "frequency": "3-4 times daily"
+      }
+    ],
+    "investigations": [],
+    "follow_up": [
+      "Return in 1-2 weeks if symptoms have not improved or worsen"
+    ],
+    "advice": [
+      "Wear gloves when cleaning to avoid triggers",
+      "Apply emollient cream 3-4 times daily for several weeks",
+      "Avoid harsh cleaning products when possible",
+      "Monitor for spreading or worsening dryness"
+    ],
+    "allergies": [],
+    "vitals": {
+      "bp": null,
+      "pulse": null,
+      "temperature": null,
+      "spo2": null
+    },
+    "medical_history": [
+      "type 2 diabetes"
+    ],
+    "family_history": [
+      "diabetes"
+    ],
+    "social_history": [
+      "Works as a housekeeper at a hotel",
+      "Does not consistently wear gloves while cleaning",
+      "Changed jobs 4 months ago",
+      "Consumes a couple of pints of alcohol per week",
+      "Non‑smoker"
+    ],
+    "exposure_history": [
+      "Regular exposure to cleaning products without protective gloves"
+    ]
+  },
+  "C00016": {
+    "patient_info": {
+      "age": null,
+      "gender": null
+    },
+    "symptoms": [
+      {
+        "text": "difficulty hearing in left ear",
+        "duration": "6 weeks",
+        "severity": null,
+        "status": "current"
+      },
+      {
+        "text": "ringing in left ear (tinnitus)",
+        "duration": "6 weeks",
+        "severity": null,
+        "status": "current"
+      },
+      {
+        "text": "dizziness / feeling off‑balance",
+        "duration": "6 weeks",
+        "severity": "mild",
+        "status": "current"
+      }
+    ],
+    "diagnoses": [
+      {
+        "text": "Tinnitus",
+        "status": "suspected"
+      }
+    ],
+    "current_medications": [],
+    "prescribed": [],
+    "investigations": [
+      "otoscopic examination of left ear"
+    ],
+    "follow_up": [
+      "face‑to‑face clinic appointment in 4‑5 days"
+    ],
+    "advice": [
+      "avoid using cotton buds to clean ears",
+      "read the provided leaflet about tinnitus",
+      "if symptoms worsen or new issues arise, book another video appointment"
+    ],
+    "allergies": [],
+    "vitals": {
+      "bp": null,
+      "pulse": null,
+      "temperature": null,
+      "spo2": null
+    },
+    "medical_history": [],
+    "family_history": [],
+    "social_history": [],
+    "exposure_history": []
+  },
+  "C00017": {
+    "patient_info": {
+      "age": 53,
+      "gender": null
+    },
+    "symptoms": [
+      {
+        "text": "swelling of left elbow",
+        "duration": "about a week",
+        "severity": null,
+        "status": "current"
+      },
+      {
+        "text": "dry skin on left elbow",
+        "duration": null,
+        "severity": null,
+        "status": "current"
+      }
+    ],
+    "diagnoses": [
+      {
+        "text": "bursitis",
+        "status": "suspected"
+      },
+      {
+        "text": "osteoarthritis",
+        "status": "known"
+      }
+    ],
+    "current_medications": [],
+    "prescribed": [
+      {
+        "name": "Ibuprofen",
+        "dose": 400,
+        "frequency": "twice a day"
+      }
+    ],
+    "investigations": [
+      "blood tests for inflammatory markers, infection, rheumatological antibodies, gout"
+    ],
+    "follow_up": [
+      "follow-up appointment (phone or video) after blood test results"
+    ],
+    "advice": [
+      "take ibuprofen after food, not on an empty stomach; stop if heartburn occurs",
+      "monitor for increased redness, pain, or swelling and seek urgent care if these occur",
+      "condition is not currently dangerous"
+    ],
+    "allergies": [
+      "peanuts"
+    ],
+    "vitals": {
+      "bp": null,
+      "pulse": null,
+      "temperature": null,
+      "spo2": null
+    },
+    "medical_history": [
+      "osteoarthritis"
+    ],
+    "family_history": [],
+    "social_history": [
+      "desk job",
+      "runs 2-3 times per week"
+    ],
+    "exposure_history": []
+  },
+  "C00018": {
+    "patient_info": {
+      "age": 40,
+      "gender": null
+    },
+    "symptoms": [
+      {
+        "text": "Reduced hearing on left side",
+        "duration": "three weeks",
+        "severity": null,
+        "status": "current"
+      },
+      {
+        "text": "Facial numbness on left side around ear and jawline",
+        "duration": "three weeks",
+        "severity": null,
+        "status": "current"
+      },
+      {
+        "text": "Occasional ringing in left ear (tinnitus)",
+        "duration": null,
+        "severity": null,
+        "status": "current"
+      },
+      {
+        "text": "Occasional dizziness associated with ringing",
+        "duration": null,
+        "severity": null,
+        "status": "current"
+      }
+    ],
+    "diagnoses": [
+      {
+        "text": "Bell's Palsy",
+        "status": "suspected"
+      }
+    ],
+    "current_medications": [
+      "nasal spray (prescribed previously)",
+      "Rennie's"
+    ],
+    "prescribed": [],
+    "investigations": [],
+    "follow_up": [
+      "Face-to-face clinic appointment today for neurological and ear examination"
+    ],
+    "advice": [
+      "Attend the scheduled clinic appointment for assessment",
+      "Reassured that condition is not life‑threatening"
+    ],
+    "allergies": [
+      "Latex"
+    ],
+    "vitals": {
+      "bp": null,
+      "pulse": null,
+      "temperature": null,
+      "spo2": null
+    },
+    "medical_history": [
+      "Nasal polyps",
+      "Past labyrinthitis"
+    ],
+    "family_history": [
+      "Brother with Neurofibromatosis"
+    ],
+    "social_history": [
+      "Occupation: jockey",
+      "Lives with partner",
+      "No pets"
+    ],
+    "exposure_history": []
+  },
+  "C00020": {
+    "patient_info": {
+      "age": 32,
+      "gender": null
+    },
+    "symptoms": [
+      {
+        "text": "fatigue / feeling very tired",
+        "duration": "about a month (initially a couple of days)",
+        "severity": null,
+        "status": "current"
+      },
+      {
+        "text": "pins and needles sensation in right hand",
+        "duration": "about a month, episodes now several times a day",
+        "severity": null,
+        "status": "current"
+      },
+      {
+        "text": "weakness in right arm",
+        "duration": "about a month, episodes lasting a few days",
+        "severity": null,
+        "status": "current"
+      },
+      {
+        "text": "weakness in right leg during episodes",
+        "duration": "about a month, episodes lasting a few days",
+        "severity": null,
+        "status": "current"
+      },
+      {
+        "text": "abnormal gait / walking slightly differently",
+        "duration": "episodes lasting three to four days",
+        "severity": null,
+        "status": "current"
+      },
+      {
+        "text": "nausea",
+        "duration": null,
+        "severity": null,
+        "status": "current"
+      },
+      {
+        "text": "difficulty holding a cup of coffee (hand weakness) during episodes",
+        "duration": "last couple of days",
+        "severity": null,
+        "status": "current"
+      },
+      {
+        "text": "sensation of something stuck in throat during episodes",
+        "duration": null,
+        "severity": null,
+        "status": "current"
+      }
+    ],
+    "diagnoses": [
+      {
+        "text": "Transient ischemic attack (TIA)",
+        "status": "presumed"
+      }
+    ],
+    "current_medications": [
+      "aspirin 75 mg once daily"
+    ],
+    "prescribed": [],
+    "investigations": [
+      "carotid artery ultrasound",
+      "brain imaging (CT/MRI)"
+    ],
+    "follow_up": [
+      "Referral to TIA clinic with appointment expected within 1–2 days"
+    ],
+    "advice": [
+      "If symptoms become prolonged or worsen, attend A&E immediately",
+      "Contact the clinic if the appointment is delayed or symptoms recur"
+    ],
+    "allergies": [
+      "penicillin"
+    ],
+    "vitals": {
+      "bp": null,
+      "pulse": null,
+      "temperature": null,
+      "spo2": null
+    },
+    "medical_history": [],
+    "family_history": [
+      "father had carotid surgery to reduce stroke risk"
+    ],
+    "social_history": [
+      "works as a medical doctor (plastic surgery)",
+      "lives with wife",
+      "non‑smoker"
+    ],
+    "exposure_history": []
+  },
+  "C00021": {
+    "patient_info": {
+      "age": 27,
+      "gender": null
+    },
+    "symptoms": [
+      {
+        "text": "difficulty breathing",
+        "duration": "few minutes",
+        "severity": null,
+        "status": "current"
+      },
+      {
+        "text": "rash on arm",
+        "duration": "few minutes",
+        "severity": null,
+        "status": "current"
+      },
+      {
+        "text": "swelling of lips",
+        "duration": "few minutes",
+        "severity": null,
+        "status": "current"
+      },
+      {
+        "text": "tongue feels weird",
+        "duration": "few minutes",
+        "severity": null,
+        "status": "current"
+      },
+      {
+        "text": "anxiety about breathing",
+        "duration": "few minutes",
+        "severity": null,
+        "status": "current"
+      }
+    ],
+    "diagnoses": [
+      {
+        "text": "localised allergic reaction to insect sting",
+        "status": "provisional"
+      }
+    ],
+    "current_medications": [],
+    "prescribed": [
+      {
+        "name": "Piriton (chlorphenamine)",
+        "dose": "4 mg",
+        "frequency": "up to six times a day"
+      }
+    ],
+    "investigations": [],
+    "follow_up": [
+      "If symptoms worsen, go to A&E immediately",
+      "Make a follow‑up appointment if needed"
+    ],
+    "advice": [
+      "Take an over‑the‑counter antihistamine such as Piriton or chlorphenamine",
+      "Monitor for swelling or worsening breathing difficulty",
+      "Seek urgent care if breathing worsens or lip swelling increases",
+      "No allergy testing required at this time",
+      "Information link about anaphylaxis was provided"
+    ],
+    "allergies": [
+      "penicillin"
+    ],
+    "vitals": {
+      "bp": null,
+      "pulse": null,
+      "temperature": null,
+      "spo2": null
+    },
+    "medical_history": [
+      "eczema",
+      "occasional anxiety/panic attacks"
+    ],
+    "family_history": [],
+    "social_history": [
+      "computer scientist",
+      "lives alone",
+      "has a cat"
+    ],
+    "exposure_history": [
+      "wasp/bee sting a few minutes ago"
+    ]
+  },
+  "C00022": {
+    "patient_info": {
+      "age": null,
+      "gender": null
+    },
+    "symptoms": [
+      {
+        "text": "chest discomfort/pressure feeling like someone sitting on chest",
+        "duration": "a couple of hours",
+        "severity": null,
+        "status": "current"
+      },
+      {
+        "text": "nausea",
+        "duration": "a couple of hours",
+        "severity": null,
+        "status": "current"
+      },
+      {
+        "text": "sweating",
+        "duration": "a couple of hours",
+        "severity": null,
+        "status": "current"
+      },
+      {
+        "text": "shortness of breath",
+        "duration": "a couple of hours",
+        "severity": null,
+        "status": "current"
+      },
+      {
+        "text": "pain in left arm and shoulder",
+        "duration": "a couple of hours",
+        "severity": null,
+        "status": "current"
+      },
+      {
+        "text": "palpitations (heart beating faster)",
+        "duration": "a couple of hours",
+        "severity": null,
+        "status": "current"
+      }
+    ],
+    "diagnoses": [
+      {
+        "text": "possible heart attack",
+        "status": "suspected"
+      }
+    ],
+    "current_medications": [],
+    "prescribed": [],
+    "investigations": [
+      "ECG"
+    ],
+    "follow_up": [],
+    "advice": [
+      "call ambulance / ambulance is on the way",
+      "stay on the line until ambulance arrives",
+      "inform hospital about aspirin allergy"
+    ],
+    "allergies": [
+      "aspirin"
+    ],
+    "vitals": {
+      "bp": null,
+      "pulse": null,
+      "temperature": null,
+      "spo2": null
+    },
+    "medical_history": [
+      "high blood pressure",
+      "smoker (10 cigarettes per day for 15 years)",
+      "overweight"
+    ],
+    "family_history": [
+      "father died of heart attack around age 60",
+      "mother had heart problems"
+    ],
+    "social_history": [
+      "lives alone",
+      "restaurant owner (sushi shop)",
+      "drinks 7-8 pints of beer per week"
+    ],
+    "exposure_history": []
+  },
+  "C00023": {
+    "patient_info": {
+      "age": null,
+      "gender": null
+    },
+    "symptoms": [
+      {
+        "text": "fever",
+        "duration": "7 days",
+        "severity": null,
+        "status": "current"
+      },
+      {
+        "text": "muscle aches all over",
+        "duration": null,
+        "severity": null,
+        "status": "current"
+      },
+      {
+        "text": "nausea",
+        "duration": null,
+        "severity": null,
+        "status": "current"
+      },
+      {
+        "text": "reduced appetite / unable to eat much",
+        "duration": null,
+        "severity": null,
+        "status": "current"
+      },
+      {
+        "text": "night sweats",
+        "duration": null,
+        "severity": null,
+        "status": "current"
+      },
+      {
+        "text": "feeling hot and sweaty",
+        "duration": null,
+        "severity": null,
+        "status": "current"
+      },
+      {
+        "text": "feeling cold",
+        "duration": null,
+        "severity": null,
+        "status": "current"
+      },
+      {
+        "text": "tiredness",
+        "duration": null,
+        "severity": null,
+        "status": "current"
+      },
+      {
+        "text": "generalized headache",
+        "duration": "years",
+        "severity": null,
+        "status": "current"
+      },
+      {
+        "text": "back pain",
+        "duration": "several years",
+        "severity": null,
+        "status": "current"
+      }
+    ],
+    "diagnoses": [
+      {
+        "text": "back pain",
+        "status": "chronic"
+      },
+      {
+        "text": "hay fever (pollen allergy)",
+        "status": "existing"
+      }
+    ],
+    "current_medications": [
+      "Seroxat",
+      "ibuprofen",
+      "paracetamol"
+    ],
+    "prescribed": [],
+    "investigations": [
+      "thick and thin blood films",
+      "inflammatory markers"
+    ],
+    "follow_up": [
+      "clinic appointment in central London",
+      "possible A&E attendance if central London is inconvenient"
+    ],
+    "advice": [
+      "Do not go to work until investigations are completed",
+      "Blood tests for malaria and inflammatory markers are needed",
+      "Examination by a GP is required before deciding urgency of tests"
+    ],
+    "allergies": [
+      "pollen (hay fever)"
+    ],
+    "vitals": {
+      "bp": null,
+      "pulse": null,
+      "temperature": null,
+      "spo2": null
+    },
+    "medical_history": [
+      "back pain"
+    ],
+    "family_history": [
+      "father had heart attack in his 60s"
+    ],
+    "social_history": [
+      "nurse (occupation)",
+      "non-smoker",
+      "moderate alcohol intake",
+      "moderate exercise a few times a week"
+    ],
+    "exposure_history": [
+      "travel to Vietnam 4 weeks ago with rural trekking and cycling"
+    ]
+  },
+  "C00024": {
+    "patient_info": {
+      "age": null,
+      "gender": null
+    },
+    "symptoms": [
+      {
+        "text": "cannot move left arm",
+        "duration": "about 1 hour",
+        "severity": null,
+        "status": "current"
+      },
+      {
+        "text": "tingling on left side of face",
+        "duration": "about 1 hour",
+        "severity": null,
+        "status": "current"
+      },
+      {
+        "text": "difficulty swallowing",
+        "duration": "about 1 hour",
+        "severity": null,
+        "status": "current"
+      },
+      {
+        "text": "speech difficulty (slower, harder to speak)",
+        "duration": "about 1 hour",
+        "severity": null,
+        "status": "current"
+      }
+    ],
+    "diagnoses": [
+      {
+        "text": "stroke",
+        "status": "suspected"
+      }
+    ],
+    "current_medications": [
+      "Metformin",
+      "Losartan",
+      "Amlodipine"
+    ],
+    "prescribed": [],
+    "investigations": [],
+    "follow_up": [],
+    "advice": [
+      "Leave the front door unlocked and sit in the hallway while waiting for the ambulance",
+      "Do not attempt any further activities until emergency services arrive"
+    ],
+    "allergies": [
+      "penicillin"
+    ],
+    "vitals": {
+      "bp": null,
+      "pulse": null,
+      "temperature": null,
+      "spo2": null
+    },
+    "medical_history": [
+      "type 2 diabetes",
+      "high blood pressure"
+    ],
+    "family_history": [
+      "father has heart disease"
+    ],
+    "social_history": [
+      "living alone",
+      "former smoker",
+      "drinks a few beers on weekends and a couple during the week"
+    ],
+    "exposure_history": []
+  },
+  "C00025": {
+    "patient_info": {
+      "age": null,
+      "gender": null
+    },
+    "symptoms": [
+      {
+        "text": "headache on left side of head",
+        "duration": "since this morning",
+        "severity": null,
+        "status": "current"
+      },
+      {
+        "text": "sensitivity to bright lights",
+        "duration": null,
+        "severity": null,
+        "status": "current"
+      },
+      {
+        "text": "dizziness on waking",
+        "duration": null,
+        "severity": null,
+        "status": "resolved"
+      }
+    ],
+    "diagnoses": [],
+    "current_medications": [
+      "Sertraline",
+      "Paracetamol"
+    ],
+    "prescribed": [
+      {
+        "name": "Ibuprofen",
+        "dose": null,
+        "frequency": null
+      }
+    ],
+    "investigations": [],
+    "follow_up": [
+      "Follow‑up appointment in 1 week"
+    ],
+    "advice": [
+      "Take ibuprofen for migraine‑type headache",
+      "Continue paracetamol if needed",
+      "Consider taking a week off work to reduce stress",
+      "Explore counselling services",
+      "Aim for 7–8 hours of sleep each night",
+      "Drink 1.5–2 litres of water or fluids daily",
+      "Monitor for danger signs of headache and seek care if they worsen"
+    ],
+    "allergies": [],
+    "vitals": {
+      "bp": null,
+      "pulse": null,
+      "temperature": null,
+      "spo2": null
+    },
+    "medical_history": [
+      "Anxiety (diagnosed, on sertraline)",
+      "Previous less‑severe headaches"
+    ],
+    "family_history": [
+      "Mother has anxiety",
+      "No family history of migraines"
+    ],
+    "social_history": [
+      "Lives with partner",
+      "Non‑smoker",
+      "Has a cat",
+      "Runs three times a week",
+      "Works in a stressful job with backlog of work"
+    ],
+    "exposure_history": []
+  },
+  "C00026": {
+    "patient_info": {
+      "age": null,
+      "gender": null
+    },
+    "symptoms": [
+      {
+        "text": "swelling of upper lip",
+        "duration": "30 minutes",
+        "severity": null,
+        "status": "current"
+      },
+      {
+        "text": "difficulty breathing",
+        "duration": null,
+        "severity": null,
+        "status": "current"
+      },
+      {
+        "text": "chest tightness",
+        "duration": null,
+        "severity": null,
+        "status": "current"
+      },
+      {
+        "text": "dizziness",
+        "duration": null,
+        "severity": null,
+        "status": "current"
+      }
+    ],
+    "diagnoses": [
+      {
+        "text": "anaphylactic reaction",
+        "status": "suspected"
+      }
+    ],
+    "current_medications": [
+      "Salbutamol inhaler"
+    ],
+    "prescribed": [
+      {
+        "name": "antihistamine",
+        "dose": null,
+        "frequency": null
+      }
+    ],
+    "investigations": [],
+    "follow_up": [
+      "Call back after hospital visit to arrange injection follow‑up"
+    ],
+    "advice": [
+      "Call ambulance (999) immediately",
+      "Take antihistamine while waiting",
+      "Have someone stay with you until ambulance arrives",
+      "After hospital discharge, contact clinic for follow‑up on injections"
+    ],
+    "allergies": [
+      "peanut"
+    ],
+    "vitals": {
+      "bp": null,
+      "pulse": null,
+      "temperature": null,
+      "spo2": null
+    },
+    "medical_history": [
+      "asthma"
+    ],
+    "family_history": [],
+    "social_history": [],
+    "exposure_history": [
+      "prawn soup"
+    ]
+  },
+  "C00027": {
+    "patient_info": {
+      "age": null,
+      "gender": null
+    },
+    "symptoms": [
+      {
+        "text": "headache",
+        "duration": "4 days",
+        "severity": "severe",
+        "status": "current"
+      },
+      {
+        "text": "fever",
+        "duration": null,
+        "severity": null,
+        "status": "current"
+      },
+      {
+        "text": "general muscle ache",
+        "duration": null,
+        "severity": null,
+        "status": "current"
+      },
+      {
+        "text": "rash (red, itchy, all over)",
+        "duration": null,
+        "severity": null,
+        "status": "current"
+      },
+      {
+        "text": "feeling cold",
+        "duration": null,
+        "severity": null,
+        "status": "current"
+      }
+    ],
+    "diagnoses": [
+      {
+        "text": "viral illness",
+        "status": "suspected"
+      },
+      {
+        "text": "dengue",
+        "status": "suspected"
+      }
+    ],
+    "current_medications": [
+      "Paracetamol",
+      "Ibuprofen"
+    ],
+    "prescribed": [],
+    "investigations": [],
+    "follow_up": [
+      "Urgent in‑person examination at a Babylon hub (within a few hours)"
+    ],
+    "advice": [
+      "Seek urgent face‑to‑face assessment",
+      "Possible need for blood tests and hospital referral"
+    ],
+    "allergies": [],
+    "vitals": {
+      "bp": null,
+      "pulse": null,
+      "temperature": null,
+      "spo2": null
+    },
+    "medical_history": [],
+    "family_history": [],
+    "social_history": [
+      "Recent travel to Thailand (about a week ago)"
+    ],
+    "exposure_history": [
+      "Mosquito bites during travel"
+    ]
+  },
+  "C00028": {
+    "patient_info": {
+      "age": 35,
+      "gender": null
+    },
+    "symptoms": [
+      {
+        "text": "loss of appetite",
+        "duration": "3-3.5 months",
+        "severity": null,
+        "status": "current"
+      },
+      {
+        "text": "low energy",
+        "duration": "3-3.5 months",
+        "severity": null,
+        "status": "current"
+      },
+      {
+        "text": "low mood / feeling down",
+        "duration": "long",
+        "severity": null,
+        "status": "current"
+      },
+      {
+        "text": "shortness of breath in lift",
+        "duration": null,
+        "severity": null,
+        "status": "current"
+      },
+      {
+        "text": "palpitations in lift",
+        "duration": null,
+        "severity": null,
+        "status": "current"
+      },
+      {
+        "text": "nausea occasional",
+        "duration": null,
+        "severity": null,
+        "status": "current"
+      },
+      {
+        "text": "headaches at work",
+        "duration": null,
+        "severity": null,
+        "status": "current"
+      },
+      {
+        "text": "weight loss (~1 stone) over 6 months",
+        "duration": "6 months",
+        "severity": null,
+        "status": "current"
+      }
+    ],
+    "diagnoses": [
+      {
+        "text": "underactive thyroid",
+        "status": "historical"
+      }
+    ],
+    "current_medications": [],
+    "prescribed": [],
+    "investigations": [
+      "general blood tests"
+    ],
+    "follow_up": [
+      "call support to arrange blood test",
+      "receive text to book appointment",
+      "contact service if chest pain or bowel changes"
+    ],
+    "advice": [
+      "if chest pain or worsening symptoms, go to A&E",
+      "if feeling poorly before results, get in touch with the service",
+      "call the app support number (0300) for assistance"
+    ],
+    "allergies": [],
+    "vitals": {
+      "bp": null,
+      "pulse": null,
+      "temperature": null,
+      "spo2": null
+    },
+    "medical_history": [
+      "underactive thyroid"
+    ],
+    "family_history": [],
+    "social_history": [
+      "lawyer (occupation)"
+    ],
+    "exposure_history": []
+  },
+  "C00029": {
+    "patient_info": {
+      "age": null,
+      "gender": null
+    },
+    "symptoms": [
+      {
+        "text": "shortness of breath",
+        "duration": "2-3 days",
+        "severity": null,
+        "status": "current"
+      },
+      {
+        "text": "wheezing",
+        "duration": "2-3 days",
+        "severity": null,
+        "status": "current"
+      },
+      {
+        "text": "coughing",
+        "duration": "2-3 days",
+        "severity": null,
+        "status": "current"
+      },
+      {
+        "text": "tightness",
+        "duration": null,
+        "severity": null,
+        "status": "current"
+      }
+    ],
+    "diagnoses": [
+      {
+        "text": "asthma",
+        "status": "current"
+      },
+      {
+        "text": "eczema",
+        "status": "history"
+      }
+    ],
+    "current_medications": [
+      "Salbutamol (blue inhaler)",
+      "Flanel Bactroban",
+      "Hydrocortisone",
+      "Cetraben",
+      "Clenil (brown inhaler)"
+    ],
+    "prescribed": [
+      {
+        "name": "Clenil",
+        "dose": "4 puffs",
+        "frequency": "twice daily"
+      },
+      {
+        "name": "Salbutamol",
+        "dose": null,
+        "frequency": "every 2-4 hours as needed"
+      }
+    ],
+    "investigations": [],
+    "follow_up": [
+      "see GP in the next few days"
+    ],
+    "advice": [
+      "use blue inhaler (Salbutamol) every 2-4 hours maximum",
+      "increase brown inhaler (Clenil) to four puffs twice a day",
+      "go to A&E if breathing gets worse",
+      "book a face‑to‑face appointment with a GP"
+    ],
+    "allergies": [
+      "hay fever"
+    ],
+    "vitals": {
+      "bp": null,
+      "pulse": null,
+      "temperature": null,
+      "spo2": null
+    },
+    "medical_history": [
+      "asthma",
+      "eczema"
+    ],
+    "family_history": [
+      "brother with asthma",
+      "sister with eczema"
+    ],
+    "social_history": [],
+    "exposure_history": []
+  },
+  "C00030": {
+    "patient_info": {
+      "age": null,
+      "gender": null
+    },
+    "symptoms": [
+      {
+        "text": "dizziness and spinning sensation",
+        "duration": "2 hours",
+        "severity": null,
+        "status": "current"
+      },
+      {
+        "text": "unsteady gait, unable to walk straight",
+        "duration": "2 hours",
+        "severity": null,
+        "status": "current"
+      },
+      {
+        "text": "ear buzzing",
+        "duration": "2 hours",
+        "severity": null,
+        "status": "current"
+      },
+      {
+        "text": "feeling very sick",
+        "duration": "2 hours",
+        "severity": null,
+        "status": "current"
+      },
+      {
+        "text": "shakiness",
+        "duration": "2 hours",
+        "severity": null,
+        "status": "current"
+      },
+      {
+        "text": "similar episode of dizziness",
+        "duration": "5-10 minutes, about a month ago",
+        "severity": null,
+        "status": "resolved"
+      }
+    ],
+    "diagnoses": [
+      {
+        "text": "labyrinthitis",
+        "status": "provisional"
+      }
+    ],
+    "current_medications": [],
+    "prescribed": [],
+    "investigations": [
+      "blood pressure measurement",
+      "ear examination"
+    ],
+    "follow_up": [
+      "appointment with doctor for ear examination",
+      "call support to book appointment"
+    ],
+    "advice": [
+      "if you develop weakness, sudden headache, or severe vomiting, go to A&E",
+      "take prescribed tablets any time, with or without food",
+      "wait for the scheduled appointment"
+    ],
+    "allergies": [],
+    "vitals": {
+      "bp": null,
+      "pulse": null,
+      "temperature": null,
+      "spo2": null
+    },
+    "medical_history": [
+      "premature ovarian failure (on HRT)"
+    ],
+    "family_history": [],
+    "social_history": [],
+    "exposure_history": []
+  },
+  "C00033": {
+    "patient_info": {
+      "age": null,
+      "gender": null
+    },
+    "symptoms": [
+      {
+        "text": "cough",
+        "duration": "5 days",
+        "severity": null,
+        "status": "current"
+      },
+      {
+        "text": "runny nose",
+        "duration": "5 days",
+        "severity": null,
+        "status": "current"
+      },
+      {
+        "text": "muscle aches",
+        "duration": "5 days",
+        "severity": null,
+        "status": "current"
+      },
+      {
+        "text": "headache",
+        "duration": "5 days",
+        "severity": null,
+        "status": "current"
+      },
+      {
+        "text": "chills",
+        "duration": "5 days",
+        "severity": null,
+        "status": "current"
+      },
+      {
+        "text": "dry cough (hacking)",
+        "duration": "5 days",
+        "severity": null,
+        "status": "current"
+      }
+    ],
+    "diagnoses": [
+      {
+        "text": "viral infection (common cold)",
+        "status": "provisional"
+      }
+    ],
+    "current_medications": [
+      "metformin",
+      "lisinopril",
+      "paracetamol"
+    ],
+    "prescribed": [],
+    "investigations": [],
+    "follow_up": [],
+    "advice": [
+      "Use Night Nurse and Day Nurse as needed (compatible with current medications).",
+      "If symptoms last more than three weeks or develop shortness of breath, wheeze, or become poorly, get in touch with us."
+    ],
+    "allergies": [],
+    "vitals": {
+      "bp": null,
+      "pulse": null,
+      "temperature": null,
+      "spo2": null
+    },
+    "medical_history": [
+      "diabetes",
+      "hypertension"
+    ],
+    "family_history": [],
+    "social_history": [],
+    "exposure_history": []
+  },
+  "C00034": {
+    "patient_info": {
+      "age": null,
+      "gender": null
+    },
+    "symptoms": [
+      {
+        "text": "Numbness in left arm, elbow, hand and the second, third and fourth fingers (palmar side)",
+        "duration": "2 weeks",
+        "severity": null,
+        "status": "current"
+      },
+      {
+        "text": "Tingling sensation in left arm and fingers",
+        "duration": "2 weeks",
+        "severity": null,
+        "status": "current"
+      },
+      {
+        "text": "Weakness in left arm affecting grip",
+        "duration": "2 weeks",
+        "severity": null,
+        "status": "current"
+      },
+      {
+        "text": "Neck pain",
+        "duration": null,
+        "severity": null,
+        "status": "current"
+      },
+      {
+        "text": "Occasional tired headaches",
+        "duration": null,
+        "severity": null,
+        "status": "current"
+      },
+      {
+        "text": "Transient loss of peripheral vision in left eye",
+        "duration": "20 minutes",
+        "severity": null,
+        "status": "resolved"
+      },
+      {
+        "text": "Pain in right hand knuckles",
+        "duration": null,
+        "severity": null,
+        "status": "current"
+      }
+    ],
+    "diagnoses": [
+      {
+        "text": "Multiple sclerosis",
+        "status": "suspected"
+      }
+    ],
+    "current_medications": [
+      "Ibuprofen",
+      "Vitamin D",
+      "Iron supplement",
+      "Melatonin"
+    ],
+    "prescribed": [],
+    "investigations": [
+      "Urgent neurology referral",
+      "Brain imaging (MRI/CT)"
+    ],
+    "follow_up": [
+      "Urgent neurology appointment"
+    ],
+    "advice": [
+      "If weakness progresses to legs, or new headaches, vomiting, seizures, or worsening visual symptoms, go to A&E immediately",
+      "Steroid treatment may be considered after definitive diagnosis"
+    ],
+    "allergies": [],
+    "vitals": {
+      "bp": null,
+      "pulse": null,
+      "temperature": null,
+      "spo2": null
+    },
+    "medical_history": [
+      "Recent viral upper respiratory infection (cold/flu) about one month ago"
+    ],
+    "family_history": [
+      "Father: hypothyroidism and unspecified autoimmune condition",
+      "Mother: type 2 diabetes, hypertension, high cholesterol"
+    ],
+    "social_history": [
+      "Participates in boxing class (few weeks)",
+      "Occasional alcohol consumption at social events",
+      "Plays piano"
+    ],
+    "exposure_history": []
+  },
+  "C00035": {
+    "patient_info": {
+      "age": null,
+      "gender": null
+    },
+    "symptoms": [
+      {
+        "text": "diarrhea",
+        "duration": "about three days",
+        "severity": null,
+        "status": "current"
+      },
+      {
+        "text": "abdominal pain",
+        "duration": null,
+        "severity": null,
+        "status": "current"
+      },
+      {
+        "text": "vomiting",
+        "duration": null,
+        "severity": null,
+        "status": "current"
+      },
+      {
+        "text": "fever",
+        "duration": null,
+        "severity": null,
+        "status": "current"
+      },
+      {
+        "text": "appetite loss",
+        "duration": null,
+        "severity": null,
+        "status": "current"
+      }
+    ],
+    "diagnoses": [],
+    "current_medications": [
+      "Lexapro"
+    ],
+    "prescribed": [
+      {
+        "name": "Dioralyte",
+        "dose": null,
+        "frequency": null
+      }
+    ],
+    "investigations": [
+      "stool sample if diarrhea persists > 1 week or blood present"
+    ],
+    "follow_up": [
+      "contact doctor if diarrhea persists more than a week",
+      "contact doctor if blood appears in stool",
+      "seek emergency care if stool frequency exceeds 6-8 times per day or signs of dehydration"
+    ],
+    "advice": [
+      "drink plenty of fluids",
+      "follow a soft diet (crackers, toast, jam, boiled vegetables, mash) for 48 hours",
+      "avoid dairy, fish, meat, eggs while symptomatic",
+      "introduce yoghurt/probiotics when improving",
+      "use over‑the‑counter Dioralyte to replace lost salts"
+    ],
+    "allergies": [],
+    "vitals": {
+      "bp": null,
+      "pulse": null,
+      "temperature": null,
+      "spo2": null
+    },
+    "medical_history": [
+      "asthma"
+    ],
+    "family_history": [
+      "father had hypertension",
+      "father died of bowel cancer at age 62"
+    ],
+    "social_history": [],
+    "exposure_history": []
+  },
+  "C00036": {
+    "patient_info": {
+      "age": 54,
+      "gender": null
+    },
+    "symptoms": [
+      {
+        "text": "chest discomfort (pressure, feeling like someone sitting on chest)",
+        "duration": "couple of hours",
+        "severity": 7,
+        "status": "current"
+      },
+      {
+        "text": "shortness of breath",
+        "duration": null,
+        "severity": null,
+        "status": "current"
+      },
+      {
+        "text": "light‑headedness",
+        "duration": null,
+        "severity": null,
+        "status": "current"
+      },
+      {
+        "text": "difficulty climbing stairs or walking uphill",
+        "duration": null,
+        "severity": null,
+        "status": "current"
+      },
+      {
+        "text": "calf pain and leg swelling",
+        "duration": null,
+        "severity": null,
+        "status": "current"
+      },
+      {
+        "text": "nausea (no vomiting)",
+        "duration": null,
+        "severity": null,
+        "status": "current"
+      },
+      {
+        "text": "pain in left shoulder and left arm",
+        "duration": null,
+        "severity": null,
+        "status": "current"
+      }
+    ],
+    "diagnoses": [],
+    "current_medications": [],
+    "prescribed": [],
+    "investigations": [],
+    "follow_up": [
+      "Doctor will book another appointment after hospital visit"
+    ],
+    "advice": [
+      "Stay calm",
+      "Have some water if needed",
+      "Do not take any medications",
+      "Await ambulance",
+      "Inform wife about hospital visit"
+    ],
+    "allergies": [],
+    "vitals": {
+      "bp": null,
+      "pulse": null,
+      "temperature": null,
+      "spo2": null
+    },
+    "medical_history": [
+      "high cholesterol",
+      "hypertension"
+    ],
+    "family_history": [],
+    "social_history": [
+      "smokes",
+      "gardening regularly (every other week)",
+      "lives with wife"
+    ],
+    "exposure_history": []
+  },
+  "C00037": {
+    "patient_info": {
+      "age": 35,
+      "gender": null
+    },
+    "symptoms": [
+      {
+        "text": "severe headaches",
+        "duration": null,
+        "severity": "severe",
+        "status": "current"
+      },
+      {
+        "text": "reduced appetite",
+        "duration": null,
+        "severity": null,
+        "status": "current"
+      },
+      {
+        "text": "tingling in both hands",
+        "duration": null,
+        "severity": null,
+        "status": "current"
+      },
+      {
+        "text": "feeling hot",
+        "duration": null,
+        "severity": null,
+        "status": "current"
+      },
+      {
+        "text": "shortness of breath",
+        "duration": null,
+        "severity": null,
+        "status": "current"
+      },
+      {
+        "text": "palpitations (fast heart beating)",
+        "duration": null,
+        "severity": null,
+        "status": "current"
+      },
+      {
+        "text": "loss of libido",
+        "duration": null,
+        "severity": null,
+        "status": "current"
+      },
+      {
+        "text": "weight loss of 5 pounds",
+        "duration": null,
+        "severity": null,
+        "status": "current"
+      }
+    ],
+    "diagnoses": [
+      {
+        "text": "hyperthyroidism",
+        "status": "existing"
+      }
+    ],
+    "current_medications": [
+      "Thyroxine"
+    ],
+    "prescribed": [],
+    "investigations": [
+      "blood tests for thyroxine",
+      "heart examination",
+      "breathing examination"
+    ],
+    "follow_up": [
+      "clinic appointment"
+    ],
+    "advice": [
+      "see a doctor in clinic for examination",
+      "blood tests for thyroxine"
+    ],
+    "allergies": [],
+    "vitals": {
+      "bp": null,
+      "pulse": null,
+      "temperature": null,
+      "spo2": null
+    },
+    "medical_history": [],
+    "family_history": [],
+    "social_history": [
+      "drinks wine once a week (couple of glasses)",
+      "non-smoker",
+      "no recreational drug use"
+    ],
+    "exposure_history": []
+  },
+  "C00038": {
+    "patient_info": {
+      "age": null,
+      "gender": null
+    },
+    "symptoms": [
+      {
+        "text": "shortness of breath",
+        "duration": "over the last hour",
+        "severity": null,
+        "status": "current"
+      },
+      {
+        "text": "cough",
+        "duration": "yesterday",
+        "severity": null,
+        "status": "current"
+      },
+      {
+        "text": "chest soreness/tenderness on deep breath and C-section scar",
+        "duration": null,
+        "severity": null,
+        "status": "current"
+      }
+    ],
+    "diagnoses": [],
+    "current_medications": [],
+    "prescribed": [],
+    "investigations": [],
+    "follow_up": [],
+    "advice": [
+      "Go to the hospital promptly with the baby",
+      "Do not take Codeine for the time being",
+      "Monitor heart rate; it is slightly fast",
+      "Consider evaluation for possible clot"
+    ],
+    "allergies": [
+      "Ibuprofen"
+    ],
+    "vitals": {
+      "bp": null,
+      "pulse": null,
+      "temperature": null,
+      "spo2": null
+    },
+    "medical_history": [
+      "C-section (4 weeks ago)"
+    ],
+    "family_history": [
+      "Mother had clots in her legs"
+    ],
+    "social_history": [
+      "Partner at work"
+    ],
+    "exposure_history": []
+  },
+  "C00039": {
+    "patient_info": {
+      "age": 40,
+      "gender": null
+    },
+    "symptoms": [
+      {
+        "text": "wheezing",
+        "duration": "2 days",
+        "severity": null,
+        "status": "current"
+      },
+      {
+        "text": "shortness of breath",
+        "duration": "2 days",
+        "severity": null,
+        "status": "current"
+      },
+      {
+        "text": "difficulty completing sentences while speaking",
+        "duration": "2 days",
+        "severity": null,
+        "status": "current"
+      },
+      {
+        "text": "worsening of symptoms at night",
+        "duration": "2 days",
+        "severity": null,
+        "status": "current"
+      }
+    ],
+    "diagnoses": [],
+    "current_medications": [
+      "asthma inhaler"
+    ],
+    "prescribed": [],
+    "investigations": [
+      "pulse oximetry"
+    ],
+    "follow_up": [
+      "GP visit for further testing"
+    ],
+    "advice": [
+      "Take an antihistamine for possible dust allergy",
+      "Obtain antihistamine over the counter if needed",
+      "Visit GP for further testing and possible steroids after results"
+    ],
+    "allergies": [],
+    "vitals": {
+      "bp": null,
+      "pulse": null,
+      "temperature": null,
+      "spo2": null
+    },
+    "medical_history": [
+      "childhood asthma",
+      "seasonal hay fever"
+    ],
+    "family_history": [],
+    "social_history": [],
+    "exposure_history": [
+      "dust exposure from cleaning the house"
+    ]
+  },
+  "C00019": {
+    "patient_info": {
+      "age": 45,
+      "gender": null
+    },
+    "symptoms": [
+      {
+        "text": "Shortness of breath",
+        "duration": "today",
+        "severity": null,
+        "status": "current"
+      },
+      {
+        "text": "Pain on deep breathing in right side of back",
+        "duration": "today",
+        "severity": null,
+        "status": "current"
+      },
+      {
+        "text": "Slight fever",
+        "duration": "today",
+        "severity": null,
+        "status": "current"
+      },
+      {
+        "text": "Coughing up blood (hemoptysis) on two occasions",
+        "duration": "today",
+        "severity": null,
+        "status": "current"
+      },
+      {
+        "text": "Palpitations (feeling heart beating faster)",
+        "duration": "today",
+        "severity": null,
+        "status": "current"
+      },
+      {
+        "text": "Tiredness and reduced exercise tolerance",
+        "duration": "couple of weeks",
+        "severity": null,
+        "status": "current"
+      }
+    ],
+    "diagnoses": [
+      {
+        "text": "Systemic lupus erythematosus (SLE)",
+        "status": "existing"
+      },
+      {
+        "text": "Chest infection",
+        "status": "suspected"
+      },
+      {
+        "text": "Pneumonia",
+        "status": "suspected"
+      }
+    ],
+    "current_medications": [
+      "Methotrexate"
+    ],
+    "prescribed": [],
+    "investigations": [
+      "Chest examination (auscultation)",
+      "Blood pressure measurement",
+      "Pulse recheck",
+      "Temperature check",
+      "Chest X-ray (if needed)"
+    ],
+    "follow_up": [
+      "Face-to-face GP appointment today"
+    ],
+    "advice": [
+      "Seek immediate in-person assessment and chest examination",
+      "Potential need for antibiotics after assessment",
+      "Monitor temperature and pulse",
+      "If symptoms persist, a follow‑up chest X‑ray may be required",
+      "Reassurance that current presentation is more consistent with a chest infection than lung cancer"
+    ],
+    "allergies": [],
+    "vitals": {
+      "bp": null,
+      "pulse": null,
+      "temperature": null,
+      "spo2": null
+    },
+    "medical_history": [
+      "Systemic lupus erythematosus"
+    ],
+    "family_history": [],
+    "social_history": [
+      "Non‑smoker",
+      "Office desk job",
+      "Lives alone in a flat",
+      "Cat owner"
+    ],
+    "exposure_history": []
+  },
+  "C00031": {
+    "patient_info": {
+      "age": null,
+      "gender": null
+    },
+    "symptoms": [
+      {
+        "text": "shallow breathing / breathing difficulties",
+        "duration": "15 minutes",
+        "severity": null,
+        "status": "current"
+      },
+      {
+        "text": "tingling sensation in the lips",
+        "duration": null,
+        "severity": null,
+        "status": "current"
+      },
+      {
+        "text": "chest tightness",
+        "duration": null,
+        "severity": null,
+        "status": "current"
+      },
+      {
+        "text": "rash / blotching on body",
+        "duration": null,
+        "severity": null,
+        "status": "current"
+      }
+    ],
+    "diagnoses": [
+      {
+        "text": "anaphylactic reaction",
+        "status": "suspected"
+      }
+    ],
+    "current_medications": [],
+    "prescribed": [
+      {
+        "name": "antihistamine",
+        "dose": null,
+        "frequency": null
+      }
+    ],
+    "investigations": [],
+    "follow_up": [],
+    "advice": [
+      "call ambulance",
+      "take antihistamine while awaiting ambulance",
+      "go to hospital / emergency department"
+    ],
+    "allergies": [
+      "penicillin"
+    ],
+    "vitals": {
+      "bp": null,
+      "pulse": null,
+      "temperature": null,
+      "spo2": null
+    },
+    "medical_history": [
+      "eczema"
+    ],
+    "family_history": [],
+    "social_history": [],
+    "exposure_history": [
+      "wasp sting"
+    ]
+  },
+  "C00058": {
+    "patient_info": {
+      "age": 76,
+      "gender": "female"
+    },
+    "symptoms": [],
+    "diagnoses": [
+      {
+        "text": "hypertension",
+        "status": ""
+      },
+      {
+        "text": "osteoarthritis",
+        "status": ""
+      },
+      {
+        "text": "osteoporosis",
+        "status": ""
+      },
+      {
+        "text": "hypothyroidism",
+        "status": ""
+      },
+      {
+        "text": "allergic rhinitis",
+        "status": ""
+      },
+      {
+        "text": "kidney stones",
+        "status": ""
+      }
+    ],
+    "current_medications": [],
+    "prescribed": [],
+    "investigations": [],
+    "follow_up": [],
+    "advice": [],
+    "allergies": [],
+    "vitals": {
+      "bp": null,
+      "pulse": null,
+      "temperature": null,
+      "spo2": null
+    },
+    "medical_history": [
+      "hypertension",
+      "osteoarthritis",
+      "osteoporosis",
+      "hypothyroidism",
+      "allergic rhinitis",
+      "kidney stones"
+    ],
+    "family_history": [],
+    "social_history": [],
+    "exposure_history": []
+  },
+  "C01368": {
+    "patient_info": {
+      "age": null,
+      "gender": null
+    },
+    "symptoms": [],
+    "diagnoses": [],
+    "current_medications": [],
+    "prescribed": [],
+    "investigations": [],
+    "follow_up": [],
+    "advice": [],
+    "allergies": [],
+    "vitals": {
+      "bp": null,
+      "pulse": null,
+      "temperature": null,
+      "spo2": null
+    },
+    "medical_history": [],
+    "family_history": [],
+    "social_history": [],
+    "exposure_history": []
+  }
+}
