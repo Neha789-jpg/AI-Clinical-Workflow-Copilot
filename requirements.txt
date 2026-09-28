@@ -7,4 +7,4 @@ python-dotenv
 openpyxl
 textgrid
 openai
-jiwer
+jiwerrequests

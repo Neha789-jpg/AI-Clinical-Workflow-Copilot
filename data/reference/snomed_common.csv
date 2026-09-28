@@ -1,0 +1,35 @@
+diagnosis,snomed_code,snomed_description,synonyms
+diabetes mellitus,73211009,Diabetes,diabetes
+type 2 diabetes mellitus,44054006,Type 2 diabetes,type 2 diabetes; T2DM; diabetes type 2
+vertigo,399153001,Vertigo,dizziness; dizzy spells
+migraine,37796009,Migraine,migraine headache
+headache,25064002,Headache,head pain
+asthma,195967001,Asthma,
+hypertension,38341003,Hypertension,high blood pressure; HTN
+urinary tract infection,68566005,Urinary tract infection,UTI; urine infection; cystitis
+gastroenteritis,25374005,Gastroenteritis,stomach bug; stomach flu
+eczema,43116000,Eczema,atopic dermatitis; dermatitis
+upper respiratory tract infection,54150009,Upper respiratory tract infection,URTI; cold; common cold
+influenza,6142004,Influenza,flu
+cough,49727002,Cough,
+fever,386661006,Fever,pyrexia; high temperature
+vomiting,422400008,Vomiting,
+diarrhoea,62315008,Diarrhoea,diarrhea; loose stools
+shortness of breath,267036007,Dyspnoea,breathlessness; difficulty breathing; SOB
+chest pain,29857009,Chest pain,
+multiple sclerosis,24700007,Multiple sclerosis,MS; demyelinating disease
+depression,35489007,Depression,low mood; depressive episode
+anxiety disorder,197480006,Anxiety disorder,anxiety
+gastro-oesophageal reflux disease,235595009,Gastro-oesophageal reflux disease,GERD; GORD; acid reflux; reflux
+pneumonia,233604007,Pneumonia,chest infection
+gout,90560007,Gout,
+osteoarthritis,396275006,Osteoarthritis,OA; wear and tear arthritis
+back pain,161891005,Backache,lower back pain; low back pain
+tonsillitis,90176007,Tonsillitis,sore throat infection
+sinusitis,36971009,Sinusitis,
+otitis media,65363002,Otitis media,ear infection; middle ear infection
+conjunctivitis,9826008,Conjunctivitis,pink eye
+allergic rhinitis,61582004,Allergic rhinitis,hay fever
+anaemia,271737000,Anaemia,anemia; low haemoglobin
+hypothyroidism,40930008,Hypothyroidism,underactive thyroid
+knee pain,30989003,Knee pain,pain in knee; sore knee

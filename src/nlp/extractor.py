@@ -614,39 +614,48 @@ def extract_with_llm(transcript, retries=2):
     from openai import OpenAI
     client = OpenAI(api_key=os.getenv("GROQ_API_KEY"),
                     base_url="https://api.groq.com/openai/v1")
+
+    # big model first; the free tier rejects long transcripts on it,
+    # so fall back to the smaller model when the request is too large
+    models = ["openai/gpt-oss-120b", "openai/gpt-oss-20b"]
+
     last_error = None
     for attempt in range(retries):
-        try:
-            response = client.chat.completions.create(
-                model="openai/gpt-oss-120b",
-                temperature=0,
-                response_format={"type": "json_object"},
-                messages=[{"role": "system", "content": PROMPT},
-                          {"role": "user", "content": transcript}],
-            )
-            data = json.loads(response.choices[0].message.content)
+        for model in models:
+            try:
+                response = client.chat.completions.create(
+                    model=model,
+                    temperature=0,
+                    response_format={"type": "json_object"},
+                    messages=[{"role": "system", "content": PROMPT},
+                              {"role": "user", "content": transcript}],
+                )
+                data = json.loads(response.choices[0].message.content)
 
-# Safety check: prevent pregnancy test from becoming
-# an inferred pregnancy diagnosis.
-            prescribed_items = data.get("prescribed", [])
+                # Safety check: prevent pregnancy test from becoming
+                # an inferred pregnancy diagnosis.
+                prescribed_items = data.get("prescribed", [])
+                has_pregnancy_test = any(
+                    "pregnancy test" in str(item).lower()
+                    for item in prescribed_items
+                )
+                if has_pregnancy_test:
+                    data["diagnoses"] = [
+                        diagnosis
+                        for diagnosis in data.get("diagnoses", [])
+                        if diagnosis.get("text", "").lower() != "pregnancy"
+                    ]
 
-            has_pregnancy_test = any(
-               "pregnancy test" in str(item).lower()
-               for item in prescribed_items
-)
+                return data
 
-            if has_pregnancy_test:
+            except Exception as e:
+                last_error = e
+                if "413" in str(e) or "too large" in str(e).lower():
+                    continue   # request too big → try the smaller model
+                break          # any other error → go round the retry loop
 
-               data["diagnoses"] = [
-                   diagnosis
-                   for diagnosis in data.get("diagnoses", [])
-                   if diagnosis.get("text", "").lower() != "pregnancy"
-    ]
+        print(f"[extractor] attempt {attempt + 1} failed, retrying...")
 
-            return data
-        except Exception as e:
-            last_error = e
-            print(f"[extractor] attempt {attempt + 1} failed, retrying...")
     raise last_error
 
 
