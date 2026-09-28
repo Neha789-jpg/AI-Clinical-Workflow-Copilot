@@ -1,0 +1,171 @@
+consultation_id,completeness,faithfulness,hallucination,section_correctness,overall_quality,important_information_missing,unsupported_information,section_errors,strengths,weaknesses,subjective,objective,assessment,plan
+C00004,0.75,1.0,1.0,1.0,0.8,"[""sore throat"", ""initial fever""]",[],[],"[""Captures most of the patient's symptoms and timeline"", ""Includes detailed social and family history"", ""Accurately reflects the clinician's assessment and plan"", ""Correctly categorizes information into SOAP sections""]","[""Omitted the primary complaint of sore throat"", ""Did not mention the initial fever reported by the patient""]","Patient Information:
+- Gender: male
+
+Symptoms:
+- runny nose and nasal congestion for four days
+- dry cough for one day
+- night sweats for three to four days
+- shortness of breath on exertion for four days
+- headaches (general, intermittent)
+- muscle aches/pain for past couple days
+- fatigue/tiredness for four days
+
+Relevant Clinical Context:
+- patient lives alone
+- works as an accountant
+- occasional cigar use at company parties
+- occasionally drinks alcohol but not a heavy drinker
+- stressful period at work affecting speed
+
+Allergies:
+- none known
+
+Medical History:
+- None documented.
+
+Family History:
+- grandmother has type 2 diabetes
+- great‑grandfather had eczema
+
+Social History:
+- lives alone
+- accountant
+- occasional cigar use
+- occasionally drinks alcohol
+- no regular smoking
+
+Current Medications:
+- Paracetamol
+- Ibuprofen",No objective findings documented.,"Possible viral upper respiratory tract infection, Possible influenza.","Follow-up:
+- return next week if not better
+- call doctor sooner if high fever, worsening breathing, or chest pain
+Advice:
+- get plenty of rest
+- take a day or two off work
+- stay well‑hydrated
+- continue regular Paracetamol and Ibuprofen"
+C00008,0.75,1.0,1.0,1.0,0.8,"[""Absence of fever, vomiting, or other systemic symptoms"", ""No prior history of skin conditions such as eczema or dermatitis"", ""Use of coconut butter as a home remedy (ineffective)"", ""No other medications besides Microgynon""]",[],[],"[""Accurately captures the main skin symptoms, location, and timing"", ""Includes relevant contextual factors (stress, swimming, possible lactose intolerance, weather)"", ""Correctly records family, social history, and current medication"", ""Provides a clear assessment and appropriate treatment plan with follow‑up""]","[""Omits documentation of negative systemic findings (no fever, no vomiting, normal bowel/urine)"", ""Does not note lack of prior skin problems"", ""Does not mention the patient’s trial of coconut butter"", ""Medical history section left empty despite existing medication information""]","Patient Information:
+- Age: 26
+
+Symptoms:
+- dry itchy skin with redness on arms and hands for a few days
+- tiredness
+
+Relevant Clinical Context:
+- stress at work may be contributing to skin symptoms
+- symptoms started after swimming
+- patient reports possible lactose intolerance
+- patient considered weather as a possible factor
+
+Allergies:
+- None documented.
+
+Medical History:
+- None documented.
+
+Family History:
+- father has asthma
+- mother has hayfever
+
+Social History:
+- works as a primary school teacher
+- lives alone
+- does not smoke
+- does not drink alcohol
+- does not use recreational drugs
+
+Current Medications:
+- Microgynon",No objective findings documented.,Possible dermatitis.,"Medications:
+- topical steroid cream
+- emollient for next few days
+Follow-up:
+- return next week if symptoms do not improve
+Advice:
+- try over-the-counter antihistamines such as Piriton or Loratadine for itchiness"
+C00012,0.75,1.0,1.0,1.0,0.85,"[""absence of blood in stools"", ""absence of abdominal/tummy pain"", ""absence of headache or muscle pain"", ""no recent sick contacts"", ""no recent consumption of takeaway or suspicious food""]",[],[],"[""Accurately captures key symptoms, timeline, and severity"", ""Includes relevant past medical, family, and social history"", ""Documents medication (blue inhaler) and allergies correctly"", ""Provides clear assessment and detailed management plan""]","[""Omits documentation of important negative findings (blood, pain, exposures)"", ""Objective section left blank despite no objective data being recorded""]","Patient Information:
+- Age: 48
+
+Symptoms:
+- diarrhoea, watery loose stools, 5-6 times a day for three days (Severity: very bad)
+- vomiting (Resolved)
+- feeling dehydrated for three days
+- reduced appetite for three days
+- weakness for three days
+- low-grade fever (Resolved)
+- nausea (Resolved)
+
+Relevant Clinical Context:
+- patient lives alone
+- patient is a software engineer
+- patient has been unable to work for the past few days due to illness
+- patient uses a blue inhaler infrequently for asthma
+
+Allergies:
+- none known
+
+Medical History:
+- asthma
+
+Family History:
+- father had hypertension
+- father died of bowel cancer
+- mother has type 2 diabetes
+
+Social History:
+- non-smoker
+- drinks alcohol infrequently socially
+- lives alone
+- software engineer
+
+Current Medications:
+- blue inhaler",No objective findings documented.,Possible gastroenteritis.,"Follow-up:
+- come back next week if not better
+- call back if symptoms do not improve
+Advice:
+- drink plenty of fluids
+- take Dioralyte oral rehydration solution
+- take Paracetamol if feverish and weak
+- continue taking time off work for the next day or two
+- be diarrhea-free for 24-48 hours before returning to work"
+C00015,0.75,1.0,1.0,1.0,0.75,"[""Patient had tried over‑the‑counter E45 cream and an antihistamine without improvement"", ""Symptoms prevented the patient from working for the past three days"", ""Recent job change four months ago to a hotel setting, potentially relevant to exposure""]",[],[],"[""Accurately captures key symptoms (cracked, itchy, painful, bleeding, dryness) and their duration"", ""Includes relevant past medical, family, social history and medication list"", ""Correctly identifies likely diagnosis of contact dermatitis"", ""Provides clear, appropriate treatment plan with topical steroids, emollients, glove use, and follow‑up instructions""]","[""Omits mention of prior over‑the‑counter treatments and their lack of efficacy"", ""Does not note work‑related functional impact (time off work)"", ""Fails to record recent job change which may be a trigger""]","Patient Information:
+- Age: 45
+
+Symptoms:
+- cracked skin on hands (palms) for 3-4 months
+- itchiness on palms for 3-4 months
+- pain in hands for 3-4 months (Severity: severe)
+- dryness of skin on hands and legs for 3-4 months
+- bleeding from scratches for 3-4 months
+
+Relevant Clinical Context:
+- patient works as a housekeeper and often does not wear gloves while using cleaning products, which may be a trigger for skin condition
+- patient reports low water intake
+
+Allergies:
+- none known
+
+Medical History:
+- type 2 diabetes
+
+Family History:
+- diabetes
+
+Social History:
+- works as a housekeeper
+- does not always wear gloves while cleaning
+- drinks a couple of pints of alcohol per week
+- does not smoke
+
+Current Medications:
+- Metformin",No objective findings documented.,Possible contact dermatitis.,"Medications:
+- topical steroid cream, three to four times a day for 2 weeks
+- emollient cream, three to four times a day for 2 weeks
+Follow-up:
+- return in about one to two weeks if symptoms have not improved
+- return sooner if symptoms worsen or spread
+Advice:
+- wear gloves when cleaning at all times
+- avoid cleaning product triggers
+- apply prescribed steroid cream as directed
+- apply emollient cream three to four times a day for the next couple of weeks"

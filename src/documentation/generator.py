@@ -1,37 +1,65 @@
 def generate_subjective(entities):
     """
     Generate the Subjective section from extracted clinical information.
-    Includes symptoms and separate medical, family, and social history.
+
+    Includes:
+    - Patient demographics
+    - Symptoms
+    - Allergies
+    - Medical, family, and social history
+    - Current medications
     """
 
+    patient_info = entities.get("patient_info", {})
     symptoms = entities.get("symptoms", [])
+    relevant_context = entities.get("relevant_context", [])
     medical_history = entities.get("medical_history", [])
     family_history = entities.get("family_history", [])
     social_history = entities.get("social_history", [])
     current_medications = entities.get("current_medications", [])
+    allergies = entities.get("allergies", [])
 
     lines = []
 
-    # Add symptoms
-    if symptoms:
-        lines.append("Symptoms:")
+    # --------------------------------------------------
+    # Patient Information
+    # --------------------------------------------------
 
+    age = patient_info.get("age")
+    gender = patient_info.get("gender")
+
+    if age is not None or gender:
+        lines.append("Patient Information:")
+
+        if age is not None:
+            lines.append(f"- Age: {age}")
+
+        if gender:
+            lines.append(f"- Gender: {gender}")
+
+    # --------------------------------------------------
+    # Symptoms
+    # --------------------------------------------------
+
+    lines.append("")
+    lines.append("Symptoms:")
+
+    if symptoms:
         for symptom in symptoms:
 
-    # Handle symptoms returned as dictionaries
             if isinstance(symptom, dict):
-               text = symptom.get("text")
-               duration = symptom.get("duration")
-               severity = symptom.get("severity")
-               status = symptom.get("status")
-
-    # Handle symptoms returned as strings
+                text = symptom.get("text")
+                duration = symptom.get("duration")
+                severity = symptom.get("severity")
+                status = symptom.get("status")
             else:
-              text = symptom
-              duration = None
+                text = symptom
+                duration = None
+                severity = None
+                status = None
 
             if not text:
-              continue
+                continue
 
             symptom_text = f"- {text}"
 
@@ -47,9 +75,35 @@ def generate_subjective(entities):
             lines.append(symptom_text)
 
     else:
-        lines.append("Symptoms: None documented.")
+        lines.append("- None documented.")
 
-    # Add separate history sections
+        # Relevant clinical context
+    if relevant_context:
+        lines.append("")
+        lines.append("Relevant Clinical Context:")
+
+        for item in relevant_context:
+            if item:
+                lines.append(f"- {item}")
+
+    # --------------------------------------------------
+    # Allergies
+    # --------------------------------------------------
+
+    lines.append("")
+    lines.append("Allergies:")
+
+    if allergies:
+        for allergy in allergies:
+            if allergy:
+                lines.append(f"- {allergy}")
+    else:
+        lines.append("- None documented.")
+
+    # --------------------------------------------------
+    # Medical / Family / Social History
+    # --------------------------------------------------
+
     history_sections = [
         ("Medical History", medical_history),
         ("Family History", family_history),
@@ -57,39 +111,55 @@ def generate_subjective(entities):
     ]
 
     for title, items in history_sections:
+
         lines.append("")
         lines.append(f"{title}:")
 
         if items:
             for item in items:
-                lines.append(f"- {item}")
+                if item:
+                    lines.append(f"- {item}")
         else:
             lines.append("- None documented.")
+
+    # --------------------------------------------------
+    # Current Medications
+    # --------------------------------------------------
 
     lines.append("")
     lines.append("Current Medications:")
 
     if current_medications:
+
         for medication in current_medications:
+
             if isinstance(medication, dict):
                 name = medication.get("name")
                 dose = medication.get("dose")
                 frequency = medication.get("frequency")
-
-                if not name:
-                    continue
-
-                medication_text = name
-
-                if dose:
-                    medication_text += f" - {dose}"
-
-                if frequency:
-                    medication_text += f", {frequency}"
-
-                lines.append(f"- {medication_text}")
+                duration = medication.get("duration")
             else:
-                lines.append(f"- {medication}")
+                name = medication
+                dose = None
+                frequency = None
+                duration = None
+
+            if not name:
+                continue
+
+            medication_text = name
+
+            if dose:
+                medication_text += f" - {dose}"
+
+            if frequency:
+                medication_text += f", {frequency}"
+
+            if duration:
+                medication_text += f" for {duration}"
+
+            lines.append(f"- {medication_text}")
+
     else:
         lines.append("- None documented.")
 
@@ -216,10 +286,12 @@ def generate_plan(entities):
                 name = medication.get("name")
                 dose = medication.get("dose")
                 frequency = medication.get("frequency")
+                duration = medication.get("duration")
             else:
                 name = medication
                 dose = None
                 frequency = None
+                duration = None
 
             if not name:
                 continue
@@ -231,6 +303,9 @@ def generate_plan(entities):
 
             if frequency:
                 medication_text += f", {frequency}"
+
+            if duration:
+                medication_text += f" for {duration}"
 
             medication_lines.append(f"- {medication_text}")
 

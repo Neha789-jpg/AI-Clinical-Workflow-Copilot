@@ -24,3 +24,10 @@ data/placeholder/
 # OS
 .DS_Store
 Thumbs.dbdata/primock57/*.parquet
+
+# Datasets
+data/raw/
+data/placeholder/
+data/primock57/
+*.wav
+*.mpeg
