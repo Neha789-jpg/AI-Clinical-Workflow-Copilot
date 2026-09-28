@@ -1,0 +1,6 @@
+consultation_id,patient_id,date,age,gender,specialty,symptoms,diagnosis,medications,referral,followup_required,source_type
+C00001,P00001,,,male,General Practice,diarrhea (watery loose stool); lower left abdominal cramp; weakness and shakiness; loss of appetite; vomiting,gastroenteritis,inhaler; Dioralyte; paracetamol,False,True,public_primock57
+C00002,P00002,,31.0,,General Practice,very itchy skin; very sore skin; cracked skin; dry skin,eczema flare-up,topical steroid cream; emollient; Fexofenadine,False,True,public_primock57
+C00003,P00003,,,female,General Practice,"terrible throbbing headache on left side, worsens with movement; nausea; vomiting (vomited twice); blurred vision; photophobia (sensitivity to bright light); visual disturbances (zig-zag lines)",migraine,Microgynon; Paracetamol; Co-codamol; Ibuprofen; Naproxen,False,True,public_primock57
+C00004,P00004,,,female,General Practice,sore throat; chest pain; vomiting; nausea; fever; cough,diabetes,,False,False,public_primock57
+C00005,P00005,,,,General Practice,lower abdominal burning pain; feeling hot and sweaty; pink urine; increased urinary frequency; nausea; constipation,urinary tract infection,Implanon; Trimethoprim,False,True,public_primock57

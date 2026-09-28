@@ -1,5 +1,5 @@
 
-# Step 5 of the pipeline - decide if the patient needs a referral,
+#  decide if the patient needs a referral,
 # pick the department, and write the referral letter.
 #
 # Two ways to do it (same idea as extractor.py):

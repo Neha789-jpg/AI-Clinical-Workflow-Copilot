@@ -8,3 +8,4 @@ openpyxl
 textgrid
 openai
 jiwerrequests
+plotly
