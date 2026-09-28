@@ -1,3 +1,7 @@
+import sys
+from pathlib import Path
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+
 import os
 import tempfile
 
@@ -7,6 +11,7 @@ from src.transcription.transcriber import transcribe_audio
 from src.nlp.extractor import extract_entities
 from src.documentation.generator import generate_soap
 from src.workflow.referral import generate_referral
+from src.transcription.audio_utils import merge_audio
 
 
 # =====================================================
@@ -623,6 +628,10 @@ uploaded_file = st.file_uploader(
     ],
     label_visibility="collapsed"
 )
+patient_file = st.file_uploader(
+    "Patient track (optional — for recordings with separate doctor/patient audio)",
+    type=["wav", "mp3", "mpeg", "mp4", "m4a"],
+)
 
 
 if uploaded_file is not None:
@@ -651,9 +660,16 @@ if uploaded_file is not None:
             temp_file.write(
                 uploaded_file.getbuffer()
             )
-
             audio_path = temp_file.name
 
+        if patient_file is not None:
+            with tempfile.NamedTemporaryFile(
+                delete=False,
+                suffix=os.path.splitext(patient_file.name)[1]
+            ) as patient_temp:
+                patient_temp.write(patient_file.getbuffer())
+                patient_path = patient_temp.name
+            audio_path = merge_audio(audio_path, patient_path)
         try:
 
             # =================================================
