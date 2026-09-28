@@ -1,5 +1,6 @@
 import sys
 from pathlib import Path
+
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
 import os
@@ -12,7 +13,7 @@ from src.nlp.extractor import extract_entities
 from src.documentation.generator import generate_soap
 from src.workflow.referral import generate_referral
 from src.transcription.audio_utils import merge_audio
-
+from src.workflow.coding import suggest_codes
 
 # =====================================================
 # PAGE CONFIGURATION
@@ -22,7 +23,7 @@ st.set_page_config(
     page_title="Clinical Workflow Copilot",
     page_icon="C",
     layout="wide",
-    initial_sidebar_state="expanded"
+    initial_sidebar_state="expanded",
 )
 
 
@@ -237,13 +238,14 @@ h1, h2, h3 {
 
 </style>
 """,
-    unsafe_allow_html=True
+    unsafe_allow_html=True,
 )
 
 
 # =====================================================
 # HELPER FUNCTIONS
 # =====================================================
+
 
 def display_value(value):
     """
@@ -281,10 +283,7 @@ def card_title(title):
     Displays a consistent heading inside a card.
     """
 
-    st.markdown(
-        f'<div class="card-title">{title}</div>',
-        unsafe_allow_html=True
-    )
+    st.markdown(f'<div class="card-title">{title}</div>', unsafe_allow_html=True)
 
 
 def display_list(title, items):
@@ -312,25 +311,19 @@ def display_patient_info(patient_info):
     col1, col2 = st.columns(2)
 
     with col1:
-        st.markdown(
-            '<div class="info-label">Age</div>',
-            unsafe_allow_html=True
-        )
+        st.markdown('<div class="info-label">Age</div>', unsafe_allow_html=True)
 
         st.markdown(
             f'<div class="info-value">{display_value(patient_info.get("age"))}</div>',
-            unsafe_allow_html=True
+            unsafe_allow_html=True,
         )
 
     with col2:
-        st.markdown(
-            '<div class="info-label">Gender</div>',
-            unsafe_allow_html=True
-        )
+        st.markdown('<div class="info-label">Gender</div>', unsafe_allow_html=True)
 
         st.markdown(
             f'<div class="info-value">{display_value(patient_info.get("gender"))}</div>',
-            unsafe_allow_html=True
+            unsafe_allow_html=True,
         )
 
 
@@ -349,18 +342,13 @@ def display_symptoms(symptoms):
 
         if isinstance(symptom, dict):
 
-            symptom_name = symptom.get(
-                "text",
-                "Unknown symptom"
-            )
+            symptom_name = symptom.get("text", "Unknown symptom")
 
             duration = symptom.get("duration")
             severity = symptom.get("severity")
             status = symptom.get("status")
 
-            st.markdown(
-                f"**{symptom_name.title()}**"
-            )
+            st.markdown(f"**{symptom_name.title()}**")
 
             details = []
 
@@ -406,10 +394,7 @@ def display_clinical_information(entities):
     using proper Streamlit containers.
     """
 
-    patient_info = entities.get(
-        "patient_info",
-        {}
-    )
+    patient_info = entities.get("patient_info", {})
 
     # Patient information
 
@@ -419,9 +404,7 @@ def display_clinical_information(entities):
     # Symptoms
 
     with st.container(border=True):
-        display_symptoms(
-            entities.get("symptoms", [])
-        )
+        display_symptoms(entities.get("symptoms", []))
 
     # Diagnoses and medications
 
@@ -430,24 +413,17 @@ def display_clinical_information(entities):
     with col1:
 
         with st.container(border=True):
-            display_list(
-                "Diagnoses",
-                entities.get("diagnoses", [])
-            )
+            display_list("Diagnoses", entities.get("diagnoses", []))
 
     with col2:
 
         with st.container(border=True):
 
             medications = entities.get(
-                "current_medications",
-                entities.get("medications", [])
+                "current_medications", entities.get("medications", [])
             )
 
-            display_list(
-                "Medications",
-                medications
-            )
+            display_list("Medications", medications)
 
     # Allergies and investigations
 
@@ -456,37 +432,22 @@ def display_clinical_information(entities):
     with col1:
 
         with st.container(border=True):
-            display_list(
-                "Allergies",
-                entities.get("allergies", [])
-            )
+            display_list("Allergies", entities.get("allergies", []))
 
     with col2:
 
         with st.container(border=True):
-            display_list(
-                "Investigations",
-                entities.get("investigations", [])
-            )
+            display_list("Investigations", entities.get("investigations", []))
 
     # History
 
     with st.container(border=True):
 
-        display_history(
-            "Medical History",
-            entities.get("medical_history", [])
-        )
+        display_history("Medical History", entities.get("medical_history", []))
 
-        display_history(
-            "Family History",
-            entities.get("family_history", [])
-        )
+        display_history("Family History", entities.get("family_history", []))
 
-        display_history(
-            "Social History",
-            entities.get("social_history", [])
-        )
+        display_history("Social History", entities.get("social_history", []))
 
     # Advice and follow-up
 
@@ -495,18 +456,12 @@ def display_clinical_information(entities):
     with col1:
 
         with st.container(border=True):
-            display_list(
-                "Clinical Advice",
-                entities.get("advice", [])
-            )
+            display_list("Clinical Advice", entities.get("advice", []))
 
     with col2:
 
         with st.container(border=True):
-            display_list(
-                "Follow-up",
-                entities.get("follow_up", [])
-            )
+            display_list("Follow-up", entities.get("follow_up", []))
 
 
 def create_soap_text(soap):
@@ -555,15 +510,14 @@ with st.sidebar:
         AI-assisted clinical documentation
         </div>
         """,
-        unsafe_allow_html=True
+        unsafe_allow_html=True,
     )
 
     st.divider()
 
     st.markdown("### Workflow")
 
-    st.markdown(
-        """
+    st.markdown("""
         **01**  Audio transcription
 
         **02**  Clinical information extraction
@@ -571,8 +525,7 @@ with st.sidebar:
         **03**  SOAP note generation
 
         **04**  Referral assessment
-        """
-    )
+        """)
 
     st.divider()
 
@@ -593,11 +546,11 @@ st.markdown(
     '<div class="app-tag">CLINICAL DOCUMENTATION PLATFORM</div>'
     '<div class="app-title">AI Clinical Workflow Copilot</div>'
     '<div class="app-subtitle">'
-    'Convert consultation recordings into structured clinical '
-    'information, SOAP documentation, and referral letters.'
-    '</div>'
-    '</div>',
-    unsafe_allow_html=True
+    "Convert consultation recordings into structured clinical "
+    "information, SOAP documentation, and referral letters."
+    "</div>"
+    "</div>",
+    unsafe_allow_html=True,
 )
 
 
@@ -606,27 +559,20 @@ st.markdown(
 # =====================================================
 
 st.markdown(
-    '<div class="section-heading">Consultation Recording</div>',
-    unsafe_allow_html=True
+    '<div class="section-heading">Consultation Recording</div>', unsafe_allow_html=True
 )
 
 st.markdown(
     '<div class="section-description">'
-    'Upload an audio recording to begin the documentation workflow.'
-    '</div>',
-    unsafe_allow_html=True
+    "Upload an audio recording to begin the documentation workflow."
+    "</div>",
+    unsafe_allow_html=True,
 )
 
 uploaded_file = st.file_uploader(
     "Choose an audio file",
-    type=[
-        "wav",
-        "mp3",
-        "mpeg",
-        "mp4",
-        "m4a"
-    ],
-    label_visibility="collapsed"
+    type=["wav", "mp3", "mpeg", "mp4", "m4a"],
+    label_visibility="collapsed",
 )
 patient_file = st.file_uploader(
     "Patient track (optional — for recordings with separate doctor/patient audio)",
@@ -636,36 +582,24 @@ patient_file = st.file_uploader(
 
 if uploaded_file is not None:
 
-    st.audio(
-        uploaded_file,
-        format=uploaded_file.type
-    )
+    st.audio(uploaded_file, format=uploaded_file.type)
 
     st.write("")
 
-    if st.button(
-        "Process Consultation",
-        use_container_width=True
-    ):
+    if st.button("Process Consultation", use_container_width=True):
 
         audio_path = None
 
         with tempfile.NamedTemporaryFile(
-            delete=False,
-            suffix=os.path.splitext(
-                uploaded_file.name
-            )[1]
+            delete=False, suffix=os.path.splitext(uploaded_file.name)[1]
         ) as temp_file:
 
-            temp_file.write(
-                uploaded_file.getbuffer()
-            )
+            temp_file.write(uploaded_file.getbuffer())
             audio_path = temp_file.name
 
         if patient_file is not None:
             with tempfile.NamedTemporaryFile(
-                delete=False,
-                suffix=os.path.splitext(patient_file.name)[1]
+                delete=False, suffix=os.path.splitext(patient_file.name)[1]
             ) as patient_temp:
                 patient_temp.write(patient_file.getbuffer())
                 patient_path = patient_temp.name
@@ -676,68 +610,44 @@ if uploaded_file is not None:
             # TRANSCRIPTION
             # =================================================
 
-            with st.spinner(
-                "Transcribing consultation..."
-            ):
+            with st.spinner("Transcribing consultation..."):
 
-                transcript = transcribe_audio(
-                    audio_path
-                )
+                transcript = transcribe_audio(audio_path)
 
-            st.success(
-                "Transcription completed."
-            )
+            st.success("Transcription completed.")
 
             # =================================================
             # CLINICAL INFORMATION EXTRACTION
             # =================================================
 
-            with st.spinner(
-                "Extracting clinical information..."
-            ):
+            with st.spinner("Extracting clinical information..."):
 
-                entities = extract_entities(
-                    transcript
-                )
+                entities = extract_entities(transcript)
 
-            st.success(
-                "Clinical information extracted."
-            )
+            st.success("Clinical information extracted.")
 
             # =================================================
             # SOAP GENERATION
             # =================================================
 
-            with st.spinner(
-                "Generating SOAP note..."
-            ):
+            with st.spinner("Generating SOAP note..."):
 
-                soap = generate_soap(
-                    transcript,
-                    entities
-                )
+                soap = generate_soap(transcript, entities)
 
-            st.success(
-                "SOAP note generated."
-            )
+            st.success("SOAP note generated.")
 
             # =================================================
             # REFERRAL GENERATION
             # =================================================
 
-            with st.spinner(
-                "Assessing referral requirement..."
-            ):
+            with st.spinner("Assessing referral requirement..."):
 
-                referral = generate_referral(
-                    transcript,
-                    entities,
-                    soap
-                )
+                referral = generate_referral(transcript, entities, soap)
 
-            st.success(
-                "Referral assessment completed."
-            )
+            st.success("Referral assessment completed.")
+            with st.spinner("Suggesting SNOMED codes..."):
+                codes = suggest_codes(entities)
+            st.success("Clinical coding completed.")
 
             # =================================================
             # RESULTS HEADER
@@ -747,32 +657,26 @@ if uploaded_file is not None:
 
             st.markdown(
                 '<div class="section-heading">Consultation Results</div>',
-                unsafe_allow_html=True
+                unsafe_allow_html=True,
             )
 
             st.markdown(
                 '<div class="section-description">'
-                'Review the generated documentation and extracted clinical information.'
-                '</div>',
-                unsafe_allow_html=True
+                "Review the generated documentation and extracted clinical information."
+                "</div>",
+                unsafe_allow_html=True,
             )
 
             # =================================================
             # SUMMARY METRICS
             # =================================================
 
-            symptoms_count = len(
-                entities.get("symptoms", [])
-            )
+            symptoms_count = len(entities.get("symptoms", []))
 
-            diagnoses_count = len(
-                entities.get("diagnoses", [])
-            )
+            diagnoses_count = len(entities.get("diagnoses", []))
 
             referral_status = (
-                "Required"
-                if referral.get("referral_needed")
-                else "Not identified"
+                "Required" if referral.get("referral_needed") else "Not identified"
             )
 
             col1, col2, col3, col4 = st.columns(4)
@@ -790,7 +694,7 @@ if uploaded_file is not None:
                         </div>
                     </div>
                     """,
-                    unsafe_allow_html=True
+                    unsafe_allow_html=True,
                 )
 
             with col2:
@@ -806,7 +710,7 @@ if uploaded_file is not None:
                         </div>
                     </div>
                     """,
-                    unsafe_allow_html=True
+                    unsafe_allow_html=True,
                 )
 
             with col3:
@@ -822,7 +726,7 @@ if uploaded_file is not None:
                         </div>
                     </div>
                     """,
-                    unsafe_allow_html=True
+                    unsafe_allow_html=True,
                 )
 
             with col4:
@@ -838,7 +742,7 @@ if uploaded_file is not None:
                         </div>
                     </div>
                     """,
-                    unsafe_allow_html=True
+                    unsafe_allow_html=True,
                 )
 
             st.write("")
@@ -847,12 +751,13 @@ if uploaded_file is not None:
             # TABS
             # =================================================
 
-            tab1, tab2, tab3, tab4 = st.tabs(
+            tab1, tab2, tab3, tab4, tab5 = st.tabs(
                 [
                     "Transcription",
                     "Clinical Information",
                     "SOAP Note",
-                    "Referral"
+                    "Referral",
+                    "SNOMED Codes",
                 ]
             )
 
@@ -864,9 +769,9 @@ if uploaded_file is not None:
 
                 st.markdown(
                     '<div class="section-heading">'
-                    'Consultation Transcription'
-                    '</div>',
-                    unsafe_allow_html=True
+                    "Consultation Transcription"
+                    "</div>",
+                    unsafe_allow_html=True,
                 )
 
                 with st.container(border=True):
@@ -877,7 +782,7 @@ if uploaded_file is not None:
                     label="Download Transcription",
                     data=transcript,
                     file_name="consultation_transcript.txt",
-                    mime="text/plain"
+                    mime="text/plain",
                 )
 
             # =================================================
@@ -887,26 +792,20 @@ if uploaded_file is not None:
             with tab2:
 
                 st.markdown(
-                    '<div class="section-heading">'
-                    'Clinical Information'
-                    '</div>',
-                    unsafe_allow_html=True
+                    '<div class="section-heading">' "Clinical Information" "</div>",
+                    unsafe_allow_html=True,
                 )
 
                 st.markdown(
                     '<div class="section-description">'
-                    'Structured information extracted from the consultation.'
-                    '</div>',
-                    unsafe_allow_html=True
+                    "Structured information extracted from the consultation."
+                    "</div>",
+                    unsafe_allow_html=True,
                 )
 
-                display_clinical_information(
-                    entities
-                )
+                display_clinical_information(entities)
 
-                with st.expander(
-                    "View technical JSON output"
-                ):
+                with st.expander("View technical JSON output"):
 
                     st.json(entities)
 
@@ -917,36 +816,22 @@ if uploaded_file is not None:
             with tab3:
 
                 st.markdown(
-                    '<div class="section-heading">'
-                    'Clinical SOAP Note'
-                    '</div>',
-                    unsafe_allow_html=True
+                    '<div class="section-heading">' "Clinical SOAP Note" "</div>",
+                    unsafe_allow_html=True,
                 )
 
                 st.markdown(
                     '<div class="section-description">'
-                    'Automatically generated clinical documentation.'
-                    '</div>',
-                    unsafe_allow_html=True
+                    "Automatically generated clinical documentation."
+                    "</div>",
+                    unsafe_allow_html=True,
                 )
 
                 soap_sections = {
-                    "Subjective": soap.get(
-                        "subjective",
-                        "Not available"
-                    ),
-                    "Objective": soap.get(
-                        "objective",
-                        "Not available"
-                    ),
-                    "Assessment": soap.get(
-                        "assessment",
-                        "Not available"
-                    ),
-                    "Plan": soap.get(
-                        "plan",
-                        "Not available"
-                    )
+                    "Subjective": soap.get("subjective", "Not available"),
+                    "Objective": soap.get("objective", "Not available"),
+                    "Assessment": soap.get("assessment", "Not available"),
+                    "Plan": soap.get("plan", "Not available"),
                 }
 
                 for section_name, section_content in soap_sections.items():
@@ -955,19 +840,15 @@ if uploaded_file is not None:
 
                         card_title(section_name)
 
-                        st.write(
-                            section_content
-                        )
+                        st.write(section_content)
 
-                soap_text = create_soap_text(
-                    soap
-                )
+                soap_text = create_soap_text(soap)
 
                 st.download_button(
                     label="Download SOAP Note",
                     data=soap_text,
                     file_name="soap_note.txt",
-                    mime="text/plain"
+                    mime="text/plain",
                 )
 
             # =================================================
@@ -977,92 +858,89 @@ if uploaded_file is not None:
             with tab4:
 
                 st.markdown(
-                    '<div class="section-heading">'
-                    'Referral Assessment'
-                    '</div>',
-                    unsafe_allow_html=True
+                    '<div class="section-heading">' "Referral Assessment" "</div>",
+                    unsafe_allow_html=True,
                 )
 
                 st.markdown(
                     '<div class="section-description">'
-                    'Review whether a referral was identified in the consultation.'
-                    '</div>',
-                    unsafe_allow_html=True
+                    "Review whether a referral was identified in the consultation."
+                    "</div>",
+                    unsafe_allow_html=True,
                 )
 
-                if referral.get(
-                    "referral_needed",
-                    False
-                ):
+                if referral.get("referral_needed", False):
 
-                    st.success(
-                        "Referral identified."
-                    )
+                    st.success("Referral identified.")
 
                     with st.container(border=True):
 
                         card_title("Specialist")
 
-                        st.write(
-                            referral.get(
-                                "specialist",
-                                "Not available"
-                            )
-                        )
+                        st.write(referral.get("specialist", "Not available"))
 
                         card_title("Referral Reason")
 
-                        st.write(
-                            referral.get(
-                                "referral_reason",
-                                "Not available"
-                            )
-                        )
+                        st.write(referral.get("referral_reason", "Not available"))
 
                     with st.container(border=True):
 
-                        card_title(
-                            "Generated Referral Letter"
-                        )
+                        card_title("Generated Referral Letter")
 
-                        referral_letter = referral.get(
-                            "referral_letter",
-                            ""
-                        )
+                        referral_letter = referral.get("referral_letter", "")
 
                         st.text_area(
                             "Referral letter",
                             referral_letter,
                             height=350,
-                            label_visibility="collapsed"
+                            label_visibility="collapsed",
                         )
 
                         st.download_button(
                             label="Download Referral Letter",
                             data=referral_letter,
                             file_name="referral_letter.txt",
-                            mime="text/plain"
+                            mime="text/plain",
                         )
 
                 else:
 
-                    st.info(
-                        "No referral was identified in this consultation."
-                    )
+                    st.info("No referral was identified in this consultation.")
+            with tab5:
+                st.markdown(
+                    '<div class="section-heading">SNOMED CT Coding</div>',
+                    unsafe_allow_html=True,
+                )
+                st.markdown(
+                    '<div class="section-description">'
+                    "Suggested codes for each diagnosis. Codes come only from a verified "
+                    "reference table — confirm before saving to the record.</div>",
+                    unsafe_allow_html=True,
+                )
+                if not codes:
+                    st.info("No diagnoses to code.")
+                else:
+                    import pandas as pd
+
+                    table = pd.DataFrame(codes)[
+                        [
+                            "diagnosis",
+                            "status",
+                            "snomed_code",
+                            "snomed_description",
+                            "confidence",
+                        ]
+                    ]
+                    st.dataframe(table, use_container_width=True, hide_index=True)
 
         except Exception as error:
 
-            st.error(
-                "An error occurred while processing the consultation."
-            )
+            st.error("An error occurred while processing the consultation.")
 
             st.exception(error)
 
         finally:
 
-            if (
-                audio_path
-                and os.path.exists(audio_path)
-            ):
+            if audio_path and os.path.exists(audio_path):
 
                 os.remove(audio_path)
