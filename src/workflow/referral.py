@@ -28,10 +28,11 @@ SPECIALTY_MAP = {
     "ENT": ["hearing", "tinnitus", "sinus", "tonsil"],
     "Dental": ["dental", "tooth", "toothache", "dentist"],
     "Urology": ["haematuria", "kidney stone", "prostate", "urolog"],
+    "Physiotherapy": ["physio", "physiotherap", "physical therapy"],
 }
 
 # words the doctor uses when they are referring someone
-REFERRAL_WORDS = ["refer", "referral", "specialist", "see a", "send you to"]
+REFERRAL_WORDS = ["refer you", "referral", "refer to", "referring you"]
 
 
 def needs_referral(transcript):
@@ -124,12 +125,16 @@ You will get the consultation transcript, the extracted clinical information, an
 Return ONLY a JSON object like this:
 {
   "referral_needed": true or false,
-  "specialist": "department name (e.g. Neurology, Cardiology, Orthopaedics, Dental, Ophthalmology, ENT, Gastroenterology, Dermatology, Urology)" or null,
+  "specialist": "<department name, e.g. Neurology, Cardiology, Orthopaedics, Physiotherapy, Dental, Ophthalmology, ENT, Gastroenterology, Dermatology, Urology, Stroke/TIA clinic>" or null,
   "referral_reason": "one sentence",
   "referral_letter": "the full letter"
 }
 
 Rules:
+- A referral means the GP is sending the patient to a hospital specialist or specialist
+  service (e.g. neurology, cardiology, TIA clinic, physiotherapy). These are NOT referrals:
+  a face-to-face appointment with the GP, blood tests or investigations, advice to attend
+  A&E if symptoms worsen, or telling the patient to self-refer (e.g. to talking therapies).
 - NEVER name a specific test (MRI, CT, X-ray, blood test) unless the doctor said that exact test.
   If the doctor said "brain scan", write "brain scan". If unsure, write "appropriate investigations".
 - referral_needed is true ONLY if the doctor decided to refer the patient in the transcript.
