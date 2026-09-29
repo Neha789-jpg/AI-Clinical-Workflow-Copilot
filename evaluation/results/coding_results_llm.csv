@@ -1,0 +1,39 @@
+consultation_id,doctor_assessment,expected,predicted,code,confidence,outcome
+C00001,gastroenteritis,Gastroenteritis,Gastroenteritis,25374005,high,correct
+C00002,flare up of eczema,Eczema,Eczema,43116000,high,correct
+C00003,migraine,Migraine,Migraine,37796009,high,correct
+C00004,viral URTI/influenza,Upper respiratory tract infection|Influenza,Influenza,6142004,high,correct
+C00005,?UTI. also need to exclude pregnancy,Urinary tract infection,Urinary tract infection,68566005,high,correct
+C00006,exacerbation of heart failure,Heart failure,Heart failure,84114007,high,correct
+C00007,viral URTI/? LRTI,Upper respiratory tract infection,Upper respiratory tract infection,54150009,high,correct
+C00009,UTI/cystitis,Urinary tract infection,Urinary tract infection,68566005,high,correct
+C00010,UTI,Urinary tract infection,Urinary tract infection,68566005,high,correct
+C00011,gastroenteritis,Gastroenteritis,Gastroenteritis,25374005,high,correct
+C00012,gastroenteritis,Gastroenteritis,Gastroenteritis,25374005,high,correct
+C00013,migraines,Migraine,Migraine,37796009,high,correct
+C00014,viral URTI,Upper respiratory tract infection,Upper respiratory tract infection,54150009,high,correct
+C00015,contact dermatitis,Contact dermatitis,Contact dermatitis,40275004,high,correct
+C00017,possible bursitis,Bursitis,Bursitis,84017003,high,correct
+C00018,? Bell's Palsy- need to rule out any other focal neurology,Bell's palsy,Bell's palsy,193093009,high,correct
+C00019,"probable LRTI, possibly secondary to immunosuppression",Lower respiratory tract infection,Lower respiratory tract infection,50417007,high,correct
+C00020,"TIAs- despite young age (need to exclude any systemic disease, eg antiphospholipid syndrome, that could be cause)",Transient ischaemic attack,Transient ischaemic attack,266257000,high,correct
+C00025,tension type headache +/- migraine,Tension headache|Migraine,Migraine,37796009,high,correct
+C00033,Upper respiratory tract infection,Upper respiratory tract infection,Upper respiratory tract infection,54150009,high,correct
+C00035,Gastroenteritis,Gastroenteritis,Gastroenteritis,25374005,high,correct
+C00046,? Tension headache/first episode migraine. No features meningitic illness but is worse with light.,Tension headache|Migraine,Tension headache,398057008,high,correct
+C00047,Likely UTI.,Urinary tract infection,Urinary tract infection,68566005,high,correct
+C00048,Work related anxiety. Insomnia.,Anxiety disorder|Insomnia,Insomnia,193462001,high,correct
+C00049,Abdominal pain ? cause. Needs to check preg test today and contact us immediately if pos. Urgent examination booked with,Abdominal pain,Abdominal pain,21522001,high,correct
+C00050,? UTI.,Urinary tract infection,Urinary tract infection,68566005,high,correct
+C00051,Gastroenteritis ?Viral/?food poisoning.,Gastroenteritis,Gastroenteritis,25374005,high,correct
+C00052,Viral bronchitis.,Bronchitis,Bronchitis,32398004,high,correct
+C00053,Exacerbation asthma,Asthma,Asthma,195967001,high,correct
+C00054,6/52 hx fatigue and hx circular rash on calf.,Fatigue,Fatigue,84229001,high,correct
+C00055,Likely migraine but as ongoing and persistent needs neurological examination to exclude other pathology. Advised regular,Migraine,Migraine,37796009,high,correct
+C00057,New onset headache.,Headache,Headache,25064002,high,correct
+C00008,dermatitis,,,,low,abstained
+C00016,need to exclude impacted wax in ear canal first,,,,low,abstained
+C00021,"localized inflammatory reaction to insect bite, no evidence of acute anaphylactic reaction or cellulitis",,,,low,abstained
+C00022,acute cardiac event- needs urgent ECG + trop T,,,,low,abstained
+C00023,"PUO, need to exclude malaria",,,,low,abstained
+C00024,? CVA,,,,low,abstained

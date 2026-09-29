@@ -44,7 +44,7 @@ def _all_terms():
     return terms
 
 
-TERMS = _all_terms()
+TERMS = sorted(_all_terms(), key=lambda t: len(t[0]), reverse=True)
 
 
 def match_rules(diagnosis_text):

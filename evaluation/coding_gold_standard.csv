@@ -1,0 +1,39 @@
+consultation_id,doctor_assessment,expected_description,in_table
+C00001,gastroenteritis,Gastroenteritis,True
+C00002,flare up of eczema,Eczema,True
+C00003,migraine,Migraine,True
+C00004,viral URTI/influenza,Upper respiratory tract infection|Influenza,True
+C00005,?UTI. also need to exclude pregnancy,Urinary tract infection,True
+C00006,exacerbation of heart failure,Heart failure,True
+C00007,viral URTI/? LRTI,Upper respiratory tract infection,True
+C00009,UTI/cystitis,Urinary tract infection,True
+C00010,UTI,Urinary tract infection,True
+C00011,gastroenteritis,Gastroenteritis,True
+C00012,gastroenteritis,Gastroenteritis,True
+C00013,migraines,Migraine,True
+C00014,viral URTI,Upper respiratory tract infection,True
+C00015,contact dermatitis,Contact dermatitis,True
+C00017,possible bursitis,Bursitis,True
+C00018,? Bell's Palsy- need to rule out any other focal neurology,Bell's palsy,True
+C00019,"probable LRTI, possibly secondary to immunosuppression",Lower respiratory tract infection,True
+C00020,"TIAs- despite young age (need to exclude any systemic disease, eg antiphospholipid syndrome, that could be cause)",Transient ischaemic attack,True
+C00025,tension type headache +/- migraine,Tension headache|Migraine,True
+C00033,Upper respiratory tract infection,Upper respiratory tract infection,True
+C00035,Gastroenteritis,Gastroenteritis,True
+C00046,? Tension headache/first episode migraine. No features meningitic illness but is worse with light.,Tension headache|Migraine,True
+C00047,Likely UTI.,Urinary tract infection,True
+C00048,Work related anxiety. Insomnia.,Anxiety disorder|Insomnia,True
+C00049,Abdominal pain ? cause. Needs to check preg test today and contact us immediately if pos. Urgent examination booked with,Abdominal pain,True
+C00050,? UTI.,Urinary tract infection,True
+C00051,Gastroenteritis ?Viral/?food poisoning.,Gastroenteritis,True
+C00052,Viral bronchitis.,Bronchitis,True
+C00053,Exacerbation asthma,Asthma,True
+C00054,6/52 hx fatigue and hx circular rash on calf.,Fatigue,True
+C00055,Likely migraine but as ongoing and persistent needs neurological examination to exclude other pathology. Advised regular,Migraine,True
+C00057,New onset headache.,Headache,True
+C00008,dermatitis,,False
+C00016,need to exclude impacted wax in ear canal first,,False
+C00021,"localized inflammatory reaction to insect bite, no evidence of acute anaphylactic reaction or cellulitis",,False
+C00022,acute cardiac event- needs urgent ECG + trop T,,False
+C00023,"PUO, need to exclude malaria",,False
+C00024,? CVA,,False

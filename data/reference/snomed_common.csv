@@ -8,7 +8,7 @@ asthma,195967001,Asthma,
 hypertension,38341003,Hypertension,high blood pressure; HTN
 urinary tract infection,68566005,Urinary tract infection,UTI; urine infection; cystitis
 gastroenteritis,25374005,Gastroenteritis,stomach bug; stomach flu
-eczema,43116000,Eczema,atopic dermatitis; dermatitis
+eczema,43116000,Eczema,atopic dermatitis
 upper respiratory tract infection,54150009,Upper respiratory tract infection,URTI; cold; common cold
 influenza,6142004,Influenza,flu
 cough,49727002,Cough,
@@ -33,3 +33,14 @@ allergic rhinitis,61582004,Allergic rhinitis,hay fever
 anaemia,271737000,Anaemia,anemia; low haemoglobin
 hypothyroidism,40930008,Hypothyroidism,underactive thyroid
 knee pain,30989003,Knee pain,pain in knee; sore knee
+heart failure,84114007,Heart failure,cardiac failure; exacerbation of heart failure
+transient ischaemic attack,266257000,Transient ischaemic attack,TIA; TIAs; mini stroke
+bronchitis,32398004,Bronchitis,viral bronchitis; chest infection
+lower respiratory tract infection,50417007,Lower respiratory tract infection,LRTI
+tension-type headache,398057008,Tension headache,tension headache
+insomnia,193462001,Insomnia,difficulty sleeping
+contact dermatitis,40275004,Contact dermatitis,
+bell's palsy,193093009,Bell's palsy,facial palsy
+bursitis,84017003,Bursitis,
+abdominal pain,21522001,Abdominal pain,tummy pain; stomach ache
+fatigue,84229001,Fatigue,tiredness; tired all the time; TATT
