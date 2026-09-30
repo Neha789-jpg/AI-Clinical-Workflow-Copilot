@@ -16,7 +16,8 @@ OUTPUT_FILE = "evaluation/results/symptom_llm_results.csv"
 
 # None = all consultations
 with open("evaluation/auto_gold_standard.json", "r", encoding="utf-8") as f:
-    TARGET_IDS = list(json.load(f).keys())
+    gold_ids = set(json.load(f).keys())
+TARGET_IDS = [f"C{i:05d}" for i in range(1, 58) if f"C{i:05d}" in gold_ids]
 GROQ_API_KEY = None
 
 

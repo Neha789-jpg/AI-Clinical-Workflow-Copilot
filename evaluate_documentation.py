@@ -22,19 +22,8 @@ MODEL = "openai/gpt-oss-120b"
 
 # Set to None to evaluate all consultations.
 # For testing, you can temporarily use a small list such as:
-# TARGET_IDS = ["C00004", "C00008"]
-TARGET_IDS = [
-    "C00004",
-    "C00008",
-    "C00012",
-    "C00015",
-    "C00025",
-    "C00030",
-    "C00031",
-    "C00034",
-    "C00040",
-    "C00045"
-]
+# TARGET_IDS = [f"C{i:05d}" for i in range(1, 58)]
+TARGET_IDS = [f"C{i:05d}" for i in range(1, 58)]
 
 FORCE_REEVALUATE = True
 
