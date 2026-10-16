@@ -610,13 +610,11 @@ Return ONLY the JSON object. No markdown. No explanation.
 
 
 
-def extract_with_llm(transcript, retries=2):
+def extract_with_llm(transcript, retries=3):
     from openai import OpenAI
     client = OpenAI(api_key=os.getenv("GROQ_API_KEY"),
                     base_url="https://api.groq.com/openai/v1")
 
-    # big model first; the free tier rejects long transcripts on it,
-    # so fall back to the smaller model when the request is too large
     models = ["openai/gpt-oss-120b", "openai/gpt-oss-20b"]
 
     last_error = None
@@ -632,36 +630,25 @@ def extract_with_llm(transcript, retries=2):
                 )
                 data = json.loads(response.choices[0].message.content)
 
-                # Safety check: prevent pregnancy test from becoming
-                # an inferred pregnancy diagnosis.
-                prescribed_items = data.get("prescribed", [])
-                has_pregnancy_test = any(
-                    "pregnancy test" in str(item).lower()
-                    for item in prescribed_items
-                )
-                if has_pregnancy_test:
-                    data["diagnoses"] = [
-                        diagnosis
-                        for diagnosis in data.get("diagnoses", [])
-                        if diagnosis.get("text", "").lower() != "pregnancy"
-                    ]
-
+                # Safety check: a pregnancy test is not a pregnancy diagnosis
+                if any("pregnancy test" in str(i).lower() for i in data.get("prescribed", [])):
+                    data["diagnoses"] = [d for d in data.get("diagnoses", [])
+                                         if d.get("text", "").lower() != "pregnancy"]
                 return data
 
             except Exception as e:
+                error_text = str(e)
                 last_error = e
-                if "413" in str(e) or "too large" in str(e).lower():
-                    continue   # request too big → try the smaller model
-                break          # any other error → go round the retry loop
-
-        print(f"[extractor] attempt {attempt + 1} failed, retrying...")
+                if "429" in error_text or "rate_limit_exceeded" in error_text \
+                        or "tokens per day" in error_text:
+                    raise RuntimeError("GROQ_RATE_LIMIT: " + error_text)
+                if "413" in error_text or "too large" in error_text.lower():
+                    continue
+                print(f"[extractor] {model} attempt {attempt + 1} failed: {error_text[:90]}")
 
     raise last_error
 
 
-# ---------------------------------------------------------------------------
-# Public API
-# ---------------------------------------------------------------------------
 def extract_entities(transcript, engine="auto"):
     """
     engine = "auto"  -> LLM if GROQ_API_KEY exists, else rules
