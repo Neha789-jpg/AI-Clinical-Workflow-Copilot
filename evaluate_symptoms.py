@@ -221,21 +221,25 @@ def get_llm_client():
 # ============================================================
 # 7. LLM EVALUATOR
 # ============================================================
+JUDGE_MODELS = ["openai/gpt-oss-120b", "llama-3.3-70b-versatile"]
 
 def evaluate_with_llm(
     transcript,
     reference_symptoms,
-    predicted_symptoms
+    predicted_symptoms,
+    _retry=0,
+    _model_idx=0
 ):
     """
-    Use an LLM as a transcript-grounded evaluator.
-
-    Important:
-    Rate-limit errors are NOT retried because retrying them
-    consumes/wastes more requests while the limit is active.
+    Transcript-grounded LLM judge.
+      413 -> fall back to the next judge model
+      429 per-minute -> wait and retry
+      429 per-day -> raise GROQ_RATE_LIMIT
     """
+    import time
 
     client = get_llm_client()
+    model = JUDGE_MODELS[_model_idx]
 
     payload = {
         "transcript": transcript,
@@ -244,47 +248,48 @@ def evaluate_with_llm(
     }
 
     try:
-
         response = client.chat.completions.create(
-            model="openai/gpt-oss-120b",
+            model=model,
             temperature=0,
             response_format={"type": "json_object"},
             messages=[
-                {
-                    "role": "system",
-                    "content": EVALUATOR_PROMPT
-                },
-                {
-                    "role": "user",
-                    "content": json.dumps(
-                        payload,
-                        ensure_ascii=False
-                    )
-                }
+                {"role": "system", "content": EVALUATOR_PROMPT},
+                {"role": "user", "content": json.dumps(payload, ensure_ascii=False)}
             ]
         )
-
-        content = response.choices[0].message.content
-
-        return json.loads(content)
+        data = json.loads(response.choices[0].message.content)
+        data["_judge_model"] = model
+        return data
 
     except Exception as e:
-
         error_text = str(e)
+        print(f"[judge] {model} error: {error_text[:200]}")
 
-        # Do not retry Groq rate-limit errors
-        if (
-            "429" in error_text
-            or "rate_limit_exceeded" in error_text
-            or "tokens per day" in error_text
-        ):
-            raise RuntimeError(
-                "GROQ_RATE_LIMIT: " + error_text
-            )
+        if "413" in error_text or "Request too large" in error_text:
+            if _model_idx + 1 < len(JUDGE_MODELS):
+                print(f"[judge] falling back to {JUDGE_MODELS[_model_idx + 1]}")
+                return evaluate_with_llm(
+                    transcript, reference_symptoms, predicted_symptoms,
+                    _retry=_retry, _model_idx=_model_idx + 1
+                )
+            raise RuntimeError("GROQ_RATE_LIMIT: " + error_text)
+
+        if "tokens per day" in error_text or "TPD" in error_text:
+            raise RuntimeError("GROQ_RATE_LIMIT: " + error_text)
+
+        if "429" in error_text or "rate_limit_exceeded" in error_text or "per minute" in error_text:
+            m = re.search(r"try again in ([\d.]+)s", error_text)
+            wait = float(m.group(1)) + 2 if m else 60
+            if _retry < 5:
+                print(f"[judge] per-minute limit, waiting {wait:.0f}s ...")
+                time.sleep(wait)
+                return evaluate_with_llm(
+                    transcript, reference_symptoms, predicted_symptoms,
+                    _retry=_retry + 1, _model_idx=_model_idx
+                )
+            raise RuntimeError("GROQ_RATE_LIMIT: " + error_text)
 
         raise
-
-
 # ============================================================
 # 8. SAFE LIST
 # ============================================================
@@ -710,8 +715,17 @@ for _, row in eval_df.iterrows():
             "consultation_id":
                 consultation_id,
 
+            "transcript_split": 
+                llm_output.get("_split", 0),
+
             "status":
                 "EVALUATED",
+
+            "extractor_model": 
+                llm_output.get("_model", ""),
+
+            "judge_model": 
+                evaluation.get("_judge_model", ""),
 
             "original_reference":
                 " | ".join(reference_raw),

@@ -610,43 +610,155 @@ Return ONLY the JSON object. No markdown. No explanation.
 
 
 
-def extract_with_llm(transcript, retries=3):
-    from openai import OpenAI
-    client = OpenAI(api_key=os.getenv("GROQ_API_KEY"),
-                    base_url="https://api.groq.com/openai/v1")
 
-    models = ["openai/gpt-oss-120b", "openai/gpt-oss-20b"]
+import os, json, re, time
+from openai import OpenAI
 
+# Free-tier Groq caps every request at ~8k tokens for the gpt-oss models.
+# Transcripts that exceed it are split at a turn boundary, extracted with the
+# SAME model, and merged (see extract_with_llm).
+EXTRACTOR_MODELS = ["openai/gpt-oss-120b", "openai/gpt-oss-20b"]
+
+LIST_FIELDS = [
+    "symptoms", "diagnoses", "current_medications", "prescribed",
+    "allergies", "medical_history", "family_history", "social_history",
+    "investigations", "follow_up", "advice", "relevant_context",
+]
+DICT_FIELDS = ["patient_info", "vitals"]
+
+_client = None
+
+
+def _groq_client():
+    global _client
+    if _client is None:
+        _client = OpenAI(
+            api_key=os.getenv("GROQ_API_KEY"),
+            base_url="https://api.groq.com/openai/v1",
+        )
+    return _client
+
+
+class RequestTooLarge(Exception):
+    """No model accepted the request size (HTTP 413)."""
+
+
+def _extract_once(transcript, retries=3):
+    """
+    One extraction call with model fallback and retries.
+      413 on every model        -> RequestTooLarge (caller splits the transcript)
+      429 per-minute limit      -> wait as instructed, retry
+      429 per-day limit         -> RuntimeError('GROQ_RATE_LIMIT: ...')
+      invalid JSON / other      -> retry up to `retries` times
+    """
+    client = _groq_client()
     last_error = None
+
     for attempt in range(retries):
-        for model in models:
+        too_large_everywhere = True
+        for model in EXTRACTOR_MODELS:
             try:
                 response = client.chat.completions.create(
                     model=model,
                     temperature=0,
                     response_format={"type": "json_object"},
-                    messages=[{"role": "system", "content": PROMPT},
-                              {"role": "user", "content": transcript}],
+                    messages=[
+                        {"role": "system", "content": PROMPT},
+                        {"role": "user", "content": transcript},
+                    ],
                 )
                 data = json.loads(response.choices[0].message.content)
 
-                # Safety check: a pregnancy test is not a pregnancy diagnosis
-                if any("pregnancy test" in str(i).lower() for i in data.get("prescribed", [])):
-                    data["diagnoses"] = [d for d in data.get("diagnoses", [])
-                                         if d.get("text", "").lower() != "pregnancy"]
+                # Safety check: a pregnancy TEST is not a pregnancy DIAGNOSIS
+                prescribed = " ".join(str(p) for p in data.get("prescribed", [])).lower()
+                if "pregnancy test" in prescribed:
+                    data["diagnoses"] = [
+                        d for d in data.get("diagnoses", [])
+                        if "pregnan" not in json.dumps(d).lower()
+                    ]
+
+                data["_model"] = model
                 return data
 
             except Exception as e:
-                error_text = str(e)
                 last_error = e
-                if "429" in error_text or "rate_limit_exceeded" in error_text \
-                        or "tokens per day" in error_text:
-                    raise RuntimeError("GROQ_RATE_LIMIT: " + error_text)
-                if "413" in error_text or "too large" in error_text.lower():
+                msg = str(e)
+
+                if "413" in msg or "Request too large" in msg:
+                    print(f"[extractor] {model}: request too large -> split")
+                    raise RequestTooLarge(msg)
+
+                too_large_everywhere = False
+
+                if "tokens per day" in msg or "TPD" in msg:
+                    raise RuntimeError("GROQ_RATE_LIMIT: " + msg)
+
+                if "429" in msg or "rate_limit_exceeded" in msg or "per minute" in msg:
+                    m = re.search(r"try again in ([\d.]+)s", msg)
+                    wait = float(m.group(1)) + 2 if m else 60
+                    print(f"[extractor] per-minute limit on {model}, waiting {wait:.0f}s")
+                    time.sleep(wait)
                     continue
-                print(f"[extractor] {model} attempt {attempt + 1} failed: {error_text[:90]}")
+
+                print(f"[extractor] {model} attempt {attempt+1} failed: {msg[:160]}")
+
+        if too_large_everywhere:
+            raise RequestTooLarge(str(last_error))
 
     raise last_error
+
+
+def _merge(a, b):
+    """Merge two extraction dicts: concatenate + dedupe list fields, union dict fields."""
+    out = {}
+    for f in LIST_FIELDS:
+        seen, merged = set(), []
+        for item in (a.get(f) or []) + (b.get(f) or []):
+            key = (json.dumps(item, sort_keys=True) if isinstance(item, dict) else str(item)).strip().lower()
+            if key and key not in seen:
+                seen.add(key)
+                merged.append(item)
+        out[f] = merged
+    for f in DICT_FIELDS:
+        d = dict(a.get(f) or {})
+        for k, v in (b.get(f) or {}).items():
+            if v not in (None, "", "unknown", "not stated") and not d.get(k):
+                d[k] = v
+        out[f] = d
+    out["_model"] = a.get("_model", "")
+    return out
+
+
+def _split_transcript(transcript):
+    lines = transcript.splitlines()
+    if len(lines) < 4:
+        mid = len(transcript) // 2
+        return transcript[:mid], transcript[mid:]
+    mid = len(lines) // 2
+    return "\n".join(lines[:mid]), "\n".join(lines[mid:])
+
+
+def extract_with_llm(transcript, retries=3, _depth=0):
+    """
+    Public entry point. Transcripts that exceed the API's per-request limit are
+    split in half at a line boundary, each half is extracted with the same
+    model, and the two results are merged. `_split` in the result records how
+    many times splitting was needed (0 = none).
+    """
+    try:
+        data = _extract_once(transcript, retries=retries)
+        data.setdefault("_split", 0)
+        return data
+    except RequestTooLarge:
+        if _depth >= 3:
+            raise
+        print(f"[extractor] transcript too large, splitting (depth {_depth + 1})")
+        first, second = _split_transcript(transcript)
+        a = extract_with_llm(first, retries=retries, _depth=_depth + 1)
+        b = extract_with_llm(second, retries=retries, _depth=_depth + 1)
+        merged = _merge(a, b)
+        merged["_split"] = _depth + 1
+        return merged
 
 
 def extract_entities(transcript, engine="auto"):
