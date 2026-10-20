@@ -1,0 +1,533 @@
+Loading consultation data...
+
+Columns in dataset:
+['consultation_id', 'patient_id', 'doctor_id', 'date', 'specialty', 'audio_path', 'audio_duration_sec', 'transcript', 'symptoms', 'medical_history', 'allergies', 'vital_signs', 'source_type', 'source_id']
+Total consultations in dataset: 1965
+Evaluating selected consultations: 57
+Found 7 previously evaluated consultations.
+
+Skipping C00001 (already evaluated)
+
+Skipping C00002 (already evaluated)
+
+Skipping C00003 (already evaluated)
+
+Skipping C00004 (already evaluated)
+
+Skipping C00005 (already evaluated)
+
+Skipping C00006 (already evaluated)
+
+Skipping C00007 (already evaluated)
+
+======================================================================
+Evaluating documentation: C00008
+======================================================================
+Running NLP extractor...
+[extractor] openai/gpt-oss-120b: request too large -> split
+[extractor] transcript too large, splitting (depth 1)
+{
+  "symptoms": [
+    {
+      "text": "dry itchy skin",
+      "duration": "few days",
+      "severity": null,
+      "status": "current"
+    },
+    {
+      "text": "red skin",
+      "duration": null,
+      "severity": null,
+      "status": "current"
+    },
+    {
+      "text": "tiredness",
+      "duration": null,
+      "severity": null,
+      "status": "current"
+    },
+    {
+      "text": "dry itchy rash on hands and arms",
+      "duration": "a few days",
+      "severity": null,
+      "status": "current"
+    }
+  ],
+  "pertinent_negatives": [
+    "no spots",
+    "no fever",
+    "no sweating",
+    "no vomiting",
+    "no loose stools",
+    "no bleeding or discharge from skin",
+    "no other medications",
+    "no skin problems in the past",
+    "no smoking",
+    "no alcohol",
+    "no recreational drugs"
+  ],
+  "diagnoses": [
+    {
+      "text": "dermatitis",
+      "status": "suspected"
+    }
+  ],
+  "current_medications": [
+    {
+      "name": "Microgynon",
+      "dose": null,
+      "frequency": null
+    }
+  ],
+  "prescribed": [
+    {
+      "name": "steroid cream",
+      "dose": null,
+      "frequency": "throughout the day",
+      "duration": "next few days"
+    },
+    {
+      "name": "emollient",
+      "dose": null,
+      "frequency": "throughout the day",
+      "duration": "next few days"
+    }
+  ],
+  "allergies": [],
+  "medical_history": [],
+  "family_history": [
+    "father has asthma",
+    "mother has hayfever"
+  ],
+  "social_history": [
+    "teacher",
+    "lives alone",
+    "primary school teacher",
+    "increased stress recently"
+  ],
+  "investigations": [],
+  "follow_up": [
+    "return next week if symptoms do not improve"
+  ],
+  "advice": [
+    "try over-the-counter antihistamines such as Piriton or Loratadine for itchiness"
+  ],
+  "relevant_context": [
+    "stress at work for the past few days",
+    "symptoms started after swimming a few days ago",
+    "using coconut butter for the past few days without improvement",
+    "patient reports possible lactose intolerance",
+    "patient lives alone",
+    "patient works as a primary school teacher",
+    "patient reports increased stress recently"
+  ],
+  "patient_info": {
+    "age": 26,
+    "gender": null
+  },
+  "vitals": {
+    "bp": null,
+    "pulse": null,
+    "temperature": null,
+    "spo2": null
+  },
+  "_model": "openai/gpt-oss-120b",
+  "_split": 1
+}
+Generating SOAP note...
+Evaluating SOAP note with LLM...
+
+Scores:
+Completeness:       1.00
+Faithfulness:       1.00
+Hallucination:      1.00
+Section correctness: 1.00
+Overall quality:    1.00
+
+======================================================================
+Evaluating documentation: C00009
+======================================================================
+Running NLP extractor...
+[extractor] openai/gpt-oss-120b: request too large -> split
+[extractor] transcript too large, splitting (depth 1)
+{
+  "symptoms": [
+    {
+      "text": "pain when urinating (dysuria)",
+      "duration": "a few days",
+      "severity": null,
+      "status": "current"
+    },
+    {
+      "text": "lower abdominal cramping pain when urinating",
+      "duration": "a few days",
+      "severity": null,
+      "status": "current"
+    },
+    {
+      "text": "blood in urine (hematuria)",
+      "duration": "earlier today",
+      "severity": null,
+      "status": "current"
+    },
+    {
+      "text": "urine has a weird smell",
+      "duration": null,
+      "severity": null,
+      "status": "current"
+    },
+    {
+      "text": "burning pain on passing urine",
+      "duration": "three days",
+      "severity": null,
+      "status": "current"
+    },
+    {
+      "text": "crampy lower abdominal pain",
+      "duration": "three days",
+      "severity": null,
+      "status": "current"
+    }
+  ],
+  "pertinent_negatives": [
+    "no fever",
+    "no nausea",
+    "no vomiting",
+    "no diarrhea",
+    "no increased urinary frequency",
+    "no flank pain",
+    "no back pain",
+    "no vaginal discharge"
+  ],
+  "diagnoses": [
+    {
+      "text": "urinary tract infection",
+      "status": "confirmed"
+    }
+  ],
+  "current_medications": [],
+  "prescribed": [],
+  "allergies": [
+    "Clindamycin"
+  ],
+  "medical_history": [
+    "irritable bowel syndrome"
+  ],
+  "family_history": [],
+  "social_history": [
+    "sexually active with a boyfriend for a couple of months",
+    "uses condoms",
+    "student",
+    "drinks alcohol on weekends",
+    "does not smoke",
+    "lives in flat with friends"
+  ],
+  "investigations": [],
+  "follow_up": [
+    "call or return if symptoms not improved by end of week",
+    "call if any concerns or signs of infection spreading"
+  ],
+  "advice": [
+    "drink plenty of fluids",
+    "try cranberry juice",
+    "continue using barrier contraception",
+    "avoid sexual intercourse while symptoms clear",
+    "monitor for high temperature, back pain, or feeling more unwell",
+    "choice of Nitrofurantoin or Trimethoprim offered"
+  ],
+  "relevant_context": [
+    "sexually active, uses condoms",
+    "last menstrual period was three weeks ago",
+    "has not had an STD screen",
+    "tried over-the-counter bicarbonate a couple of days ago without relief"
+  ],
+  "patient_info": {
+    "age": 19,
+    "gender": "female"
+  },
+  "vitals": {
+    "bp": null,
+    "pulse": null,
+    "temperature": null,
+    "spo2": null
+  },
+  "_model": "openai/gpt-oss-120b",
+  "_split": 1
+}
+Generating SOAP note...
+Evaluating SOAP note with LLM...
+
+Scores:
+Completeness:       0.75
+Faithfulness:       1.00
+Hallucination:      1.00
+Section correctness: 1.00
+Overall quality:    0.75
+
+======================================================================
+Evaluating documentation: C00010
+======================================================================
+Running NLP extractor...
+[extractor] openai/gpt-oss-120b: request too large -> split
+[extractor] transcript too large, splitting (depth 1)
+[extractor] per-minute limit on openai/gpt-oss-120b, waiting 60s
+[extractor] openai/gpt-oss-20b attempt 1 failed: Error code: 400 - {'error': {'message': "Failed to validate JSON. Please adjust your prompt. See 'failed_generation' for more details.", 'type': 'invalid_reques
+{
+  "symptoms": [
+    {
+      "text": "burning pain when urinating",
+      "duration": "just under a week",
+      "severity": null,
+      "status": "current"
+    },
+    {
+      "text": "increased urinary frequency",
+      "duration": "just under a week",
+      "severity": null,
+      "status": "current"
+    },
+    {
+      "text": "pink urine",
+      "duration": "today",
+      "severity": null,
+      "status": "current"
+    },
+    {
+      "text": "lower abdominal ache",
+      "duration": "just under a week",
+      "severity": null,
+      "status": "current"
+    }
+  ],
+  "pertinent_negatives": [
+    "no nausea",
+    "no vomiting",
+    "no fever",
+    "no frank blood in urine",
+    "no vaginal discharge",
+    "no back pain",
+    "no new bowel symptoms",
+    "no other medical conditions"
+  ],
+  "diagnoses": [
+    {
+      "text": "urinary tract infection",
+      "status": "suspected"
+    }
+  ],
+  "current_medications": [
+    {
+      "name": "combined oral contraceptive pill",
+      "dose": null,
+      "frequency": null
+    },
+    {
+      "name": "combined pill",
+      "dose": null,
+      "frequency": null
+    }
+  ],
+  "prescribed": [],
+  "allergies": [
+    "Clindamycin"
+  ],
+  "medical_history": [
+    "IBS",
+    "irritable bowel syndrome"
+  ],
+  "family_history": [],
+  "social_history": [
+    "sexually active with long-term boyfriend",
+    "living in university halls with a flatmate",
+    "studying English at university",
+    "occasional social alcohol consumption",
+    "first cannabis use a week and a half ago"
+  ],
+  "investigations": [
+    "urine sample for laboratory analysis"
+  ],
+  "follow_up": [
+    "return next week if symptoms do not improve",
+    "call doctor if fever, back pain, or vomiting develop"
+  ],
+  "advice": [
+    "avoid cannabis use",
+    "stay hydrated and drink plenty of fluids",
+    "take paracetamol for pain if needed",
+    "provide urine sample for testing",
+    "choice of Trimethoprim or Nitrofurantoin, three day course"
+  ],
+  "relevant_context": [
+    "history of IBS",
+    "on combined oral contraceptive pill",
+    "sexually active with long-term boyfriend",
+    "last unprotected intercourse about a week ago",
+    "last menstrual period two weeks ago",
+    "eating and drinking OK"
+  ],
+  "patient_info": {
+    "age": 19,
+    "gender": null
+  },
+  "vitals": {
+    "bp": null,
+    "pulse": null,
+    "temperature": null,
+    "spo2": null
+  },
+  "_model": "openai/gpt-oss-120b",
+  "_split": 1
+}
+Generating SOAP note...
+Evaluating SOAP note with LLM...
+
+Scores:
+Completeness:       0.75
+Faithfulness:       0.75
+Hallucination:      1.00
+Section correctness: 1.00
+Overall quality:    0.80
+
+======================================================================
+Evaluating documentation: C00011
+======================================================================
+Running NLP extractor...
+[extractor] openai/gpt-oss-120b: request too large -> split
+[extractor] transcript too large, splitting (depth 1)
+{
+  "symptoms": [
+    {
+      "text": "watery diarrhea, loose stools, almost every hour when awake",
+      "duration": "three days",
+      "severity": null,
+      "status": "current"
+    },
+    {
+      "text": "crampy abdominal pain, midline, comes and goes",
+      "duration": null,
+      "severity": "6-7/10",
+      "status": "current"
+    },
+    {
+      "text": "nausea",
+      "duration": null,
+      "severity": null,
+      "status": "current"
+    },
+    {
+      "text": "vomiting after milk",
+      "duration": null,
+      "severity": null,
+      "status": "current"
+    },
+    {
+      "text": "feeling hot, burning up",
+      "duration": null,
+      "severity": null,
+      "status": "current"
+    },
+    {
+      "text": "diarrhea",
+      "duration": null,
+      "severity": null,
+      "status": "current"
+    }
+  ],
+  "pertinent_negatives": [
+    "no blood in stools"
+  ],
+  "diagnoses": [
+    {
+      "text": "gastroenteritis",
+      "status": "suspected"
+    }
+  ],
+  "current_medications": [
+    {
+      "name": "Paracetamol",
+      "dose": null,
+      "frequency": null
+    }
+  ],
+  "prescribed": [],
+  "allergies": [
+    "none known"
+  ],
+  "medical_history": [],
+  "family_history": [
+    "brother had diarrhoea",
+    "father has colon cancer"
+  ],
+  "social_history": [
+    "social smoker",
+    "occasional alcohol consumption",
+    "works in a government office in Central London",
+    "lives with sister and mother"
+  ],
+  "investigations": [],
+  "follow_up": [
+    "call back if symptoms have not settled within 48 hours",
+    "review in 1-2 days to assess progress"
+  ],
+  "advice": [
+    "drink plenty of fluids",
+    "use oral rehydration solution (e.g., Diarolyte)",
+    "consume clear fluids and a soft diet such as soup or mashed foods, gradually increasing as tolerated",
+    "continue Paracetamol if experiencing fever or abdominal pain",
+    "avoid alcohol"
+  ],
+  "relevant_context": [
+    "drinking a lot of water but fluids go straight through",
+    "brother has similar diarrhoea for five days",
+    "had lunch today but stool still loose",
+    "patient feels hot but has not taken temperature",
+    "patient has not discussed the illness in detail with sister and mother",
+    "patient feels unable to take time off work due to symptoms"
+  ],
+  "patient_info": {
+    "age": 27,
+    "gender": null
+  },
+  "vitals": {
+    "bp": null,
+    "pulse": null,
+    "temperature": null,
+    "spo2": null
+  },
+  "_model": "openai/gpt-oss-120b",
+  "_split": 1
+}
+Generating SOAP note...
+Evaluating SOAP note with LLM...
+
+Scores:
+Completeness:       0.75
+Faithfulness:       1.00
+Hallucination:      1.00
+Section correctness: 1.00
+Overall quality:    0.75
+
+======================================================================
+Evaluating documentation: C00012
+======================================================================
+Running NLP extractor...
+
+ERROR while evaluating C00012:
+GROQ_RATE_LIMIT: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m2fed2dyereb4gzdf7kpzxkq` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 194677, Requested 7270. Please try again in 14m1.104s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+
+Groq rate limit detected.
+Progress has already been saved.
+
+======================================================================
+DOCUMENTATION EVALUATION SUMMARY
+======================================================================
+Consultations evaluated: 11
+
+Average completeness: 0.841
+Average faithfulness: 0.932
+Average hallucination score: 0.932
+Average section correctness: 0.977
+Average overall quality: 0.841
+
+Results saved to:
+evaluation/results/documentation_llm_results.csv

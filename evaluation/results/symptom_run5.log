@@ -1,0 +1,272 @@
+
+Previous results belonging to auto-gold set: 50 rows
+Already evaluated successfully: 50 consultations
+These consultations will be skipped.
+
+
+==============================================
+TRANSCRIPT-GROUNDED LLM SYMPTOM EVALUATION
+==============================================
+
+Consultations selected: 57
+Already completed: 50
+Remaining: 7
+
+Skipping C00001 (already evaluated)
+Skipping C00002 (already evaluated)
+Skipping C00003 (already evaluated)
+Skipping C00004 (already evaluated)
+Skipping C00005 (already evaluated)
+Skipping C00006 (already evaluated)
+Skipping C00007 (already evaluated)
+Skipping C00008 (already evaluated)
+Skipping C00009 (already evaluated)
+Skipping C00010 (already evaluated)
+Skipping C00011 (already evaluated)
+Skipping C00012 (already evaluated)
+Skipping C00013 (already evaluated)
+Skipping C00014 (already evaluated)
+Skipping C00015 (already evaluated)
+Skipping C00016 (already evaluated)
+Skipping C00017 (already evaluated)
+Skipping C00018 (already evaluated)
+Skipping C00019 (already evaluated)
+Skipping C00020 (already evaluated)
+Skipping C00021 (already evaluated)
+Skipping C00022 (already evaluated)
+Skipping C00023 (already evaluated)
+Skipping C00024 (already evaluated)
+Skipping C00025 (already evaluated)
+Skipping C00026 (already evaluated)
+Skipping C00027 (already evaluated)
+Skipping C00028 (already evaluated)
+Skipping C00029 (already evaluated)
+Skipping C00030 (already evaluated)
+Skipping C00031 (already evaluated)
+Skipping C00032 (already evaluated)
+Skipping C00033 (already evaluated)
+Evaluating C00034...
+
+  Original reference:
+    ['I have pain in my jaw']
+
+  Extractor predicted:
+    ['Numbness and tingling in left arm, elbow, hand, affecting second, third, and fourth fingers (front side)', 'Weakness in left arm, difficulty gripping objects and playing piano', 'Neck pain', 'Headaches described as tired headaches', 'Fatigue', 'Transient loss of peripheral vision in left eye lasting about 20 minutes', 'Pain in right hand knuckles', 'Occasional shoulder pain during boxing movements']
+
+  Transcript-supported:
+    ["I can't quite move my left arm... it's numb", 'I also feel some tingling in my fingertips', 'I can feel it both in my elbow, and then in my arm, as well as in my hand', 'Second, third, and fourth finger... front side', 'I have difficulty gripping a glass and playing piano is harder', 'Yes, absolutely. (when asked about neck pain)', 'I lost some peripheral vision in my left eye for about twenty minutes', "Sometimes I get headaches but they're just tired headaches", 'I just felt really, fatigued', 'I hurt my knuckles on my right hand... a little bit painful', 'Sometimes I will feel it in my shoulder... a little bit of pain', 'my muscles were sore, a little bit']
+
+  Predicted evaluation:
+    [MATCHED] Numbness and tingling in left arm, elbow, hand, affecting second, third, and fourth fingers (front side)
+       -> I can't quite move my left arm... it's numb; I also feel some tingling in my fingertips; Second, third, and fourth finger... front side
+    [MATCHED] Weakness in left arm, difficulty gripping objects and playing piano
+       -> I have difficulty gripping a glass and playing piano is harder
+    [MATCHED] Neck pain
+       -> Yes, absolutely. (when asked about neck pain)
+    [MATCHED] Headaches described as tired headaches
+       -> Sometimes I get headaches but they're just tired headaches
+    [MATCHED] Fatigue
+       -> I just felt really, fatigued
+    [MATCHED] Transient loss of peripheral vision in left eye lasting about 20 minutes
+       -> I lost some peripheral vision in my left eye for about twenty minutes
+    [MATCHED] Pain in right hand knuckles
+       -> I hurt my knuckles on my right hand... a little bit painful
+    [MATCHED] Occasional shoulder pain during boxing movements
+       -> Sometimes I will feel it in my shoulder... a little bit of pain
+
+  Missed:
+    ['my muscles were sore, a little bit']
+
+  Transcript-grounded: P=1.00 R=0.89 F1=0.94
+Skipping C00035 (already evaluated)
+Skipping C00036 (already evaluated)
+Skipping C00037 (already evaluated)
+Skipping C00038 (already evaluated)
+Skipping C00039 (already evaluated)
+Skipping C00040 (already evaluated)
+Evaluating C00041...
+[extractor] openai/gpt-oss-120b: request too large -> split
+[extractor] transcript too large, splitting (depth 1)
+
+  Original reference:
+    ["my chest hurts and it's been hard to breathe"]
+
+  Extractor predicted:
+    ['strong unilateral left-sided headache', 'dizziness', 'blurred vision with zigzag lines', 'nausea', 'vomiting (two episodes)', 'headache worsens with movement (standing up)', 'headache on left side of head, possibly behind the eye', 'blurry vision with visual disturbances']
+
+  Transcript-supported:
+    ['strong unilateral left-sided headache', 'dizziness', 'blurred vision', 'visual aura with zigzag lines', 'nausea', 'vomiting (two episodes)', 'headache worsened by movement']
+
+  Predicted evaluation:
+    [MATCHED] strong unilateral left-sided headache
+       -> strong unilateral left-sided headache
+    [MATCHED] dizziness
+       -> dizziness
+    [MATCHED] blurred vision with zigzag lines
+       -> visual aura with zigzag lines
+    [MATCHED] nausea
+       -> nausea
+    [MATCHED] vomiting (two episodes)
+       -> vomiting (two episodes)
+    [MATCHED] headache worsens with movement (standing up)
+       -> headache worsened by movement
+    [MATCHED] headache on left side of head, possibly behind the eye
+       -> strong unilateral left-sided headache
+    [MATCHED] blurry vision with visual disturbances
+       -> blurred vision
+
+  Missed:
+    []
+
+  Transcript-grounded: P=1.00 R=1.00 F1=1.00
+Evaluating C00042...
+[extractor] openai/gpt-oss-120b: request too large -> split
+[extractor] transcript too large, splitting (depth 1)
+
+  Original reference:
+    ['I have a cold']
+
+  Extractor predicted:
+    ['cough (dry)', 'sore throat', 'shortness of breath', 'wheeze', 'chest pain', 'dry cough', 'shortness of breath', 'fever', 'headache (intermittent)', 'loss of appetite', 'throat discomfort']
+
+  Transcript-supported:
+    ['dry cough', 'sore throat', 'shortness of breath', 'wheeze', 'chest pain', 'fever', 'headache', 'loss of appetite']
+
+  Predicted evaluation:
+    [MATCHED] cough (dry)
+       -> dry cough
+    [MATCHED] sore throat
+       -> sore throat
+    [MATCHED] shortness of breath
+       -> shortness of breath
+    [MATCHED] wheeze
+       -> wheeze
+    [MATCHED] chest pain
+       -> chest pain
+    [MATCHED] dry cough
+       -> dry cough
+    [MATCHED] shortness of breath
+       -> shortness of breath
+    [MATCHED] fever
+       -> fever
+    [MATCHED] headache (intermittent)
+       -> headache
+    [MATCHED] loss of appetite
+       -> loss of appetite
+    [MATCHED] throat discomfort
+       -> sore throat
+
+  Missed:
+    []
+
+  Transcript-grounded: P=1.00 R=1.00 F1=1.00
+Evaluating C00043...
+[extractor] openai/gpt-oss-120b: request too large -> split
+[extractor] transcript too large, splitting (depth 1)
+
+  Original reference:
+    ["lately, I haven't had much appetite or energy"]
+
+  Extractor predicted:
+    ['low energy/fatigue', 'decreased appetite', 'difficulty sleeping', 'difficulty concentrating / easily distracted', 'low mood', 'decreased sex drive', 'absence of morning erections', 'decreased sex drive', 'low mood', 'shortness of breath on exertion']
+
+  Transcript-supported:
+    ["I don't have much energy", "I'm not eating very much", 'difficulty waking up / trouble sleeping', 'finding it really hard to keep focusing, easily distracted', 'my mood is a bit lower recently', 'my sex drive has kind of decreased', "I haven't noticed morning erections", 'shortness of breath when doing sports']
+
+  Predicted evaluation:
+    [MATCHED] low energy/fatigue
+       -> I don't have much energy
+    [MATCHED] decreased appetite
+       -> I'm not eating very much
+    [MATCHED] difficulty sleeping
+       -> trouble sleeping at all
+    [MATCHED] difficulty concentrating / easily distracted
+       -> finding it really hard to keep focusing, easily distracted
+    [MATCHED] low mood
+       -> my mood is a bit lower recently
+    [MATCHED] decreased sex drive
+       -> my sex drive has kind of decreased
+    [MATCHED] absence of morning erections
+       -> I haven't noticed morning erections
+    [MATCHED] decreased sex drive
+       -> my sex drive has kind of decreased
+    [MATCHED] low mood
+       -> my mood is a bit lower recently
+    [MATCHED] shortness of breath on exertion
+       -> shortness of breath when doing sports
+
+  Missed:
+    []
+
+  Transcript-grounded: P=1.00 R=1.00 F1=1.00
+Evaluating C00044...
+[extractor] openai/gpt-oss-120b: request too large -> split
+[extractor] transcript too large, splitting (depth 1)
+[extractor] openai/gpt-oss-120b: request too large -> split
+[extractor] transcript too large, splitting (depth 2)
+
+  Original reference:
+    ['I have pain in my jaw']
+
+  Extractor predicted:
+    ['tight chest', 'shortness of breath', 'wheeze', 'cough', 'sore throat', 'runny nose', 'tight chest', 'shortness of breath on exertion']
+
+  Transcript-supported:
+    ['tight chest', 'shortness of breath', 'wheezy', 'cough', 'sore throat', 'runny nose']
+
+  Predicted evaluation:
+    [MATCHED] tight chest
+       -> tight chest
+    [MATCHED] shortness of breath
+       -> shortness of breath
+    [MATCHED] wheeze
+       -> wheezy
+    [MATCHED] cough
+       -> cough
+    [MATCHED] sore throat
+       -> sore throat
+    [MATCHED] runny nose
+       -> runny nose
+    [MATCHED] tight chest
+       -> tight chest
+    [MATCHED] shortness of breath on exertion
+       -> shortness of breath
+
+  Missed:
+    []
+
+  Transcript-grounded: P=1.00 R=1.00 F1=1.00
+Evaluating C00045...
+
+  NOT EVALUATED: GROQ_RATE_LIMIT: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m2fed2dyereb4gzdf7kpzxkq` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 195790, Requested 9225. Please try again in 36m6.48s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+
+Groq rate limit reached.
+Stopping safely. Successful results have already been saved.
+
+==============================================
+FINAL RESULTS
+==============================================
+Total consultations selected : 57
+LLM evaluated                : 55
+Not evaluated                : 0
+
+----------------------------------------------
+TRANSCRIPT-GROUNDED METRICS
+----------------------------------------------
+True Positives  : 285
+False Positives : 0
+False Negatives : 27
+
+Precision       : 1.000
+Recall          : 0.913
+F1              : 0.955
+
+----------------------------------------------
+ORIGINAL REFERENCE METRICS
+----------------------------------------------
+Precision       : 0.000
+Recall          : 0.000
+F1              : 0.000
+
+Results saved to:
+evaluation/results/symptom_llm_results.csv

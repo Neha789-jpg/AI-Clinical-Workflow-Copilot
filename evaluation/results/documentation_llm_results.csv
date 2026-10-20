@@ -1,22 +1,208 @@
 consultation_id,completeness,faithfulness,hallucination,section_correctness,overall_quality,important_information_missing,unsupported_information,section_errors,strengths,weaknesses,subjective,objective,assessment,plan
-C00004,0.75,1.0,1.0,1.0,0.8,"[""sore throat"", ""initial fever""]",[],[],"[""Captures most of the patient's symptoms and timeline"", ""Includes detailed social and family history"", ""Accurately reflects the clinician's assessment and plan"", ""Correctly categorizes information into SOAP sections""]","[""Omitted the primary complaint of sore throat"", ""Did not mention the initial fever reported by the patient""]","Patient Information:
+C00001,1.0,1.0,1.0,1.0,1.0,[],[],[],"[""Captures all key symptoms and their characteristics"", ""Includes relevant negatives (no blood, no sweating)"", ""Documents pertinent history (asthma, recent Chinese takeaway, social factors)"", ""Provides clear assessment and appropriate conservative management plan"", ""Information placed in correct SOAP sections""]","[""Objective section empty (no objective data were provided in transcript, so acceptable)"", ""Minor omission of detail that patient can tolerate fluids, but not clinically critical""]","Patient Information:
 - Gender: male
 
 Symptoms:
-- runny nose and nasal congestion for four days
-- dry cough for one day
-- night sweats for three to four days
-- shortness of breath on exertion for four days
-- headaches (general, intermittent)
-- muscle aches/pain for past couple days
-- fatigue/tiredness for four days
+- diarrhea (loose watery stool) for three days
+- crampy abdominal pain in left lower abdomen
+- weakness and shakiness
+- fever (temperature at symptom onset) (Resolved)
+- vomiting (Resolved)
+- loss of appetite
+
+Pertinent Negatives:
+- no blood in stool
+- no blood in vomit
+- no sweating
+- no night sweats
 
 Relevant Clinical Context:
+- possible trigger: Chinese takeaway 4 days ago
+- frequent bowel movements affecting daily activities and work
+
+Allergies:
+- None documented.
+
+Medical History:
+- asthma
+
+Family History:
+- None documented.
+
+Social History:
+- non-smoker
+- does not drink alcohol
+- accountant
+- lives with wife and two children
+
+Current Medications:
+- inhaler",No objective findings documented.,Possible gastroenteritis.,"Medications:
+- paracetamol - two tablets, up to four times a day for first few days
+Investigations/Tests:
+- stool sample for testing
+Follow-up:
+- return if symptoms have not improved in three to four days
+Advice:
+- stay well hydrated by drinking fluids
+- use Dioralyte oral rehydration solution
+- take time off work for two to three days
+- rest"
+C00002,0.75,1.0,1.0,1.0,0.75,"[""Patient reported no recent changes in shower gel, clothing, or other potential triggers"", ""Explicit statement that patient has no other current medical problems besides past asthma and eczema"", ""Family history was not documented""]",[],[],"[""Accurately captures key symptoms (itchy, sore, cracked, dry skin) and their impact on sleep and work"", ""Includes relevant negatives (fever, cough, discharge, pus, blood)"", ""Documents past eczema, prior steroid cream use, and failed antihistamine trial"", ""Provides a clear assessment (possible eczema) and a plan that matches the physician's recommendations"", ""Social history (living situation, occupation, alcohol use, non‑smoker) is well represented""]","[""Omitted mention of the patient's uncertainty about recent trigger changes (e.g., shower gel, clothing)"", ""Did not explicitly note the absence of other current medical conditions"", ""Family history section left blank without stating that none was reported""]","Patient Information:
+- Age: 31
+- Gender: male
+
+Symptoms:
+- itchy skin for four days
+- sore skin for four days
+- cracked skin
+- dry skin
+- insomnia due to itching for four days
+- difficulty focusing at work for four days
+
+Pertinent Negatives:
+- no fever
+- no cough
+- no breathing difficulties
+- no discharge from skin
+- no pus
+- no blood
+- no temperature
+
+Relevant Clinical Context:
+- patient lives with flatmates
+- patient works as a project manager at a pharmaceutical company
+- patient drinks a few beers per week and used to drink more when younger
+- patient does not smoke
+- patient had eczema previously limited to arms
+- patient previously used steroid cream which helped initially but not now
+- patient previously tried antihistamines without relief
+
+Allergies:
+- none known
+
+Medical History:
+- asthma (past)
+- eczema (previous)
+
+Family History:
+- None documented.
+
+Social History:
+- lives with flatmates
+- project manager at pharmaceutical company
+- drinks a few beers per week
+- does not smoke
+
+Current Medications:
+- None documented.",No objective findings documented.,Possible eczema.,"Medications:
+- prescription topical steroid cream for seven to ten days
+- emollient (bath and shower) for seven to ten days
+- Fexofenadine
+Follow-up:
+- return next week if symptoms do not improve
+Advice:
+- use emollient in bath and shower for first 7-10 days
+- keep a diary of any triggers such as clothing or shower gels
+- use over-the-counter antihistamines like Loratadine or Piriton for itchiness
+- use stronger antihistamine Fexofenadine as prescribed
+- apply prescribed steroid cream regularly over next week to ten days"
+C00003,0.75,0.75,0.75,1.0,0.75,[],"[""no family history of brain cancer""]",[],"[""Captures all key symptoms (headache characteristics, visual changes, photophobia, nausea, vomiting)."", ""Includes relevant negatives (fever, rash, neurological deficits, head injury)."", ""Documents pertinent social and family history, medication use, and patient concerns."", ""Provides clear assessment (migraine) and detailed plan with follow‑up instructions and medication recommendations.""]","[""Includes an unsupported negative statement about family history of brain cancer."", ""Duplicate entry for work in the social history section.""]","
+Symptoms:
+- terrible throbbing headache on left side, worsened by movement for since mid-day (Severity: terrible)
+- blurred vision in both eyes
+- light sensitivity causing eye pain
+- nausea
+- vomiting twice earlier today
+- migraine headache
+
+Pertinent Negatives:
+- no fever
+- no skin rash
+- no speech problems
+- no numbness or weakness in arms and legs
+- no balance or coordination problems
+- no head injury
+- no recent fall
+- no breathlessness
+- no personal medical history
+- no personal history of migraines
+- no family history of brain cancer
+- no exercise
+- no smoking
+- no alcohol use
+
+Relevant Clinical Context:
+- concern about possible brain tumour due to friend's mother having died of brain tumor
+- patient works in the fashion industry and needs to return to work today
+- patient not normally prone to headaches
+- patient took painkillers, rested, and took sick days for previous similar headache
+- patient works in the fashion industry and finds the job stressful
 - patient lives alone
-- works as an accountant
-- occasional cigar use at company parties
-- occasionally drinks alcohol but not a heavy drinker
-- stressful period at work affecting speed
+- patient uses oral contraceptive Microgynon for contraception for three months
+
+Allergies:
+- None documented.
+
+Medical History:
+- similar headache a few weeks ago lasting a couple of days
+
+Family History:
+- mother has migraines
+- mother has underactive thyroid
+
+Social History:
+- works in the fashion industry
+- works in fashion industry
+- job is stressful
+- lives alone
+- does not exercise
+- does not smoke
+- does not drink alcohol
+
+Current Medications:
+- Microgynon",No objective findings documented.,migraine.,"Follow-up:
+- discussion next week
+- return immediately if headache worsens or does not respond to medication
+- return immediately if neck pain worsens, or if weakness in arms or legs develops, or if vision changes occur
+- if symptoms are not better in 2-3 days, seek medical review
+Advice:
+- keep a headache diary
+- use Paracetamol for pain
+- use Co-codamol for pain
+- use Ibuprofen as an anti‑inflammatory
+- use Naproxen as an anti‑inflammatory"
+C00004,1.0,1.0,1.0,1.0,1.0,[],[],[],"[""Captures all key symptoms and timeline"", ""Includes pertinent negatives and relevant exposure history"", ""Accurately reflects medication use and fluid intake"", ""Correct family and social history"", ""Assessment and plan align with clinician's impression""]","[""Minor redundancy (runny nose listed twice in symptoms)""]","Patient Information:
+- Gender: male
+
+Symptoms:
+- sore throat
+- runny nose and nasal congestion for four days
+- dry cough
+- night sweats for four days
+- fever for four days (Resolved)
+- fatigue for four days
+- shortness of breath on exertion for four days
+- intermittent headache
+- runny nose for four days
+- muscle pain for four days
+- weakness for four days
+
+Pertinent Negatives:
+- no chest pain
+- no ear pain
+- no ear blockage
+- no ear discharge
+- no shortness of breath at rest
+- no vision problems
+- no nausea
+- no vomiting
+- no rash
+
+Relevant Clinical Context:
+- possible exposure to viral infection from colleague who was sneezing
+- patient taking paracetamol and ibuprofen for fever
+- patient reports increased fluid intake
+- patient reports eating slightly less than usual
 
 Allergies:
 - none known
@@ -26,37 +212,227 @@ Medical History:
 
 Family History:
 - grandmother has type 2 diabetes
-- great‑grandfather had eczema
+- great-grandfather had eczema
 
 Social History:
 - lives alone
 - accountant
-- occasional cigar use
-- occasionally drinks alcohol
-- no regular smoking
+- occasional cigar smoking
+- occasional alcohol consumption
 
 Current Medications:
 - Paracetamol
-- Ibuprofen",No objective findings documented.,"Possible viral upper respiratory tract infection, Possible influenza.","Follow-up:
-- return next week if not better
+- Ibuprofen",No objective findings documented.,"Possible viral upper respiratory tract infection, Possible influenza.","Medications:
+- Paracetamol
+- Ibuprofen
+Follow-up:
+- return next week if symptoms not improved
 - call doctor sooner if high fever, worsening breathing, or chest pain
 Advice:
-- get plenty of rest
+- rest
 - take a day or two off work
-- stay well‑hydrated
-- continue regular Paracetamol and Ibuprofen"
-C00008,0.75,1.0,1.0,1.0,0.8,"[""Absence of fever, vomiting, or other systemic symptoms"", ""No prior history of skin conditions such as eczema or dermatitis"", ""Use of coconut butter as a home remedy (ineffective)"", ""No other medications besides Microgynon""]",[],[],"[""Accurately captures the main skin symptoms, location, and timing"", ""Includes relevant contextual factors (stress, swimming, possible lactose intolerance, weather)"", ""Correctly records family, social history, and current medication"", ""Provides a clear assessment and appropriate treatment plan with follow‑up""]","[""Omits documentation of negative systemic findings (no fever, no vomiting, normal bowel/urine)"", ""Does not note lack of prior skin problems"", ""Does not mention the patient’s trial of coconut butter"", ""Medical history section left empty despite existing medication information""]","Patient Information:
+- stay well-hydrated"
+C00005,0.75,1.0,1.0,1.0,0.75,"[""Last menstrual period was approximately 2 weeks ago"", ""No prior similar episodes of abdominal pain"", ""No surgical history (patient reported no surgeries)"", ""Absence of other medical conditions besides Implanon""]",[],[],"[""Accurately captures the main presenting symptoms (burning lower abdominal pain, hot/sweaty feeling, pink urine, increased urinary frequency, nausea)"", ""Includes relevant negatives (vomiting, diarrhea, dysuria, respiratory and cardiac symptoms)"", ""Documents sexual history, contraception use, and recommendation for pregnancy test"", ""Provides clear treatment plan with antibiotic dosing, supportive care, and follow‑up instructions""]","[""Omitted menstrual history details that are pertinent to pregnancy risk assessment"", ""Did not note that the patient has never experienced similar symptoms before"", ""Did not explicitly state the lack of surgical history"", ""Medical history section labeled as \""None documented\"" despite presence of Implanon (listed under medications)""]","Patient Information:
+- Gender: female
+
+Symptoms:
+- burning lower abdominal pain below belly button for two days
+- feeling hot and sweaty
+- constipation for since last week (Resolved)
+- pink urine
+- increased urinary frequency
+- nausea
+- tummy pain for couple of days
+
+Pertinent Negatives:
+- no vomiting
+- no diarrhea
+- no burning or stinging pain when passing urine
+- no shortness of breath
+- no cough
+- no palpitations
+- no headaches
+- no vision problems
+
+Relevant Clinical Context:
+- patient reports increased urinary frequency despite drinking lots of fluids
+
+Allergies:
+- None documented.
+
+Medical History:
+- None documented.
+
+Family History:
+- None documented.
+
+Social History:
+- sexually active with one partner, last sexual activity 4 days ago
+- uses Implanon implant inserted about a year ago
+- last STD screen normal 6 months ago
+- lives in a share house with two roommates
+- works as an accountant
+- non-smoker
+- social alcohol consumption
+
+Current Medications:
+- Implanon",No objective findings documented.,Possible urine infection.,"Medications:
+- Trimethoprim - two tablets, twice a day for three days
+Investigations/Tests:
+- pregnancy test
+Follow-up:
+- return in a few days if symptoms do not improve or worsen
+- call the doctor if worried about anything else
+Advice:
+- take regular paracetamol for pain
+- drink plenty of fluids
+- try cranberry juice for urinary symptoms
+- take the antibiotics as prescribed"
+C00006,1.0,1.0,1.0,1.0,1.0,[],[],[],"[""Captures all key subjective symptoms and negatives"", ""Accurately reflects past medical, family, and social history"", ""Includes relevant medication list and plan details matching the conversation"", ""Appropriate placement of information into SOAP sections""]",[],"Patient Information:
+- Gender: male
+
+Symptoms:
+- shortness of breath for last couple of weeks
+- dry cough
+- ankle swelling for last few days
+- feeling run-down
+- frequent urination
+- more breathless even walking to the shop
+
+Pertinent Negatives:
+- no chest pain
+- no palpitations
+- no fever
+- no allergies
+- no current smoking
+- no alcohol
+
+Relevant Clinical Context:
+- patient is worried that heart failure may be worsening
+- patient worried about inability to work if condition worsens
+
+Allergies:
+- none known
+
+Medical History:
+- heart failure
+- small heart attack (myocardial infarction) five years ago
+
+Family History:
+- father died of heart attack in early sixties
+- mother has osteoporosis
+
+Social History:
+- lives alone with two cats
+- part-time lorry driver
+- former smoker, 1 pack per day for 25 years, quit
+- does not drink alcohol
+- walks to shop once a day
+- does not work night shifts
+
+Current Medications:
+- Furosemide
+- Aspirin
+- Bisoprolol",No objective findings documented.,heart failure.,"Medications:
+- Furosemide - 1 tablet, twice a day for first few days
+Investigations/Tests:
+- blood test (full blood count, kidney function)
+- echocardiogram
+Follow-up:
+- return in about a week for review
+- call doctor sooner if symptoms worsen (increased breathlessness, chest pain, palpitations, dizziness)"
+C00007,0.75,0.75,0.5,0.75,0.7,"[""Occasional aspirin use""]","[""Pertinent negative stating 'no breathlessness' contradicts patient report of shortness of breath""]",[],"[""Captures most of the patient's reported symptoms"", ""Includes relevant social history and medication list"", ""Provides a clear assessment and plan consistent with the clinician's advice""]","[""Missing mention of occasional aspirin in medication list"", ""Contradictory negative statement about breathlessness"", ""No objective findings documented, though none were provided in the transcript""]","Patient Information:
+- Age: 50
+- Gender: male
+
+Symptoms:
+- run-down feeling for few days
+- dry cough
+- runny nose
+- sore throat
+- hoarseness
+- ear dullness/blocked ears
+- shortness of breath for few days
+- feeling hot and cold, sweaty
+- diarrhoea (Resolved)
+- muscle and joint stiffness in elbows and knees, all over
+- not feeling great for five days
+
+Pertinent Negatives:
+- no breathlessness
+- no sputum production
+- no chest pain
+- no nausea
+- no vomiting
+- no tummy pain
+- no measured fever
+
+Relevant Clinical Context:
+- hoarseness possibly due to frequent shouting at football matches
+- patient reports hearing not as good as it used to be
+- symptoms began after dinner outing on Saturday
+- patient reports being overweight
+
+Allergies:
+- none known
+
+Medical History:
+- type 2 diabetes
+- hypertension
+
+Family History:
+- None documented.
+
+Social History:
+- lives with wife, no children at home
+- currently employed
+- works in a steel parts manufacturing factory
+- drinks approximately nine pints of alcohol per week
+- occasionally smokes cigarettes
+- uses a vaporiser to reduce smoking
+- plays football
+
+Current Medications:
+- Metformin
+- Lisinopril",No objective findings documented.,"high blood pressure, Possible viral illness, Possible influenza.","Medications:
+- Amoxicillin - one tablet, three times a day
+Follow-up:
+- if not better by next week, return for review
+Advice:
+- keep fluids up
+- stay rested
+- drink plenty of fluids
+- take regular Paracetamol"
+C00008,1.0,1.0,1.0,1.0,1.0,[],[],[],"[""Captures all key subjective details from the transcript"", ""Accurately reflects negatives and relevant context (stress, swimming, coconut butter use)"", ""Correctly lists current medication (Microgynon) and family history"", ""Assessment aligns with clinician's impression of dermatitis"", ""Plan includes appropriate treatments and follow‑up instructions""]","[""Redundant entries in social history (teacher listed twice)"", ""Objective section empty, though no exam data were provided in the transcript""]","Patient Information:
 - Age: 26
 
 Symptoms:
-- dry itchy skin with redness on arms and hands for a few days
+- dry itchy skin for few days
+- red skin
 - tiredness
+- dry itchy rash on hands and arms for a few days
+
+Pertinent Negatives:
+- no spots
+- no fever
+- no sweating
+- no vomiting
+- no loose stools
+- no bleeding or discharge from skin
+- no other medications
+- no skin problems in the past
+- no smoking
+- no alcohol
+- no recreational drugs
 
 Relevant Clinical Context:
-- stress at work may be contributing to skin symptoms
-- symptoms started after swimming
+- stress at work for the past few days
+- symptoms started after swimming a few days ago
+- using coconut butter for the past few days without improvement
 - patient reports possible lactose intolerance
-- patient considered weather as a possible factor
+- patient lives alone
+- patient works as a primary school teacher
+- patient reports increased stress recently
 
 Allergies:
 - None documented.
@@ -69,103 +445,177 @@ Family History:
 - mother has hayfever
 
 Social History:
-- works as a primary school teacher
+- teacher
 - lives alone
-- does not smoke
-- does not drink alcohol
-- does not use recreational drugs
+- primary school teacher
+- increased stress recently
 
 Current Medications:
 - Microgynon",No objective findings documented.,Possible dermatitis.,"Medications:
-- topical steroid cream
-- emollient for next few days
+- steroid cream, throughout the day for next few days
+- emollient, throughout the day for next few days
 Follow-up:
 - return next week if symptoms do not improve
 Advice:
 - try over-the-counter antihistamines such as Piriton or Loratadine for itchiness"
-C00012,0.75,1.0,1.0,1.0,0.85,"[""absence of blood in stools"", ""absence of abdominal/tummy pain"", ""absence of headache or muscle pain"", ""no recent sick contacts"", ""no recent consumption of takeaway or suspicious food""]",[],[],"[""Accurately captures key symptoms, timeline, and severity"", ""Includes relevant past medical, family, and social history"", ""Documents medication (blue inhaler) and allergies correctly"", ""Provides clear assessment and detailed management plan""]","[""Omits documentation of important negative findings (blood, pain, exposures)"", ""Objective section left blank despite no objective data being recorded""]","Patient Information:
-- Age: 48
+C00009,0.75,1.0,1.0,1.0,0.75,"[""Recommendation for a pregnancy test to rule out pregnancy"", ""Specific description of clindamycin allergy reaction (swelling)""]",[],[],"[""Accurately captures all key urinary symptoms and timing"", ""Includes pertinent negatives (fever, nausea, frequency, flank/back pain, vaginal discharge)"", ""Documents sexual activity, contraception use, and social history"", ""Notes past medical history of IBS and clindamycin allergy"", ""Provides clear assessment of urinary tract infection and appropriate treatment plan""]","[""Omitted recommendation for pregnancy testing"", ""Did not detail the nature of the clindamycin allergy reaction"", ""Minor discrepancy in last menstrual period timing""]","Patient Information:
+- Age: 19
+- Gender: female
 
 Symptoms:
-- diarrhoea, watery loose stools, 5-6 times a day for three days (Severity: very bad)
-- vomiting (Resolved)
-- feeling dehydrated for three days
-- reduced appetite for three days
-- weakness for three days
-- low-grade fever (Resolved)
-- nausea (Resolved)
+- pain when urinating (dysuria) for a few days
+- lower abdominal cramping pain when urinating for a few days
+- blood in urine (hematuria) for earlier today
+- urine has a weird smell
+- burning pain on passing urine for three days
+- crampy lower abdominal pain for three days
+
+Pertinent Negatives:
+- no fever
+- no nausea
+- no vomiting
+- no diarrhea
+- no increased urinary frequency
+- no flank pain
+- no back pain
+- no vaginal discharge
 
 Relevant Clinical Context:
-- patient lives alone
-- patient is a software engineer
-- patient has been unable to work for the past few days due to illness
-- patient uses a blue inhaler infrequently for asthma
+- sexually active, uses condoms
+- last menstrual period was three weeks ago
+- has not had an STD screen
+- tried over-the-counter bicarbonate a couple of days ago without relief
 
 Allergies:
-- none known
+- Clindamycin
 
 Medical History:
-- asthma
+- irritable bowel syndrome
 
 Family History:
-- father had hypertension
-- father died of bowel cancer
-- mother has type 2 diabetes
+- None documented.
 
 Social History:
-- non-smoker
-- drinks alcohol infrequently socially
-- lives alone
-- software engineer
+- sexually active with a boyfriend for a couple of months
+- uses condoms
+- student
+- drinks alcohol on weekends
+- does not smoke
+- lives in flat with friends
 
 Current Medications:
-- blue inhaler",No objective findings documented.,Possible gastroenteritis.,"Follow-up:
-- come back next week if not better
-- call back if symptoms do not improve
+- None documented.",No objective findings documented.,urinary tract infection.,"Follow-up:
+- call or return if symptoms not improved by end of week
+- call if any concerns or signs of infection spreading
 Advice:
 - drink plenty of fluids
-- take Dioralyte oral rehydration solution
-- take Paracetamol if feverish and weak
-- continue taking time off work for the next day or two
-- be diarrhea-free for 24-48 hours before returning to work"
-C00015,0.75,1.0,1.0,1.0,0.75,"[""Patient had tried over‑the‑counter E45 cream and an antihistamine without improvement"", ""Symptoms prevented the patient from working for the past three days"", ""Recent job change four months ago to a hotel setting, potentially relevant to exposure""]",[],[],"[""Accurately captures key symptoms (cracked, itchy, painful, bleeding, dryness) and their duration"", ""Includes relevant past medical, family, social history and medication list"", ""Correctly identifies likely diagnosis of contact dermatitis"", ""Provides clear, appropriate treatment plan with topical steroids, emollients, glove use, and follow‑up instructions""]","[""Omits mention of prior over‑the‑counter treatments and their lack of efficacy"", ""Does not note work‑related functional impact (time off work)"", ""Fails to record recent job change which may be a trigger""]","Patient Information:
-- Age: 45
+- try cranberry juice
+- continue using barrier contraception
+- avoid sexual intercourse while symptoms clear
+- monitor for high temperature, back pain, or feeling more unwell
+- choice of Nitrofurantoin or Trimethoprim offered"
+C00010,0.75,0.75,1.0,1.0,0.8,"[""IBS medication (the 'M' medication the patient takes for cramps)""]",[],[],"[""Accurately captures chief complaint: burning dysuria, increased frequency, pink urine, lower abdominal ache"", ""Includes relevant negatives (no nausea, vomiting, fever, frank hematuria, back pain, new bowel changes)"", ""Documents pertinent history: IBS, combined oral contraceptive use, sexual activity, recent unprotected intercourse, last menstrual period"", ""Records allergy to clindamycin"", ""Provides clear assessment (possible UTI) and appropriate plan (urine sample, antibiotics, hydration, analgesia, follow‑up, warning signs)"", ""Includes social history details (living situation, studies, alcohol, recent cannabis use)""]","[""Missing the specific IBS medication the patient mentioned"", ""Duplicate entry for combined oral contraceptive pill under current medications"", ""Statement \""no other medical conditions\"" is slightly contradictory given the documented IBS""]","Patient Information:
+- Age: 19
 
 Symptoms:
-- cracked skin on hands (palms) for 3-4 months
-- itchiness on palms for 3-4 months
-- pain in hands for 3-4 months (Severity: severe)
-- dryness of skin on hands and legs for 3-4 months
-- bleeding from scratches for 3-4 months
+- burning pain when urinating for just under a week
+- increased urinary frequency for just under a week
+- pink urine for today
+- lower abdominal ache for just under a week
+
+Pertinent Negatives:
+- no nausea
+- no vomiting
+- no fever
+- no frank blood in urine
+- no vaginal discharge
+- no back pain
+- no new bowel symptoms
+- no other medical conditions
 
 Relevant Clinical Context:
-- patient works as a housekeeper and often does not wear gloves while using cleaning products, which may be a trigger for skin condition
-- patient reports low water intake
+- history of IBS
+- on combined oral contraceptive pill
+- sexually active with long-term boyfriend
+- last unprotected intercourse about a week ago
+- last menstrual period two weeks ago
+- eating and drinking OK
+
+Allergies:
+- Clindamycin
+
+Medical History:
+- IBS
+- irritable bowel syndrome
+
+Family History:
+- None documented.
+
+Social History:
+- sexually active with long-term boyfriend
+- living in university halls with a flatmate
+- studying English at university
+- occasional social alcohol consumption
+- first cannabis use a week and a half ago
+
+Current Medications:
+- combined oral contraceptive pill
+- combined pill",No objective findings documented.,Possible urinary tract infection.,"Investigations/Tests:
+- urine sample for laboratory analysis
+Follow-up:
+- return next week if symptoms do not improve
+- call doctor if fever, back pain, or vomiting develop
+Advice:
+- avoid cannabis use
+- stay hydrated and drink plenty of fluids
+- take paracetamol for pain if needed
+- provide urine sample for testing
+- choice of Trimethoprim or Nitrofurantoin, three day course"
+C00011,0.75,1.0,1.0,1.0,0.75,"[""Decreased urinary frequency reported by patient""]",[],[],"[""Accurately captures core symptoms (watery diarrhea, frequency, abdominal pain severity, nausea, vomiting after milk, feeling hot)"", ""Includes pertinent negatives (no blood in stool)"", ""Documents relevant family history (father with colon cancer, brother with similar illness)"", ""Provides detailed social history (living situation, work, smoking, alcohol)"", ""Lists current medication (paracetamol) and lack of allergies"", ""Assessment and plan align with clinician's recommendations""]","[""Omitted mention of reduced urine output, which is relevant for dehydration assessment"", ""Objective section empty (though no objective data were provided in transcript)""]","Patient Information:
+- Age: 27
+
+Symptoms:
+- watery diarrhea, loose stools, almost every hour when awake for three days
+- crampy abdominal pain, midline, comes and goes (Severity: 6-7/10)
+- nausea
+- vomiting after milk
+- feeling hot, burning up
+- diarrhea
+
+Pertinent Negatives:
+- no blood in stools
+
+Relevant Clinical Context:
+- drinking a lot of water but fluids go straight through
+- brother has similar diarrhoea for five days
+- had lunch today but stool still loose
+- patient feels hot but has not taken temperature
+- patient has not discussed the illness in detail with sister and mother
+- patient feels unable to take time off work due to symptoms
 
 Allergies:
 - none known
 
 Medical History:
-- type 2 diabetes
+- None documented.
 
 Family History:
-- diabetes
+- brother had diarrhoea
+- father has colon cancer
 
 Social History:
-- works as a housekeeper
-- does not always wear gloves while cleaning
-- drinks a couple of pints of alcohol per week
-- does not smoke
+- social smoker
+- occasional alcohol consumption
+- works in a government office in Central London
+- lives with sister and mother
 
 Current Medications:
-- Metformin",No objective findings documented.,Possible contact dermatitis.,"Medications:
-- topical steroid cream, three to four times a day for 2 weeks
-- emollient cream, three to four times a day for 2 weeks
-Follow-up:
-- return in about one to two weeks if symptoms have not improved
-- return sooner if symptoms worsen or spread
+- Paracetamol",No objective findings documented.,Possible gastroenteritis.,"Follow-up:
+- call back if symptoms have not settled within 48 hours
+- review in 1-2 days to assess progress
 Advice:
-- wear gloves when cleaning at all times
-- avoid cleaning product triggers
-- apply prescribed steroid cream as directed
-- apply emollient cream three to four times a day for the next couple of weeks"
+- drink plenty of fluids
+- use oral rehydration solution (e.g., Diarolyte)
+- consume clear fluids and a soft diet such as soup or mashed foods, gradually increasing as tolerated
+- continue Paracetamol if experiencing fever or abdominal pain
+- avoid alcohol"

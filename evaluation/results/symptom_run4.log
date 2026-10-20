@@ -1,0 +1,253 @@
+
+Previous results belonging to auto-gold set: 46 rows
+Already evaluated successfully: 46 consultations
+These consultations will be skipped.
+
+
+==============================================
+TRANSCRIPT-GROUNDED LLM SYMPTOM EVALUATION
+==============================================
+
+Consultations selected: 57
+Already completed: 46
+Remaining: 11
+
+Skipping C00001 (already evaluated)
+Skipping C00002 (already evaluated)
+Skipping C00003 (already evaluated)
+Skipping C00004 (already evaluated)
+Skipping C00005 (already evaluated)
+Skipping C00006 (already evaluated)
+Evaluating C00007...
+[extractor] openai/gpt-oss-120b: request too large
+[extractor] openai/gpt-oss-20b: request too large
+[extractor] transcript too large, splitting (depth 1)
+
+  Original reference:
+    ['I have a cough and cold']
+
+  Extractor predicted:
+    ['run-down feeling / general malaise', 'dry cough, worse in the morning', 'runny nose (sniffles)', 'sore throat', 'hoarseness', 'reduced hearing', 'shortness of breath', 'feeling hot and cold with sweating (subjective fever)', 'diarrhoea', 'muscle and joint stiffness (elbows and knees)', 'feeling unwell', 'shortness of breath']
+
+  Transcript-supported:
+    ['I am not feeling very well', 'mostly dry cough, a bit worse in the morning', 'bit of a runny nose / sniffles', "I've had a bit of a sore throat", 'shouting myself a wee bit hoarse', "my hearing's not as good as it used to be", 'shortness of breath', 'feeling hot and cold and sweaty', 'a wee bit of diarrhoea', 'stiffness in elbows and knees when bending down']
+
+  Predicted evaluation:
+    [MATCHED] run-down feeling / general malaise
+       -> I am not feeling very well
+    [MATCHED] dry cough, worse in the morning
+       -> mostly dry cough, a bit worse in the morning
+    [MATCHED] runny nose (sniffles)
+       -> bit of a runny nose / sniffles
+    [MATCHED] sore throat
+       -> I've had a bit of a sore throat
+    [MATCHED] hoarseness
+       -> shouting myself a wee bit hoarse
+    [MATCHED] reduced hearing
+       -> my hearing's not as good as it used to be
+    [MATCHED] shortness of breath
+       -> shortness of breath
+    [MATCHED] feeling hot and cold with sweating (subjective fever)
+       -> feeling hot and cold and sweaty
+    [MATCHED] diarrhoea
+       -> a wee bit of diarrhoea
+
+  Missed:
+    []
+
+  Transcript-grounded: P=1.00 R=1.00 F1=1.00
+Skipping C00008 (already evaluated)
+Skipping C00009 (already evaluated)
+Skipping C00010 (already evaluated)
+Skipping C00011 (already evaluated)
+Skipping C00012 (already evaluated)
+Skipping C00013 (already evaluated)
+Skipping C00014 (already evaluated)
+Skipping C00015 (already evaluated)
+Skipping C00016 (already evaluated)
+Skipping C00017 (already evaluated)
+Skipping C00018 (already evaluated)
+Skipping C00019 (already evaluated)
+Skipping C00020 (already evaluated)
+Skipping C00021 (already evaluated)
+Skipping C00022 (already evaluated)
+Skipping C00023 (already evaluated)
+Skipping C00024 (already evaluated)
+Skipping C00025 (already evaluated)
+Skipping C00026 (already evaluated)
+Skipping C00027 (already evaluated)
+Evaluating C00028...
+
+  Original reference:
+    ["I don't have much appetite or energy lately"]
+
+  Extractor predicted:
+    ['loss of appetite', 'low energy/fatigue', 'low mood/depressed mood', 'shortness of breath in lift', 'palpitations (racing heart)', 'intermittent nausea', 'weight loss (~14 lbs)', 'headaches at work']
+
+  Transcript-supported:
+    ["I'm not having much of an appetite", "didn't really have energy", 'feeling down', 'feeling short of breath when in the lift', 'my heart starts beating', 'I feel nauseous every now and again', 'I have lost ... about a stone', 'having headaches']
+
+  Predicted evaluation:
+    [MATCHED] loss of appetite
+       -> appetite loss
+    [MATCHED] low energy/fatigue
+       -> fatigue
+    [MATCHED] low mood/depressed mood
+       -> low mood
+    [MATCHED] shortness of breath in lift
+       -> shortness of breath
+    [MATCHED] palpitations (racing heart)
+       -> palpitations
+    [MATCHED] intermittent nausea
+       -> nausea
+    [MATCHED] weight loss (~14 lbs)
+       -> weight loss
+    [MATCHED] headaches at work
+       -> headache
+
+  Missed:
+    []
+
+  Transcript-grounded: P=1.00 R=1.00 F1=1.00
+Skipping C00029 (already evaluated)
+Skipping C00030 (already evaluated)
+Skipping C00031 (already evaluated)
+Skipping C00032 (already evaluated)
+Skipping C00033 (already evaluated)
+Evaluating C00034...
+[extractor] openai/gpt-oss-120b: request too large
+[extractor] openai/gpt-oss-20b attempt 1 failed: Error code: 400 - {'error': {'message': "Failed to validate JSON. Please adjust your prompt. See 'failed_generation' for more details.", 'type': 'invalid_reques
+
+  NOT EVALUATED: Error code: 400 - {'error': {'message': "Failed to validate JSON. Please adjust your prompt. See 'failed_generation' for more details.", 'type': 'invalid_request_error', 'code': 'json_validate_failed', 'failed_generation': ''}}
+
+Skipping C00035 (already evaluated)
+Skipping C00036 (already evaluated)
+Skipping C00037 (already evaluated)
+Skipping C00038 (already evaluated)
+Skipping C00039 (already evaluated)
+Skipping C00040 (already evaluated)
+Evaluating C00041...
+[extractor] openai/gpt-oss-120b: request too large
+[extractor] openai/gpt-oss-20b attempt 1 failed: Error code: 400 - {'error': {'message': "Failed to validate JSON. Please adjust your prompt. See 'failed_generation' for more details.", 'type': 'invalid_reques
+
+  NOT EVALUATED: Error code: 400 - {'error': {'message': "Failed to validate JSON. Please adjust your prompt. See 'failed_generation' for more details.", 'type': 'invalid_request_error', 'code': 'json_validate_failed', 'failed_generation': ''}}
+
+Evaluating C00042...
+[extractor] openai/gpt-oss-120b: request too large
+[extractor] openai/gpt-oss-20b attempt 1 failed: Error code: 400 - {'error': {'message': "Failed to validate JSON. Please adjust your prompt. See 'failed_generation' for more details.", 'type': 'invalid_reques
+
+  NOT EVALUATED: Error code: 400 - {'error': {'message': "Failed to validate JSON. Please adjust your prompt. See 'failed_generation' for more details.", 'type': 'invalid_request_error', 'code': 'json_validate_failed', 'failed_generation': ''}}
+
+Evaluating C00043...
+[extractor] openai/gpt-oss-120b: request too large
+[extractor] openai/gpt-oss-20b attempt 1 failed: Error code: 400 - {'error': {'message': "Failed to validate JSON. Please adjust your prompt. See 'failed_generation' for more details.", 'type': 'invalid_reques
+
+  NOT EVALUATED: Error code: 400 - {'error': {'message': "Failed to validate JSON. Please adjust your prompt. See 'failed_generation' for more details.", 'type': 'invalid_request_error', 'code': 'json_validate_failed', 'failed_generation': ''}}
+
+Evaluating C00044...
+[extractor] openai/gpt-oss-120b: request too large
+[extractor] openai/gpt-oss-20b attempt 1 failed: Error code: 400 - {'error': {'message': "Failed to validate JSON. Please adjust your prompt. See 'failed_generation' for more details.", 'type': 'invalid_reques
+
+  NOT EVALUATED: Error code: 400 - {'error': {'message': "Failed to validate JSON. Please adjust your prompt. See 'failed_generation' for more details.", 'type': 'invalid_request_error', 'code': 'json_validate_failed', 'failed_generation': ''}}
+
+Evaluating C00045...
+[extractor] openai/gpt-oss-120b: request too large
+[extractor] openai/gpt-oss-20b attempt 1 failed: Error code: 400 - {'error': {'message': "Failed to validate JSON. Please adjust your prompt. See 'failed_generation' for more details.", 'type': 'invalid_reques
+
+  NOT EVALUATED: Error code: 400 - {'error': {'message': "Failed to validate JSON. Please adjust your prompt. See 'failed_generation' for more details.", 'type': 'invalid_request_error', 'code': 'json_validate_failed', 'failed_generation': ''}}
+
+Skipping C00046 (already evaluated)
+Skipping C00047 (already evaluated)
+Evaluating C00048...
+[extractor] openai/gpt-oss-120b: request too large
+[extractor] openai/gpt-oss-20b attempt 1 failed: Error code: 400 - {'error': {'message': "Failed to validate JSON. Please adjust your prompt. See 'failed_generation' for more details.", 'type': 'invalid_reques
+
+  NOT EVALUATED: Error code: 400 - {'error': {'message': "Failed to validate JSON. Please adjust your prompt. See 'failed_generation' for more details.", 'type': 'invalid_request_error', 'code': 'json_validate_failed', 'failed_generation': ''}}
+
+Skipping C00049 (already evaluated)
+Skipping C00050 (already evaluated)
+Evaluating C00051...
+
+  Original reference:
+    ['Diarrhoea']
+
+  Extractor predicted:
+    ['diarrhoea, very loose watery stools', 'fever, high temperature', 'vomiting, unable to retain any fluids', 'abdominal pain around navel, sore, urge to defecate']
+
+  Transcript-supported:
+    ['serious diarrhoea, very loose watery stools', 'running a serious temperature, literally boiling', "throwing up, can't keep any fluids down", 'abdominal pain around navel, sore, urge to defecate']
+
+  Predicted evaluation:
+    [MATCHED] diarrhoea, very loose watery stools
+       -> diarrhea
+    [MATCHED] fever, high temperature
+       -> fever
+    [MATCHED] vomiting, unable to retain any fluids
+       -> vomiting
+    [MATCHED] abdominal pain around navel, sore, urge to defecate
+       -> abdominal pain
+
+  Missed:
+    []
+
+  Transcript-grounded: P=1.00 R=1.00 F1=1.00
+Skipping C00052 (already evaluated)
+Skipping C00053 (already evaluated)
+Skipping C00054 (already evaluated)
+Skipping C00055 (already evaluated)
+Evaluating C00056...
+
+  Original reference:
+    ['I have a pouring diarrhea']
+
+  Extractor predicted:
+    ['right knee pain during running and when flexing/extending', 'right knee clicking when flexing/extending', 'tingling in right toes after a run', 'intermittent swelling of feet/legs after standing for long periods', 'right knee swelling that resolved after ice']
+
+  Transcript-supported:
+    ["I can't run very far ... feeling pain in my knees ... it starts hurting after about twenty minutes of running", "when I do my abs ... I feel all this clicking ... there's no clicking but I'll notice it in the gym and then when I run it'll start hurting", 'the first time I ran, it was a little bit swollen, but then I put some ice on it and it went away', 'there was tingling in my toes like on my right toes after a run', 'if you stand for a long time, your feet or your legs will swell up ... I notice an indentation in my socks']
+
+  Predicted evaluation:
+    [MATCHED] right knee pain during running and when flexing/extending
+       -> right knee pain with activity
+    [MATCHED] right knee clicking when flexing/extending
+       -> right knee clicking
+    [MATCHED] tingling in right toes after a run
+       -> right toe tingling
+    [MATCHED] intermittent swelling of feet/legs after standing for long periods
+       -> lower extremity swelling after prolonged standing
+    [MATCHED] right knee swelling that resolved after ice
+       -> right knee swelling (transient)
+
+  Missed:
+    []
+
+  Transcript-grounded: P=1.00 R=1.00 F1=1.00
+Skipping C00057 (already evaluated)
+
+==============================================
+FINAL RESULTS
+==============================================
+Total consultations selected : 57
+LLM evaluated                : 50
+Not evaluated                : 0
+
+----------------------------------------------
+TRANSCRIPT-GROUNDED METRICS
+----------------------------------------------
+True Positives  : 240
+False Positives : 0
+False Negatives : 26
+
+Precision       : 1.000
+Recall          : 0.902
+F1              : 0.949
+
+----------------------------------------------
+ORIGINAL REFERENCE METRICS
+----------------------------------------------
+Precision       : 0.000
+Recall          : 0.000
+F1              : 0.000
+
+Results saved to:
+evaluation/results/symptom_llm_results.csv

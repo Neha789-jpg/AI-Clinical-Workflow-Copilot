@@ -1,0 +1,619 @@
+Loading consultation data...
+
+Columns in dataset:
+['consultation_id', 'patient_id', 'doctor_id', 'date', 'specialty', 'audio_path', 'audio_duration_sec', 'transcript', 'symptoms', 'medical_history', 'allergies', 'vital_signs', 'source_type', 'source_id']
+Total consultations in dataset: 1965
+Evaluating selected consultations: 57
+Found 6 previously evaluated consultations.
+
+Skipping C00001 (already evaluated)
+
+Skipping C00002 (already evaluated)
+
+Skipping C00003 (already evaluated)
+
+Skipping C00004 (already evaluated)
+
+Skipping C00005 (already evaluated)
+
+Skipping C00006 (already evaluated)
+
+======================================================================
+Evaluating documentation: C00007
+======================================================================
+Running NLP extractor...
+[extractor] openai/gpt-oss-120b: request too large -> split
+[extractor] transcript too large, splitting (depth 1)
+{
+  "symptoms": [
+    {
+      "text": "run-down (general malaise)",
+      "duration": "a few days",
+      "severity": null,
+      "status": "current"
+    },
+    {
+      "text": "dry cough, worse in the morning",
+      "duration": "a few days",
+      "severity": null,
+      "status": "current"
+    },
+    {
+      "text": "runny nose (sniffles)",
+      "duration": "a few days",
+      "severity": null,
+      "status": "current"
+    },
+    {
+      "text": "sore throat",
+      "duration": "a few days",
+      "severity": null,
+      "status": "current"
+    },
+    {
+      "text": "hoarseness",
+      "duration": "a few days",
+      "severity": null,
+      "status": "current"
+    },
+    {
+      "text": "shortness of breath",
+      "duration": "a few days",
+      "severity": null,
+      "status": "current"
+    },
+    {
+      "text": "feeling feverish with hot and cold sensations",
+      "duration": "a few days",
+      "severity": null,
+      "status": "current"
+    },
+    {
+      "text": "diarrhoea",
+      "duration": null,
+      "severity": null,
+      "status": "resolved"
+    },
+    {
+      "text": "joint stiffness in elbows and knees",
+      "duration": "a few days",
+      "severity": null,
+      "status": "current"
+    },
+    {
+      "text": "not feeling great",
+      "duration": null,
+      "severity": null,
+      "status": "current"
+    }
+  ],
+  "diagnoses": [
+    {
+      "text": "viral illness",
+      "status": "suspected"
+    }
+  ],
+  "current_medications": [
+    {
+      "name": "Metformin",
+      "dose": null,
+      "frequency": null
+    },
+    {
+      "name": "Lisinopril",
+      "dose": null,
+      "frequency": null
+    }
+  ],
+  "prescribed": [
+    {
+      "name": "Amoxicillin",
+      "dose": "one tablet",
+      "frequency": "three times a day",
+      "duration": null
+    }
+  ],
+  "allergies": [
+    "none known"
+  ],
+  "medical_history": [
+    "type 2 diabetes",
+    "high blood pressure"
+  ],
+  "family_history": [],
+  "social_history": [
+    "drinks about nine pints of beer per week",
+    "occasional smoking, using vaporizer to cut down",
+    "works in a steel parts factory"
+  ],
+  "investigations": [],
+  "follow_up": [
+    "if not better by next week, return for review"
+  ],
+  "advice": [
+    "keep fluids up",
+    "stay rested",
+    "drink plenty of fluids",
+    "take regular Paracetamol if feeling hot, cold, or sweaty",
+    "use vaporizer to help quit smoking"
+  ],
+  "relevant_context": [
+    "hoarseness possibly related to vocal strain from shouting at football matches",
+    "patient reports being overweight with a spare tyre around the midriff"
+  ],
+  "patient_info": {
+    "age": "50",
+    "gender": "male"
+  },
+  "vitals": {
+    "bp": null,
+    "pulse": null,
+    "temperature": null,
+    "spo2": null
+  },
+  "_model": "openai/gpt-oss-120b",
+  "_split": 1
+}
+Generating SOAP note...
+Evaluating SOAP note with LLM...
+
+Scores:
+Completeness:       0.75
+Faithfulness:       1.00
+Hallucination:      1.00
+Section correctness: 1.00
+Overall quality:    0.90
+
+======================================================================
+Evaluating documentation: C00008
+======================================================================
+Running NLP extractor...
+{
+  "patient_info": {
+    "age": 26,
+    "gender": null
+  },
+  "symptoms": [
+    {
+      "text": "dry itchy skin on arms and hands",
+      "duration": "a few days",
+      "severity": null,
+      "status": "current"
+    },
+    {
+      "text": "red skin on arms and hands",
+      "duration": null,
+      "severity": null,
+      "status": "current"
+    },
+    {
+      "text": "tiredness",
+      "duration": null,
+      "severity": null,
+      "status": "current"
+    }
+  ],
+  "relevant_context": [
+    "patient reports work-related stress",
+    "symptoms started after swimming a few days ago",
+    "patient has been using coconut butter for past few days without improvement",
+    "patient suspects lactose intolerance"
+  ],
+  "diagnoses": [
+    {
+      "text": "dermatitis",
+      "status": "suspected"
+    }
+  ],
+  "current_medications": [
+    {
+      "name": "Microgynon",
+      "dose": null,
+      "frequency": null
+    }
+  ],
+  "prescribed": [
+    {
+      "name": "steroid cream",
+      "dose": null,
+      "frequency": "throughout the day",
+      "duration": "next few days"
+    },
+    {
+      "name": "emollient",
+      "dose": null,
+      "frequency": "throughout the day",
+      "duration": "next few days"
+    }
+  ],
+  "investigations": [],
+  "follow_up": [
+    "return next week if symptoms do not improve"
+  ],
+  "advice": [
+    "try antihistamines such as Piriton or Loratadine for itchiness"
+  ],
+  "allergies": [],
+  "vitals": {
+    "bp": null,
+    "pulse": null,
+    "temperature": null,
+    "spo2": null
+  },
+  "medical_history": [],
+  "family_history": [
+    "father has asthma",
+    "mother has hayfever"
+  ],
+  "social_history": [
+    "lives alone",
+    "non-smoker",
+    "does not drink alcohol",
+    "no recreational drug use"
+  ],
+  "_model": "openai/gpt-oss-120b",
+  "_split": 0
+}
+Generating SOAP note...
+Evaluating SOAP note with LLM...
+
+Scores:
+Completeness:       0.75
+Faithfulness:       1.00
+Hallucination:      1.00
+Section correctness: 1.00
+Overall quality:    0.90
+
+======================================================================
+Evaluating documentation: C00009
+======================================================================
+Running NLP extractor...
+[extractor] openai/gpt-oss-120b: request too large -> split
+[extractor] transcript too large, splitting (depth 1)
+{
+  "symptoms": [
+    {
+      "text": "pain when urinating (dysuria)",
+      "duration": "a few days",
+      "severity": "not too bad, stinging",
+      "status": "current"
+    },
+    {
+      "text": "lower abdominal cramping pain associated with urination",
+      "duration": "a few days",
+      "severity": null,
+      "status": "current"
+    },
+    {
+      "text": "blood in urine",
+      "duration": "today",
+      "severity": null,
+      "status": "current"
+    },
+    {
+      "text": "urine has a weird smell",
+      "duration": null,
+      "severity": null,
+      "status": "current"
+    },
+    {
+      "text": "burning pain on passing urine",
+      "duration": "three days",
+      "severity": null,
+      "status": "current"
+    },
+    {
+      "text": "crampy lower abdominal pain",
+      "duration": "three days",
+      "severity": null,
+      "status": "current"
+    }
+  ],
+  "diagnoses": [
+    {
+      "text": "urinary tract infection",
+      "status": "confirmed"
+    }
+  ],
+  "current_medications": [],
+  "prescribed": [
+    {
+      "name": "Nitrofurantoin or Trimethoprim",
+      "dose": "one tablet",
+      "frequency": "twice a day",
+      "duration": "three days"
+    }
+  ],
+  "allergies": [
+    "Clindamycin"
+  ],
+  "medical_history": [
+    "irritable bowel syndrome"
+  ],
+  "family_history": [],
+  "social_history": [
+    "sexually active, uses condoms",
+    "student",
+    "drinks alcohol on weekends",
+    "non-smoker",
+    "lives in a flat with friends"
+  ],
+  "investigations": [
+    "pregnancy test"
+  ],
+  "follow_up": [
+    "call or return by the end of this week if symptoms have not improved",
+    "call if you develop high temperature, back pain, or feel more unwell",
+    "call if you have concerns that the infection may be spreading to the kidneys"
+  ],
+  "advice": [
+    "drink plenty of fluids",
+    "try cranberry juice",
+    "avoid sexual intercourse while symptoms are present",
+    "continue using barrier contraception"
+  ],
+  "relevant_context": [
+    "patient uses condoms for contraception",
+    "last menstrual period was about three weeks ago",
+    "patient does not think she is pregnant",
+    "tried over-the-counter bicarbonate a couple of days ago without relief"
+  ],
+  "patient_info": {
+    "age": 19,
+    "gender": "female"
+  },
+  "vitals": {
+    "bp": null,
+    "pulse": null,
+    "temperature": null,
+    "spo2": null
+  },
+  "_model": "openai/gpt-oss-120b",
+  "_split": 1
+}
+Generating SOAP note...
+Evaluating SOAP note with LLM...
+
+Scores:
+Completeness:       0.75
+Faithfulness:       1.00
+Hallucination:      1.00
+Section correctness: 1.00
+Overall quality:    0.75
+
+======================================================================
+Evaluating documentation: C00010
+======================================================================
+Running NLP extractor...
+[extractor] openai/gpt-oss-120b: request too large -> split
+[extractor] transcript too large, splitting (depth 1)
+{
+  "symptoms": [
+    {
+      "text": "burning pain when urinating",
+      "duration": "just under a week",
+      "severity": null,
+      "status": "current"
+    },
+    {
+      "text": "increased urinary frequency",
+      "duration": "just under a week",
+      "severity": null,
+      "status": "current"
+    },
+    {
+      "text": "pink urine",
+      "duration": "today",
+      "severity": null,
+      "status": "current"
+    },
+    {
+      "text": "lower abdominal ache",
+      "duration": "just under a week",
+      "severity": null,
+      "status": "current"
+    }
+  ],
+  "diagnoses": [
+    {
+      "text": "urinary tract infection (UTI)",
+      "status": "suspected"
+    }
+  ],
+  "current_medications": [
+    {
+      "name": "combined oral contraceptive pill",
+      "dose": null,
+      "frequency": null
+    },
+    {
+      "name": "combined pill",
+      "dose": null,
+      "frequency": null
+    }
+  ],
+  "prescribed": [
+    {
+      "name": "Trimethoprim",
+      "dose": null,
+      "frequency": null,
+      "duration": "three day course"
+    },
+    {
+      "name": "Nitrofurantoin",
+      "dose": null,
+      "frequency": null,
+      "duration": "three day course"
+    }
+  ],
+  "allergies": [
+    "Clindamycin"
+  ],
+  "medical_history": [
+    "irritable bowel syndrome",
+    "irritable bowel syndrome (IBS)"
+  ],
+  "family_history": [],
+  "social_history": [
+    "sexually active with a long-term boyfriend",
+    "occasionally drinks socially",
+    "does not smoke",
+    "living in university halls with a flatmate",
+    "family lives outside London"
+  ],
+  "investigations": [
+    "urine sample for culture"
+  ],
+  "follow_up": [
+    "return next week if symptoms do not improve",
+    "call the doctor if fever, back pain, or vomiting develop"
+  ],
+  "advice": [
+    "make it a regular habit if you can",
+    "avoid weed if you can",
+    "stay well hydrated, drink plenty of fluids",
+    "take Paracetamol for pain as needed"
+  ],
+  "relevant_context": [
+    "first use of cannabis approximately 1.5 weeks ago"
+  ],
+  "patient_info": {
+    "age": 19,
+    "gender": null
+  },
+  "vitals": {
+    "bp": null,
+    "pulse": null,
+    "temperature": null,
+    "spo2": null
+  },
+  "_model": "openai/gpt-oss-120b",
+  "_split": 1
+}
+Generating SOAP note...
+Evaluating SOAP note with LLM...
+
+Scores:
+Completeness:       0.50
+Faithfulness:       0.50
+Hallucination:      0.50
+Section correctness: 1.00
+Overall quality:    0.70
+
+======================================================================
+Evaluating documentation: C00011
+======================================================================
+Running NLP extractor...
+{
+  "patient_info": {
+    "age": 27,
+    "gender": null
+  },
+  "symptoms": [
+    {
+      "text": "watery diarrhea, frequent (almost every hour when awake)",
+      "duration": "three days",
+      "severity": null,
+      "status": "current"
+    },
+    {
+      "text": "crampy abdominal pain, middle of abdomen, comes and goes",
+      "duration": null,
+      "severity": "6-7/10",
+      "status": "current"
+    },
+    {
+      "text": "nausea",
+      "duration": null,
+      "severity": null,
+      "status": "current"
+    },
+    {
+      "text": "vomiting",
+      "duration": null,
+      "severity": null,
+      "status": "current"
+    },
+    {
+      "text": "feeling feverish / hot",
+      "duration": null,
+      "severity": null,
+      "status": "current"
+    }
+  ],
+  "relevant_context": [
+    "patient reports difficulty keeping fluids down as they pass straight through",
+    "patient reports that his brother also has similar diarrhoea for five days",
+    "patient reports difficulty working due to symptoms"
+  ],
+  "diagnoses": [
+    {
+      "text": "gastroenteritis",
+      "status": "suspected"
+    }
+  ],
+  "current_medications": [
+    {
+      "name": "Paracetamol",
+      "dose": null,
+      "frequency": null
+    }
+  ],
+  "prescribed": [],
+  "investigations": [],
+  "follow_up": [
+    "call back if symptoms are not settled within 48 hours",
+    "follow up in 1-2 days to assess progress"
+  ],
+  "advice": [
+    "drink plenty of fluids",
+    "use oral rehydration solution such as Diarolyte (over the counter)",
+    "consume clear fluids and soft diet (soup, mash) and gradually increase as tolerated",
+    "continue Paracetamol if feverish",
+    "avoid alcohol",
+    "stay well hydrated"
+  ],
+  "allergies": [
+    "none known"
+  ],
+  "vitals": {
+    "bp": null,
+    "pulse": null,
+    "temperature": null,
+    "spo2": null
+  },
+  "medical_history": [],
+  "family_history": [
+    "father has colon cancer (stage 3)"
+  ],
+  "social_history": [
+    "smokes socially (occasionally)",
+    "alcohol occasionally (once or twice a month, more on Fridays)",
+    "lives with sister and mother",
+    "works in an office government job in Central London"
+  ],
+  "_model": "openai/gpt-oss-120b",
+  "_split": 0
+}
+Generating SOAP note...
+Evaluating SOAP note with LLM...
+
+ERROR while evaluating C00011:
+Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m2fed2dyereb4gzdf7kpzxkq` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 194450, Requested 6202. Please try again in 4m41.664s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+
+Groq rate limit detected.
+Progress has already been saved.
+
+======================================================================
+DOCUMENTATION EVALUATION SUMMARY
+======================================================================
+Consultations evaluated: 10
+
+Average completeness: 0.725
+Average faithfulness: 0.875
+Average hallucination score: 0.875
+Average section correctness: 0.975
+Average overall quality: 0.780
+
+Results saved to:
+evaluation/results/documentation_llm_results.csv

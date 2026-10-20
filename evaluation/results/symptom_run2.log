@@ -1,0 +1,54 @@
+
+Previous results belonging to auto-gold set: 39 rows
+Already evaluated successfully: 39 consultations
+These consultations will be skipped.
+
+
+==============================================
+TRANSCRIPT-GROUNDED LLM SYMPTOM EVALUATION
+==============================================
+
+Consultations selected: 57
+Already completed: 39
+Remaining: 18
+
+Skipping C00001 (already evaluated)
+Skipping C00002 (already evaluated)
+Skipping C00003 (already evaluated)
+Skipping C00004 (already evaluated)
+Skipping C00005 (already evaluated)
+Skipping C00006 (already evaluated)
+Evaluating C00007...
+
+  NOT EVALUATED: GROQ_RATE_LIMIT: Error code: 413 - {'error': {'message': 'Request too large for model `openai/gpt-oss-120b` in organization `org_01m2fed2dyereb4gzdf7kpzxkq` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 8182, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+
+Groq rate limit reached.
+Stopping safely. Successful results have already been saved.
+
+==============================================
+FINAL RESULTS
+==============================================
+Total consultations selected : 57
+LLM evaluated                : 39
+Not evaluated                : 0
+
+----------------------------------------------
+TRANSCRIPT-GROUNDED METRICS
+----------------------------------------------
+True Positives  : 184
+False Positives : 0
+False Negatives : 20
+
+Precision       : 1.000
+Recall          : 0.902
+F1              : 0.948
+
+----------------------------------------------
+ORIGINAL REFERENCE METRICS
+----------------------------------------------
+Precision       : 0.000
+Recall          : 0.000
+F1              : 0.000
+
+Results saved to:
+evaluation/results/symptom_llm_results.csv

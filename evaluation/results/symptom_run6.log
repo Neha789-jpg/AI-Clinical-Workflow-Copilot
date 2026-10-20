@@ -1,0 +1,163 @@
+
+Previous results belonging to auto-gold set: 55 rows
+Already evaluated successfully: 55 consultations
+These consultations will be skipped.
+
+
+==============================================
+TRANSCRIPT-GROUNDED LLM SYMPTOM EVALUATION
+==============================================
+
+Consultations selected: 57
+Already completed: 55
+Remaining: 2
+
+Skipping C00001 (already evaluated)
+Skipping C00002 (already evaluated)
+Skipping C00003 (already evaluated)
+Skipping C00004 (already evaluated)
+Skipping C00005 (already evaluated)
+Skipping C00006 (already evaluated)
+Skipping C00007 (already evaluated)
+Skipping C00008 (already evaluated)
+Skipping C00009 (already evaluated)
+Skipping C00010 (already evaluated)
+Skipping C00011 (already evaluated)
+Skipping C00012 (already evaluated)
+Skipping C00013 (already evaluated)
+Skipping C00014 (already evaluated)
+Skipping C00015 (already evaluated)
+Skipping C00016 (already evaluated)
+Skipping C00017 (already evaluated)
+Skipping C00018 (already evaluated)
+Skipping C00019 (already evaluated)
+Skipping C00020 (already evaluated)
+Skipping C00021 (already evaluated)
+Skipping C00022 (already evaluated)
+Skipping C00023 (already evaluated)
+Skipping C00024 (already evaluated)
+Skipping C00025 (already evaluated)
+Skipping C00026 (already evaluated)
+Skipping C00027 (already evaluated)
+Skipping C00028 (already evaluated)
+Skipping C00029 (already evaluated)
+Skipping C00030 (already evaluated)
+Skipping C00031 (already evaluated)
+Skipping C00032 (already evaluated)
+Skipping C00033 (already evaluated)
+Skipping C00034 (already evaluated)
+Skipping C00035 (already evaluated)
+Skipping C00036 (already evaluated)
+Skipping C00037 (already evaluated)
+Skipping C00038 (already evaluated)
+Skipping C00039 (already evaluated)
+Skipping C00040 (already evaluated)
+Skipping C00041 (already evaluated)
+Skipping C00042 (already evaluated)
+Skipping C00043 (already evaluated)
+Skipping C00044 (already evaluated)
+Evaluating C00045...
+
+  Original reference:
+    ['I have really bad diarrhea']
+
+  Extractor predicted:
+    ['dull ache in lower abdomen below the belly button, constant', 'nauseous', 'feeling hot and sweaty', 'increased urinary frequency (more frequent urination)', 'pink vaginal spotting/pink urine', 'constipation']
+
+  Transcript-supported:
+    ['dull ache below the belly button, constant', 'feeling nauseous', 'feeling hot and sweaty', 'going to the loo a little bit more often than usual', 'pink urine/spotting', 'constipated']
+
+  Predicted evaluation:
+    [MATCHED] dull ache in lower abdomen below the belly button, constant
+       -> dull ache below the belly button, constant
+    [MATCHED] nauseous
+       -> feeling nauseous
+    [MATCHED] feeling hot and sweaty
+       -> feeling hot and sweaty
+    [MATCHED] increased urinary frequency (more frequent urination)
+       -> going to the loo a little bit more often than usual
+    [MATCHED] pink vaginal spotting/pink urine
+       -> pink urine/spotting
+    [MATCHED] constipation
+       -> constipated
+
+  Missed:
+    []
+
+  Transcript-grounded: P=1.00 R=1.00 F1=1.00
+Skipping C00046 (already evaluated)
+Skipping C00047 (already evaluated)
+Evaluating C00048...
+[extractor] openai/gpt-oss-120b: request too large -> split
+[extractor] transcript too large, splitting (depth 1)
+
+  Original reference:
+    ["I'm feeling very anxious"]
+
+  Extractor predicted:
+    ['anxiety', 'difficulty sleeping', 'palpitations (rapid irregular heart beating)', 'chest discomfort associated with palpitations', 'fatigue/low energy', 'loss of interest/enjoyment (anhedonia)', 'social withdrawal/avoiding friends', 'anxiety worsening over the past couple of months', 'persistent low mood and feeling down']
+
+  Transcript-supported:
+    ['feeling really anxious', "can't get to sleep for hours, lying awake all night, shallow sleep, only 3-4 hours", 'heart racing, irregular fast beat, palpitations', 'painful when heart beating fast', 'low energy, feeling tired, low energy level daytime', 'no enjoyment, loss of interest, not enjoying activities', 'avoid friends, avoid social contact', 'down, low mood, feeling unhappy', 'avoid public transport because it feels stressful']
+
+  Predicted evaluation:
+    [MATCHED] anxiety
+       -> feeling really anxious
+    [MATCHED] difficulty sleeping
+       -> can't get to sleep for hours, lying awake all night, shallow sleep, only 3-4 hours
+    [MATCHED] palpitations (rapid irregular heart beating)
+       -> heart racing, irregular fast beat, palpitations
+    [MATCHED] chest discomfort associated with palpitations
+       -> painful when heart beating fast
+    [MATCHED] fatigue/low energy
+       -> low energy, feeling tired, low energy level daytime
+    [MATCHED] loss of interest/enjoyment (anhedonia)
+       -> no enjoyment, loss of interest, not enjoying activities
+    [MATCHED] social withdrawal/avoiding friends
+       -> avoid friends, avoid social contact
+    [MATCHED] anxiety worsening over the past couple of months
+       -> feeling really anxious
+    [MATCHED] persistent low mood and feeling down
+       -> down, low mood, feeling unhappy
+
+  Missed:
+    ['avoid public transport because it feels stressful']
+
+  Transcript-grounded: P=1.00 R=0.90 F1=0.95
+Skipping C00049 (already evaluated)
+Skipping C00050 (already evaluated)
+Skipping C00051 (already evaluated)
+Skipping C00052 (already evaluated)
+Skipping C00053 (already evaluated)
+Skipping C00054 (already evaluated)
+Skipping C00055 (already evaluated)
+Skipping C00056 (already evaluated)
+Skipping C00057 (already evaluated)
+
+==============================================
+FINAL RESULTS
+==============================================
+Total consultations selected : 57
+LLM evaluated                : 57
+Not evaluated                : 0
+
+----------------------------------------------
+TRANSCRIPT-GROUNDED METRICS
+----------------------------------------------
+True Positives  : 300
+False Positives : 0
+False Negatives : 28
+
+Precision       : 1.000
+Recall          : 0.915
+F1              : 0.955
+
+----------------------------------------------
+ORIGINAL REFERENCE METRICS
+----------------------------------------------
+Precision       : 0.000
+Recall          : 0.000
+F1              : 0.000
+
+Results saved to:
+evaluation/results/symptom_llm_results.csv

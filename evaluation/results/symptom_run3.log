@@ -1,0 +1,338 @@
+
+Previous results belonging to auto-gold set: 39 rows
+Already evaluated successfully: 39 consultations
+These consultations will be skipped.
+
+
+==============================================
+TRANSCRIPT-GROUNDED LLM SYMPTOM EVALUATION
+==============================================
+
+Consultations selected: 57
+Already completed: 39
+Remaining: 18
+
+Skipping C00001 (already evaluated)
+Skipping C00002 (already evaluated)
+Skipping C00003 (already evaluated)
+Skipping C00004 (already evaluated)
+Skipping C00005 (already evaluated)
+Skipping C00006 (already evaluated)
+Evaluating C00007...
+[extractor] openai/gpt-oss-120b: request too large, trying next model
+[extractor] openai/gpt-oss-20b: request too large, trying next model
+[extractor] llama-3.3-70b-versatile attempt 1 failed: Error code: 404 - {'error': {'message': 'The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+
+  NOT EVALUATED: Error code: 404 - {'error': {'message': 'The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+
+Skipping C00008 (already evaluated)
+Skipping C00009 (already evaluated)
+Skipping C00010 (already evaluated)
+Skipping C00011 (already evaluated)
+Skipping C00012 (already evaluated)
+Skipping C00013 (already evaluated)
+Skipping C00014 (already evaluated)
+Skipping C00015 (already evaluated)
+Skipping C00016 (already evaluated)
+Skipping C00017 (already evaluated)
+Skipping C00018 (already evaluated)
+Skipping C00019 (already evaluated)
+Evaluating C00020...
+
+  Original reference:
+    ['My asthma is not responding to my inhalers']
+
+  Extractor predicted:
+    ['fatigue (feeling very tired)', 'pins and needles in right hand', 'right arm weakness lasting a few days per episode', 'right leg weakness during episodes', 'abnormal gait during episodes', 'nausea (sometimes)', 'difficulty holding cup / reduced grip strength during episodes', 'sensation of something in throat during episodes']
+
+  Transcript-supported:
+    ['feeling very tired', 'I generally feel tired, and weak', 'pins and needles in the hand', 'my arm is getting weaker, but it only lasts few days', 'my leg feels weaker', "I'm walking slightly differently to normal", 'sometimes I feel nauseous', "I can't hold my cup of coffee", "I feel like there's something in my throat"]
+
+  Predicted evaluation:
+    [MATCHED] fatigue (feeling very tired)
+       -> feeling very tired
+    [MATCHED] pins and needles in right hand
+       -> pins and needles in the hand
+    [MATCHED] right arm weakness lasting a few days per episode
+       -> my arm is getting weaker, but it only lasts few days
+    [MATCHED] right leg weakness during episodes
+       -> my leg feels weaker
+    [MATCHED] abnormal gait during episodes
+       -> I'm walking slightly differently to normal
+    [MATCHED] nausea (sometimes)
+       -> sometimes I feel nauseous
+    [MATCHED] difficulty holding cup / reduced grip strength during episodes
+       -> I can't hold my cup of coffee
+    [MATCHED] sensation of something in throat during episodes
+       -> I feel like there's something in my throat
+
+  Missed:
+    ['I generally feel tired, and weak']
+
+  Transcript-grounded: P=1.00 R=0.89 F1=0.94
+Skipping C00021 (already evaluated)
+Skipping C00022 (already evaluated)
+Skipping C00023 (already evaluated)
+Skipping C00024 (already evaluated)
+Evaluating C00025...
+[extractor] openai/gpt-oss-120b: request too large, trying next model
+
+  Original reference:
+    ["I've got a really bad headache"]
+
+  Extractor predicted:
+    []
+
+  Transcript-supported:
+    ['really horrible pain on the left side of my head', 'sensitive to bright lights, makes my eyes a little sore', 'head felt a bit dizzy', 'sometimes I do feel a bit anxious']
+
+  Predicted evaluation:
+
+  Missed:
+    ['really horrible pain on the left side of my head', 'sensitive to bright lights, makes my eyes a little sore', 'head felt a bit dizzy', 'sometimes I do feel a bit anxious']
+
+  Transcript-grounded: P=0.00 R=0.00 F1=0.00
+Skipping C00026 (already evaluated)
+Skipping C00027 (already evaluated)
+Evaluating C00028...
+[extractor] openai/gpt-oss-120b: request too large, trying next model
+[extractor] openai/gpt-oss-20b attempt 1 failed: Error code: 400 - {'error': {'message': "Failed to validate JSON. Please adjust your prompt. See 'failed_generation' for more details.", 'type': 'invalid_request_error', 'code': 'json_validate_failed'
+[extractor] llama-3.3-70b-versatile attempt 1 failed: Error code: 404 - {'error': {'message': 'The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+
+  NOT EVALUATED: Error code: 404 - {'error': {'message': 'The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+
+Skipping C00029 (already evaluated)
+Skipping C00030 (already evaluated)
+Skipping C00031 (already evaluated)
+Skipping C00032 (already evaluated)
+Skipping C00033 (already evaluated)
+Evaluating C00034...
+[extractor] openai/gpt-oss-120b: request too large, trying next model
+[extractor] openai/gpt-oss-20b attempt 1 failed: Error code: 400 - {'error': {'message': "Failed to validate JSON. Please adjust your prompt. See 'failed_generation' for more details.", 'type': 'invalid_request_error', 'code': 'json_validate_failed'
+[extractor] llama-3.3-70b-versatile attempt 1 failed: Error code: 404 - {'error': {'message': 'The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+
+  NOT EVALUATED: Error code: 404 - {'error': {'message': 'The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+
+Skipping C00035 (already evaluated)
+Skipping C00036 (already evaluated)
+Skipping C00037 (already evaluated)
+Skipping C00038 (already evaluated)
+Skipping C00039 (already evaluated)
+Evaluating C00040...
+
+  Original reference:
+    ["I've had bad diarrhea for 3 days"]
+
+  Extractor predicted:
+    ['diarrhoea', 'abdominal pain (central abdomen)', 'vomiting', 'nausea']
+
+  Transcript-supported:
+    ['diarrhoea for three days', 'pain in the centre area of the abdomen', 'I had a bit of vomiting', 'I got a bit of nausea']
+
+  Predicted evaluation:
+    [MATCHED] diarrhoea
+       -> diarrhoea for three days
+    [MATCHED] abdominal pain (central abdomen)
+       -> pain in the centre area of the abdomen
+    [MATCHED] vomiting
+       -> I had a bit of vomiting
+    [MATCHED] nausea
+       -> I got a bit of nausea
+
+  Missed:
+    []
+
+  Transcript-grounded: P=1.00 R=1.00 F1=1.00
+Evaluating C00041...
+[extractor] openai/gpt-oss-120b: request too large, trying next model
+[extractor] openai/gpt-oss-20b: request too large, trying next model
+[extractor] llama-3.3-70b-versatile attempt 1 failed: Error code: 404 - {'error': {'message': 'The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+
+  NOT EVALUATED: Error code: 404 - {'error': {'message': 'The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+
+Evaluating C00042...
+[extractor] openai/gpt-oss-120b: request too large, trying next model
+[extractor] openai/gpt-oss-20b attempt 1 failed: Error code: 400 - {'error': {'message': "Failed to validate JSON. Please adjust your prompt. See 'failed_generation' for more details.", 'type': 'invalid_request_error', 'code': 'json_validate_failed'
+[extractor] llama-3.3-70b-versatile attempt 1 failed: Error code: 404 - {'error': {'message': 'The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+
+  NOT EVALUATED: Error code: 404 - {'error': {'message': 'The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+
+Evaluating C00043...
+[extractor] openai/gpt-oss-120b: request too large, trying next model
+[extractor] openai/gpt-oss-20b attempt 1 failed: Error code: 400 - {'error': {'message': "Failed to validate JSON. Please adjust your prompt. See 'failed_generation' for more details.", 'type': 'invalid_request_error', 'code': 'json_validate_failed'
+[extractor] llama-3.3-70b-versatile attempt 1 failed: Error code: 404 - {'error': {'message': 'The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+
+  NOT EVALUATED: Error code: 404 - {'error': {'message': 'The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+
+Evaluating C00044...
+[extractor] openai/gpt-oss-120b: request too large, trying next model
+[extractor] openai/gpt-oss-20b: request too large, trying next model
+[extractor] llama-3.3-70b-versatile attempt 1 failed: Error code: 404 - {'error': {'message': 'The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+
+  NOT EVALUATED: Error code: 404 - {'error': {'message': 'The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+
+Evaluating C00045...
+[extractor] openai/gpt-oss-120b: request too large, trying next model
+[extractor] openai/gpt-oss-20b attempt 1 failed: Error code: 400 - {'error': {'message': "Failed to validate JSON. Please adjust your prompt. See 'failed_generation' for more details.", 'type': 'invalid_request_error', 'code': 'json_validate_failed'
+[extractor] llama-3.3-70b-versatile attempt 1 failed: Error code: 404 - {'error': {'message': 'The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+
+  NOT EVALUATED: Error code: 404 - {'error': {'message': 'The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+
+Skipping C00046 (already evaluated)
+Skipping C00047 (already evaluated)
+Evaluating C00048...
+[extractor] openai/gpt-oss-120b: request too large, trying next model
+[extractor] openai/gpt-oss-20b: request too large, trying next model
+[extractor] llama-3.3-70b-versatile attempt 1 failed: Error code: 404 - {'error': {'message': 'The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+
+  NOT EVALUATED: Error code: 404 - {'error': {'message': 'The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+
+Skipping C00049 (already evaluated)
+Skipping C00050 (already evaluated)
+Evaluating C00051...
+[extractor] openai/gpt-oss-120b: request too large, trying next model
+[extractor] openai/gpt-oss-20b attempt 1 failed: Error code: 400 - {'error': {'message': "Failed to validate JSON. Please adjust your prompt. See 'failed_generation' for more details.", 'type': 'invalid_request_error', 'code': 'json_validate_failed'
+[extractor] llama-3.3-70b-versatile attempt 1 failed: Error code: 404 - {'error': {'message': 'The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+
+  NOT EVALUATED: Error code: 404 - {'error': {'message': 'The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+
+Skipping C00052 (already evaluated)
+Evaluating C00053...
+
+  Original reference:
+    ["I'm wheezy"]
+
+  Extractor predicted:
+    ['wheezing and shortness of breath', 'cough', 'fever', 'exercise intolerance (unable to exercise)']
+
+  Transcript-supported:
+    ["recently I'm wheezy", 'feel like kind of short of breath', 'cough and cough a lot', 'I have a fever', "I can't exercise / can't walk to work"]
+
+  Predicted evaluation:
+    [MATCHED] wheezing and shortness of breath
+       -> wheezing; shortness of breath
+    [MATCHED] cough
+       -> cough
+    [MATCHED] fever
+       -> fever
+    [MATCHED] exercise intolerance (unable to exercise)
+       -> exercise intolerance
+
+  Missed:
+    []
+
+  Transcript-grounded: P=1.00 R=1.00 F1=1.00
+Evaluating C00054...
+
+  Original reference:
+    ['Tired all the time']
+
+  Extractor predicted:
+    ['aching all over', 'tiredness / low energy', 'rash on calf', 'sore throat with possible fever', 'decreased appetite / eating smaller portions', 'reduced exercise', 'mild headache']
+
+  Transcript-supported:
+    ['aching all over', 'feeling really tired, run down', 'eating smaller portions / less hungry', 'rash on calf that faded after a couple of weeks', 'sore throat', 'possibly a little bit feverish', 'mild headache', 'not as much exercise / reduced physical activity']
+
+  Predicted evaluation:
+    [MATCHED] aching all over
+       -> aching all over
+    [MATCHED] tiredness / low energy
+       -> feeling really tired, run down
+    [MATCHED] rash on calf
+       -> rash on calf that faded after a couple of weeks
+    [MATCHED] sore throat with possible fever
+       -> sore throat
+    [MATCHED] decreased appetite / eating smaller portions
+       -> eating smaller portions / less hungry
+    [MATCHED] reduced exercise
+       -> not as much exercise / reduced physical activity
+    [MATCHED] mild headache
+       -> mild headache
+
+  Missed:
+    []
+
+  Transcript-grounded: P=1.00 R=1.00 F1=1.00
+Evaluating C00055...
+
+  Original reference:
+    ['I have a blinding headache']
+
+  Extractor predicted:
+    ['blinding headache', 'photophobia (light sensitivity)', 'visual disturbances (flashing lights)', 'nausea', 'stabbing pain on standing quickly', 'lack of energy']
+
+  Transcript-supported:
+    ['blinding headache', 'lights definitely make me more sensitive', 'shooting light sometimes', 'feeling a bit sick', 'stabbing pain when standing up quickly', 'lack of energy', 'hard to focus']
+
+  Predicted evaluation:
+    [MATCHED] blinding headache
+       -> blinding headache
+    [MATCHED] photophobia (light sensitivity)
+       -> lights definitely make me more sensitive
+    [MATCHED] visual disturbances (flashing lights)
+       -> shooting light sometimes
+    [MATCHED] nausea
+       -> feeling a bit sick, but no vomiting
+    [MATCHED] stabbing pain on standing quickly
+       -> stabbing pain when standing up quickly
+    [MATCHED] lack of energy
+       -> maybe lack of energy
+
+  Missed:
+    ['hard to focus']
+
+  Transcript-grounded: P=1.00 R=0.86 F1=0.92
+Evaluating C00056...
+[extractor] openai/gpt-oss-120b: request too large, trying next model
+[extractor] openai/gpt-oss-20b attempt 1 failed: Error code: 400 - {'error': {'message': "Failed to validate JSON. Please adjust your prompt. See 'failed_generation' for more details.", 'type': 'invalid_request_error', 'code': 'json_validate_failed'
+[extractor] llama-3.3-70b-versatile attempt 1 failed: Error code: 404 - {'error': {'message': 'The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+
+  NOT EVALUATED: Error code: 404 - {'error': {'message': 'The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}
+
+Evaluating C00057...
+
+  Original reference:
+    ['Headache']
+
+  Extractor predicted:
+    ['headache on the left side at the back, throbbing, intense']
+
+  Transcript-supported:
+    ['headache on the left side at the back, throbbing, intense']
+
+  Predicted evaluation:
+    [MATCHED] headache on the left side at the back, throbbing, intense
+       -> headache on the left side at the back, throbbing, intense
+
+  Missed:
+    []
+
+  Transcript-grounded: P=1.00 R=1.00 F1=1.00
+
+==============================================
+FINAL RESULTS
+==============================================
+Total consultations selected : 57
+LLM evaluated                : 46
+Not evaluated                : 0
+
+----------------------------------------------
+TRANSCRIPT-GROUNDED METRICS
+----------------------------------------------
+True Positives  : 214
+False Positives : 0
+False Negatives : 26
+
+Precision       : 1.000
+Recall          : 0.892
+F1              : 0.943
+
+----------------------------------------------
+ORIGINAL REFERENCE METRICS
+----------------------------------------------
+Precision       : 0.000
+Recall          : 0.000
+F1              : 0.000
+
+Results saved to:
+evaluation/results/symptom_llm_results.csv
