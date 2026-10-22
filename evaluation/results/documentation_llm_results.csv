@@ -619,3 +619,628 @@ Advice:
 - consume clear fluids and a soft diet such as soup or mashed foods, gradually increasing as tolerated
 - continue Paracetamol if experiencing fever or abdominal pain
 - avoid alcohol"
+C00012,0.75,1.0,1.0,0.75,0.75,"[""no recent sick contacts"", ""no recent food exposures or triggers""]",[],"[""Advice about needing to be diarrhea‑free for 24‑48 hours before returning to work is placed in the Subjective/Relevant Clinical Context section instead of the Plan""]","[""Accurately records chief complaint, duration, frequency, and character of diarrhea"", ""Includes vomiting, dehydration, reduced appetite, weakness, and resolved fever"", ""Documents pertinent negatives (blood, abdominal pain, headache, muscle pain)"", ""Captures past medical history (asthma), medication (inhaler), allergies, family history, and social history"", ""Provides clear assessment (gastroenteritis) and appropriate plan (fluids, Dioralyte, Paracetamol, follow‑up)""]","[""Missing exposure history (no recent sick contacts or food triggers)"", ""Minor misplacement of a plan item within the subjective section""]","Patient Information:
+- Age: 48
+
+Symptoms:
+- watery loose diarrhoea, 5-6 times a day for three days (Severity: very bad)
+- vomiting (Resolved)
+- feeling dehydrated
+- reduced appetite
+- weakness
+- fever (Resolved)
+
+Pertinent Negatives:
+- no blood in stools
+- no abdominal pain
+- no headache
+- no muscle pains
+
+Relevant Clinical Context:
+- patient lives alone
+- software engineer
+- unable to work for past three days due to illness
+- needs to be diarrhea-free for 24-48 hours before returning to work
+- drinks alcohol infrequently socially
+- inhaler used infrequently for asthma
+
+Allergies:
+- none known
+
+Medical History:
+- asthma
+
+Family History:
+- father had hypertension
+- father died of bowel cancer
+- mother has type 2 diabetes
+
+Social History:
+- does not smoke
+- drinks alcohol infrequently socially
+- lives alone
+- software engineer
+
+Current Medications:
+- inhaler",No objective findings documented.,Possible gastroenteritis.,"Medications:
+- Dioralyte
+- Paracetamol
+Follow-up:
+- come back next week if symptoms not improved
+- call doctor if symptoms do not improve
+Advice:
+- drink plenty of fluids
+- continue taking time off work for next day or two
+- use Dioralyte to replenish minerals
+- take Paracetamol if feeling feverish and weak"
+C00013,0.75,0.75,0.75,0.75,0.75,"[""Patient reported neck pain or stiffness (positive response to question about neck pain).""]","[""Statement that patient may be exceeding the recommended ibuprofen dose by taking three tablets a day.""]",[],"[""Accurately captures chief complaint details: location, quality, severity, duration, and photophobia."", ""Includes relevant negatives (vomiting, vision loss, fever, rash, weakness, speech difficulty)."", ""Documents relevant social and family history, including migraine history in mother and sister."", ""Provides a clear assessment (possible migraine) and a concise plan with medication, follow‑up, and advice.""]","[""Omitted the reported neck pain/stiffness, which is clinically relevant."", ""Included an inaccurate inference about exceeding ibuprofen dosing."", ""Did not list all analgesic options discussed (e.g., paracetamol, codeine).""]","Patient Information:
+- Age: 26
+
+Symptoms:
+- headache, dull with occasional sharpness, around right eye, comes and goes, worsening for three days (Severity: 8/10)
+- photophobia (painful sensitivity to bright lights)
+- nausea
+- difficulty focusing
+- headache
+
+Pertinent Negatives:
+- no vomiting
+- no loss of vision
+- no blurry vision
+- no fever
+- no rash
+- no recent head injury
+- no weakness in arms and legs
+- no difficulty speaking
+
+Relevant Clinical Context:
+- Ibuprofen taken for two days without relief
+- took a couple of days off work due to headache
+- stressful new project at work affecting focus
+- patient reports inadequate water intake may trigger headaches
+- patient has been taking ibuprofen three tablets a day, possibly exceeding recommended dose
+- patient wears glasses since age five
+
+Allergies:
+- none known
+
+Medical History:
+- recurrent headaches previously responsive to ibuprofen
+
+Family History:
+- sister has migraines
+- mother has migraines
+
+Social History:
+- lives with three housemates
+- works in IT
+- socially smokes
+- socially drinks
+- wears glasses
+
+Current Medications:
+- Ibuprofen, three a day",No objective findings documented.,Possible migraine.,"Medications:
+- Naproxen
+Investigations/Tests:
+- repeat eye test
+Follow-up:
+- return in about a week to two weeks
+- call or return sooner if headaches worsen or do not improve
+- call or return if vision problems, weakness in arms or legs, or feeling unwell
+Advice:
+- keep a headache diary"
+C00014,0.75,1.0,1.0,1.0,0.85,"[""explicit mention of possible fever or subjective temperature elevation""]",[],[],"[""Comprehensive capture of symptoms, negatives, past medical history, medications, and social history"", ""Accurate reflection of the physician's assessment (viral illness) and management plan"", ""Includes all counseling points given by the clinician (rest, fluids, paracetamol, alcohol reduction, work advice)""]","[""Redundant duplicate entries (e.g., cough, weakness) in the subjective section"", ""Does not explicitly note the patient's subjective feeling of fever despite shivering/chills""]","Patient Information:
+- Age: 50
+
+Symptoms:
+- dry cough, continuous, keeps me up at night for 5-6 days
+- runny nose for 5-6 days
+- sore throat from coughing for 5-6 days
+- shivering/chills
+- fatigue/tiredness
+- muscle aches throughout arms and legs
+- lethargy and weakness
+- diarrhea for 5-6 days (Resolved)
+- cough
+- weakness and lethargy
+
+Pertinent Negatives:
+- no ear pain
+- no ear discharge
+- ears not blocked
+- no chest pain
+- no breathlessness
+- no nausea
+- no vomiting
+- no urinary problems
+
+Relevant Clinical Context:
+- cough keeps patient up at night
+- patient drinks plenty of fluids
+- patient unable to do pilates due to muscle pain
+- patient lying in bed
+- patient does not attribute symptoms to stress
+
+Allergies:
+- none known
+
+Medical History:
+- type 2 diabetes
+- high blood pressure
+
+Family History:
+- father has type 2 diabetes
+
+Social History:
+- lives with partner
+- works as a developer in IT
+- stopped smoking 6 months ago
+- drinks wine 2-3 glasses on three evenings per week
+
+Current Medications:
+- Metformin
+- Lisinopril",No objective findings documented.,Possible viral illness.,"Medications:
+- Paracetamol
+Follow-up:
+- If you feel like you're still not getting any better in two to three days, it's probably worth coming back to see me again
+- If your cough isn't getting any better, or your breathing is getting worse, come back sooner
+Advice:
+- cut down alcohol consumption to two glasses a week for the first few weeks, then one glass a week thereafter
+- take a day or two off work if coughing
+- get good bed rest
+- drink plenty of fluids and stay well‑hydrated
+- rest"
+C00015,0.75,1.0,1.0,1.0,0.75,"[""Previous over-the-counter treatments (E45 cream and antihistamine) that were tried without benefit"", ""Absence of prior diagnosed skin conditions (e.g., no history of eczema or dermatitis)""]",[],[],"[""Accurately captures the patient's chief complaint, timeline, and symptom details"", ""Includes relevant past medical, family, and social history"", ""Correctly identifies likely diagnosis of contact dermatitis"", ""Provides clear management plan with medication, skin care advice, and follow‑up instructions""]","[""Omits documentation of prior OTC treatments attempted by the patient"", ""Assigns severity labels (\""severe\"") that are inferred rather than explicitly stated"", ""Objective section is empty despite no physical exam findings being recorded""]","Patient Information:
+- Age: 45
+
+Symptoms:
+- cracked skin on hands for 3-4 months (Severity: severe)
+- dryness of skin on hands and legs
+- itchiness in palms
+- bleeding from scratched skin when scratched
+- soreness in fingers for 3-4 months (Severity: severe)
+
+Pertinent Negatives:
+- no fever
+- no nausea
+- no vomiting
+- no bowel problems
+- no urinary problems
+- no asthma
+
+Relevant Clinical Context:
+- unable to work for the past three days due to hand symptoms
+- does not consistently wear gloves while cleaning
+- changed jobs four months ago to hotel housekeeping
+- uses cleaning products for bathrooms and bedrooms
+- drinks a couple of pints of alcohol per week
+- minimal alcohol consumption
+- no smoking
+
+Allergies:
+- none known
+
+Medical History:
+- type 2 diabetes
+
+Family History:
+- diabetes
+
+Social History:
+- works as a housekeeper at a hotel
+- does not always wear gloves while cleaning
+- changed jobs four months ago
+- drinks a couple of pints of alcohol per week
+- does not smoke
+
+Current Medications:
+- Metformin",No objective findings documented.,Possible contact dermatitis.,"Medications:
+- steroid cream
+- stronger emollient, 3-4 times a day for 10-14 days
+Follow-up:
+- if symptoms have not improved within one to two weeks, return for review
+- if symptoms worsen or spread, return sooner
+Advice:
+- wear gloves when cleaning at all times
+- apply emollient 3-4 times a day for 10-14 days
+- use prescribed steroid cream as directed
+- avoid cleaning product triggers"
+C00016,0.75,1.0,1.0,0.75,0.75,"[""Assessment of left ear hearing loss / otologic problem"", ""Explicit mention that patient uses cotton buds (though advice to avoid is included)""]",[],[],"[""Accurately records the duration and laterality of hearing difficulty, tinnitus, and dizziness"", ""Includes pertinent negatives (pain, discharge, fever, chest pain, palpitations)"", ""Notes triggers for tinnitus and character of dizziness"", ""Provides clear plan for ear examination, follow‑up timing, and patient education""]","[""Assessment section limited to \""tinnitus\"" and omits mention of hearing loss"", ""Does not document that the patient uses cotton buds, only the avoidance advice""]","
+Symptoms:
+- hearing difficulty in left ear for six weeks
+- ringing in left ear (tinnitus) for six weeks
+- dizziness (off balance)
+
+Pertinent Negatives:
+- no ear pain
+- no ear discharge
+- no fever
+- no chest pain
+- no palpitations
+
+Relevant Clinical Context:
+- ringing in ear is triggered by watching TV or listening to music
+- dizziness described as mild off-balance without nausea or true spinning
+
+Allergies:
+- None documented.
+
+Medical History:
+- transient hearing problem about a year ago lasting a couple of days
+
+Family History:
+- None documented.
+
+Social History:
+- None documented.
+
+Current Medications:
+- None documented.",No objective findings documented.,tinnitus.,"Investigations/Tests:
+- ear examination (otoscopy) in clinic
+Follow-up:
+- attend ear examination appointment in 4-5 days
+- book another appointment if any issues arise before the clinic visit
+- contact support team via phone number in notes if needed
+Advice:
+- avoid using cotton buds to clean ears
+- read the provided leaflet about tinnitus"
+C00017,0.75,0.75,0.75,1.0,0.75,"[""Objective findings: warmth of the elbow, mild tenderness on palpation, dry skin noted on the tip of the elbow""]","[""Intermittent joint pain (patient reported no pain in the elbow)""]",[],"[""Accurately records patient age, allergy to peanuts, and history of osteoarthritis"", ""Captures key subjective symptoms: swelling, warmth, weird feeling, dry skin"", ""Includes relevant negatives (no injury, no prior episodes, no family rheumatologic disease, no medication allergies)"", ""Provides clear assessment of possible bursitis"", ""Details appropriate plan: ibuprofen dosing, blood tests, follow‑up instructions, and red‑flag advice""]","[""Includes an unsupported statement about intermittent joint pain"", ""Omits documented objective exam findings (warmth, mild tenderness, dry skin)"", ""Objective section left blank despite available exam information""]","Patient Information:
+- Age: 53
+
+Symptoms:
+- swelling on left elbow for about a week
+- warmth of left elbow
+- intermittent joint pain
+- weird feeling on tip of elbow with swelling
+- dry skin
+
+Pertinent Negatives:
+- no pain in elbow
+- no recent injury to elbow
+- no prior episodes of elbow swelling
+- no family history of rheumatologic disease
+- no medication allergies
+- no regular medications
+- no other illnesses
+- no eczema
+- no dry skin elsewhere
+
+Relevant Clinical Context:
+- doctor explained bursitis as inflammation of a fluid sac around the joint
+
+Allergies:
+- peanuts
+
+Medical History:
+- osteoarthritis
+
+Family History:
+- None documented.
+
+Social History:
+- desk job
+- runs 2-3 times a week
+- does sports
+
+Current Medications:
+- None documented.",No objective findings documented.,Possible bursitis.,"Medications:
+- Ibuprofen - 400 mg, twice a day
+Investigations/Tests:
+- blood tests for inflammatory markers, infection, rheumatological antibodies, and gout
+Follow-up:
+- follow-up appointment after blood test results, can be phone or video
+- contact us after blood test done
+Advice:
+- take ibuprofen after food, not on an empty stomach; stop if heartburn occurs
+- seek immediate medical attention if elbow becomes very red, very painful, or redness spreads
+- contact the clinic if symptoms worsen"
+C00018,0.75,1.0,1.0,1.0,0.85,"[""patient expressed concern about seriousness of condition"", ""doctor provided reassurance that condition likely not life‑threatening"", ""detailed steps for booking the face‑to‑face appointment (admin message, support team phone)""]",[],[],"[""Comprehensive capture of symptoms and pertinent negatives"", ""Relevant past medical, medication, allergy, family and social history included"", ""Appropriate assessment (possible Bell's palsy) and concise plan for face‑to‑face evaluation""]","[""Does not document patient anxiety and reassurance provided by the clinician"", ""Lacks detail of administrative steps for arranging the appointment"", ""Objective section empty, though no objective data were recorded in the transcript""]","Patient Information:
+- Age: 40
+
+Symptoms:
+- hearing loss left side for three weeks
+- numbness of left side of face around ear and jawline for three weeks
+- ringing in left ear
+- occasional ringing in ears (tinnitus)
+- dizziness
+- hearing loss
+- numbness
+
+Pertinent Negatives:
+- no weakness
+- no numbness elsewhere
+- no difficulty swallowing
+- no difficulty speaking
+- no vision problems
+- no ear discharge
+- no ear pain
+- no fever
+- no ear itchiness
+- no use of cotton buds
+- no other medication
+- no other allergies
+
+Relevant Clinical Context:
+- history of nasal polyps, uses nasal spray as needed
+- takes Rennie's antacid as needed
+- previous diagnosis of labyrinthitis, not ongoing
+- symptoms affecting ability to train as a jockey
+
+Allergies:
+- latex
+
+Medical History:
+- nasal polyps
+- labyrinthitis (past)
+
+Family History:
+- brother had neurofibromatosis
+
+Social History:
+- jockey
+- lives with partner
+- no pets
+
+Current Medications:
+- nasal spray
+- Rennie's",No objective findings documented.,Possible Bell's Palsy.,"Follow-up:
+- attend face-to-face clinic appointment today"
+C00019,0.75,0.75,1.0,0.75,0.75,"[""Objective vital signs (pulse rate ~66-74 bpm)"", ""Capillary refill test result"", ""Visual examination of throat"", ""Neck exam findings (absence of enlarged glands confirmed)"", ""Temperature measurement value""]",[],"[""Objective section incorrectly states no findings despite observations made during the telehealth exam""]","[""Comprehensive capture of subjective symptoms and timeline"", ""Includes relevant past medical history (SLE) and current medication (Methotrexate)"", ""Documents pertinent negatives (no recent flight, no clot history, no antibiotic allergies)"", ""Accurate assessment and appropriate plan for further evaluation""]","[""Omission of documented objective findings (pulse, capillary refill, throat and neck exam)"", ""Duplicate listing of coughing up blood in symptoms"", ""Objective section mischaracterizes the lack of findings""]","Patient Information:
+- Age: 45
+
+Symptoms:
+- shortness of breath for today
+- pain in right side of back when breathing deeply for today
+- slight fever
+- coughing up blood (hemoptysis)
+- feeling heart beating faster (palpitations)
+- fatigue and reduced exercise tolerance for couple of weeks
+- coughing up blood
+- fever for one day
+- slight pain for one day
+
+Pertinent Negatives:
+- no recent long-haul flight
+- no clots in legs or lungs
+- no family history of clots
+- no allergies to antibiotics
+- no enlarged neck glands
+
+Allergies:
+- none known
+
+Medical History:
+- systemic lupus erythematosus
+
+Family History:
+- None documented.
+
+Social History:
+- office desk job
+- lives alone in a flat
+- has a cat
+- non-smoker
+
+Current Medications:
+- Methotrexate",No objective findings documented.,"Possible chest infection, Possible pneumonia.","Investigations/Tests:
+- chest auscultation
+- blood pressure measurement
+- pulse measurement
+- temperature measurement
+- chest X-ray
+Follow-up:
+- review in clinic today
+- follow-up chest X-ray if symptoms persist"
+C00020,0.75,0.75,1.0,1.0,0.75,"[""Specific duration of each episode (e.g., weakness lasting a few days then resolving)"", ""Explicit mention that the patient feels normal between episodes""]",[],[],"[""Comprehensive capture of the patient's neurological symptoms and their progression"", ""Includes relevant family and social history, medication, and allergy information"", ""Accurately reflects the clinician's assessment and urgent referral plan""]","[""Does not detail the transient nature of the weakness episodes (lasting days)"", ""Minor redundancy in stating \""no current symptoms\"" despite episodic nature""]","Patient Information:
+- Age: 32
+
+Symptoms:
+- feeling very tired for a couple of days (Resolved)
+- general fatigue and weakness
+- pins and needles in right hand for about a month
+- weakness in right arm
+- weakness in right leg
+- abnormal gait
+- nausea
+- difficulty holding cup of coffee and drinking for last couple of days
+- feeling like something in throat
+
+Pertinent Negatives:
+- no difficulty swallowing
+- no difficulty speaking
+- no visual problems during episodes
+- no other illnesses
+- no current symptoms
+- no smoking
+- no GP discussion about aspirin risks
+
+Relevant Clinical Context:
+- colleague observed abnormal gait
+- episodes increasing in frequency from about once a week to several times a day
+- patient takes aspirin 75 mg once daily to reduce risk of stroke and heart attack, started after father's operation
+- patient was required to be checked after father's operation and had blood tests showing normal cholesterol, diabetes, and blood pressure
+- father had operation to the side of his neck to reduce risk of stroke
+
+Allergies:
+- penicillin
+
+Medical History:
+- None documented.
+
+Family History:
+- father had neck operation to reduce risk of stroke
+
+Social History:
+- works as a plastic surgeon
+- lives with wife
+- non-smoker
+
+Current Medications:
+- aspirin - 75 mg, once a day",No objective findings documented.,Possible mini-stroke (TIA).,"Investigations/Tests:
+- carotid artery ultrasound
+- brain scan
+Follow-up:
+- attend TIA clinic within 1-2 days
+- call the hospital/TIA clinic number to confirm appointment
+- contact the clinic over the phone if symptoms return
+- go to A&E immediately if symptoms are prolonged or worsen
+- contact us if there is any delay in the appointment
+Advice:
+- contact us over the phone if symptoms recur
+- go to A&E if symptoms are prolonged"
+C00021,0.75,0.5,0.5,0.75,0.6,"[""Objective exam findings (e.g., lips not visibly swollen, breathing appeared normal, description of arm rash and puncture mark)"", ""Patient's occasional anxiety/panic attacks""]","[""Statement that there is no swelling of the lips"", ""Statement that there is no difficulty breathing"", ""Claim that no objective findings were documented""]","[""Objective section is empty despite the clinician having performed an exam and noted findings""]","[""Includes key subjective symptoms (breathing difficulty, rash, lip swelling, tongue sensation, anxiety)"", ""Documents relevant past medical history (eczema) and allergies (penicillin)"", ""Provides clear management plan with antihistamine recommendations and safety instructions""]","[""Contains inaccurate negative statements that contradict the patient's report"", ""Omits documented objective examination details"", ""Misrepresents the presence/absence of certain findings, leading to potential confusion""]","Patient Information:
+- Age: 27
+
+Symptoms:
+- difficulty breathing
+- rash on arm for a few minutes
+- swelling of lips for a few minutes
+- tongue feels weird for a few minutes
+- anxiety
+
+Pertinent Negatives:
+- no history of anaphylaxis
+- no prior epipen
+- no antihistamines taken
+- no significant swelling at sting site
+- no food allergies
+- no pet allergies
+- no swelling of lips
+- no difficulty breathing
+- no stridor
+- no life‑threatening allergic reaction
+
+Relevant Clinical Context:
+- patient uncertain whether sting was from a bee or a wasp
+- patient has been around dogs and cats
+- localised allergic reaction to an insect bite
+
+Allergies:
+- penicillin
+
+Medical History:
+- eczema
+
+Family History:
+- None documented.
+
+Social History:
+- living alone
+- computer scientist
+- has a cat
+
+Current Medications:
+- None documented.",No objective findings documented.,localised allergic reaction.,"Follow-up:
+- if anything deteriorates, go straight to A&E
+- make an appointment with us if symptoms worsen
+- come back to us if you have any further issues
+- lower threshold for contacting us if worried
+Advice:
+- take an antihistamine such as Piriton or Chlorphenamine, one tablet 4 mg up to six times a day or one a day as preferred
+- buy antihistamine over the counter without prescription
+- monitor for spreading redness, warmth or signs of infection in the arm
+- read information about anaphylactic reactions"
+C00022,0.75,1.0,1.0,1.0,0.85,"[""First episode of chest discomfort (no prior episodes)"", ""Ambulance dispatch and emergency transport plan"", ""Absence of vital signs/clinical observations"", ""Patient's stress level noted but not documented"", ""No current medications listed (if any)""]",[],[],"[""Comprehensive capture of chest pain characteristics and associated symptoms"", ""Inclusion of relevant risk factors (smoking, hypertension, family history)"", ""Accurate documentation of aspirin allergy"", ""Clear assessment of possible myocardial infarction"", ""Appropriate plan for ECG and allergy communication""]","[""Missing explicit mention of emergency ambulance activation in plan"", ""Did not note that this is the first occurrence of chest pain"", ""Lacks documentation of vital signs or objective findings"", ""Plan does not include monitoring or further emergency management steps""]","
+Symptoms:
+- chest discomfort/pressure in the middle of chest, diffuse for a couple of hours
+- nausea
+- sweating
+- shortness of breath
+- pain in left arm
+- shoulder pain
+- palpitations (feeling heart beating faster)
+
+Pertinent Negatives:
+- no vomiting
+- no diabetes
+
+Relevant Clinical Context:
+- symptoms began while gardening, kneeling, not strenuous activity
+
+Allergies:
+- aspirin
+
+Medical History:
+- hypertension
+- overweight
+
+Family History:
+- father died of heart attack
+- mother had heart problems
+
+Social History:
+- smokes about ten cigarettes a day for fifteen years
+- generally does not do much physical activity
+- drinks 7-8 pints of beer per week
+- lives alone
+- restaurant owner
+
+Current Medications:
+- None documented.",No objective findings documented.,Possible heart attack.,"Investigations/Tests:
+- ECG
+Advice:
+- communicate aspirin allergy to the hospital"
+C00023,0.5,0.5,1.0,1.0,0.75,"[""Chronic back pain and physiotherapy details"", ""Underlying condition for Seroxat (e.g., depression/anxiety)"", ""Detailed headache history (centralized, chronic, migraine triggers)""]","[""Medical History: None documented.""]",[],"[""Accurately captures fever, muscle aches, nausea, sweating, cold sensations, fatigue, headache, and back pain as symptoms"", ""Includes pertinent negatives (cough, cold, sore throat, ear pain, diarrhoea, neck stiffness, rash, joint issues, urinary symptoms)"", ""Correctly records travel to Vietnam, malaria prophylaxis, rural exposure"", ""Documents allergies, social history, current medications, family history, and plan for investigations and follow‑up""]","[""Fails to document existing medical history of chronic back pain and physiotherapy"", ""Incorrectly states that there is no medical history"", ""Omits details about the chronic headache pattern"", ""Overall missing important background information reduces completeness and faithfulness""]","
+Symptoms:
+- fever for seven days
+- muscle aches
+- nausea
+- sweating
+- feeling cold
+- fatigue
+- headache
+- back pain
+- tiredness
+
+Pertinent Negatives:
+- no cough
+- no cold
+- no sore throat
+- no ear pain
+- no diarrhoea
+- no neck stiffness
+- no rash
+- no joint swelling or tenderness
+- no painful urination
+- no increased urinary frequency
+- no smoking
+
+Relevant Clinical Context:
+- recent travel to Vietnam, returned four weeks ago
+- took daily malaria prophylaxis (unspecified drug)
+- low fluid intake
+- back pain related to long periods of sitting at a desk and bad posture, physiotherapy focusing on posture and strengthening
+- patient works as a nurse
+- patient is up to date with vaccinations including Hepatitis B
+- moderate alcohol intake
+- moderate physical exercise a few times a week
+- recent travel to rural areas in Vietnam with potential exposure to malaria
+
+Allergies:
+- pollen
+
+Medical History:
+- None documented.
+
+Family History:
+- father had heart attack
+
+Social History:
+- works as a nurse
+- non-smoker
+- moderate alcohol intake
+- moderate physical exercise a few times a week
+
+Current Medications:
+- ibuprofen, daily
+- paracetamol, daily
+- Seroxat",No objective findings documented.,No diagnosis documented.,"Investigations/Tests:
+- thick and thin blood films
+- inflammatory markers
+- blood tests
+Follow-up:
+- attend central London clinic for examination and blood tests
+- if unable to travel, attend local A&E
+Advice:
+- do not go to work until investigations are completed
+- need to sort this out sooner rather than later"
