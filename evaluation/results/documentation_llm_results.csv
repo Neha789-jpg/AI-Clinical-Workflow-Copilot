@@ -1,24 +1,27 @@
 consultation_id,completeness,faithfulness,hallucination,section_correctness,overall_quality,important_information_missing,unsupported_information,section_errors,strengths,weaknesses,subjective,objective,assessment,plan
-C00001,1.0,1.0,1.0,1.0,1.0,[],[],[],"[""Captures all key symptoms and their characteristics"", ""Includes relevant negatives (no blood, no sweating)"", ""Documents pertinent history (asthma, recent Chinese takeaway, social factors)"", ""Provides clear assessment and appropriate conservative management plan"", ""Information placed in correct SOAP sections""]","[""Objective section empty (no objective data were provided in transcript, so acceptable)"", ""Minor omission of detail that patient can tolerate fluids, but not clinically critical""]","Patient Information:
+C00001,0.75,0.75,1.0,1.0,0.75,"[""patient reported feeling hot/low‑grade temperature at symptom onset (possible fever)"", ""one child had vomiting but no diarrhea"", ""no other current medications besides inhaler"", ""no other bowel problems reported"", ""patient is still attending work despite symptoms""]",[],[],"[""captures core gastrointestinal symptoms (watery diarrhea, frequency, abdominal cramp, vomiting, loss of appetite)"", ""includes relevant negatives (blood in stool/vomit, pain radiating to back, sweating, night sweats)"", ""documents pertinent social history (non‑smoker, no alcohol, occupation)"", ""records asthma history and inhaler use"", ""provides clear assessment of probable gastroenteritis"", ""includes appropriate conservative management plan (rehydration, paracetamol, stool test, follow‑up, work rest)""]","[""does not mention the patient’s reported low‑grade fever/temperature at onset"", ""omits detail that a child in the household had vomiting"", ""fails to note that the patient is not on any other medications"", ""does not state that the patient has no other bowel problems"", ""slightly mischaracterizes fever status as a definitive negative""]","Patient Information:
 - Gender: male
 
 Symptoms:
-- diarrhea (loose watery stool) for three days
-- crampy abdominal pain in left lower abdomen
-- weakness and shakiness
-- fever (temperature at symptom onset) (Resolved)
-- vomiting (Resolved)
-- loss of appetite
+- loose watery stool, frequent bowel movements for three days
+- cramp-like lower left abdominal pain, comes and goes
+- feeling weak and shaky
+- loss of appetite, reduced food intake
+- vomiting at start of illness (Resolved)
 
 Pertinent Negatives:
 - no blood in stool
 - no blood in vomit
+- no pain moving to back
 - no sweating
 - no night sweats
+- no fever
 
 Relevant Clinical Context:
-- possible trigger: Chinese takeaway 4 days ago
-- frequent bowel movements affecting daily activities and work
+- needs to stay close to the toilet because of frequent bowel movements
+- diarrhea affecting day-to-day activities and work attendance
+- recent Chinese takeaway 4 days ago may be trigger
+- maintaining fluid intake with soups and liquid foods
 
 Allergies:
 - None documented.
@@ -33,158 +36,96 @@ Social History:
 - non-smoker
 - does not drink alcohol
 - accountant
-- lives with wife and two children
 
 Current Medications:
 - inhaler",No objective findings documented.,Possible gastroenteritis.,"Medications:
 - paracetamol - two tablets, up to four times a day for first few days
+- Dioralyte
 Investigations/Tests:
-- stool sample for testing
+- stool sample for analysis
 Follow-up:
-- return if symptoms have not improved in three to four days
+- return in three to four days if symptoms have not improved
 Advice:
-- stay well hydrated by drinking fluids
-- use Dioralyte oral rehydration solution
-- take time off work for two to three days
+- stay hydrated by drinking fluids
+- take two to three days off work to rest
 - rest"
-C00002,0.75,1.0,1.0,1.0,0.75,"[""Patient reported no recent changes in shower gel, clothing, or other potential triggers"", ""Explicit statement that patient has no other current medical problems besides past asthma and eczema"", ""Family history was not documented""]",[],[],"[""Accurately captures key symptoms (itchy, sore, cracked, dry skin) and their impact on sleep and work"", ""Includes relevant negatives (fever, cough, discharge, pus, blood)"", ""Documents past eczema, prior steroid cream use, and failed antihistamine trial"", ""Provides a clear assessment (possible eczema) and a plan that matches the physician's recommendations"", ""Social history (living situation, occupation, alcohol use, non‑smoker) is well represented""]","[""Omitted mention of the patient's uncertainty about recent trigger changes (e.g., shower gel, clothing)"", ""Did not explicitly note the absence of other current medical conditions"", ""Family history section left blank without stating that none was reported""]","Patient Information:
+C00002,0.5,0.75,0.5,1.0,0.75,"[""hand and arm involvement (including inside elbows)"", ""patient previously tried antihistamines without benefit""]","[""rash on back (not mentioned in transcript)"", ""dry skin description not explicitly stated""]",[],"[""captures duration and severity of itch and soreness"", ""includes impact on sleep and work"", ""documents past eczema and prior steroid use"", ""provides clear treatment plan with steroid, emollient, antihistamine and follow-up"", ""includes relevant social history""]","[""omits hand/arm distribution of rash"", ""includes unsupported back involvement"", ""adds dry skin description not in transcript"", ""does not note prior antihistamine trial failure""]","Patient Information:
 - Age: 31
 - Gender: male
 
 Symptoms:
-- itchy skin for four days
-- sore skin for four days
-- cracked skin
-- dry skin
-- insomnia due to itching for four days
-- difficulty focusing at work for four days
+- itchy skin for four days (Severity: very)
+- sore skin for four days (Severity: very)
+- cracked skin for four days
+- inability to sleep for four days
+- itchy rash on chest and back
+- dry skin on chest and back
+- cracked skin on chest and back
 
 Pertinent Negatives:
 - no fever
 - no cough
 - no breathing difficulties
-- no discharge from skin
+- no discharge
 - no pus
 - no blood
-- no temperature
+- no facial involvement
+- no current asthma
+- no allergies
+- no smoking
+- no other medical problems
 
 Relevant Clinical Context:
-- patient lives with flatmates
-- patient works as a project manager at a pharmaceutical company
-- patient drinks a few beers per week and used to drink more when younger
-- patient does not smoke
-- patient had eczema previously limited to arms
-- patient previously used steroid cream which helped initially but not now
-- patient previously tried antihistamines without relief
+- itching interferes with work and sleep
+- previous eczema treated with steroid cream previously effective
+- over-the-counter steroid cream purchased last night ineffective
 
 Allergies:
 - none known
 
 Medical History:
-- asthma (past)
-- eczema (previous)
+- eczema
+- past asthma
+- previous eczema on arms
 
 Family History:
 - None documented.
 
 Social History:
 - lives with flatmates
-- project manager at pharmaceutical company
+- full-time project manager at a pharmaceutical company
 - drinks a few beers per week
-- does not smoke
+- non-smoker
 
 Current Medications:
-- None documented.",No objective findings documented.,Possible eczema.,"Medications:
-- prescription topical steroid cream for seven to ten days
-- emollient (bath and shower) for seven to ten days
+- None documented.","Examination Findings:
+- rash observed on chest and back, dry and cracked skin",Possible eczema flare-up.,"Medications:
+- topical steroid cream
+- emollient for 7-10 days
 - Fexofenadine
 Follow-up:
 - return next week if symptoms do not improve
 Advice:
-- use emollient in bath and shower for first 7-10 days
-- keep a diary of any triggers such as clothing or shower gels
-- use over-the-counter antihistamines like Loratadine or Piriton for itchiness
-- use stronger antihistamine Fexofenadine as prescribed
-- apply prescribed steroid cream regularly over next week to ten days"
-C00003,0.75,0.75,0.75,1.0,0.75,[],"[""no family history of brain cancer""]",[],"[""Captures all key symptoms (headache characteristics, visual changes, photophobia, nausea, vomiting)."", ""Includes relevant negatives (fever, rash, neurological deficits, head injury)."", ""Documents pertinent social and family history, medication use, and patient concerns."", ""Provides clear assessment (migraine) and detailed plan with follow‑up instructions and medication recommendations.""]","[""Includes an unsupported negative statement about family history of brain cancer."", ""Duplicate entry for work in the social history section.""]","
-Symptoms:
-- terrible throbbing headache on left side, worsened by movement for since mid-day (Severity: terrible)
-- blurred vision in both eyes
-- light sensitivity causing eye pain
-- nausea
-- vomiting twice earlier today
-- migraine headache
-
-Pertinent Negatives:
-- no fever
-- no skin rash
-- no speech problems
-- no numbness or weakness in arms and legs
-- no balance or coordination problems
-- no head injury
-- no recent fall
-- no breathlessness
-- no personal medical history
-- no personal history of migraines
-- no family history of brain cancer
-- no exercise
-- no smoking
-- no alcohol use
-
-Relevant Clinical Context:
-- concern about possible brain tumour due to friend's mother having died of brain tumor
-- patient works in the fashion industry and needs to return to work today
-- patient not normally prone to headaches
-- patient took painkillers, rested, and took sick days for previous similar headache
-- patient works in the fashion industry and finds the job stressful
-- patient lives alone
-- patient uses oral contraceptive Microgynon for contraception for three months
-
-Allergies:
-- None documented.
-
-Medical History:
-- similar headache a few weeks ago lasting a couple of days
-
-Family History:
-- mother has migraines
-- mother has underactive thyroid
-
-Social History:
-- works in the fashion industry
-- works in fashion industry
-- job is stressful
-- lives alone
-- does not exercise
-- does not smoke
-- does not drink alcohol
-
-Current Medications:
-- Microgynon",No objective findings documented.,migraine.,"Follow-up:
-- discussion next week
-- return immediately if headache worsens or does not respond to medication
-- return immediately if neck pain worsens, or if weakness in arms or legs develops, or if vision changes occur
-- if symptoms are not better in 2-3 days, seek medical review
-Advice:
-- keep a headache diary
-- use Paracetamol for pain
-- use Co-codamol for pain
-- use Ibuprofen as an anti‑inflammatory
-- use Naproxen as an anti‑inflammatory"
-C00004,1.0,1.0,1.0,1.0,1.0,[],[],[],"[""Captures all key symptoms and timeline"", ""Includes pertinent negatives and relevant exposure history"", ""Accurately reflects medication use and fluid intake"", ""Correct family and social history"", ""Assessment and plan align with clinician's impression""]","[""Minor redundancy (runny nose listed twice in symptoms)""]","Patient Information:
+- use prescribed steroid cream regularly over the next week to ten days
+- apply emollient in bath and shower for first 7-10 days
+- keep a diary of any triggers such as clothing or soaps
+- consider over-the-counter antihistamines like Loratadine or Piriton for itch"
+C00004,1.0,1.0,1.0,1.0,1.0,[],[],[],"[""Captures all key symptoms and timeline"", ""Includes pertinent negatives and relevant exposure history"", ""Accurately reflects medication use and social history"", ""Appropriate assessment and clear plan""]","[""Minor duplication of runny nose entry in symptom list""]","Patient Information:
 - Gender: male
 
 Symptoms:
-- sore throat
+- feeling under the weather for four days
+- sore throat for four days (Severity: painful) (Resolved)
 - runny nose and nasal congestion for four days
-- dry cough
-- night sweats for four days
-- fever for four days (Resolved)
-- fatigue for four days
-- shortness of breath on exertion for four days
-- intermittent headache
+- dry cough for 1 day
+- night sweats for three to four days
+- fever (Resolved)
+- fatigue/tiredness for four days
+- shortness of breath on exertion
+- headache
+- painful swallowing for one to two days (Severity: painful) (Resolved)
 - runny nose for four days
-- muscle pain for four days
+- muscle pain for past couple days
 - weakness for four days
 
 Pertinent Negatives:
@@ -192,17 +133,18 @@ Pertinent Negatives:
 - no ear pain
 - no ear blockage
 - no ear discharge
-- no shortness of breath at rest
+- no white spots in throat
+- no redness at back of throat
 - no vision problems
+- no shortness of breath at rest
 - no nausea
 - no vomiting
 - no rash
 
 Relevant Clinical Context:
-- possible exposure to viral infection from colleague who was sneezing
-- patient taking paracetamol and ibuprofen for fever
-- patient reports increased fluid intake
-- patient reports eating slightly less than usual
+- possible exposure to infection from colleague's children
+- patient has been taking paracetamol and ibuprofen for fever
+- patient has reduced gym activity due to exertional dyspnea
 
 Allergies:
 - none known
@@ -217,37 +159,36 @@ Family History:
 Social History:
 - lives alone
 - accountant
-- occasional cigar smoking
+- occasional cigar use at company parties
 - occasional alcohol consumption
+- stressful work period
 
 Current Medications:
 - Paracetamol
-- Ibuprofen",No objective findings documented.,"Possible viral upper respiratory tract infection, Possible influenza.","Medications:
+- Ibuprofen",No objective findings documented.,"viral upper respiratory tract infection, Possible influenza.","Medications:
 - Paracetamol
 - Ibuprofen
 Follow-up:
-- return next week if symptoms not improved
+- return next week if not better
 - call doctor sooner if high fever, worsening breathing, or chest pain
 Advice:
-- rest
+- plenty of rest
 - take a day or two off work
 - stay well-hydrated"
-C00005,0.75,1.0,1.0,1.0,0.75,"[""Last menstrual period was approximately 2 weeks ago"", ""No prior similar episodes of abdominal pain"", ""No surgical history (patient reported no surgeries)"", ""Absence of other medical conditions besides Implanon""]",[],[],"[""Accurately captures the main presenting symptoms (burning lower abdominal pain, hot/sweaty feeling, pink urine, increased urinary frequency, nausea)"", ""Includes relevant negatives (vomiting, diarrhea, dysuria, respiratory and cardiac symptoms)"", ""Documents sexual history, contraception use, and recommendation for pregnancy test"", ""Provides clear treatment plan with antibiotic dosing, supportive care, and follow‑up instructions""]","[""Omitted menstrual history details that are pertinent to pregnancy risk assessment"", ""Did not note that the patient has never experienced similar symptoms before"", ""Did not explicitly state the lack of surgical history"", ""Medical history section labeled as \""None documented\"" despite presence of Implanon (listed under medications)""]","Patient Information:
-- Gender: female
-
+C00005,0.75,0.75,1.0,0.75,0.8,"[""Implanon contraceptive implant not listed under current medications"", ""Assessment/diagnosis not documented""]",[],"[""Assessment section empty""]","[""Captures key presenting symptoms (burning lower abdominal pain, hot/sweaty, pink urine, increased urinary frequency, nausea)"", ""Includes pertinent negatives and relevant social/sexual history"", ""Provides clear plan with antibiotics, pregnancy test, follow‑up, and supportive advice""]","[""Omits Implanon from medication list"", ""Lacks an explicit assessment or working diagnosis"", ""Does not document any objective findings or physical exam (though none were provided)"", ""Does not explicitly note absence of measured fever""]","
 Symptoms:
-- burning lower abdominal pain below belly button for two days
+- burning lower abdominal pain below belly button, constant and worsening for two days
 - feeling hot and sweaty
 - constipation for since last week (Resolved)
 - pink urine
 - increased urinary frequency
 - nausea
-- tummy pain for couple of days
+- tummy pain for last couple of days
 
 Pertinent Negatives:
 - no vomiting
 - no diarrhea
-- no burning or stinging pain when passing urine
+- no burning or stinging on urination
 - no shortness of breath
 - no cough
 - no palpitations
@@ -255,7 +196,11 @@ Pertinent Negatives:
 - no vision problems
 
 Relevant Clinical Context:
-- patient reports increased urinary frequency despite drinking lots of fluids
+- Implanon contraceptive implant inserted one year ago
+- last menstrual period approximately two weeks ago
+- last STD screen normal six months ago
+- patient reports drinking lots of fluids
+- patient has an Implanon contraceptive implant
 
 Allergies:
 - None documented.
@@ -267,56 +212,56 @@ Family History:
 - None documented.
 
 Social History:
-- sexually active with one partner, last sexual activity 4 days ago
-- uses Implanon implant inserted about a year ago
-- last STD screen normal 6 months ago
+- sexually active with one partner, last intercourse 4 days ago
+- uses Implanon for contraception
 - lives in a share house with two roommates
 - works as an accountant
 - non-smoker
 - social alcohol consumption
 
 Current Medications:
-- Implanon",No objective findings documented.,Possible urine infection.,"Medications:
-- Trimethoprim - two tablets, twice a day for three days
+- None documented.",No objective findings documented.,No diagnosis documented.,"Medications:
+- Trimethoprim - one tablet, twice a day for three days
 Investigations/Tests:
 - pregnancy test
 Follow-up:
 - return in a few days if symptoms do not improve or worsen
-- call the doctor if worried about anything else
 Advice:
-- take regular paracetamol for pain
+- take Paracetamol for pain
 - drink plenty of fluids
-- try cranberry juice for urinary symptoms
-- take the antibiotics as prescribed"
-C00006,1.0,1.0,1.0,1.0,1.0,[],[],[],"[""Captures all key subjective symptoms and negatives"", ""Accurately reflects past medical, family, and social history"", ""Includes relevant medication list and plan details matching the conversation"", ""Appropriate placement of information into SOAP sections""]",[],"Patient Information:
+- drink cranberry juice to help urinary symptoms
+- monitor for worsening tummy pain, fever, or vomiting
+- call the doctor if you are worried about anything else"
+C00006,0.75,0.75,0.75,1.0,0.75,[],"[""Furosemide dosage stated as two tablets twice daily (transcript suggests either two tablets once daily or one tablet twice daily)""]",[],"[""Includes all major subjective symptoms (dyspnea, dry cough, ankle edema, run-down feeling, increased urinary frequency)"", ""Accurately records past medical history, family history, social history, and medication list"", ""Documents pertinent negatives (no chest pain, palpitations, fever)"", ""Objective findings (normal chest exam, saturations, blood pressure) are reflected"", ""Plan includes appropriate medication adjustment, investigations, and follow‑up instructions""]","[""Incorrect specification of Furosemide dosing"", ""Minor omission of some negatives (e.g., no dizziness reported as a current symptom)""]","Patient Information:
 - Gender: male
 
 Symptoms:
 - shortness of breath for last couple of weeks
 - dry cough
-- ankle swelling for last few days
 - feeling run-down
-- frequent urination
-- more breathless even walking to the shop
+- ankle swelling for last few days
+- increased urinary frequency
+- feeling more breathless even walking to the shop
 
 Pertinent Negatives:
 - no chest pain
 - no palpitations
 - no fever
-- no allergies
-- no current smoking
-- no alcohol
 
 Relevant Clinical Context:
-- patient is worried that heart failure may be worsening
-- patient worried about inability to work if condition worsens
+- patient worries about being unable to work if condition worsens
+- patient lives alone with two cats
+- patient works part-time as a lorry driver, day shifts, finds it exhausting
+- patient walks to the shop once a day and does not run
+- patient used to smoke a pack a day for about 25 years, now quit
+- patient does not drink alcohol
 
 Allergies:
 - none known
 
 Medical History:
 - heart failure
-- small heart attack (myocardial infarction) five years ago
+- small heart attack
 
 Family History:
 - father died of heart attack in early sixties
@@ -324,115 +269,164 @@ Family History:
 
 Social History:
 - lives alone with two cats
-- part-time lorry driver
-- former smoker, 1 pack per day for 25 years, quit
+- works part-time as lorry driver, day shifts
+- previous smoker, pack a day for 25 years, now quit
 - does not drink alcohol
-- walks to shop once a day
-- does not work night shifts
+- walks to shop once a day, no running
 
 Current Medications:
 - Furosemide
 - Aspirin
-- Bisoprolol",No objective findings documented.,heart failure.,"Medications:
-- Furosemide - 1 tablet, twice a day for first few days
+- Bisoprolol","Examination Findings:
+- chest examination normal
+- saturations normal
+- blood pressure normal",heart failure.,"Medications:
+- Furosemide - two tablets, twice daily for first few days
 Investigations/Tests:
-- blood test (full blood count, kidney function)
+- full blood count
+- kidney function tests
 - echocardiogram
 Follow-up:
-- return in about a week for review
-- call doctor sooner if symptoms worsen (increased breathlessness, chest pain, palpitations, dizziness)"
-C00007,0.75,0.75,0.5,0.75,0.7,"[""Occasional aspirin use""]","[""Pertinent negative stating 'no breathlessness' contradicts patient report of shortness of breath""]",[],"[""Captures most of the patient's reported symptoms"", ""Includes relevant social history and medication list"", ""Provides a clear assessment and plan consistent with the clinician's advice""]","[""Missing mention of occasional aspirin in medication list"", ""Contradictory negative statement about breathlessness"", ""No objective findings documented, though none were provided in the transcript""]","Patient Information:
+- return in about a week to review symptoms
+- call doctor sooner if breathlessness worsens, or chest pain, palpitations or dizziness develop"
+C00003,0.5,0.75,0.75,0.5,0.63,"[""Explicit assessment/diagnosis (migraine)"", ""Prior similar headache episode a few weeks ago"", ""Discussion of prophylactic migraine medication"", ""Reassurance regarding brain cancer concern""]","[""No depression""]","[""Assessment section is empty (missing diagnosis)""]","[""Accurately captures headache characteristics (left-sided, throbbing, worsened by movement)"", ""Includes visual aura, photophobia, nausea, and vomiting details"", ""Documents relevant negatives (fever, rash, neurological deficits)"", ""Lists current medication (Microgynon) and social/family history"", ""Provides clear plan with analgesics, headache diary, and follow‑up instructions""]","[""Missing explicit diagnosis in Assessment"", ""Includes unsupported negative (no depression)"", ""Omits mention of previous similar headache episode"", ""Does not note discussion of prophylactic treatment options"", ""Lacks reassurance about brain cancer worry""]","
+Symptoms:
+- terrible throbbing headache on left side, worse with movement/leaning forward for since mid-day (Severity: terrible)
+- visual disturbances with zig‑zag lines (aura) and blurred vision in both eyes for a few minutes before headache started
+- photophobia (sensitivity to bright light)
+- nausea for earlier today
+- vomiting (two episodes) for earlier today
+
+Pertinent Negatives:
+- no fever
+- no skin rash
+- no speech problems
+- no numbness or weakness
+- no balance problems
+- no head injury
+- no past migraines
+- no depression
+- no smoking
+- no alcohol
+- no exercise
+
+Allergies:
+- None documented.
+
+Medical History:
+- None documented.
+
+Family History:
+- mother has migraines
+- mother has underactive thyroid
+
+Social History:
+- works in fashion industry, stressful job
+- lives alone
+- no exercise
+- no smoking
+- no alcohol
+
+Current Medications:
+- Microgynon",No objective findings documented.,No diagnosis documented.,"Medications:
+- Paracetamol
+- Co‑codamol
+- Ibuprofen
+- Naproxen
+Follow-up:
+- return next week for review
+- return within 2‑3 days if symptoms are not improving
+- come back immediately if headache worsens, neck pain worsens, weakness develops, or vision changes
+Advice:
+- keep a headache diary
+- take Paracetamol, Co‑codamol, Ibuprofen or Naproxen as needed for headache"
+C00007,0.75,0.75,0.75,1.0,0.8,"[""No ear symptoms reported (ear pain or blockage)"", ""No documented fever measurement""]","[""Pertinent negative stating 'no breathlessness' despite patient reporting shortness of breath""]",[],"[""Accurately captures key symptoms (dry cough, runny nose, sore throat, hoarseness, shortness of breath, feverish feelings, diarrhoea, joint stiffness)"", ""Includes relevant social history (living situation, employment, alcohol intake, smoking/vaporiser use)"", ""Correct medication list (Metformin, Lisinopril) and plan (amoxicillin, paracetamol, fluids, rest)"", ""Appropriate placement of information into SOAP sections""]","[""Contradictory negative entry stating no breathlessness"", ""Missing documentation of ear-related symptoms discussed"", ""Missing note on lack of measured fever"", ""Duplicate wording of 'feeling hot and cold and sweaty' in symptoms list""]","Patient Information:
 - Age: 50
 - Gender: male
 
 Symptoms:
-- run-down feeling for few days
+- run-down feeling for a good few days
 - dry cough
 - runny nose
 - sore throat
 - hoarseness
-- ear dullness/blocked ears
-- shortness of breath for few days
+- shortness of breath for a few days
 - feeling hot and cold, sweaty
 - diarrhoea (Resolved)
-- muscle and joint stiffness in elbows and knees, all over
+- joint stiffness in elbows and knees
 - not feeling great for five days
+- feeling hot and cold and sweaty
 
 Pertinent Negatives:
 - no breathlessness
-- no sputum production
+- no chest tightness
 - no chest pain
 - no nausea
 - no vomiting
 - no tummy pain
-- no measured fever
 
 Relevant Clinical Context:
-- hoarseness possibly due to frequent shouting at football matches
-- patient reports hearing not as good as it used to be
-- symptoms began after dinner outing on Saturday
-- patient reports being overweight
+- celebrated wife's promotion and ate out at a restaurant
+- patient describes himself as slightly overweight with a spare tyre around the midriff
 
 Allergies:
 - none known
 
 Medical History:
 - type 2 diabetes
-- hypertension
 
 Family History:
 - None documented.
 
 Social History:
-- lives with wife, no children at home
+- lives with wife only, children have moved out
 - currently employed
-- works in a steel parts manufacturing factory
 - drinks approximately nine pints of alcohol per week
-- occasionally smokes cigarettes
-- uses a vaporiser to reduce smoking
-- plays football
+- occasional cigarette smoking, using a vaporiser to reduce smoking
 
 Current Medications:
 - Metformin
-- Lisinopril",No objective findings documented.,"high blood pressure, Possible viral illness, Possible influenza.","Medications:
+- Lisinopril",No objective findings documented.,"high blood pressure, Possible viral illness (possible flu).","Medications:
 - Amoxicillin - one tablet, three times a day
 Follow-up:
-- if not better by next week, return for review
+- if not better by next week, come back and see me
 Advice:
 - keep fluids up
+- continue current fluid intake
+- keep doing what you're doing
 - stay rested
 - drink plenty of fluids
-- take regular Paracetamol"
-C00008,1.0,1.0,1.0,1.0,1.0,[],[],[],"[""Captures all key subjective details from the transcript"", ""Accurately reflects negatives and relevant context (stress, swimming, coconut butter use)"", ""Correctly lists current medication (Microgynon) and family history"", ""Assessment aligns with clinician's impression of dermatitis"", ""Plan includes appropriate treatments and follow‑up instructions""]","[""Redundant entries in social history (teacher listed twice)"", ""Objective section empty, though no exam data were provided in the transcript""]","Patient Information:
+- take regular Paracetamol if feeling hot and cold and sweaty
+- continue using vaporiser to help quit smoking"
+C00008,0.75,1.0,1.0,1.0,0.75,"[""description of skin redness (erythema) noted by the patient""]",[],[],"[""Accurately captures chief complaint of dry itchy skin on arms and hands"", ""Includes relevant negatives (fever, sweating, spots, vomiting, etc.)"", ""Documents relevant context: stress at work, recent swimming, use of coconut butter, contraceptive use, possible lactose intolerance"", ""Correctly records family history, social history, and current medication"", ""Provides appropriate assessment (possible dermatitis) and a clear management plan with topical steroids, emollients, antihistamines, and follow‑up""]","[""Omits mention of the skin being described as red/erythematous"", ""Objective section is empty, though no exam findings were documented in the transcript (acceptable but noted)""]","Patient Information:
 - Age: 26
 
 Symptoms:
-- dry itchy skin for few days
-- red skin
+- dry itchy skin on arms and hands for few days
 - tiredness
-- dry itchy rash on hands and arms for a few days
 
 Pertinent Negatives:
-- no spots
 - no fever
 - no sweating
+- no spots
 - no vomiting
 - no loose stools
 - no bleeding or discharge from skin
-- no other medications
-- no skin problems in the past
+- no other symptoms
 - no smoking
 - no alcohol
 - no recreational drugs
+- no other skin problems in the past
+- no other medications
 
 Relevant Clinical Context:
-- stress at work for the past few days
-- symptoms started after swimming a few days ago
-- using coconut butter for the past few days without improvement
-- patient reports possible lactose intolerance
+- stress at work may be contributing to skin symptoms
+- symptoms started after swimming
+- patient has been using coconut butter without improvement
+- patient is taking contraceptive pill Microgynon
+- patient may be lactose intolerant
 - patient lives alone
 - patient works as a primary school teacher
-- patient reports increased stress recently
 
 Allergies:
 - None documented.
@@ -442,805 +436,22 @@ Medical History:
 
 Family History:
 - father has asthma
-- mother has hayfever
+- mother has hay fever
 
 Social History:
-- teacher
 - lives alone
-- primary school teacher
-- increased stress recently
+- works as primary school teacher
+- non-smoker
+- does not drink alcohol
+- does not use recreational drugs
 
 Current Medications:
 - Microgynon",No objective findings documented.,Possible dermatitis.,"Medications:
-- steroid cream, throughout the day for next few days
-- emollient, throughout the day for next few days
-Follow-up:
-- return next week if symptoms do not improve
-Advice:
-- try over-the-counter antihistamines such as Piriton or Loratadine for itchiness"
-C00009,0.75,1.0,1.0,1.0,0.75,"[""Recommendation for a pregnancy test to rule out pregnancy"", ""Specific description of clindamycin allergy reaction (swelling)""]",[],[],"[""Accurately captures all key urinary symptoms and timing"", ""Includes pertinent negatives (fever, nausea, frequency, flank/back pain, vaginal discharge)"", ""Documents sexual activity, contraception use, and social history"", ""Notes past medical history of IBS and clindamycin allergy"", ""Provides clear assessment of urinary tract infection and appropriate treatment plan""]","[""Omitted recommendation for pregnancy testing"", ""Did not detail the nature of the clindamycin allergy reaction"", ""Minor discrepancy in last menstrual period timing""]","Patient Information:
-- Age: 19
-- Gender: female
-
-Symptoms:
-- pain when urinating (dysuria) for a few days
-- lower abdominal cramping pain when urinating for a few days
-- blood in urine (hematuria) for earlier today
-- urine has a weird smell
-- burning pain on passing urine for three days
-- crampy lower abdominal pain for three days
-
-Pertinent Negatives:
-- no fever
-- no nausea
-- no vomiting
-- no diarrhea
-- no increased urinary frequency
-- no flank pain
-- no back pain
-- no vaginal discharge
-
-Relevant Clinical Context:
-- sexually active, uses condoms
-- last menstrual period was three weeks ago
-- has not had an STD screen
-- tried over-the-counter bicarbonate a couple of days ago without relief
-
-Allergies:
-- Clindamycin
-
-Medical History:
-- irritable bowel syndrome
-
-Family History:
-- None documented.
-
-Social History:
-- sexually active with a boyfriend for a couple of months
-- uses condoms
-- student
-- drinks alcohol on weekends
-- does not smoke
-- lives in flat with friends
-
-Current Medications:
-- None documented.",No objective findings documented.,urinary tract infection.,"Follow-up:
-- call or return if symptoms not improved by end of week
-- call if any concerns or signs of infection spreading
-Advice:
-- drink plenty of fluids
-- try cranberry juice
-- continue using barrier contraception
-- avoid sexual intercourse while symptoms clear
-- monitor for high temperature, back pain, or feeling more unwell
-- choice of Nitrofurantoin or Trimethoprim offered"
-C00010,0.75,0.75,1.0,1.0,0.8,"[""IBS medication (the 'M' medication the patient takes for cramps)""]",[],[],"[""Accurately captures chief complaint: burning dysuria, increased frequency, pink urine, lower abdominal ache"", ""Includes relevant negatives (no nausea, vomiting, fever, frank hematuria, back pain, new bowel changes)"", ""Documents pertinent history: IBS, combined oral contraceptive use, sexual activity, recent unprotected intercourse, last menstrual period"", ""Records allergy to clindamycin"", ""Provides clear assessment (possible UTI) and appropriate plan (urine sample, antibiotics, hydration, analgesia, follow‑up, warning signs)"", ""Includes social history details (living situation, studies, alcohol, recent cannabis use)""]","[""Missing the specific IBS medication the patient mentioned"", ""Duplicate entry for combined oral contraceptive pill under current medications"", ""Statement \""no other medical conditions\"" is slightly contradictory given the documented IBS""]","Patient Information:
-- Age: 19
-
-Symptoms:
-- burning pain when urinating for just under a week
-- increased urinary frequency for just under a week
-- pink urine for today
-- lower abdominal ache for just under a week
-
-Pertinent Negatives:
-- no nausea
-- no vomiting
-- no fever
-- no frank blood in urine
-- no vaginal discharge
-- no back pain
-- no new bowel symptoms
-- no other medical conditions
-
-Relevant Clinical Context:
-- history of IBS
-- on combined oral contraceptive pill
-- sexually active with long-term boyfriend
-- last unprotected intercourse about a week ago
-- last menstrual period two weeks ago
-- eating and drinking OK
-
-Allergies:
-- Clindamycin
-
-Medical History:
-- IBS
-- irritable bowel syndrome
-
-Family History:
-- None documented.
-
-Social History:
-- sexually active with long-term boyfriend
-- living in university halls with a flatmate
-- studying English at university
-- occasional social alcohol consumption
-- first cannabis use a week and a half ago
-
-Current Medications:
-- combined oral contraceptive pill
-- combined pill",No objective findings documented.,Possible urinary tract infection.,"Investigations/Tests:
-- urine sample for laboratory analysis
-Follow-up:
-- return next week if symptoms do not improve
-- call doctor if fever, back pain, or vomiting develop
-Advice:
-- avoid cannabis use
-- stay hydrated and drink plenty of fluids
-- take paracetamol for pain if needed
-- provide urine sample for testing
-- choice of Trimethoprim or Nitrofurantoin, three day course"
-C00011,0.75,1.0,1.0,1.0,0.75,"[""Decreased urinary frequency reported by patient""]",[],[],"[""Accurately captures core symptoms (watery diarrhea, frequency, abdominal pain severity, nausea, vomiting after milk, feeling hot)"", ""Includes pertinent negatives (no blood in stool)"", ""Documents relevant family history (father with colon cancer, brother with similar illness)"", ""Provides detailed social history (living situation, work, smoking, alcohol)"", ""Lists current medication (paracetamol) and lack of allergies"", ""Assessment and plan align with clinician's recommendations""]","[""Omitted mention of reduced urine output, which is relevant for dehydration assessment"", ""Objective section empty (though no objective data were provided in transcript)""]","Patient Information:
-- Age: 27
-
-Symptoms:
-- watery diarrhea, loose stools, almost every hour when awake for three days
-- crampy abdominal pain, midline, comes and goes (Severity: 6-7/10)
-- nausea
-- vomiting after milk
-- feeling hot, burning up
-- diarrhea
-
-Pertinent Negatives:
-- no blood in stools
-
-Relevant Clinical Context:
-- drinking a lot of water but fluids go straight through
-- brother has similar diarrhoea for five days
-- had lunch today but stool still loose
-- patient feels hot but has not taken temperature
-- patient has not discussed the illness in detail with sister and mother
-- patient feels unable to take time off work due to symptoms
-
-Allergies:
-- none known
-
-Medical History:
-- None documented.
-
-Family History:
-- brother had diarrhoea
-- father has colon cancer
-
-Social History:
-- social smoker
-- occasional alcohol consumption
-- works in a government office in Central London
-- lives with sister and mother
-
-Current Medications:
-- Paracetamol",No objective findings documented.,Possible gastroenteritis.,"Follow-up:
-- call back if symptoms have not settled within 48 hours
-- review in 1-2 days to assess progress
-Advice:
-- drink plenty of fluids
-- use oral rehydration solution (e.g., Diarolyte)
-- consume clear fluids and a soft diet such as soup or mashed foods, gradually increasing as tolerated
-- continue Paracetamol if experiencing fever or abdominal pain
-- avoid alcohol"
-C00012,0.75,1.0,1.0,0.75,0.75,"[""no recent sick contacts"", ""no recent food exposures or triggers""]",[],"[""Advice about needing to be diarrhea‑free for 24‑48 hours before returning to work is placed in the Subjective/Relevant Clinical Context section instead of the Plan""]","[""Accurately records chief complaint, duration, frequency, and character of diarrhea"", ""Includes vomiting, dehydration, reduced appetite, weakness, and resolved fever"", ""Documents pertinent negatives (blood, abdominal pain, headache, muscle pain)"", ""Captures past medical history (asthma), medication (inhaler), allergies, family history, and social history"", ""Provides clear assessment (gastroenteritis) and appropriate plan (fluids, Dioralyte, Paracetamol, follow‑up)""]","[""Missing exposure history (no recent sick contacts or food triggers)"", ""Minor misplacement of a plan item within the subjective section""]","Patient Information:
-- Age: 48
-
-Symptoms:
-- watery loose diarrhoea, 5-6 times a day for three days (Severity: very bad)
-- vomiting (Resolved)
-- feeling dehydrated
-- reduced appetite
-- weakness
-- fever (Resolved)
-
-Pertinent Negatives:
-- no blood in stools
-- no abdominal pain
-- no headache
-- no muscle pains
-
-Relevant Clinical Context:
-- patient lives alone
-- software engineer
-- unable to work for past three days due to illness
-- needs to be diarrhea-free for 24-48 hours before returning to work
-- drinks alcohol infrequently socially
-- inhaler used infrequently for asthma
-
-Allergies:
-- none known
-
-Medical History:
-- asthma
-
-Family History:
-- father had hypertension
-- father died of bowel cancer
-- mother has type 2 diabetes
-
-Social History:
-- does not smoke
-- drinks alcohol infrequently socially
-- lives alone
-- software engineer
-
-Current Medications:
-- inhaler",No objective findings documented.,Possible gastroenteritis.,"Medications:
-- Dioralyte
-- Paracetamol
-Follow-up:
-- come back next week if symptoms not improved
-- call doctor if symptoms do not improve
-Advice:
-- drink plenty of fluids
-- continue taking time off work for next day or two
-- use Dioralyte to replenish minerals
-- take Paracetamol if feeling feverish and weak"
-C00013,0.75,0.75,0.75,0.75,0.75,"[""Patient reported neck pain or stiffness (positive response to question about neck pain).""]","[""Statement that patient may be exceeding the recommended ibuprofen dose by taking three tablets a day.""]",[],"[""Accurately captures chief complaint details: location, quality, severity, duration, and photophobia."", ""Includes relevant negatives (vomiting, vision loss, fever, rash, weakness, speech difficulty)."", ""Documents relevant social and family history, including migraine history in mother and sister."", ""Provides a clear assessment (possible migraine) and a concise plan with medication, follow‑up, and advice.""]","[""Omitted the reported neck pain/stiffness, which is clinically relevant."", ""Included an inaccurate inference about exceeding ibuprofen dosing."", ""Did not list all analgesic options discussed (e.g., paracetamol, codeine).""]","Patient Information:
-- Age: 26
-
-Symptoms:
-- headache, dull with occasional sharpness, around right eye, comes and goes, worsening for three days (Severity: 8/10)
-- photophobia (painful sensitivity to bright lights)
-- nausea
-- difficulty focusing
-- headache
-
-Pertinent Negatives:
-- no vomiting
-- no loss of vision
-- no blurry vision
-- no fever
-- no rash
-- no recent head injury
-- no weakness in arms and legs
-- no difficulty speaking
-
-Relevant Clinical Context:
-- Ibuprofen taken for two days without relief
-- took a couple of days off work due to headache
-- stressful new project at work affecting focus
-- patient reports inadequate water intake may trigger headaches
-- patient has been taking ibuprofen three tablets a day, possibly exceeding recommended dose
-- patient wears glasses since age five
-
-Allergies:
-- none known
-
-Medical History:
-- recurrent headaches previously responsive to ibuprofen
-
-Family History:
-- sister has migraines
-- mother has migraines
-
-Social History:
-- lives with three housemates
-- works in IT
-- socially smokes
-- socially drinks
-- wears glasses
-
-Current Medications:
-- Ibuprofen, three a day",No objective findings documented.,Possible migraine.,"Medications:
-- Naproxen
-Investigations/Tests:
-- repeat eye test
-Follow-up:
-- return in about a week to two weeks
-- call or return sooner if headaches worsen or do not improve
-- call or return if vision problems, weakness in arms or legs, or feeling unwell
-Advice:
-- keep a headache diary"
-C00014,0.75,1.0,1.0,1.0,0.85,"[""explicit mention of possible fever or subjective temperature elevation""]",[],[],"[""Comprehensive capture of symptoms, negatives, past medical history, medications, and social history"", ""Accurate reflection of the physician's assessment (viral illness) and management plan"", ""Includes all counseling points given by the clinician (rest, fluids, paracetamol, alcohol reduction, work advice)""]","[""Redundant duplicate entries (e.g., cough, weakness) in the subjective section"", ""Does not explicitly note the patient's subjective feeling of fever despite shivering/chills""]","Patient Information:
-- Age: 50
-
-Symptoms:
-- dry cough, continuous, keeps me up at night for 5-6 days
-- runny nose for 5-6 days
-- sore throat from coughing for 5-6 days
-- shivering/chills
-- fatigue/tiredness
-- muscle aches throughout arms and legs
-- lethargy and weakness
-- diarrhea for 5-6 days (Resolved)
-- cough
-- weakness and lethargy
-
-Pertinent Negatives:
-- no ear pain
-- no ear discharge
-- ears not blocked
-- no chest pain
-- no breathlessness
-- no nausea
-- no vomiting
-- no urinary problems
-
-Relevant Clinical Context:
-- cough keeps patient up at night
-- patient drinks plenty of fluids
-- patient unable to do pilates due to muscle pain
-- patient lying in bed
-- patient does not attribute symptoms to stress
-
-Allergies:
-- none known
-
-Medical History:
-- type 2 diabetes
-- high blood pressure
-
-Family History:
-- father has type 2 diabetes
-
-Social History:
-- lives with partner
-- works as a developer in IT
-- stopped smoking 6 months ago
-- drinks wine 2-3 glasses on three evenings per week
-
-Current Medications:
-- Metformin
-- Lisinopril",No objective findings documented.,Possible viral illness.,"Medications:
-- Paracetamol
-Follow-up:
-- If you feel like you're still not getting any better in two to three days, it's probably worth coming back to see me again
-- If your cough isn't getting any better, or your breathing is getting worse, come back sooner
-Advice:
-- cut down alcohol consumption to two glasses a week for the first few weeks, then one glass a week thereafter
-- take a day or two off work if coughing
-- get good bed rest
-- drink plenty of fluids and stay well‑hydrated
-- rest"
-C00015,0.75,1.0,1.0,1.0,0.75,"[""Previous over-the-counter treatments (E45 cream and antihistamine) that were tried without benefit"", ""Absence of prior diagnosed skin conditions (e.g., no history of eczema or dermatitis)""]",[],[],"[""Accurately captures the patient's chief complaint, timeline, and symptom details"", ""Includes relevant past medical, family, and social history"", ""Correctly identifies likely diagnosis of contact dermatitis"", ""Provides clear management plan with medication, skin care advice, and follow‑up instructions""]","[""Omits documentation of prior OTC treatments attempted by the patient"", ""Assigns severity labels (\""severe\"") that are inferred rather than explicitly stated"", ""Objective section is empty despite no physical exam findings being recorded""]","Patient Information:
-- Age: 45
-
-Symptoms:
-- cracked skin on hands for 3-4 months (Severity: severe)
-- dryness of skin on hands and legs
-- itchiness in palms
-- bleeding from scratched skin when scratched
-- soreness in fingers for 3-4 months (Severity: severe)
-
-Pertinent Negatives:
-- no fever
-- no nausea
-- no vomiting
-- no bowel problems
-- no urinary problems
-- no asthma
-
-Relevant Clinical Context:
-- unable to work for the past three days due to hand symptoms
-- does not consistently wear gloves while cleaning
-- changed jobs four months ago to hotel housekeeping
-- uses cleaning products for bathrooms and bedrooms
-- drinks a couple of pints of alcohol per week
-- minimal alcohol consumption
-- no smoking
-
-Allergies:
-- none known
-
-Medical History:
-- type 2 diabetes
-
-Family History:
-- diabetes
-
-Social History:
-- works as a housekeeper at a hotel
-- does not always wear gloves while cleaning
-- changed jobs four months ago
-- drinks a couple of pints of alcohol per week
-- does not smoke
-
-Current Medications:
-- Metformin",No objective findings documented.,Possible contact dermatitis.,"Medications:
 - steroid cream
-- stronger emollient, 3-4 times a day for 10-14 days
+- emollient, throughout the day for few days
 Follow-up:
-- if symptoms have not improved within one to two weeks, return for review
-- if symptoms worsen or spread, return sooner
+- return next week if symptoms do not improve
 Advice:
-- wear gloves when cleaning at all times
-- apply emollient 3-4 times a day for 10-14 days
-- use prescribed steroid cream as directed
-- avoid cleaning product triggers"
-C00016,0.75,1.0,1.0,0.75,0.75,"[""Assessment of left ear hearing loss / otologic problem"", ""Explicit mention that patient uses cotton buds (though advice to avoid is included)""]",[],[],"[""Accurately records the duration and laterality of hearing difficulty, tinnitus, and dizziness"", ""Includes pertinent negatives (pain, discharge, fever, chest pain, palpitations)"", ""Notes triggers for tinnitus and character of dizziness"", ""Provides clear plan for ear examination, follow‑up timing, and patient education""]","[""Assessment section limited to \""tinnitus\"" and omits mention of hearing loss"", ""Does not document that the patient uses cotton buds, only the avoidance advice""]","
-Symptoms:
-- hearing difficulty in left ear for six weeks
-- ringing in left ear (tinnitus) for six weeks
-- dizziness (off balance)
-
-Pertinent Negatives:
-- no ear pain
-- no ear discharge
-- no fever
-- no chest pain
-- no palpitations
-
-Relevant Clinical Context:
-- ringing in ear is triggered by watching TV or listening to music
-- dizziness described as mild off-balance without nausea or true spinning
-
-Allergies:
-- None documented.
-
-Medical History:
-- transient hearing problem about a year ago lasting a couple of days
-
-Family History:
-- None documented.
-
-Social History:
-- None documented.
-
-Current Medications:
-- None documented.",No objective findings documented.,tinnitus.,"Investigations/Tests:
-- ear examination (otoscopy) in clinic
-Follow-up:
-- attend ear examination appointment in 4-5 days
-- book another appointment if any issues arise before the clinic visit
-- contact support team via phone number in notes if needed
-Advice:
-- avoid using cotton buds to clean ears
-- read the provided leaflet about tinnitus"
-C00017,0.75,0.75,0.75,1.0,0.75,"[""Objective findings: warmth of the elbow, mild tenderness on palpation, dry skin noted on the tip of the elbow""]","[""Intermittent joint pain (patient reported no pain in the elbow)""]",[],"[""Accurately records patient age, allergy to peanuts, and history of osteoarthritis"", ""Captures key subjective symptoms: swelling, warmth, weird feeling, dry skin"", ""Includes relevant negatives (no injury, no prior episodes, no family rheumatologic disease, no medication allergies)"", ""Provides clear assessment of possible bursitis"", ""Details appropriate plan: ibuprofen dosing, blood tests, follow‑up instructions, and red‑flag advice""]","[""Includes an unsupported statement about intermittent joint pain"", ""Omits documented objective exam findings (warmth, mild tenderness, dry skin)"", ""Objective section left blank despite available exam information""]","Patient Information:
-- Age: 53
-
-Symptoms:
-- swelling on left elbow for about a week
-- warmth of left elbow
-- intermittent joint pain
-- weird feeling on tip of elbow with swelling
-- dry skin
-
-Pertinent Negatives:
-- no pain in elbow
-- no recent injury to elbow
-- no prior episodes of elbow swelling
-- no family history of rheumatologic disease
-- no medication allergies
-- no regular medications
-- no other illnesses
-- no eczema
-- no dry skin elsewhere
-
-Relevant Clinical Context:
-- doctor explained bursitis as inflammation of a fluid sac around the joint
-
-Allergies:
-- peanuts
-
-Medical History:
-- osteoarthritis
-
-Family History:
-- None documented.
-
-Social History:
-- desk job
-- runs 2-3 times a week
-- does sports
-
-Current Medications:
-- None documented.",No objective findings documented.,Possible bursitis.,"Medications:
-- Ibuprofen - 400 mg, twice a day
-Investigations/Tests:
-- blood tests for inflammatory markers, infection, rheumatological antibodies, and gout
-Follow-up:
-- follow-up appointment after blood test results, can be phone or video
-- contact us after blood test done
-Advice:
-- take ibuprofen after food, not on an empty stomach; stop if heartburn occurs
-- seek immediate medical attention if elbow becomes very red, very painful, or redness spreads
-- contact the clinic if symptoms worsen"
-C00018,0.75,1.0,1.0,1.0,0.85,"[""patient expressed concern about seriousness of condition"", ""doctor provided reassurance that condition likely not life‑threatening"", ""detailed steps for booking the face‑to‑face appointment (admin message, support team phone)""]",[],[],"[""Comprehensive capture of symptoms and pertinent negatives"", ""Relevant past medical, medication, allergy, family and social history included"", ""Appropriate assessment (possible Bell's palsy) and concise plan for face‑to‑face evaluation""]","[""Does not document patient anxiety and reassurance provided by the clinician"", ""Lacks detail of administrative steps for arranging the appointment"", ""Objective section empty, though no objective data were recorded in the transcript""]","Patient Information:
-- Age: 40
-
-Symptoms:
-- hearing loss left side for three weeks
-- numbness of left side of face around ear and jawline for three weeks
-- ringing in left ear
-- occasional ringing in ears (tinnitus)
-- dizziness
-- hearing loss
-- numbness
-
-Pertinent Negatives:
-- no weakness
-- no numbness elsewhere
-- no difficulty swallowing
-- no difficulty speaking
-- no vision problems
-- no ear discharge
-- no ear pain
-- no fever
-- no ear itchiness
-- no use of cotton buds
-- no other medication
-- no other allergies
-
-Relevant Clinical Context:
-- history of nasal polyps, uses nasal spray as needed
-- takes Rennie's antacid as needed
-- previous diagnosis of labyrinthitis, not ongoing
-- symptoms affecting ability to train as a jockey
-
-Allergies:
-- latex
-
-Medical History:
-- nasal polyps
-- labyrinthitis (past)
-
-Family History:
-- brother had neurofibromatosis
-
-Social History:
-- jockey
-- lives with partner
-- no pets
-
-Current Medications:
-- nasal spray
-- Rennie's",No objective findings documented.,Possible Bell's Palsy.,"Follow-up:
-- attend face-to-face clinic appointment today"
-C00019,0.75,0.75,1.0,0.75,0.75,"[""Objective vital signs (pulse rate ~66-74 bpm)"", ""Capillary refill test result"", ""Visual examination of throat"", ""Neck exam findings (absence of enlarged glands confirmed)"", ""Temperature measurement value""]",[],"[""Objective section incorrectly states no findings despite observations made during the telehealth exam""]","[""Comprehensive capture of subjective symptoms and timeline"", ""Includes relevant past medical history (SLE) and current medication (Methotrexate)"", ""Documents pertinent negatives (no recent flight, no clot history, no antibiotic allergies)"", ""Accurate assessment and appropriate plan for further evaluation""]","[""Omission of documented objective findings (pulse, capillary refill, throat and neck exam)"", ""Duplicate listing of coughing up blood in symptoms"", ""Objective section mischaracterizes the lack of findings""]","Patient Information:
-- Age: 45
-
-Symptoms:
-- shortness of breath for today
-- pain in right side of back when breathing deeply for today
-- slight fever
-- coughing up blood (hemoptysis)
-- feeling heart beating faster (palpitations)
-- fatigue and reduced exercise tolerance for couple of weeks
-- coughing up blood
-- fever for one day
-- slight pain for one day
-
-Pertinent Negatives:
-- no recent long-haul flight
-- no clots in legs or lungs
-- no family history of clots
-- no allergies to antibiotics
-- no enlarged neck glands
-
-Allergies:
-- none known
-
-Medical History:
-- systemic lupus erythematosus
-
-Family History:
-- None documented.
-
-Social History:
-- office desk job
-- lives alone in a flat
-- has a cat
-- non-smoker
-
-Current Medications:
-- Methotrexate",No objective findings documented.,"Possible chest infection, Possible pneumonia.","Investigations/Tests:
-- chest auscultation
-- blood pressure measurement
-- pulse measurement
-- temperature measurement
-- chest X-ray
-Follow-up:
-- review in clinic today
-- follow-up chest X-ray if symptoms persist"
-C00020,0.75,0.75,1.0,1.0,0.75,"[""Specific duration of each episode (e.g., weakness lasting a few days then resolving)"", ""Explicit mention that the patient feels normal between episodes""]",[],[],"[""Comprehensive capture of the patient's neurological symptoms and their progression"", ""Includes relevant family and social history, medication, and allergy information"", ""Accurately reflects the clinician's assessment and urgent referral plan""]","[""Does not detail the transient nature of the weakness episodes (lasting days)"", ""Minor redundancy in stating \""no current symptoms\"" despite episodic nature""]","Patient Information:
-- Age: 32
-
-Symptoms:
-- feeling very tired for a couple of days (Resolved)
-- general fatigue and weakness
-- pins and needles in right hand for about a month
-- weakness in right arm
-- weakness in right leg
-- abnormal gait
-- nausea
-- difficulty holding cup of coffee and drinking for last couple of days
-- feeling like something in throat
-
-Pertinent Negatives:
-- no difficulty swallowing
-- no difficulty speaking
-- no visual problems during episodes
-- no other illnesses
-- no current symptoms
-- no smoking
-- no GP discussion about aspirin risks
-
-Relevant Clinical Context:
-- colleague observed abnormal gait
-- episodes increasing in frequency from about once a week to several times a day
-- patient takes aspirin 75 mg once daily to reduce risk of stroke and heart attack, started after father's operation
-- patient was required to be checked after father's operation and had blood tests showing normal cholesterol, diabetes, and blood pressure
-- father had operation to the side of his neck to reduce risk of stroke
-
-Allergies:
-- penicillin
-
-Medical History:
-- None documented.
-
-Family History:
-- father had neck operation to reduce risk of stroke
-
-Social History:
-- works as a plastic surgeon
-- lives with wife
-- non-smoker
-
-Current Medications:
-- aspirin - 75 mg, once a day",No objective findings documented.,Possible mini-stroke (TIA).,"Investigations/Tests:
-- carotid artery ultrasound
-- brain scan
-Follow-up:
-- attend TIA clinic within 1-2 days
-- call the hospital/TIA clinic number to confirm appointment
-- contact the clinic over the phone if symptoms return
-- go to A&E immediately if symptoms are prolonged or worsen
-- contact us if there is any delay in the appointment
-Advice:
-- contact us over the phone if symptoms recur
-- go to A&E if symptoms are prolonged"
-C00021,0.75,0.5,0.5,0.75,0.6,"[""Objective exam findings (e.g., lips not visibly swollen, breathing appeared normal, description of arm rash and puncture mark)"", ""Patient's occasional anxiety/panic attacks""]","[""Statement that there is no swelling of the lips"", ""Statement that there is no difficulty breathing"", ""Claim that no objective findings were documented""]","[""Objective section is empty despite the clinician having performed an exam and noted findings""]","[""Includes key subjective symptoms (breathing difficulty, rash, lip swelling, tongue sensation, anxiety)"", ""Documents relevant past medical history (eczema) and allergies (penicillin)"", ""Provides clear management plan with antihistamine recommendations and safety instructions""]","[""Contains inaccurate negative statements that contradict the patient's report"", ""Omits documented objective examination details"", ""Misrepresents the presence/absence of certain findings, leading to potential confusion""]","Patient Information:
-- Age: 27
-
-Symptoms:
-- difficulty breathing
-- rash on arm for a few minutes
-- swelling of lips for a few minutes
-- tongue feels weird for a few minutes
-- anxiety
-
-Pertinent Negatives:
-- no history of anaphylaxis
-- no prior epipen
-- no antihistamines taken
-- no significant swelling at sting site
-- no food allergies
-- no pet allergies
-- no swelling of lips
-- no difficulty breathing
-- no stridor
-- no life‑threatening allergic reaction
-
-Relevant Clinical Context:
-- patient uncertain whether sting was from a bee or a wasp
-- patient has been around dogs and cats
-- localised allergic reaction to an insect bite
-
-Allergies:
-- penicillin
-
-Medical History:
-- eczema
-
-Family History:
-- None documented.
-
-Social History:
-- living alone
-- computer scientist
-- has a cat
-
-Current Medications:
-- None documented.",No objective findings documented.,localised allergic reaction.,"Follow-up:
-- if anything deteriorates, go straight to A&E
-- make an appointment with us if symptoms worsen
-- come back to us if you have any further issues
-- lower threshold for contacting us if worried
-Advice:
-- take an antihistamine such as Piriton or Chlorphenamine, one tablet 4 mg up to six times a day or one a day as preferred
-- buy antihistamine over the counter without prescription
-- monitor for spreading redness, warmth or signs of infection in the arm
-- read information about anaphylactic reactions"
-C00022,0.75,1.0,1.0,1.0,0.85,"[""First episode of chest discomfort (no prior episodes)"", ""Ambulance dispatch and emergency transport plan"", ""Absence of vital signs/clinical observations"", ""Patient's stress level noted but not documented"", ""No current medications listed (if any)""]",[],[],"[""Comprehensive capture of chest pain characteristics and associated symptoms"", ""Inclusion of relevant risk factors (smoking, hypertension, family history)"", ""Accurate documentation of aspirin allergy"", ""Clear assessment of possible myocardial infarction"", ""Appropriate plan for ECG and allergy communication""]","[""Missing explicit mention of emergency ambulance activation in plan"", ""Did not note that this is the first occurrence of chest pain"", ""Lacks documentation of vital signs or objective findings"", ""Plan does not include monitoring or further emergency management steps""]","
-Symptoms:
-- chest discomfort/pressure in the middle of chest, diffuse for a couple of hours
-- nausea
-- sweating
-- shortness of breath
-- pain in left arm
-- shoulder pain
-- palpitations (feeling heart beating faster)
-
-Pertinent Negatives:
-- no vomiting
-- no diabetes
-
-Relevant Clinical Context:
-- symptoms began while gardening, kneeling, not strenuous activity
-
-Allergies:
-- aspirin
-
-Medical History:
-- hypertension
-- overweight
-
-Family History:
-- father died of heart attack
-- mother had heart problems
-
-Social History:
-- smokes about ten cigarettes a day for fifteen years
-- generally does not do much physical activity
-- drinks 7-8 pints of beer per week
-- lives alone
-- restaurant owner
-
-Current Medications:
-- None documented.",No objective findings documented.,Possible heart attack.,"Investigations/Tests:
-- ECG
-Advice:
-- communicate aspirin allergy to the hospital"
-C00023,0.5,0.5,1.0,1.0,0.75,"[""Chronic back pain and physiotherapy details"", ""Underlying condition for Seroxat (e.g., depression/anxiety)"", ""Detailed headache history (centralized, chronic, migraine triggers)""]","[""Medical History: None documented.""]",[],"[""Accurately captures fever, muscle aches, nausea, sweating, cold sensations, fatigue, headache, and back pain as symptoms"", ""Includes pertinent negatives (cough, cold, sore throat, ear pain, diarrhoea, neck stiffness, rash, joint issues, urinary symptoms)"", ""Correctly records travel to Vietnam, malaria prophylaxis, rural exposure"", ""Documents allergies, social history, current medications, family history, and plan for investigations and follow‑up""]","[""Fails to document existing medical history of chronic back pain and physiotherapy"", ""Incorrectly states that there is no medical history"", ""Omits details about the chronic headache pattern"", ""Overall missing important background information reduces completeness and faithfulness""]","
-Symptoms:
-- fever for seven days
-- muscle aches
-- nausea
-- sweating
-- feeling cold
-- fatigue
-- headache
-- back pain
-- tiredness
-
-Pertinent Negatives:
-- no cough
-- no cold
-- no sore throat
-- no ear pain
-- no diarrhoea
-- no neck stiffness
-- no rash
-- no joint swelling or tenderness
-- no painful urination
-- no increased urinary frequency
-- no smoking
-
-Relevant Clinical Context:
-- recent travel to Vietnam, returned four weeks ago
-- took daily malaria prophylaxis (unspecified drug)
-- low fluid intake
-- back pain related to long periods of sitting at a desk and bad posture, physiotherapy focusing on posture and strengthening
-- patient works as a nurse
-- patient is up to date with vaccinations including Hepatitis B
-- moderate alcohol intake
-- moderate physical exercise a few times a week
-- recent travel to rural areas in Vietnam with potential exposure to malaria
-
-Allergies:
-- pollen
-
-Medical History:
-- None documented.
-
-Family History:
-- father had heart attack
-
-Social History:
-- works as a nurse
-- non-smoker
-- moderate alcohol intake
-- moderate physical exercise a few times a week
-
-Current Medications:
-- ibuprofen, daily
-- paracetamol, daily
-- Seroxat",No objective findings documented.,No diagnosis documented.,"Investigations/Tests:
-- thick and thin blood films
-- inflammatory markers
-- blood tests
-Follow-up:
-- attend central London clinic for examination and blood tests
-- if unable to travel, attend local A&E
-Advice:
-- do not go to work until investigations are completed
-- need to sort this out sooner rather than later"
+- apply steroid cream as prescribed
+- apply emollient throughout the day for the next few days
+- try over-the-counter antihistamines (Piriton, Loratadine) for itchiness"
