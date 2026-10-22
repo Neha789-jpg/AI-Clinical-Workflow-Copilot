@@ -135,12 +135,15 @@ Return ONLY a valid JSON object with exactly these keys:
 
   "symptoms": [
     {
+      
       "text": "...",
       "duration": null,
       "severity": null,
       "status": "current"
     }
   ],
+
+  "pertinent_negatives": ["..."],
   
   "relevant_context": [
     "..."
@@ -204,7 +207,8 @@ GENERAL EXTRACTION RULES:
 SYMPTOMS:
 
 - Include symptoms that the patient currently has or clearly reports having experienced.
-- Do NOT include symptoms that the patient explicitly denies.
+- Do NOT include denied symptoms in "symptoms". Put every symptom the patient explicitly denies, or the doctor explicitly records as absent, in "pertinent_negatives" as a short phrase ("no fever", "no blood in stool", "no chest pain").
+- Attach a duration to a symptom ONLY when the transcript states that duration for that specific symptom. Do NOT copy the presenting complaint's duration onto other symptoms; leave duration null if not stated for that symptom.
 - Do NOT extract symptoms from questions asked by the doctor.
 - Do NOT extract symptoms mentioned only as hypothetical possibilities.
 - Use "current" only when the transcript indicates the symptom is ongoing at the time of the consultation.
@@ -453,6 +457,7 @@ prescribed = medicines the doctor explicitly starts, prescribes, changes, increa
 - If a medication is mentioned only as a general example, option, or possibility, do not place it in prescribed.
 - If a medication is recommended as something the patient may take but is not explicitly prescribed, place the instruction in advice when appropriate.
 - Do not put medications into investigations or diagnoses.
+- If the doctor offers a choice between medicines ("either X or Y"), do NOT put both in prescribed; record it in advice as "choice of X or Y offered".
 
 INVESTIGATIONS:
 
@@ -620,7 +625,7 @@ from openai import OpenAI
 EXTRACTOR_MODELS = ["openai/gpt-oss-120b", "openai/gpt-oss-20b"]
 
 LIST_FIELDS = [
-    "symptoms", "diagnoses", "current_medications", "prescribed",
+    "symptoms", "pertinent_negatives", "diagnoses", "current_medications", "prescribed",
     "allergies", "medical_history", "family_history", "social_history",
     "investigations", "follow_up", "advice", "relevant_context",
 ]
@@ -646,7 +651,7 @@ class RequestTooLarge(Exception):
 def _extract_once(transcript, retries=3):
     """
     One extraction call with model fallback and retries.
-      413 on every model        -> RequestTooLarge (caller splits the transcript)
+      413 (request too large)   -> RequestTooLarge (caller splits the transcript)
       429 per-minute limit      -> wait as instructed, retry
       429 per-day limit         -> RuntimeError('GROQ_RATE_LIMIT: ...')
       invalid JSON / other      -> retry up to `retries` times
@@ -655,7 +660,6 @@ def _extract_once(transcript, retries=3):
     last_error = None
 
     for attempt in range(retries):
-        too_large_everywhere = True
         for model in EXTRACTOR_MODELS:
             try:
                 response = client.chat.completions.create(
@@ -669,9 +673,12 @@ def _extract_once(transcript, retries=3):
                 )
                 data = json.loads(response.choices[0].message.content)
 
-                # Safety check: a pregnancy TEST is not a pregnancy DIAGNOSIS
-                prescribed = " ".join(str(p) for p in data.get("prescribed", [])).lower()
-                if "pregnancy test" in prescribed:
+                # Safety check: a pregnancy TEST is not a pregnancy DIAGNOSIS.
+                # The test may be recorded under prescribed, investigations or advice.
+                mentions = " ".join(
+                    json.dumps(data.get(k, [])) for k in ("prescribed", "investigations", "advice")
+                ).lower()
+                if "pregnancy test" in mentions:
                     data["diagnoses"] = [
                         d for d in data.get("diagnoses", [])
                         if "pregnan" not in json.dumps(d).lower()
@@ -688,8 +695,6 @@ def _extract_once(transcript, retries=3):
                     print(f"[extractor] {model}: request too large -> split")
                     raise RequestTooLarge(msg)
 
-                too_large_everywhere = False
-
                 if "tokens per day" in msg or "TPD" in msg:
                     raise RuntimeError("GROQ_RATE_LIMIT: " + msg)
 
@@ -702,9 +707,6 @@ def _extract_once(transcript, retries=3):
 
                 print(f"[extractor] {model} attempt {attempt+1} failed: {msg[:160]}")
 
-        if too_large_everywhere:
-            raise RequestTooLarge(str(last_error))
-
     raise last_error
 
 
@@ -714,7 +716,13 @@ def _merge(a, b):
     for f in LIST_FIELDS:
         seen, merged = set(), []
         for item in (a.get(f) or []) + (b.get(f) or []):
-            key = (json.dumps(item, sort_keys=True) if isinstance(item, dict) else str(item)).strip().lower()
+            # Dedupe by the entity's text/name so the same symptom reported in
+            # both halves (possibly with a different duration) appears once.
+            if isinstance(item, dict):
+                key = str(item.get("text") or item.get("name") or json.dumps(item, sort_keys=True))
+            else:
+                key = str(item)
+            key = key.strip().lower()
             if key and key not in seen:
                 seen.add(key)
                 merged.append(item)

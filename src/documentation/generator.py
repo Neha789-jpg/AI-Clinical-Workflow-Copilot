@@ -76,6 +76,19 @@ def generate_subjective(entities):
 
     else:
         lines.append("- None documented.")
+    # --------------------------------------------------
+    # Pertinent negatives (symptoms explicitly denied)
+    # --------------------------------------------------
+
+    negatives = entities.get("pertinent_negatives") or []
+    negatives = [n for n in negatives if n]
+
+    if negatives:
+        lines.append("")
+        lines.append("Pertinent Negatives:")
+        for item in negatives:
+            lines.append(f"- {item}")
+
 
         # Relevant clinical context
     if relevant_context:
