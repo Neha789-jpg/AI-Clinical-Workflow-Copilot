@@ -76,19 +76,6 @@ def generate_subjective(entities):
 
     else:
         lines.append("- None documented.")
-    # --------------------------------------------------
-    # Pertinent negatives (symptoms explicitly denied)
-    # --------------------------------------------------
-
-    negatives = entities.get("pertinent_negatives") or []
-    negatives = [n for n in negatives if n]
-
-    if negatives:
-        lines.append("")
-        lines.append("Pertinent Negatives:")
-        for item in negatives:
-            lines.append(f"- {item}")
-
 
         # Relevant clinical context
     if relevant_context:
@@ -181,22 +168,12 @@ def generate_subjective(entities):
 def generate_objective(entities):
     """
     Generate the Objective section from extracted clinical information.
-    Includes examination findings stated by the clinician and vital signs.
+    Includes vital signs.
     """
 
-    vitals = entities.get("vitals", {}) or {}
-    findings = [f for f in (entities.get("examination_findings") or []) if f]
+    vitals = entities.get("vitals", {})
 
     lines = []
-
-    # --------------------------------------------------
-    # Examination findings stated by the clinician
-    # --------------------------------------------------
-
-    if findings:
-        lines.append("Examination Findings:")
-        for item in findings:
-            lines.append(f"- {item}")
 
     has_vitals = (
     vitals.get("bp")
@@ -208,8 +185,6 @@ def generate_objective(entities):
 
 
     if has_vitals:
-        if lines:
-            lines.append("")
         lines.append("Vital Signs:")
 
         if vitals.get("bp"):

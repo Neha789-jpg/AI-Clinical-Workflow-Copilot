@@ -135,18 +135,13 @@ Return ONLY a valid JSON object with exactly these keys:
 
   "symptoms": [
     {
-      
       "text": "...",
       "duration": null,
       "severity": null,
       "status": "current"
     }
   ],
-
-  "pertinent_negatives": ["..."],
-
-  "examination_findings": ["..."],
-
+  
   "relevant_context": [
     "..."
   ],
@@ -209,9 +204,7 @@ GENERAL EXTRACTION RULES:
 SYMPTOMS:
 
 - Include symptoms that the patient currently has or clearly reports having experienced.
-- Do NOT include denied symptoms in "symptoms". Put ONLY symptoms the patient explicitly denies in answer to a question ("No, no fever"), or that the doctor explicitly states are absent, in "pertinent_negatives" as a short phrase ("no fever", "no blood in stool", "no chest pain").
-- A symptom the doctor merely asks about, with no clear denial in the transcript, is NOT a pertinent negative. Never list a negative that contradicts a reported symptom. Do not record negatives for family history or examination here.
-- Attach a duration to a symptom ONLY when the transcript states that duration for that specific symptom. Do NOT copy the presenting complaint's duration onto other symptoms; leave duration null if not stated for that symptom.
+- Do NOT include symptoms that the patient explicitly denies.
 - Do NOT extract symptoms from questions asked by the doctor.
 - Do NOT extract symptoms mentioned only as hypothetical possibilities.
 - Use "current" only when the transcript indicates the symptom is ongoing at the time of the consultation.
@@ -249,8 +242,6 @@ IMPORTANT:
 - Do NOT use relevant_context as a general summary of the consultation.
 - Do NOT move medical history, family history, allergies, or medications into
   relevant_context.
-- Do NOT put anything the doctor observed or found on examination into
-  relevant_context; that belongs in examination_findings.
 - Do NOT infer or invent information.
 - Only include information explicitly stated in the transcript.
 - Prefer specific clinically useful details over vague statements.
@@ -272,6 +263,10 @@ Patient: "I try not to eat a lot because I'm going to the toilet every ten minut
 Patient: "I think I don't drink enough water."
 -> relevant_context:
    ["patient reports possibly inadequate fluid intake"]
+
+Patient: "When you press on my tummy, it hurts a little bit."
+-> relevant_context:
+   ["mild abdominal tenderness on palpation"]
 
 Patient: "My old inhaler ran out and I bought a new brand here."
 -> relevant_context:
@@ -458,7 +453,6 @@ prescribed = medicines the doctor explicitly starts, prescribes, changes, increa
 - If a medication is mentioned only as a general example, option, or possibility, do not place it in prescribed.
 - If a medication is recommended as something the patient may take but is not explicitly prescribed, place the instruction in advice when appropriate.
 - Do not put medications into investigations or diagnoses.
-- If the doctor offers a choice between medicines ("either X or Y"), do NOT put both in prescribed; record it in advice as "choice of X or Y offered".
 
 INVESTIGATIONS:
 
@@ -585,21 +579,6 @@ Return:
 Do not add units to the numeric values.
 Do not calculate or infer vital signs.
 
-EXAMINATION FINDINGS:
-
-Record in examination_findings anything the DOCTOR observes or finds on examination,
-including observations stated aloud during a video or telephone consultation.
-
-Examples:
-Doctor: "Your throat looks quite red." -> ["throat red on inspection"]
-Doctor: "I can see the rash is raised and dry." -> ["rash raised and dry"]
-Doctor: "It's tender when I press here, on the lower left." -> ["tenderness on palpation, lower left abdomen"]
-Doctor: "Your chest sounds clear." -> ["chest clear on auscultation"]
-
-- Only findings the doctor states. Do not infer findings and do not record that no examination took place.
-- Patient-reported sensations are symptoms, not examination findings.
-- Measured values (BP, pulse, temperature, SpO2) go in vitals, not here.
-
 NEGATION AND UNCERTAINTY:
 
 - Carefully distinguish positive statements from negative statements.
@@ -623,8 +602,7 @@ Before returning the JSON, verify that:
 8. Every future review or medical-contact instruction is captured under follow_up.
 9. Warning signs and conditions for seeking medical review are preserved.
 10. No information has been invented or inferred.
-11. No denied symptom has been incorrectly extracted, and every pertinent negative is an explicit denial.
-12a. Every finding the doctor stated on examination is in examination_findings, not relevant_context.
+11. No denied symptom has been incorrectly extracted.
 12. No clinically important instruction has been replaced by a vague summary.
 
 Return ONLY the JSON object. No markdown. No explanation.
@@ -642,7 +620,7 @@ from openai import OpenAI
 EXTRACTOR_MODELS = ["openai/gpt-oss-120b", "openai/gpt-oss-20b"]
 
 LIST_FIELDS = [
-    "symptoms", "pertinent_negatives", "examination_findings", "diagnoses", "current_medications", "prescribed",
+    "symptoms", "diagnoses", "current_medications", "prescribed",
     "allergies", "medical_history", "family_history", "social_history",
     "investigations", "follow_up", "advice", "relevant_context",
 ]
@@ -668,7 +646,7 @@ class RequestTooLarge(Exception):
 def _extract_once(transcript, retries=3):
     """
     One extraction call with model fallback and retries.
-      413 (request too large)   -> RequestTooLarge (caller splits the transcript)
+      413 on every model        -> RequestTooLarge (caller splits the transcript)
       429 per-minute limit      -> wait as instructed, retry
       429 per-day limit         -> RuntimeError('GROQ_RATE_LIMIT: ...')
       invalid JSON / other      -> retry up to `retries` times
@@ -677,6 +655,7 @@ def _extract_once(transcript, retries=3):
     last_error = None
 
     for attempt in range(retries):
+        too_large_everywhere = True
         for model in EXTRACTOR_MODELS:
             try:
                 response = client.chat.completions.create(
@@ -690,12 +669,9 @@ def _extract_once(transcript, retries=3):
                 )
                 data = json.loads(response.choices[0].message.content)
 
-                # Safety check: a pregnancy TEST is not a pregnancy DIAGNOSIS.
-                # The test may be recorded under prescribed, investigations or advice.
-                mentions = " ".join(
-                    json.dumps(data.get(k, [])) for k in ("prescribed", "investigations", "advice")
-                ).lower()
-                if "pregnancy test" in mentions:
+                # Safety check: a pregnancy TEST is not a pregnancy DIAGNOSIS
+                prescribed = " ".join(str(p) for p in data.get("prescribed", [])).lower()
+                if "pregnancy test" in prescribed:
                     data["diagnoses"] = [
                         d for d in data.get("diagnoses", [])
                         if "pregnan" not in json.dumps(d).lower()
@@ -712,6 +688,8 @@ def _extract_once(transcript, retries=3):
                     print(f"[extractor] {model}: request too large -> split")
                     raise RequestTooLarge(msg)
 
+                too_large_everywhere = False
+
                 if "tokens per day" in msg or "TPD" in msg:
                     raise RuntimeError("GROQ_RATE_LIMIT: " + msg)
 
@@ -724,6 +702,9 @@ def _extract_once(transcript, retries=3):
 
                 print(f"[extractor] {model} attempt {attempt+1} failed: {msg[:160]}")
 
+        if too_large_everywhere:
+            raise RequestTooLarge(str(last_error))
+
     raise last_error
 
 
@@ -733,13 +714,7 @@ def _merge(a, b):
     for f in LIST_FIELDS:
         seen, merged = set(), []
         for item in (a.get(f) or []) + (b.get(f) or []):
-            # Dedupe by the entity's text/name so the same symptom reported in
-            # both halves (possibly with a different duration) appears once.
-            if isinstance(item, dict):
-                key = str(item.get("text") or item.get("name") or json.dumps(item, sort_keys=True))
-            else:
-                key = str(item)
-            key = key.strip().lower()
+            key = (json.dumps(item, sort_keys=True) if isinstance(item, dict) else str(item)).strip().lower()
             if key and key not in seen:
                 seen.add(key)
                 merged.append(item)
