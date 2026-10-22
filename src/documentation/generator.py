@@ -181,12 +181,22 @@ def generate_subjective(entities):
 def generate_objective(entities):
     """
     Generate the Objective section from extracted clinical information.
-    Includes vital signs.
+    Includes examination findings stated by the clinician and vital signs.
     """
 
-    vitals = entities.get("vitals", {})
+    vitals = entities.get("vitals", {}) or {}
+    findings = [f for f in (entities.get("examination_findings") or []) if f]
 
     lines = []
+
+    # --------------------------------------------------
+    # Examination findings stated by the clinician
+    # --------------------------------------------------
+
+    if findings:
+        lines.append("Examination Findings:")
+        for item in findings:
+            lines.append(f"- {item}")
 
     has_vitals = (
     vitals.get("bp")
@@ -198,6 +208,8 @@ def generate_objective(entities):
 
 
     if has_vitals:
+        if lines:
+            lines.append("")
         lines.append("Vital Signs:")
 
         if vitals.get("bp"):

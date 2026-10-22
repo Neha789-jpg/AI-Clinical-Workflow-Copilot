@@ -144,7 +144,9 @@ Return ONLY a valid JSON object with exactly these keys:
   ],
 
   "pertinent_negatives": ["..."],
-  
+
+  "examination_findings": ["..."],
+
   "relevant_context": [
     "..."
   ],
@@ -207,7 +209,8 @@ GENERAL EXTRACTION RULES:
 SYMPTOMS:
 
 - Include symptoms that the patient currently has or clearly reports having experienced.
-- Do NOT include denied symptoms in "symptoms". Put every symptom the patient explicitly denies, or the doctor explicitly records as absent, in "pertinent_negatives" as a short phrase ("no fever", "no blood in stool", "no chest pain").
+- Do NOT include denied symptoms in "symptoms". Put ONLY symptoms the patient explicitly denies in answer to a question ("No, no fever"), or that the doctor explicitly states are absent, in "pertinent_negatives" as a short phrase ("no fever", "no blood in stool", "no chest pain").
+- A symptom the doctor merely asks about, with no clear denial in the transcript, is NOT a pertinent negative. Never list a negative that contradicts a reported symptom. Do not record negatives for family history or examination here.
 - Attach a duration to a symptom ONLY when the transcript states that duration for that specific symptom. Do NOT copy the presenting complaint's duration onto other symptoms; leave duration null if not stated for that symptom.
 - Do NOT extract symptoms from questions asked by the doctor.
 - Do NOT extract symptoms mentioned only as hypothetical possibilities.
@@ -246,6 +249,8 @@ IMPORTANT:
 - Do NOT use relevant_context as a general summary of the consultation.
 - Do NOT move medical history, family history, allergies, or medications into
   relevant_context.
+- Do NOT put anything the doctor observed or found on examination into
+  relevant_context; that belongs in examination_findings.
 - Do NOT infer or invent information.
 - Only include information explicitly stated in the transcript.
 - Prefer specific clinically useful details over vague statements.
@@ -267,10 +272,6 @@ Patient: "I try not to eat a lot because I'm going to the toilet every ten minut
 Patient: "I think I don't drink enough water."
 -> relevant_context:
    ["patient reports possibly inadequate fluid intake"]
-
-Patient: "When you press on my tummy, it hurts a little bit."
--> relevant_context:
-   ["mild abdominal tenderness on palpation"]
 
 Patient: "My old inhaler ran out and I bought a new brand here."
 -> relevant_context:
@@ -584,6 +585,21 @@ Return:
 Do not add units to the numeric values.
 Do not calculate or infer vital signs.
 
+EXAMINATION FINDINGS:
+
+Record in examination_findings anything the DOCTOR observes or finds on examination,
+including observations stated aloud during a video or telephone consultation.
+
+Examples:
+Doctor: "Your throat looks quite red." -> ["throat red on inspection"]
+Doctor: "I can see the rash is raised and dry." -> ["rash raised and dry"]
+Doctor: "It's tender when I press here, on the lower left." -> ["tenderness on palpation, lower left abdomen"]
+Doctor: "Your chest sounds clear." -> ["chest clear on auscultation"]
+
+- Only findings the doctor states. Do not infer findings and do not record that no examination took place.
+- Patient-reported sensations are symptoms, not examination findings.
+- Measured values (BP, pulse, temperature, SpO2) go in vitals, not here.
+
 NEGATION AND UNCERTAINTY:
 
 - Carefully distinguish positive statements from negative statements.
@@ -607,7 +623,8 @@ Before returning the JSON, verify that:
 8. Every future review or medical-contact instruction is captured under follow_up.
 9. Warning signs and conditions for seeking medical review are preserved.
 10. No information has been invented or inferred.
-11. No denied symptom has been incorrectly extracted.
+11. No denied symptom has been incorrectly extracted, and every pertinent negative is an explicit denial.
+12a. Every finding the doctor stated on examination is in examination_findings, not relevant_context.
 12. No clinically important instruction has been replaced by a vague summary.
 
 Return ONLY the JSON object. No markdown. No explanation.
@@ -625,7 +642,7 @@ from openai import OpenAI
 EXTRACTOR_MODELS = ["openai/gpt-oss-120b", "openai/gpt-oss-20b"]
 
 LIST_FIELDS = [
-    "symptoms", "pertinent_negatives", "diagnoses", "current_medications", "prescribed",
+    "symptoms", "pertinent_negatives", "examination_findings", "diagnoses", "current_medications", "prescribed",
     "allergies", "medical_history", "family_history", "social_history",
     "investigations", "follow_up", "advice", "relevant_context",
 ]
