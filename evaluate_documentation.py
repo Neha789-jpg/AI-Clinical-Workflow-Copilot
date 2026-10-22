@@ -25,7 +25,7 @@ MODEL = "openai/gpt-oss-120b"
 # TARGET_IDS = [f"C{i:05d}" for i in range(1, 58)]
 TARGET_IDS = [f"C{i:05d}" for i in range(1, 58)]
 
-FORCE_REEVALUATE = True
+FORCE_REEVALUATE = False
 
 
 # ============================================================
