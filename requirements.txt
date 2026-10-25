@@ -1,11 +1,9 @@
 streamlit
-openai-whisper
-spacy
+openai
 pandas
 numpy
 python-dotenv
 openpyxl
+requests
+jiwer
 textgrid
-openai
-jiwerrequests
-plotly
