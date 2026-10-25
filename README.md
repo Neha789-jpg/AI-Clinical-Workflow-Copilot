@@ -1,5 +1,7 @@
 # AI-Clinical-Workflow-Copilot
 
+**Live demo:** https://ai-clinical-workflow-copilot.streamlit.app
+
 An AI-powered clinical workflow assistant that helps transform clinical conversations into structured documentation.
 
 ## Project Overview
