@@ -1,0 +1,1874 @@
+Loading consultation data...
+
+Columns in dataset:
+['consultation_id', 'patient_id', 'doctor_id', 'date', 'specialty', 'audio_path', 'audio_duration_sec', 'transcript', 'symptoms', 'medical_history', 'allergies', 'vital_signs', 'source_type', 'source_id']
+Total consultations in dataset: 1965
+Evaluating selected consultations: 57
+Found 33 previously evaluated consultations.
+
+Skipping C00001 (already evaluated)
+
+Skipping C00002 (already evaluated)
+
+Skipping C00003 (already evaluated)
+
+Skipping C00004 (already evaluated)
+
+Skipping C00005 (already evaluated)
+
+Skipping C00006 (already evaluated)
+
+Skipping C00007 (already evaluated)
+
+Skipping C00008 (already evaluated)
+
+Skipping C00009 (already evaluated)
+
+Skipping C00010 (already evaluated)
+
+Skipping C00011 (already evaluated)
+
+Skipping C00012 (already evaluated)
+
+Skipping C00013 (already evaluated)
+
+Skipping C00014 (already evaluated)
+
+Skipping C00015 (already evaluated)
+
+Skipping C00016 (already evaluated)
+
+Skipping C00017 (already evaluated)
+
+Skipping C00018 (already evaluated)
+
+Skipping C00019 (already evaluated)
+
+Skipping C00020 (already evaluated)
+
+Skipping C00021 (already evaluated)
+
+Skipping C00022 (already evaluated)
+
+Skipping C00023 (already evaluated)
+
+Skipping C00024 (already evaluated)
+
+Skipping C00025 (already evaluated)
+
+Skipping C00026 (already evaluated)
+
+Skipping C00027 (already evaluated)
+
+Skipping C00028 (already evaluated)
+
+Skipping C00029 (already evaluated)
+
+Skipping C00030 (already evaluated)
+
+Skipping C00031 (already evaluated)
+
+Skipping C00032 (already evaluated)
+
+Skipping C00033 (already evaluated)
+
+======================================================================
+Evaluating documentation: C00034
+======================================================================
+Running NLP extractor...
+{
+  "patient_info": {
+    "age": null,
+    "gender": null
+  },
+  "symptoms": [
+    {
+      "text": "numbness and tingling in left arm, elbow, hand affecting second, third, and fourth fingers (palmar side)",
+      "duration": "at least two weeks",
+      "severity": null,
+      "status": "current"
+    },
+    {
+      "text": "weakness in left arm affecting grip and piano playing",
+      "duration": "at least two weeks",
+      "severity": null,
+      "status": "current"
+    },
+    {
+      "text": "neck pain",
+      "duration": null,
+      "severity": null,
+      "status": "current"
+    },
+    {
+      "text": "tired headaches",
+      "duration": null,
+      "severity": null,
+      "status": "current"
+    },
+    {
+      "text": "fatigue",
+      "duration": null,
+      "severity": null,
+      "status": "current"
+    },
+    {
+      "text": "temporary loss of peripheral vision in left eye",
+      "duration": "about twenty minutes",
+      "severity": null,
+      "status": "resolved"
+    },
+    {
+      "text": "pain in right hand knuckles",
+      "duration": null,
+      "severity": null,
+      "status": "current"
+    }
+  ],
+  "relevant_context": [
+    "started boxing class a few weeks ago",
+    "recent bad cold about a month ago lasting two weeks",
+    "recent heavy alcohol consumption at a party",
+    "regular exercise/workout routine",
+    "plays piano"
+  ],
+  "diagnoses": [
+    {
+      "text": "multiple sclerosis",
+      "status": "suspected"
+    }
+  ],
+  "current_medications": [
+    {
+      "name": "ibuprofen",
+      "dose": null,
+      "frequency": null
+    },
+    {
+      "name": "vitamin D",
+      "dose": null,
+      "frequency": null
+    },
+    {
+      "name": "iron supplement",
+      "dose": null,
+      "frequency": null
+    },
+    {
+      "name": "melatonin",
+      "dose": null,
+      "frequency": null
+    }
+  ],
+  "prescribed": [],
+  "investigations": [
+    "urgent neurology referral",
+    "brain scan"
+  ],
+  "follow_up": [
+    "go to A&E if weakness progresses to legs, or if headaches, vomiting, fits, or worsening visual symptoms"
+  ],
+  "advice": [
+    "monitor for worsening weakness, headaches, vomiting, fits, or visual symptoms"
+  ],
+  "allergies": [],
+  "vitals": {
+    "bp": null,
+    "pulse": null,
+    "temperature": null,
+    "spo2": null
+  },
+  "medical_history": [
+    "bad cold (viral infection) about a month ago lasting two weeks"
+  ],
+  "family_history": [
+    "father hypothyroidism",
+    "father autoimmune condition",
+    "mother type 2 diabetes",
+    "mother hypertension",
+    "mother high cholesterol"
+  ],
+  "social_history": [
+    "recent heavy alcohol binge",
+    "boxing class participation",
+    "regular exercise",
+    "plays piano"
+  ],
+  "_model": "openai/gpt-oss-120b",
+  "_split": 0
+}
+Generating SOAP note...
+Evaluating SOAP note with LLM...
+
+Scores:
+Completeness:       0.75
+Faithfulness:       0.75
+Hallucination:      1.00
+Section correctness: 0.75
+Overall quality:    0.75
+
+======================================================================
+Evaluating documentation: C00035
+======================================================================
+Running NLP extractor...
+{
+  "patient_info": {
+    "age": null,
+    "gender": null
+  },
+  "symptoms": [
+    {
+      "text": "diarrhea",
+      "duration": "three days",
+      "severity": null,
+      "status": "current"
+    },
+    {
+      "text": "abdominal pain",
+      "duration": null,
+      "severity": "mild",
+      "status": "current"
+    },
+    {
+      "text": "vomiting",
+      "duration": null,
+      "severity": null,
+      "status": "resolved"
+    },
+    {
+      "text": "fever",
+      "duration": null,
+      "severity": "mild",
+      "status": "current"
+    },
+    {
+      "text": "appetite loss",
+      "duration": null,
+      "severity": null,
+      "status": "current"
+    }
+  ],
+  "relevant_context": [],
+  "diagnoses": [],
+  "current_medications": [
+    {
+      "name": "Lexapro",
+      "dose": null,
+      "frequency": null
+    }
+  ],
+  "prescribed": [
+    {
+      "name": "Dioralyte",
+      "dose": null,
+      "frequency": null,
+      "duration": null
+    }
+  ],
+  "investigations": [],
+  "follow_up": [],
+  "advice": [
+    "follow a soft diet avoiding dairy, fish, meat, and eggs",
+    "eat easily digested foods such as crackers, toast, jam, boiled vegetables, and mash",
+    "after 48 hours without diarrhea, gradually reintroduce meat, eggs, and fish",
+    "avoid milk and consider yogurt as a probiotic",
+    "continue drinking plenty of water to stay hydrated",
+    "if diarrhea persists for a week or you notice blood in stool, obtain a stool sample",
+    "if stool frequency exceeds six to eight times per day, seek hospital care",
+    "use Dioralyte over the counter to replenish lost salts"
+  ],
+  "allergies": [
+    "none known"
+  ],
+  "vitals": {
+    "bp": null,
+    "pulse": null,
+    "temperature": null,
+    "spo2": null
+  },
+  "medical_history": [
+    "asthma"
+  ],
+  "family_history": [
+    "father had hypertension",
+    "father had bowel cancer"
+  ],
+  "social_history": [],
+  "_model": "openai/gpt-oss-120b",
+  "_split": 0
+}
+Generating SOAP note...
+Evaluating SOAP note with LLM...
+
+Scores:
+Completeness:       0.50
+Faithfulness:       1.00
+Hallucination:      1.00
+Section correctness: 1.00
+Overall quality:    0.75
+
+======================================================================
+Evaluating documentation: C00036
+======================================================================
+Running NLP extractor...
+[extractor] per-minute limit on openai/gpt-oss-120b, waiting 60s
+[extractor] openai/gpt-oss-20b attempt 1 failed: Error code: 400 - {'error': {'message': "Failed to validate JSON. Please adjust your prompt. See 'failed_generation' for more details.", 'type': 'invalid_reques
+{
+  "patient_info": {
+    "age": null,
+    "gender": null
+  },
+  "symptoms": [
+    {
+      "text": "chest discomfort (pressure)",
+      "duration": "a couple of hours",
+      "severity": "7/10",
+      "status": "current"
+    },
+    {
+      "text": "shortness of breath",
+      "duration": null,
+      "severity": null,
+      "status": "current"
+    },
+    {
+      "text": "light-headedness",
+      "duration": null,
+      "severity": null,
+      "status": "current"
+    },
+    {
+      "text": "nausea",
+      "duration": null,
+      "severity": null,
+      "status": "current"
+    },
+    {
+      "text": "calf pain",
+      "duration": null,
+      "severity": null,
+      "status": "current"
+    },
+    {
+      "text": "leg swelling",
+      "duration": null,
+      "severity": null,
+      "status": "current"
+    },
+    {
+      "text": "pain in left shoulder and arm",
+      "duration": null,
+      "severity": null,
+      "status": "current"
+    },
+    {
+      "text": "difficulty climbing stairs",
+      "duration": null,
+      "severity": null,
+      "status": "current"
+    }
+  ],
+  "relevant_context": [],
+  "diagnoses": [],
+  "current_medications": [],
+  "prescribed": [],
+  "investigations": [],
+  "follow_up": [
+    "schedule a follow-up appointment after hospital visit"
+  ],
+  "advice": [
+    "stay calm",
+    "have some water if you need to",
+    "do not take any medications",
+    "let your wife know and have her gather your things",
+    "limit daily activity to moving around the house, avoid strenuous activity"
+  ],
+  "allergies": [],
+  "vitals": {
+    "bp": null,
+    "pulse": null,
+    "temperature": null,
+    "spo2": null
+  },
+  "medical_history": [
+    "high cholesterol",
+    "hypertension"
+  ],
+  "family_history": [],
+  "social_history": [
+    "smokes",
+    "lives with wife at home"
+  ],
+  "_model": "openai/gpt-oss-120b",
+  "_split": 0
+}
+Generating SOAP note...
+Evaluating SOAP note with LLM...
+
+Scores:
+Completeness:       0.75
+Faithfulness:       1.00
+Hallucination:      1.00
+Section correctness: 1.00
+Overall quality:    0.75
+
+======================================================================
+Evaluating documentation: C00037
+======================================================================
+Running NLP extractor...
+{
+  "patient_info": {
+    "age": 35,
+    "gender": null
+  },
+  "symptoms": [
+    {
+      "text": "feeling hot",
+      "duration": null,
+      "severity": null,
+      "status": "current"
+    },
+    {
+      "text": "severe headaches",
+      "duration": null,
+      "severity": "severe",
+      "status": "current"
+    },
+    {
+      "text": "reduced appetite",
+      "duration": null,
+      "severity": null,
+      "status": "current"
+    },
+    {
+      "text": "tingling in both hands",
+      "duration": null,
+      "severity": null,
+      "status": "current"
+    },
+    {
+      "text": "shortness of breath",
+      "duration": null,
+      "severity": null,
+      "status": "current"
+    },
+    {
+      "text": "palpitations",
+      "duration": null,
+      "severity": null,
+      "status": "current"
+    },
+    {
+      "text": "loss of libido",
+      "duration": null,
+      "severity": null,
+      "status": "current"
+    },
+    {
+      "text": "weight loss of five pounds",
+      "duration": null,
+      "severity": null,
+      "status": "current"
+    },
+    {
+      "text": "nausea",
+      "duration": null,
+      "severity": null,
+      "status": "current"
+    }
+  ],
+  "relevant_context": [
+    "symptoms started after changing jobs",
+    "patient reports stress level 7-8 out of 10"
+  ],
+  "diagnoses": [],
+  "current_medications": [
+    {
+      "name": "thyroxine",
+      "dose": null,
+      "frequency": null
+    }
+  ],
+  "prescribed": [],
+  "investigations": [
+    "blood tests for thyroxine"
+  ],
+  "follow_up": [
+    "book an appointment through the app to see a doctor in clinic",
+    "see you in person before prescribing medication"
+  ],
+  "advice": [],
+  "allergies": [],
+  "vitals": {
+    "bp": null,
+    "pulse": null,
+    "temperature": null,
+    "spo2": null
+  },
+  "medical_history": [
+    "hyperthyroidism"
+  ],
+  "family_history": [],
+  "social_history": [
+    "drinks alcohol once a week, couple glasses of wine",
+    "does not smoke",
+    "no recreational drug use"
+  ],
+  "_model": "openai/gpt-oss-120b",
+  "_split": 0
+}
+Generating SOAP note...
+Evaluating SOAP note with LLM...
+
+Scores:
+Completeness:       0.75
+Faithfulness:       1.00
+Hallucination:      1.00
+Section correctness: 1.00
+Overall quality:    0.80
+
+======================================================================
+Evaluating documentation: C00038
+======================================================================
+Running NLP extractor...
+{
+  "patient_info": {
+    "age": null,
+    "gender": null
+  },
+  "symptoms": [
+    {
+      "text": "shortness of breath",
+      "duration": "over the last hour",
+      "severity": null,
+      "status": "current"
+    },
+    {
+      "text": "cough",
+      "duration": "yesterday",
+      "severity": null,
+      "status": "current"
+    },
+    {
+      "text": "chest soreness on deep breath",
+      "duration": null,
+      "severity": null,
+      "status": "current"
+    },
+    {
+      "text": "feeling of rapid heartbeat",
+      "duration": null,
+      "severity": null,
+      "status": "current"
+    }
+  ],
+  "relevant_context": [],
+  "diagnoses": [
+    {
+      "text": "pulmonary embolism",
+      "status": "suspected"
+    }
+  ],
+  "current_medications": [],
+  "prescribed": [],
+  "investigations": [],
+  "follow_up": [],
+  "advice": [
+    "do not take codeine for the time being",
+    "go to the hospital promptly and bring supplies for the baby"
+  ],
+  "allergies": [
+    "Ibuprofen"
+  ],
+  "vitals": {
+    "bp": null,
+    "pulse": null,
+    "temperature": null,
+    "spo2": null
+  },
+  "medical_history": [
+    "C-section (four weeks ago)"
+  ],
+  "family_history": [
+    "mother had clots in legs"
+  ],
+  "social_history": [
+    "partner at work"
+  ],
+  "_model": "openai/gpt-oss-120b",
+  "_split": 0
+}
+Generating SOAP note...
+Evaluating SOAP note with LLM...
+
+Scores:
+Completeness:       0.50
+Faithfulness:       0.50
+Hallucination:      1.00
+Section correctness: 0.75
+Overall quality:    0.50
+
+======================================================================
+Evaluating documentation: C00039
+======================================================================
+Running NLP extractor...
+[extractor] per-minute limit on openai/gpt-oss-120b, waiting 3s
+{
+  "patient_info": {
+    "age": 40,
+    "gender": null
+  },
+  "symptoms": [
+    {
+      "text": "wheeze",
+      "duration": "two days",
+      "severity": null,
+      "status": "current"
+    },
+    {
+      "text": "shortness of breath",
+      "duration": null,
+      "severity": null,
+      "status": "current"
+    },
+    {
+      "text": "difficulty speaking",
+      "duration": null,
+      "severity": null,
+      "status": "current"
+    }
+  ],
+  "relevant_context": [
+    "cleaning the house triggered dust exposure",
+    "no antihistamines at home",
+    "has had steroids for asthma before",
+    "will get letter to GP"
+  ],
+  "diagnoses": [
+    {
+      "text": "asthma",
+      "status": "suspected"
+    },
+    {
+      "text": "allergy",
+      "status": "suspected"
+    }
+  ],
+  "current_medications": [
+    {
+      "name": "asthma inhaler",
+      "dose": null,
+      "frequency": null
+    }
+  ],
+  "prescribed": [],
+  "investigations": [
+    "pulse oximetry"
+  ],
+  "follow_up": [],
+  "advice": [
+    "take antihistamine over the counter if allergic",
+    "take steroids if needed",
+    "get letter to GP",
+    "visit clinic for tests"
+  ],
+  "allergies": [
+    "none known"
+  ],
+  "vitals": {
+    "bp": null,
+    "pulse": null,
+    "temperature": null,
+    "spo2": null
+  },
+  "medical_history": [
+    "childhood asthma",
+    "hay fever"
+  ],
+  "family_history": [],
+  "social_history": [],
+  "_model": "openai/gpt-oss-20b",
+  "_split": 0
+}
+Generating SOAP note...
+Evaluating SOAP note with LLM...
+
+Scores:
+Completeness:       0.75
+Faithfulness:       1.00
+Hallucination:      1.00
+Section correctness: 0.75
+Overall quality:    0.75
+
+======================================================================
+Evaluating documentation: C00040
+======================================================================
+Running NLP extractor...
+{
+  "patient_info": {
+    "age": 48,
+    "gender": null
+  },
+  "symptoms": [
+    {
+      "text": "diarrhoea",
+      "duration": "three days",
+      "severity": null,
+      "status": "current"
+    },
+    {
+      "text": "abdominal pain (central abdomen)",
+      "duration": null,
+      "severity": "mild",
+      "status": "current"
+    },
+    {
+      "text": "vomiting",
+      "duration": null,
+      "severity": null,
+      "status": "current"
+    },
+    {
+      "text": "nausea",
+      "duration": null,
+      "severity": null,
+      "status": "current"
+    },
+    {
+      "text": "frequent bowel movements (need to go to toilet every ten minutes)",
+      "duration": null,
+      "severity": null,
+      "status": "current"
+    }
+  ],
+  "relevant_context": [
+    "needs to stay close to the toilet all the time due to frequent bowel movements",
+    "reduced food intake because of frequent bowel movements",
+    "patient reports possibly inadequate fluid intake",
+    "mild abdominal tenderness on palpation",
+    "started using a new inhaler brand after the previous inhaler ran out",
+    "anxiety sometimes triggers inhaler use"
+  ],
+  "diagnoses": [
+    {
+      "text": "gastroenteritis",
+      "status": "confirmed"
+    }
+  ],
+  "current_medications": [
+    {
+      "name": "inhaler",
+      "dose": null,
+      "frequency": null
+    }
+  ],
+  "prescribed": [],
+  "investigations": [],
+  "follow_up": [
+    "see GP if symptoms worsen",
+    "book a GP appointment if not improved in a couple of days"
+  ],
+  "advice": [
+    "drink lots of water and fluids",
+    "look out for any fevers",
+    "stay home until you feel slightly better",
+    "avoid antibiotics as they do not help"
+  ],
+  "allergies": [
+    "none known"
+  ],
+  "vitals": {
+    "bp": null,
+    "pulse": null,
+    "temperature": null,
+    "spo2": null
+  },
+  "medical_history": [
+    "asthma"
+  ],
+  "family_history": [
+    "father had bowel cancer"
+  ],
+  "social_history": [],
+  "_model": "openai/gpt-oss-120b",
+  "_split": 0
+}
+Generating SOAP note...
+Evaluating SOAP note with LLM...
+
+Scores:
+Completeness:       0.75
+Faithfulness:       0.75
+Hallucination:      1.00
+Section correctness: 0.75
+Overall quality:    0.75
+
+======================================================================
+Evaluating documentation: C00041
+======================================================================
+Running NLP extractor...
+[extractor] openai/gpt-oss-120b: request too large -> split
+[extractor] transcript too large, splitting (depth 1)
+{
+  "symptoms": [
+    {
+      "text": "strong unilateral left-sided headache",
+      "duration": "four hours",
+      "severity": "6",
+      "status": "current"
+    },
+    {
+      "text": "dizziness",
+      "duration": null,
+      "severity": null,
+      "status": "current"
+    },
+    {
+      "text": "blurred vision with zigzag lines",
+      "duration": null,
+      "severity": null,
+      "status": "current"
+    },
+    {
+      "text": "nausea",
+      "duration": null,
+      "severity": null,
+      "status": "current"
+    },
+    {
+      "text": "vomiting (two episodes)",
+      "duration": null,
+      "severity": null,
+      "status": "current"
+    },
+    {
+      "text": "headache on left side of head",
+      "duration": "about four hours",
+      "severity": null,
+      "status": "current"
+    },
+    {
+      "text": "blurry vision with visual disturbances",
+      "duration": null,
+      "severity": null,
+      "status": "current"
+    }
+  ],
+  "diagnoses": [
+    {
+      "text": "migraine",
+      "status": "confirmed"
+    }
+  ],
+  "current_medications": [
+    {
+      "name": "paracetamol",
+      "dose": null,
+      "frequency": null
+    }
+  ],
+  "prescribed": [
+    {
+      "name": "ibuprofen",
+      "dose": null,
+      "frequency": null,
+      "duration": null
+    }
+  ],
+  "allergies": [
+    "none known"
+  ],
+  "medical_history": [
+    "kidney stones"
+  ],
+  "family_history": [
+    "mother has migraines",
+    "mother has hypothyroidism",
+    "mother has migraine"
+  ],
+  "social_history": [],
+  "investigations": [],
+  "follow_up": [
+    "appointment today for neurological assessment",
+    "call to cancel appointment if feeling better",
+    "contact us if further problems arise"
+  ],
+  "advice": [
+    "take ibuprofen",
+    "take anti‑sickness medication",
+    "drink sugary carbonated drinks such as Coke"
+  ],
+  "relevant_context": [
+    "headache worsens with movement",
+    "cannot stand screens due to headache",
+    "patient expresses concern about serious causes such as brain tumour or stroke",
+    "patient describes themselves as a hypochondriac"
+  ],
+  "patient_info": {
+    "age": null,
+    "gender": null
+  },
+  "vitals": {
+    "bp": null,
+    "pulse": null,
+    "temperature": null,
+    "spo2": null
+  },
+  "_model": "openai/gpt-oss-120b",
+  "_split": 1
+}
+Generating SOAP note...
+Evaluating SOAP note with LLM...
+
+Scores:
+Completeness:       0.75
+Faithfulness:       1.00
+Hallucination:      1.00
+Section correctness: 1.00
+Overall quality:    0.85
+
+======================================================================
+Evaluating documentation: C00042
+======================================================================
+Running NLP extractor...
+[extractor] openai/gpt-oss-120b: request too large -> split
+[extractor] transcript too large, splitting (depth 1)
+{
+  "symptoms": [
+    {
+      "text": "sore throat",
+      "duration": "about a week",
+      "severity": null,
+      "status": "current"
+    },
+    {
+      "text": "dry cough",
+      "duration": "about a week",
+      "severity": null,
+      "status": "current"
+    },
+    {
+      "text": "shortness of breath",
+      "duration": "3-4 days",
+      "severity": null,
+      "status": "current"
+    },
+    {
+      "text": "wheeze",
+      "duration": null,
+      "severity": null,
+      "status": "current"
+    },
+    {
+      "text": "chest pain",
+      "duration": null,
+      "severity": null,
+      "status": "current"
+    },
+    {
+      "text": "shortness of breath",
+      "duration": "last week",
+      "severity": null,
+      "status": "current"
+    },
+    {
+      "text": "dry cough",
+      "duration": "last week",
+      "severity": null,
+      "status": "current"
+    },
+    {
+      "text": "fever",
+      "duration": "first three days",
+      "severity": null,
+      "status": "resolved"
+    },
+    {
+      "text": "headache",
+      "duration": null,
+      "severity": null,
+      "status": "resolved"
+    },
+    {
+      "text": "loss of appetite",
+      "duration": null,
+      "severity": null,
+      "status": "current"
+    },
+    {
+      "text": "throat irritation",
+      "duration": null,
+      "severity": null,
+      "status": "current"
+    }
+  ],
+  "diagnoses": [],
+  "current_medications": [],
+  "prescribed": [],
+  "allergies": [
+    "peanuts"
+  ],
+  "medical_history": [],
+  "family_history": [
+    "mother had lung cancer"
+  ],
+  "social_history": [
+    "tried smoking once or twice in the past, not a regular smoker"
+  ],
+  "investigations": [],
+  "follow_up": [
+    "see a GP if shortness of breath worsens or there is a sudden change in breathlessness",
+    "contact a medical professional if symptoms do not improve"
+  ],
+  "advice": [
+    "take paracetamol",
+    "drink plenty of fluids",
+    "rest"
+  ],
+  "relevant_context": [
+    "patient requests a sick note for work",
+    "patient expressed concern about serious conditions such as tuberculosis and cancer",
+    "recent travel to Europe, not exotic",
+    "patient was born in the US and moved to the UK 12 years ago"
+  ],
+  "patient_info": {
+    "age": null,
+    "gender": null
+  },
+  "vitals": {
+    "bp": null,
+    "pulse": null,
+    "temperature": null,
+    "spo2": null
+  },
+  "_model": "openai/gpt-oss-120b",
+  "_split": 1
+}
+Generating SOAP note...
+Evaluating SOAP note with LLM...
+
+Scores:
+Completeness:       0.75
+Faithfulness:       0.75
+Hallucination:      0.75
+Section correctness: 1.00
+Overall quality:    0.80
+
+======================================================================
+Evaluating documentation: C00043
+======================================================================
+Running NLP extractor...
+[extractor] openai/gpt-oss-120b: request too large -> split
+[extractor] transcript too large, splitting (depth 1)
+{
+  "symptoms": [
+    {
+      "text": "difficulty waking up in the mornings",
+      "duration": "two months",
+      "severity": null,
+      "status": "current"
+    },
+    {
+      "text": "low energy",
+      "duration": "two months",
+      "severity": null,
+      "status": "current"
+    },
+    {
+      "text": "reduced appetite / not eating much",
+      "duration": "two months",
+      "severity": null,
+      "status": "current"
+    },
+    {
+      "text": "difficulty sleeping (trouble sleeping at all)",
+      "duration": "two months",
+      "severity": null,
+      "status": "current"
+    },
+    {
+      "text": "lower mood",
+      "duration": "two months",
+      "severity": null,
+      "status": "current"
+    },
+    {
+      "text": "difficulty focusing / easily distracted",
+      "duration": "two months",
+      "severity": null,
+      "status": "current"
+    },
+    {
+      "text": "decreased sex drive",
+      "duration": "two months",
+      "severity": null,
+      "status": "current"
+    },
+    {
+      "text": "absence of morning erections",
+      "duration": "two months",
+      "severity": null,
+      "status": "current"
+    },
+    {
+      "text": "decreased sex drive",
+      "duration": "last few months",
+      "severity": null,
+      "status": "current"
+    },
+    {
+      "text": "low mood",
+      "duration": null,
+      "severity": null,
+      "status": "current"
+    },
+    {
+      "text": "shortness of breath on exertion",
+      "duration": "last few months",
+      "severity": null,
+      "status": "current"
+    }
+  ],
+  "diagnoses": [],
+  "current_medications": [
+    {
+      "name": "Thyrocsin",
+      "dose": null,
+      "frequency": null
+    }
+  ],
+  "prescribed": [],
+  "allergies": [
+    "none known"
+  ],
+  "medical_history": [
+    "hypothyroidism"
+  ],
+  "family_history": [],
+  "social_history": [
+    "married",
+    "only child"
+  ],
+  "investigations": [
+    "blood tests",
+    "physical examination"
+  ],
+  "follow_up": [
+    "book an appointment with GP in the next few days for examination and investigations"
+  ],
+  "advice": [],
+  "relevant_context": [
+    "started a new job two months ago, which may be related to symptoms",
+    "married for many years",
+    "father committed suicide fifteen years ago",
+    "only child"
+  ],
+  "patient_info": {
+    "age": null,
+    "gender": null
+  },
+  "vitals": {
+    "bp": null,
+    "pulse": null,
+    "temperature": null,
+    "spo2": null
+  },
+  "_model": "openai/gpt-oss-120b",
+  "_split": 1
+}
+Generating SOAP note...
+Evaluating SOAP note with LLM...
+
+Scores:
+Completeness:       0.75
+Faithfulness:       0.50
+Hallucination:      0.50
+Section correctness: 0.75
+Overall quality:    0.60
+
+======================================================================
+Evaluating documentation: C00044
+======================================================================
+Running NLP extractor...
+[extractor] openai/gpt-oss-120b: request too large -> split
+[extractor] transcript too large, splitting (depth 1)
+{
+  "symptoms": [
+    {
+      "text": "tight chest",
+      "duration": "three hours",
+      "severity": null,
+      "status": "current"
+    },
+    {
+      "text": "shortness of breath",
+      "duration": null,
+      "severity": null,
+      "status": "current"
+    },
+    {
+      "text": "wheeze",
+      "duration": null,
+      "severity": null,
+      "status": "current"
+    },
+    {
+      "text": "cough",
+      "duration": null,
+      "severity": null,
+      "status": "current"
+    },
+    {
+      "text": "sore throat",
+      "duration": null,
+      "severity": null,
+      "status": "current"
+    },
+    {
+      "text": "runny nose",
+      "duration": null,
+      "severity": null,
+      "status": "current"
+    },
+    {
+      "text": "tight chest",
+      "duration": null,
+      "severity": null,
+      "status": "current"
+    },
+    {
+      "text": "shortness of breath on exertion (when walking up stairs)",
+      "duration": null,
+      "severity": null,
+      "status": "current"
+    }
+  ],
+  "diagnoses": [
+    {
+      "text": "asthma",
+      "status": "confirmed"
+    }
+  ],
+  "current_medications": [
+    {
+      "name": "Clenil",
+      "dose": null,
+      "frequency": null
+    },
+    {
+      "name": "Salbutamol",
+      "dose": null,
+      "frequency": null
+    }
+  ],
+  "prescribed": [
+    {
+      "name": "oral steroids",
+      "dose": "two tablets in the morning",
+      "frequency": null,
+      "duration": "five days"
+    }
+  ],
+  "allergies": [
+    "dust",
+    "milk protein"
+  ],
+  "medical_history": [
+    "asthma",
+    "hayfever",
+    "eczema",
+    "milk protein allergy",
+    "hospitalization for asthma with intubation at age 16-17",
+    "previous use of oral steroids (unspecified)"
+  ],
+  "family_history": [
+    "mother has eczema",
+    "father has asthma"
+  ],
+  "social_history": [],
+  "investigations": [],
+  "follow_up": [
+    "seek medical attention anytime if symptoms worsen or if using Ventolin more than every three hours"
+  ],
+  "advice": [
+    "rest a little bit until feeling better",
+    "read the label for steroid side effects",
+    "use the spacer as instructed with couple of puffs to prime and breathe in and out for five to ten breaths",
+    "self‑certify first seven days off work"
+  ],
+  "relevant_context": [
+    "patient ran out of Ventolin and Clenil inhalers and has not used them for about a week",
+    "cough gets a little worse at night",
+    "patient wants to avoid intubation again",
+    "patient has a spacer but does not regularly use it"
+  ],
+  "patient_info": {
+    "age": 26,
+    "gender": null
+  },
+  "vitals": {
+    "bp": null,
+    "pulse": null,
+    "temperature": null,
+    "spo2": null
+  },
+  "_model": "openai/gpt-oss-120b",
+  "_split": 1
+}
+Generating SOAP note...
+Evaluating SOAP note with LLM...
+
+Scores:
+Completeness:       0.50
+Faithfulness:       1.00
+Hallucination:      1.00
+Section correctness: 0.75
+Overall quality:    0.75
+
+======================================================================
+Evaluating documentation: C00045
+======================================================================
+Running NLP extractor...
+[extractor] openai/gpt-oss-120b: request too large -> split
+[extractor] transcript too large, splitting (depth 1)
+{
+  "symptoms": [
+    {
+      "text": "nausea",
+      "duration": "three days",
+      "severity": null,
+      "status": "current"
+    },
+    {
+      "text": "lower abdominal dull ache",
+      "duration": "three days",
+      "severity": null,
+      "status": "current"
+    },
+    {
+      "text": "feeling hot and sweaty",
+      "duration": "three days",
+      "severity": null,
+      "status": "current"
+    },
+    {
+      "text": "increased urinary frequency",
+      "duration": null,
+      "severity": null,
+      "status": "current"
+    },
+    {
+      "text": "pink urine",
+      "duration": null,
+      "severity": null,
+      "status": "current"
+    },
+    {
+      "text": "constipation",
+      "duration": "about a week ago",
+      "severity": null,
+      "status": "resolved"
+    },
+    {
+      "text": "abdominal pain (horrible ache)",
+      "duration": "last two days",
+      "severity": null,
+      "status": "current"
+    },
+    {
+      "text": "nausea",
+      "duration": null,
+      "severity": null,
+      "status": "current"
+    },
+    {
+      "text": "feeling hot and sweaty",
+      "duration": null,
+      "severity": null,
+      "status": "current"
+    },
+    {
+      "text": "spotting between periods",
+      "duration": null,
+      "severity": null,
+      "status": "current"
+    }
+  ],
+  "diagnoses": [
+    {
+      "text": "constipation",
+      "status": "suspected"
+    }
+  ],
+  "current_medications": [],
+  "prescribed": [],
+  "allergies": [
+    "Amoxicillin"
+  ],
+  "medical_history": [],
+  "family_history": [
+    "brother has type 1 diabetes"
+  ],
+  "social_history": [
+    "sexually active with one regular partner",
+    "uses contraceptive implant",
+    "drinks lots of water",
+    "lives with boyfriend",
+    "non-smoker"
+  ],
+  "investigations": [
+    "pregnancy test"
+  ],
+  "follow_up": [
+    "see GP face-to-face today if possible",
+    "if symptoms worsen or develop concerning symptoms, seek urgent medical review"
+  ],
+  "advice": [
+    "take concerning symptoms seriously and seek urgent medical review if they develop"
+  ],
+  "relevant_context": [
+    "patient uses Implanon contraceptive implant",
+    "patient expecting period soon"
+  ],
+  "patient_info": {
+    "age": 31,
+    "gender": "female"
+  },
+  "vitals": {
+    "bp": null,
+    "pulse": null,
+    "temperature": null,
+    "spo2": null
+  },
+  "_model": "openai/gpt-oss-120b",
+  "_split": 1
+}
+Generating SOAP note...
+Evaluating SOAP note with LLM...
+
+Scores:
+Completeness:       0.50
+Faithfulness:       0.75
+Hallucination:      0.75
+Section correctness: 0.75
+Overall quality:    0.75
+
+======================================================================
+Evaluating documentation: C00046
+======================================================================
+Running NLP extractor...
+{
+  "patient_info": {
+    "age": null,
+    "gender": null
+  },
+  "symptoms": [
+    {
+      "text": "headache, throbbing, left side, intense, comes and goes, sensitive to light",
+      "duration": "about a day",
+      "severity": "quite intense",
+      "status": "current"
+    }
+  ],
+  "relevant_context": [
+    "headache worsens in bright light or sunlight and improves when lying down",
+    "patient reports stress at work may have triggered the headache",
+    "patient has been staying at home and taking painkillers"
+  ],
+  "diagnoses": [
+    {
+      "text": "migraine",
+      "status": "suspected"
+    }
+  ],
+  "current_medications": [
+    {
+      "name": "Paracetamol",
+      "dose": null,
+      "frequency": null
+    },
+    {
+      "name": "Microgynon",
+      "dose": null,
+      "frequency": null
+    }
+  ],
+  "prescribed": [
+    {
+      "name": "Ibuprofen",
+      "dose": null,
+      "frequency": null,
+      "duration": null
+    }
+  ],
+  "investigations": [
+    "blood pressure check",
+    "home temperature measurement"
+  ],
+  "follow_up": [],
+  "advice": [
+    "stay well hydrated",
+    "use a home thermometer to monitor temperature",
+    "if temperature rises, headache worsens, or you develop a rash, contact the doctor immediately"
+  ],
+  "allergies": [
+    "Aspirin"
+  ],
+  "vitals": {
+    "bp": null,
+    "pulse": null,
+    "temperature": null,
+    "spo2": null
+  },
+  "medical_history": [],
+  "family_history": [
+    "mother had high blood pressure",
+    "mother had migraines"
+  ],
+  "social_history": [
+    "lives with housemates",
+    "drinks a few drinks on weekends",
+    "non-smoker",
+    "no illicit drug use"
+  ],
+  "_model": "openai/gpt-oss-120b",
+  "_split": 0
+}
+Generating SOAP note...
+Evaluating SOAP note with LLM...
+
+Scores:
+Completeness:       0.75
+Faithfulness:       1.00
+Hallucination:      1.00
+Section correctness: 1.00
+Overall quality:    0.75
+
+======================================================================
+Evaluating documentation: C00047
+======================================================================
+Running NLP extractor...
+{
+  "patient_info": {
+    "age": 30,
+    "gender": null
+  },
+  "symptoms": [
+    {
+      "text": "pain when urinating",
+      "duration": "six days",
+      "severity": null,
+      "status": "current"
+    },
+    {
+      "text": "unpleasant smell when urinating",
+      "duration": "six days",
+      "severity": null,
+      "status": "current"
+    },
+    {
+      "text": "lower abdominal pain",
+      "duration": "six days",
+      "severity": "7/10",
+      "status": "current"
+    },
+    {
+      "text": "spotted blood in urine",
+      "duration": "six days",
+      "severity": null,
+      "status": "current"
+    }
+  ],
+  "relevant_context": [
+    "abdominal pain is intermittent (comes and goes)",
+    "patient reports regular menstrual periods"
+  ],
+  "diagnoses": [
+    {
+      "text": "urinary infection",
+      "status": "suspected"
+    }
+  ],
+  "current_medications": [
+    {
+      "name": "Mebeverine",
+      "dose": "200 mg",
+      "frequency": "three times a day"
+    }
+  ],
+  "prescribed": [
+    {
+      "name": "antibiotics",
+      "dose": null,
+      "frequency": null,
+      "duration": "three days"
+    }
+  ],
+  "investigations": [],
+  "follow_up": [
+    "seek medical review if pain worsens, develops back pain, high temperature, or difficulty passing urine",
+    "contact doctor if symptoms do not improve or recur after treatment"
+  ],
+  "advice": [
+    "drink two and a half to three litres of water per day",
+    "drink cranberry juice",
+    "use urinary acidity sachets as advised",
+    "obtain a thermometer and check temperature at home",
+    "take the prescribed antibiotics for three days as soon as possible"
+  ],
+  "allergies": [
+    "Clindamycin"
+  ],
+  "vitals": {
+    "bp": null,
+    "pulse": null,
+    "temperature": null,
+    "spo2": null
+  },
+  "medical_history": [
+    "IBS"
+  ],
+  "family_history": [],
+  "social_history": [
+    "lives with friends",
+    "works as a support worker",
+    "occasionally drinks alcohol (one glass of wine per week)",
+    "does not smoke"
+  ],
+  "_model": "openai/gpt-oss-120b",
+  "_split": 0
+}
+Generating SOAP note...
+Evaluating SOAP note with LLM...
+
+Scores:
+Completeness:       0.75
+Faithfulness:       1.00
+Hallucination:      1.00
+Section correctness: 1.00
+Overall quality:    0.75
+
+======================================================================
+Evaluating documentation: C00048
+======================================================================
+Running NLP extractor...
+[extractor] openai/gpt-oss-120b: request too large -> split
+[extractor] transcript too large, splitting (depth 1)
+{
+  "symptoms": [
+    {
+      "text": "anxiety",
+      "duration": "past few months",
+      "severity": null,
+      "status": "current"
+    },
+    {
+      "text": "difficulty falling asleep and staying asleep (insomnia)",
+      "duration": "past few months",
+      "severity": null,
+      "status": "current"
+    },
+    {
+      "text": "palpitations (irregular rapid heart beating)",
+      "duration": "couple months",
+      "severity": null,
+      "status": "current"
+    },
+    {
+      "text": "chest discomfort associated with palpitations",
+      "duration": null,
+      "severity": null,
+      "status": "current"
+    },
+    {
+      "text": "fatigue/low energy",
+      "duration": "past few months",
+      "severity": null,
+      "status": "current"
+    },
+    {
+      "text": "loss of enjoyment (anhedonia)",
+      "duration": "past few months",
+      "severity": null,
+      "status": "current"
+    },
+    {
+      "text": "social avoidance (avoiding friends)",
+      "duration": "past few months",
+      "severity": null,
+      "status": "current"
+    },
+    {
+      "text": "panic episodes on waking with racing heart",
+      "duration": "past few months",
+      "severity": null,
+      "status": "current"
+    },
+    {
+      "text": "anxiety",
+      "duration": "past couple of months",
+      "severity": null,
+      "status": "current"
+    },
+    {
+      "text": "low mood / feeling down and unhappy",
+      "duration": null,
+      "severity": null,
+      "status": "current"
+    }
+  ],
+  "diagnoses": [],
+  "current_medications": [],
+  "prescribed": [],
+  "allergies": [],
+  "medical_history": [],
+  "family_history": [
+    "mother depression"
+  ],
+  "social_history": [
+    "occupation: fashion retailer head office team",
+    "avoids social contact with friends",
+    "lives with parents",
+    "occasionally smokes",
+    "drinks alcohol heavily on Fridays and Saturdays",
+    "does not use drugs"
+  ],
+  "investigations": [
+    "basic blood tests"
+  ],
+  "follow_up": [
+    "GP follow-up a week after blood tests",
+    "call the doctor if anxiety worsens to the point you cannot cope with work or daily activities"
+  ],
+  "advice": [
+    "self‑refer for talking therapy via NHS",
+    "use online resources for anxiety management",
+    "sleep hygiene information will be provided",
+    "contact us if anxiety is not improving"
+  ],
+  "relevant_context": [
+    "new job started two months ago in a fashion retail head office, stressful work environment with difficult boss",
+    "patient reports good support system from family",
+    "public transport is a trigger for anxiety",
+    "life currently focused around work"
+  ],
+  "patient_info": {
+    "age": null,
+    "gender": null
+  },
+  "vitals": {
+    "bp": null,
+    "pulse": null,
+    "temperature": null,
+    "spo2": null
+  },
+  "_model": "openai/gpt-oss-120b",
+  "_split": 1
+}
+Generating SOAP note...
+Evaluating SOAP note with LLM...
+
+Scores:
+Completeness:       0.75
+Faithfulness:       1.00
+Hallucination:      1.00
+Section correctness: 0.75
+Overall quality:    0.75
+
+======================================================================
+Evaluating documentation: C00049
+======================================================================
+Running NLP extractor...
+{
+  "patient_info": {
+    "age": 23,
+    "gender": null
+  },
+  "symptoms": [
+    {
+      "text": "lower abdominal pain",
+      "duration": "few days",
+      "severity": "8/10",
+      "status": "current"
+    },
+    {
+      "text": "light pink vaginal bleeding",
+      "duration": null,
+      "severity": null,
+      "status": "current"
+    },
+    {
+      "text": "small vaginal discharge",
+      "duration": null,
+      "severity": null,
+      "status": "current"
+    },
+    {
+      "text": "nausea",
+      "duration": null,
+      "severity": null,
+      "status": "current"
+    },
+    {
+      "text": "constipation",
+      "duration": "a week",
+      "severity": null,
+      "status": "resolved"
+    }
+  ],
+  "relevant_context": [],
+  "diagnoses": [],
+  "current_medications": [],
+  "prescribed": [],
+  "investigations": [
+    "face-to-face abdominal examination",
+    "pregnancy test"
+  ],
+  "follow_up": [
+    "call the support line to arrange a face-to-face examination",
+    "if symptoms worsen or you are unable to keep fluids down, seek immediate review",
+    "if pregnancy test is positive, call the clinic immediately"
+  ],
+  "advice": [
+    "do a pregnancy test today"
+  ],
+  "allergies": [
+    "amoxicillin"
+  ],
+  "vitals": {
+    "bp": null,
+    "pulse": null,
+    "temperature": null,
+    "spo2": null
+  },
+  "medical_history": [],
+  "family_history": [],
+  "social_history": [
+    "school teacher",
+    "lives with husband and his family"
+  ],
+  "_model": "openai/gpt-oss-120b",
+  "_split": 0
+}
+Generating SOAP note...
+Evaluating SOAP note with LLM...
+
+ERROR while evaluating C00049:
+Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m2fed2dyereb4gzdf7kpzxkq` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 197241, Requested 4700. Please try again in 13m58.512s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+
+Groq rate limit detected.
+Progress has already been saved.
+
+======================================================================
+DOCUMENTATION EVALUATION SUMMARY
+======================================================================
+Consultations evaluated: 48
+
+Average completeness: 0.729
+Average faithfulness: 0.891
+Average hallucination score: 0.932
+Average section correctness: 0.906
+Average overall quality: 0.772
+
+Results saved to:
+evaluation/results/documentation_llm_results.csv

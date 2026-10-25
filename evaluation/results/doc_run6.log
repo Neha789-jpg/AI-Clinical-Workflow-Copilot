@@ -1,0 +1,32 @@
+Loading consultation data...
+
+Columns in dataset:
+['consultation_id', 'patient_id', 'doctor_id', 'date', 'specialty', 'audio_path', 'audio_duration_sec', 'transcript', 'symptoms', 'medical_history', 'allergies', 'vital_signs', 'source_type', 'source_id']
+Total consultations in dataset: 1965
+Evaluating selected consultations: 57
+FORCE_REEVALUATE=True -> starting fresh evaluation.
+
+======================================================================
+Evaluating documentation: C00001
+======================================================================
+Running NLP extractor...
+
+ERROR while evaluating C00001:
+GROQ_RATE_LIMIT: Error code: 429 - {'error': {'message': 'Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m2fed2dyereb4gzdf7kpzxkq` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 196399, Requested 7910. Please try again in 31m1.488s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+
+Groq rate limit detected.
+Progress has already been saved.
+
+======================================================================
+DOCUMENTATION EVALUATION SUMMARY
+======================================================================
+Consultations evaluated: 23
+
+Average completeness: 0.783
+Average faithfulness: 0.880
+Average hallucination score: 0.924
+Average section correctness: 0.935
+Average overall quality: 0.800
+
+Results saved to:
+evaluation/results/documentation_llm_results.csv

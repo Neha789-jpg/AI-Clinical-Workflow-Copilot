@@ -1244,3 +1244,1303 @@ Follow-up:
 Advice:
 - do not go to work until investigations are completed
 - need to sort this out sooner rather than later"
+C00024,0.75,1.0,1.0,1.0,0.75,"[""ambulance activation and emergency transport plan"", ""instruction to proceed to hospital/A&E"", ""plan to stay on the line until ambulance arrival"", ""negative findings (no pain, no discoloration, no coldness, no leg symptoms) that were discussed""]",[],[],"[""Accurately captures the patient's primary symptoms (left arm paralysis, facial tingling, dysphagia, speech difficulty)"", ""Includes relevant past medical history, medications, allergies, family and social history"", ""Correctly identifies possible stroke as the assessment""]","[""Plan section omits critical emergency actions (calling ambulance, transport to hospital, staying on call)"", ""Does not document negative exam findings that were explicitly mentioned"", ""Objective section is empty, but no objective data were obtained; could note that exam was limited due to telephone""]","
+Symptoms:
+- inability to move left arm for about an hour
+- tingling on left side of face for since waking up (about an hour)
+- difficulty swallowing
+- speech difficulty (slower, harder to speak)
+
+Allergies:
+- penicillin
+
+Medical History:
+- type 2 diabetes
+- high blood pressure
+
+Family History:
+- father has heart disease
+
+Social History:
+- lives alone
+- former smoker
+- drinks a few beers on weekends and a couple during the week
+
+Current Medications:
+- Metformin
+- losartan
+- Amlodipine",No objective findings documented.,Possible stroke.,"Advice:
+- make sure the front door is open and sit in the hallway by the front door so the ambulance can access you"
+C00025,0.75,1.0,1.0,1.0,0.85,"[""absence of neck stiffness"", ""absence of fever"", ""absence of nausea"", ""negative family history for migraine"", ""previous headache pattern (typically front of head, not one-sided)"", ""lack of response to paracetamol""]",[],[],"[""Accurately captures the main presenting symptom (left-sided headache) and its severity"", ""Includes photophobia and resolved dizziness"", ""Documents relevant stressors and anxiety history"", ""Correctly records social history, medications, and family anxiety"", ""Provides appropriate differential (tension headache, migraine)"", ""Plans appropriate medication (ibuprofen) and lifestyle advice"", ""Includes follow‑up and contingency plan for blood tests""]","[""Omits several negative findings that help differentiate headache types (no neck stiffness, no fever, no nausea)"", ""Does not note the lack of family migraine history"", ""Does not mention that paracetamol was tried and was ineffective""]","
+Symptoms:
+- left-sided headache for since this morning (Severity: horrible)
+- sensitivity to bright lights
+- dizziness for this morning (Resolved)
+
+Relevant Clinical Context:
+- headache initially worsens when lying down but then improves with time
+- work-related stress for about two months
+
+Allergies:
+- none known
+
+Medical History:
+- anxiety
+
+Family History:
+- mother has anxiety
+
+Social History:
+- lives with partner
+- has a cat
+- non-smoker
+- runs three times a week
+- diet described as okay
+
+Current Medications:
+- Sertraline
+- Paracetamol",No objective findings documented.,"Possible tension headache, Possible migraine.","Medications:
+- Ibuprofen
+Investigations/Tests:
+- blood tests
+Follow-up:
+- follow-up appointment in one week
+- contact doctor if symptoms worsen or do not improve
+Advice:
+- consider taking a week off work to reduce stress
+- explore counselling services and self‑refer
+- ensure 7–8 hours of sleep each night
+- drink 1.5–2 litres of water or fluids daily, excluding coffee/tea
+- maintain a low threshold for calling back if symptoms change or worsen
+- read the provided information on danger signs of headaches"
+C00026,0.75,1.0,1.0,1.0,0.75,"[""Explicit instruction to call an ambulance/emergency services"", ""Patient had no antihistamines available at the time"", ""Patient was initially alone""]",[],[],"[""Accurately records presenting symptoms (lip swelling, breathing difficulty, chest tightness, dizziness)"", ""Identifies likely trigger (prawn soup) and relevant allergy (peanut)"", ""Includes pertinent past medical history (asthma, prior severe reactions)"", ""Correctly assesses possible anaphylactic reaction"", ""Provides appropriate plan (antihistamine, follow‑up, stay with someone)""]","[""Does not document the critical emergency action of calling an ambulance"", ""Omits note that the patient had no antihistamines on hand"", ""Fails to mention that the patient was alone initially""]","
+Symptoms:
+- lip swelling on upper lip for about half an hour
+- difficulty breathing
+- chest tightness or feeling of difficulty in chest
+- dizziness
+
+Relevant Clinical Context:
+- possible allergic trigger: prawn soup
+
+Allergies:
+- peanut
+
+Medical History:
+- asthma
+- previous severe allergic reaction in childhood
+- previous allergic reaction after curry a year ago
+
+Family History:
+- None documented.
+
+Social History:
+- None documented.
+
+Current Medications:
+- Salbutamol inhaler",No objective findings documented.,Possible anaphylactic reaction.,"Medications:
+- antihistamine
+Follow-up:
+- call back after hospital discharge to arrange further treatment
+Advice:
+- take antihistamines while waiting for ambulance
+- stay with someone until ambulance arrives"
+C00027,0.5,1.0,1.0,0.75,0.7,"[""absence of photophobia"", ""absence of neck pain or stiffness"", ""absence of cough or ear pain"", ""absence of shivering"", ""absence of weakness or focal neurological deficits"", ""absence of bleeding or petechial rash"", ""absence of vomiting or nausea"", ""recommendation for urgent in‑person examination at a hub"", ""consideration of other differentials such as dengue or viral illness""]",[],[],"[""Accurately records the main symptoms: severe headache, fever, generalized muscle aches, red itchy rash that blanches, and feeling cold."", ""Includes relevant travel history and recent mosquito bites."", ""Lists current medications (paracetamol and ibuprofen) and notes no known allergies.""]","[""Omits several negative findings that help narrow the differential (e.g., no photophobia, no neck stiffness, no cough, no ear pain, no shivering, no weakness)."", ""Assessment is limited to \""possible meningitis\"" without mentioning other considered diagnoses."", ""Plan is incomplete; it only lists blood tests and does not include the urgent referral to a hub for physical examination.""]","
+Symptoms:
+- severe headache for four days (Severity: severe)
+- fever
+- generalized muscle aches
+- red, itchy rash that blanches with pressure
+- feeling cold
+
+Relevant Clinical Context:
+- recent travel to Thailand about a week ago with mosquito bites
+
+Allergies:
+- none known
+
+Medical History:
+- None documented.
+
+Family History:
+- None documented.
+
+Social History:
+- None documented.
+
+Current Medications:
+- Paracetamol
+- Ibuprofen",No objective findings documented.,Possible meningitis.,"Investigations/Tests:
+- blood tests"
+C00028,0.75,0.5,0.5,1.0,0.7,"[""Patient stopped taking thyroxine (medication history)"", ""Reduced walking/activity reported by patient"", ""Exact duration of appetite loss (approximately 3-4 months, not six months)""]","[""Loss of appetite stated as lasting six months (transcript indicates ~3-4 months)"", ""Advice to go to A&E for palpitations (not mentioned as emergency in transcript)"", ""Current medications listed as none despite prior thyroxine use""]",[],"[""Includes key symptoms: weight loss, nausea, headache, shortness of breath, low mood, palpitations in lift"", ""Documents relevant social context (lawyer, recent job change)"", ""Notes underactive thyroid history"", ""Provides clear plan for blood tests and safety‑netting instructions""]","[""Inaccurate duration for appetite loss"", ""Omits stopped thyroxine medication"", ""Fails to mention decreased walking/activity"", ""Adds unsupported emergency advice for palpitations""]","Patient Information:
+- Age: 35
+
+Symptoms:
+- loss of appetite for around six months
+- weight loss (~1 stone) for around six months
+- nausea, intermittent
+- headache
+- shortness of breath
+- fatigue / low energy for around six months
+- low mood / feeling down for around six months
+- shortness of breath when in lift
+- palpitations (heart racing) when in lift
+
+Relevant Clinical Context:
+- recent job change to a new law firm may be a stressor
+- wife noticed changes in nightly activities
+- patient has not had a blood test in a long time
+
+Allergies:
+- None documented.
+
+Medical History:
+- underactive thyroid
+
+Family History:
+- None documented.
+
+Social History:
+- lawyer
+- recent job change
+
+Current Medications:
+- None documented.",No objective findings documented.,No diagnosis documented.,"Investigations/Tests:
+- general blood tests
+Follow-up:
+- book appointment after receiving test results
+- contact the clinic if symptoms worsen
+Advice:
+- go to A&E if you experience chest pain or palpitations
+- call the support number on the app to arrange blood test
+- if feeling poorly, do not wait for test results, get in touch with the clinic"
+C00029,0.75,1.0,1.0,0.75,0.75,"[""patient reported no sputum/phlegm production""]",[],[],"[""Accurately records recent onset shortness of breath, wheeze, and cough"", ""Includes peak flow value and its interpretation"", ""Documents medication regimen and appropriate adjustments"", ""Notes relevant past asthma history, family history, and allergies"", ""Provides clear plan for follow‑up and emergency instructions""]","[""Does not mention the patient's report of no sputum production"", ""Classifies the blue inhaler as both rescue and preventive, which may misrepresent the intended preventive inhaler (Clenil)"", ""Medication list placed in Subjective rather than a dedicated Medications section""]","
+Symptoms:
+- shortness of breath for two to three days
+- wheezing
+- coughing
+
+Relevant Clinical Context:
+- patient reports using blue inhaler (Salbutamol) as needed and also morning/evening preventive
+- patient reports using Clenil inhaler twice daily (three puffs)
+- patient reports peak flow reading of 380 (normal)
+- last asthma attack was 3-4 years ago
+- last asthma review was about two years ago
+- no prior hospital admissions for asthma
+- no prior oral steroid use
+
+Allergies:
+- hay fever
+
+Medical History:
+- asthma
+- eczema
+
+Family History:
+- brother has asthma
+- sister has eczema
+
+Social History:
+- None documented.
+
+Current Medications:
+- Salbutamol, as needed, also morning and evening
+- Flanel Bactroban
+- Hydrocortisone
+- Cetraben
+- Clenil, three puffs twice a day",No objective findings documented.,asthma exacerbation.,"Medications:
+- Clenil, four puffs twice a day
+- Salbutamol, every 2-4 hours as needed
+Follow-up:
+- see GP in the next few days
+Advice:
+- if breathing gets worse, go to A&E immediately"
+C00030,0.5,1.0,1.0,1.0,0.75,"[""Current medication: hormone replacement therapy (HRT)"", ""Prescription details (medication name, dosage, duration, pharmacy)"", ""Negative findings: no fever, no ear pain or discharge, no hearing loss, no recent viral illness, no weakness of limbs""]",[],[],"[""Accurately captures primary symptoms (vertigo, unsteady gait, tinnitus, nausea)"", ""Correctly identifies prior similar episode"", ""Includes relevant past medical history (premature ovarian failure)"", ""Provides appropriate assessment (labyrinthitis)"", ""Plans appropriate investigations and red‑flag instructions"", ""Mentions medication can be taken with or without food""]","[""Omitted current medication (HRT) from medication list"", ""Did not document prescription specifics (drug name, dosing schedule, pharmacy)"", ""Missing documentation of important negative findings (no fever, no ear pain/discharge, no hearing loss, no recent viral illness, no limb weakness)"", ""Objective section empty despite no exam data being recorded (acceptable but could note 'no exam performed')""]","
+Symptoms:
+- dizziness and spinning sensation (vertigo) for two hours
+- unsteady gait, difficulty walking straight for two hours
+- ear buzzing (tinnitus) for two hours
+- nausea and feeling very sick for two hours
+
+Relevant Clinical Context:
+- had a similar episode about a month ago lasting five to ten minutes
+
+Allergies:
+- none known
+
+Medical History:
+- premature ovarian failure
+- taken hormone replacement therapy
+
+Family History:
+- None documented.
+
+Social History:
+- None documented.
+
+Current Medications:
+- None documented.",No objective findings documented.,labyrinthitis.,"Investigations/Tests:
+- ear examination (otoscopy)
+- blood pressure measurement
+Follow-up:
+- see a doctor for ear examination
+- book appointment for ear examination
+- go to A&E if you develop weakness of legs or arms, sudden headache, or become violently sick
+Advice:
+- tablet can be taken with or without food
+- call support to book the appointment"
+C00031,0.75,1.0,1.0,1.0,0.85,"[""absence of lip swelling or throat closure"", ""no prior similar reactions"", ""no regular medications"", ""negative wheeze or other objective respiratory findings""]",[],[],"[""captures key symptoms (shallow breathing, lip tingling, chest tightness, rash)"", ""identifies wasp sting as trigger"", ""documents penicillin allergy and eczema"", ""provides clear plan with antihistamine and emergency instructions""]","[""omits negative findings such as lack of lip swelling and prior episodes"", ""does not note absence of regular medications"", ""does not mention that patient already has antihistamines at home""]","
+Symptoms:
+- shallow breathing for about fifteen minutes
+- tingling sensation in lips for about fifteen minutes
+- chest tightness for about fifteen minutes
+- blotching rash
+
+Relevant Clinical Context:
+- wasp sting while gardening
+
+Allergies:
+- penicillin
+
+Medical History:
+- eczema
+
+Family History:
+- None documented.
+
+Social History:
+- None documented.
+
+Current Medications:
+- None documented.",No objective findings documented.,Possible anaphylactic reaction.,"Medications:
+- antihistamine
+Advice:
+- take antihistamine while waiting for ambulance
+- go to hospital immediately
+- call ambulance"
+C00032,0.75,1.0,1.0,1.0,0.9,"[""Prior antihistamine trial (cetirizine) and lack of response"", ""Previous use of hydrocortisone steroid without improvement""]",[],[],"[""Accurately captures primary skin symptoms and distribution"", ""Includes current medications and family history"", ""Provides clear treatment plan with antihistamine and stronger steroid"", ""Mentions continuation of emollients""]","[""Does not note previous antihistamine trial and its failure"", ""Does not mention prior steroid use details""]","
+Symptoms:
+- itchy, sore, red skin on chest, hands, arms and inside elbows for past few days (Severity: very itchy)
+- dry skin all over body for past few days (Severity: dry)
+- cracked skin on elbows
+
+Allergies:
+- none known
+
+Medical History:
+- eczema
+- asthma
+
+Family History:
+- mother has migraine
+- mother has hypothyroidism
+
+Social History:
+- None documented.
+
+Current Medications:
+- diprobase
+- Dermal soap
+- hydrocortisone (over‑the‑counter)
+- blue inhaler",No objective findings documented.,eczema.,"Medications:
+- fexofenadine
+- Betnovate - one fingertip amount, twice a day for couple of weeks
+Follow-up:
+- If no improvement, get back to us
+- If symptoms worsen in the next two weeks, call us before the two‑week period ends
+Advice:
+- continue using emollients such as Dermal soap and diprobase
+- monitor for adverse reactions and contact us if they occur"
+C00033,0.5,1.0,1.0,0.5,0.6,"[""mild redness at the back of the throat observed on exam"", ""absence of phlegm production"", ""absence of shortness of breath"", ""absence of wheezing or rattly chest noises"", ""absence of blood in sputum"", ""no enlarged tonsils"", ""no palpable neck lymph nodes""]",[],"[""Objective section incorrectly states 'No objective findings documented' despite documented throat redness and negative exam findings""]","[""Accurately records key subjective symptoms (dry cough, runny nose, headache, muscle aches, chills)"", ""Includes relevant chronic conditions (diabetes, hypertension) and current medications"", ""Correctly identifies viral infection as assessment"", ""Provides appropriate follow‑up instructions and OTC medication recommendations""]","[""Omits documented objective findings from the physical exam"", ""Fails to note negative exam findings (no phlegm, no shortness of breath, no wheeze, no blood, no enlarged tonsils, no neck glands)"", ""Objective section is misleading by stating no findings""]","
+Symptoms:
+- dry cough for five days
+- runny nose for five days
+- occasional headache
+- muscle aches
+- chills
+
+Relevant Clinical Context:
+- patient monitors blood sugars at home and reports them as normal
+- patient's blood pressure this morning was within normal range
+
+Allergies:
+- None documented.
+
+Medical History:
+- diabetes
+- hypertension
+
+Family History:
+- None documented.
+
+Social History:
+- None documented.
+
+Current Medications:
+- metformin
+- lisinopril
+- paracetamol",No objective findings documented.,viral infection.,"Follow-up:
+- contact us if symptoms last more than three weeks or develop shortness of breath
+Advice:
+- use Night Nurse
+- use Day Nurse"
+C00034,0.75,0.75,1.0,0.75,0.75,"[""Patient tried massage and warm baths without improvement"", ""Negative findings: no glasses, no seizures, no leg weakness, no visual loss beyond the brief episode"", ""Specific mention of dropping objects and difficulty with piano playing as functional impact""]","[""Allergies: None documented""]",[],"[""Accurately captures main neurological symptoms (numbness, tingling, weakness, finger distribution)"", ""Includes relevant recent history (boxing class, recent viral illness, alcohol binge)"", ""Documents family history and current medications"", ""Provides clear assessment (possible multiple sclerosis) and appropriate plan (urgent neurology referral, safety instructions)""]","[""Omitted prior self‑care attempts (massage, warm baths) that were discussed"", ""Did not record negative findings that help narrow differential (no glasses, no seizures, normal leg function)"", ""Assumed no allergies without explicit statement from patient""]","
+Symptoms:
+- numbness and tingling in left arm, elbow, hand affecting second, third, and fourth fingers (palmar side) for at least two weeks
+- weakness in left arm affecting grip and piano playing for at least two weeks
+- neck pain
+- tired headaches
+- fatigue
+- temporary loss of peripheral vision in left eye for about twenty minutes (Resolved)
+- pain in right hand knuckles
+
+Relevant Clinical Context:
+- started boxing class a few weeks ago
+- recent bad cold about a month ago lasting two weeks
+- recent heavy alcohol consumption at a party
+- regular exercise/workout routine
+- plays piano
+
+Allergies:
+- None documented.
+
+Medical History:
+- bad cold (viral infection) about a month ago lasting two weeks
+
+Family History:
+- father hypothyroidism
+- father autoimmune condition
+- mother type 2 diabetes
+- mother hypertension
+- mother high cholesterol
+
+Social History:
+- recent heavy alcohol binge
+- boxing class participation
+- regular exercise
+- plays piano
+
+Current Medications:
+- ibuprofen
+- vitamin D
+- iron supplement
+- melatonin",No objective findings documented.,Possible multiple sclerosis.,"Investigations/Tests:
+- urgent neurology referral
+- brain scan
+Follow-up:
+- go to A&E if weakness progresses to legs, or if headaches, vomiting, fits, or worsening visual symptoms
+Advice:
+- monitor for worsening weakness, headaches, vomiting, fits, or visual symptoms"
+C00035,0.5,1.0,1.0,1.0,0.75,"[""Diarrhea frequency (4-5 times per day)"", ""Stool consistency (both watery and solid)"", ""Absence of blood and mucus in stool"", ""No signs of dehydration (patient appears not dehydrated)"", ""No current medications taken for diarrhea or abdominal pain"", ""Lack of a formal assessment/diagnosis (e.g., acute gastroenteritis)"", ""Explicit statement that patient is still able to drink plenty of fluids""]",[],[],"[""Accurately records duration of diarrhea and associated symptoms (abdominal pain, vomiting, mild fever, appetite loss)"", ""Correctly documents past medical history (asthma) and family history (father's hypertension and bowel cancer)"", ""Includes medication mentioned by patient (Lexapro) and allergy status"", ""Provides a detailed management plan consistent with the doctor's advice, including diet, hydration, probiotic use, and when to seek further care""]","[""Omits key clinical details such as stool frequency, consistency, and lack of blood/mucus"", ""Does not note the patient's hydration status or that no medications have been taken yet for symptoms"", ""Lacks an assessment/diagnosis section"", ""Missing explicit mention that the patient is still able to drink plenty of fluids""]","
+Symptoms:
+- diarrhea for three days
+- abdominal pain (Severity: mild)
+- vomiting (Resolved)
+- fever (Severity: mild)
+- appetite loss
+
+Allergies:
+- none known
+
+Medical History:
+- asthma
+
+Family History:
+- father had hypertension
+- father had bowel cancer
+
+Social History:
+- None documented.
+
+Current Medications:
+- Lexapro",No objective findings documented.,No diagnosis documented.,"Medications:
+- Dioralyte
+Advice:
+- follow a soft diet avoiding dairy, fish, meat, and eggs
+- eat easily digested foods such as crackers, toast, jam, boiled vegetables, and mash
+- after 48 hours without diarrhea, gradually reintroduce meat, eggs, and fish
+- avoid milk and consider yogurt as a probiotic
+- continue drinking plenty of water to stay hydrated
+- if diarrhea persists for a week or you notice blood in stool, obtain a stool sample
+- if stool frequency exceeds six to eight times per day, seek hospital care
+- use Dioralyte over the counter to replenish lost salts"
+C00036,0.75,1.0,1.0,1.0,0.75,"[""Recommendation to call an ambulance/emergency services"", ""Advice to remain on the phone with the doctor while awaiting ambulance""]",[],[],"[""Accurately captures all reported symptoms"", ""Includes relevant past medical history and social history"", ""Documents patient’s medication status and allergies as per transcript"", ""Provides appropriate advice consistent with conversation""]","[""Omits critical emergency plan to call ambulance"", ""Does not mention staying on the phone with clinician while awaiting ambulance""]","
+Symptoms:
+- chest discomfort (pressure) for a couple of hours (Severity: 7/10)
+- shortness of breath
+- light-headedness
+- nausea
+- calf pain
+- leg swelling
+- pain in left shoulder and arm
+- difficulty climbing stairs
+
+Allergies:
+- None documented.
+
+Medical History:
+- high cholesterol
+- hypertension
+
+Family History:
+- None documented.
+
+Social History:
+- smokes
+- lives with wife at home
+
+Current Medications:
+- None documented.",No objective findings documented.,No diagnosis documented.,"Follow-up:
+- schedule a follow-up appointment after hospital visit
+Advice:
+- stay calm
+- have some water if you need to
+- do not take any medications
+- let your wife know and have her gather your things
+- limit daily activity to moving around the house, avoid strenuous activity"
+C00037,0.75,1.0,1.0,1.0,0.8,"[""Headache characteristics (location front, occurs mainly at work during meetings or computer use)"", ""Absence of prior headache history before symptom onset"", ""Absence of leg tingling or other neurologic symptoms"", ""Absence of fever or other systemic signs""]",[],[],"[""Includes all major patient-reported symptoms (headache, heat intolerance, appetite loss, tingling, shortness of breath, palpitations, weight loss, nausea, loss of libido)"", ""Documents stress level and temporal relation to job change"", ""Records relevant medical history (hyperthyroidism) and current medication (thyroxine)"", ""Captures social history (alcohol use, no smoking, no recreational drugs)"", ""Provides clear plan for follow‑up and blood testing""]","[""Lacks detailed description of headache triggers and prior headache history"", ""No assessment or provisional diagnosis provided"", ""Objective section empty (no vitals or exam findings recorded, though none were given in transcript)"", ""Missing mention of absence of leg symptoms and fever""]","Patient Information:
+- Age: 35
+
+Symptoms:
+- feeling hot
+- severe headaches (Severity: severe)
+- reduced appetite
+- tingling in both hands
+- shortness of breath
+- palpitations
+- loss of libido
+- weight loss of five pounds
+- nausea
+
+Relevant Clinical Context:
+- symptoms started after changing jobs
+- patient reports stress level 7-8 out of 10
+
+Allergies:
+- None documented.
+
+Medical History:
+- hyperthyroidism
+
+Family History:
+- None documented.
+
+Social History:
+- drinks alcohol once a week, couple glasses of wine
+- does not smoke
+- no recreational drug use
+
+Current Medications:
+- thyroxine",No objective findings documented.,No diagnosis documented.,"Investigations/Tests:
+- blood tests for thyroxine
+Follow-up:
+- book an appointment through the app to see a doctor in clinic
+- see you in person before prescribing medication"
+C00038,0.5,0.5,1.0,0.75,0.5,"[""Current use of codeine painkillers"", ""Elevated heart rate observed during assessment""]",[],[],"[""Accurately captures shortness of breath, recent cough, chest soreness, and feeling of rapid heartbeat"", ""Includes relevant allergy to ibuprofen and family history of clots"", ""Provides appropriate plan to avoid codeine and seek hospital evaluation""]","[""Fails to document current medication (codeine) despite it being mentioned in the transcript"", ""Omits objective finding of slightly fast heart rate"", ""Lists 'Current Medications: None documented' which is inaccurate""]","
+Symptoms:
+- shortness of breath for over the last hour
+- cough for yesterday
+- chest soreness on deep breath
+- feeling of rapid heartbeat
+
+Allergies:
+- Ibuprofen
+
+Medical History:
+- C-section (four weeks ago)
+
+Family History:
+- mother had clots in legs
+
+Social History:
+- partner at work
+
+Current Medications:
+- None documented.",No objective findings documented.,Possible pulmonary embolism.,"Advice:
+- do not take codeine for the time being
+- go to the hospital promptly and bring supplies for the baby"
+C00039,0.75,1.0,1.0,0.75,0.75,"[""worsening of wheeze at night"", ""absence of chest pain on deep breath"", ""absence of dizziness or vertigo"", ""adequate fluid intake (4-5 glasses water)"", ""occasional asthma symptoms with exertion"", ""patient does not see a doctor regularly for asthma"", ""patient does not routinely take medication for hay fever""]",[],"[""\""will get letter to GP\"" placed in Subjective instead of Plan""]","[""Accurately records age, primary symptoms (wheeze, shortness of breath, difficulty speaking)"", ""Identifies dust exposure as likely trigger"", ""Includes relevant past medical history (childhood asthma, hay fever)"", ""Notes current medication (asthma inhaler) and lack of antihistamines"", ""Provides appropriate assessment (possible asthma vs allergy) and plan (pulse oximetry, antihistamine, possible steroids, referral letter, clinic visit)""]","[""Omitted details about symptom pattern (worse at night) and negative findings (no pain, no dizziness)"", ""Missing information on intermittent asthma with exertion and lack of regular asthma follow‑up"", ""Minor misplacement of a plan item within the Subjective section""]","Patient Information:
+- Age: 40
+
+Symptoms:
+- wheeze for two days
+- shortness of breath
+- difficulty speaking
+
+Relevant Clinical Context:
+- cleaning the house triggered dust exposure
+- no antihistamines at home
+- has had steroids for asthma before
+- will get letter to GP
+
+Allergies:
+- none known
+
+Medical History:
+- childhood asthma
+- hay fever
+
+Family History:
+- None documented.
+
+Social History:
+- None documented.
+
+Current Medications:
+- asthma inhaler",No objective findings documented.,"Possible asthma, Possible allergy.","Investigations/Tests:
+- pulse oximetry
+Advice:
+- take antihistamine over the counter if allergic
+- take steroids if needed
+- get letter to GP
+- visit clinic for tests"
+C00040,0.75,0.75,1.0,0.75,0.75,"[""absence of blood in stool"", ""absence of blood in vomit"", ""no fever reported"", ""no chest pain"", ""no respiratory worsening"", ""lack of vital signs or objective exam findings""]","[""abdominal pain severity labeled as mild (not explicitly stated in transcript)""]","[""mild abdominal tenderness placed in Subjective instead of Objective""]","[""captures core symptoms (diarrhea, abdominal pain, vomiting, nausea, frequent bowel movements)"", ""includes relevant medical history (asthma) and family history (father with bowel cancer)"", ""notes recent change in inhaler and possible anxiety trigger"", ""provides appropriate assessment (gastroenteritis) and clear management plan""]","[""omits negative findings that are clinically important (no blood, no fever, no chest pain, no respiratory issues)"", ""adds a severity qualifier for pain not directly supported"", ""misclassifies tenderness as subjective rather than objective""]","Patient Information:
+- Age: 48
+
+Symptoms:
+- diarrhoea for three days
+- abdominal pain (central abdomen) (Severity: mild)
+- vomiting
+- nausea
+- frequent bowel movements (need to go to toilet every ten minutes)
+
+Relevant Clinical Context:
+- needs to stay close to the toilet all the time due to frequent bowel movements
+- reduced food intake because of frequent bowel movements
+- patient reports possibly inadequate fluid intake
+- mild abdominal tenderness on palpation
+- started using a new inhaler brand after the previous inhaler ran out
+- anxiety sometimes triggers inhaler use
+
+Allergies:
+- none known
+
+Medical History:
+- asthma
+
+Family History:
+- father had bowel cancer
+
+Social History:
+- None documented.
+
+Current Medications:
+- inhaler",No objective findings documented.,gastroenteritis.,"Follow-up:
+- see GP if symptoms worsen
+- book a GP appointment if not improved in a couple of days
+Advice:
+- drink lots of water and fluids
+- look out for any fevers
+- stay home until you feel slightly better
+- avoid antibiotics as they do not help"
+C00041,0.75,1.0,1.0,1.0,0.85,"[""absence of neurological deficits (no weakness, normal gait)"", ""no prior history of similar headaches (first episode)"", ""no regular medications (patient reports none)"", ""pregnancy status was discussed (patient doubts being pregnant)"", ""paracetamol was ineffective for the headache""]",[],[],"[""Accurately captures core symptoms: unilateral left-sided headache, severity, dizziness, blurred vision with zigzag lines, nausea, vomiting, worsening with movement, screen intolerance"", ""Documents patient concerns about serious causes and self-described hypochondriasis"", ""Includes relevant family history of migraines and hypothyroidism"", ""Notes current medication (paracetamol) and suggests appropriate acute treatment (ibuprofen, anti‑sickness, sugary drinks)"", ""Provides clear follow‑up plan for same‑day neurological assessment""]","[""Omits documentation of negative neurological findings (no weakness, normal walking)"", ""Does not mention that this is the first migraine-like episode for the patient"", ""Fails to note that the patient is not on any regular medications"", ""Does not record discussion of pregnancy status"", ""Does not state that paracetamol was tried and did not relieve the headache""]","
+Symptoms:
+- strong unilateral left-sided headache for four hours (Severity: 6)
+- dizziness
+- blurred vision with zigzag lines
+- nausea
+- vomiting (two episodes)
+- headache on left side of head for about four hours
+- blurry vision with visual disturbances
+
+Relevant Clinical Context:
+- headache worsens with movement
+- cannot stand screens due to headache
+- patient expresses concern about serious causes such as brain tumour or stroke
+- patient describes themselves as a hypochondriac
+
+Allergies:
+- none known
+
+Medical History:
+- kidney stones
+
+Family History:
+- mother has migraines
+- mother has hypothyroidism
+- mother has migraine
+
+Social History:
+- None documented.
+
+Current Medications:
+- paracetamol",No objective findings documented.,migraine.,"Medications:
+- ibuprofen
+Follow-up:
+- appointment today for neurological assessment
+- call to cancel appointment if feeling better
+- contact us if further problems arise
+Advice:
+- take ibuprofen
+- take anti‑sickness medication
+- drink sugary carbonated drinks such as Coke"
+C00042,0.75,0.75,0.75,1.0,0.8,"[""Provision of sick note"", ""Explicit reassurance about seriousness of condition"", ""Negative findings: no weight loss, no sinus congestion, no asthma or clot history""]","[""shortness of breath for last week (duration inaccurate)""]",[],"[""Accurately captures main symptoms (sore throat, dry cough, shortness of breath, wheeze, chest pain)"", ""Includes patient concerns about tuberculosis and cancer"", ""Documents allergy to peanuts and family history of lung cancer"", ""Provides appropriate management plan (paracetamol, fluids, rest, follow‑up advice)""]","[""Incorrect duration of shortness of breath"", ""Omitted sick note provision in the plan"", ""Missing explicit reassurance statement"", ""Missing documentation of several negative findings (no weight loss, no sinus congestion, no asthma or clot history)""]","
+Symptoms:
+- sore throat for about a week
+- dry cough for about a week
+- shortness of breath for 3-4 days
+- wheeze
+- chest pain
+- shortness of breath for last week
+- dry cough for last week
+- fever for first three days (Resolved)
+- headache (Resolved)
+- loss of appetite
+- throat irritation
+
+Relevant Clinical Context:
+- patient requests a sick note for work
+- patient expressed concern about serious conditions such as tuberculosis and cancer
+- recent travel to Europe, not exotic
+- patient was born in the US and moved to the UK 12 years ago
+
+Allergies:
+- peanuts
+
+Medical History:
+- None documented.
+
+Family History:
+- mother had lung cancer
+
+Social History:
+- tried smoking once or twice in the past, not a regular smoker
+
+Current Medications:
+- None documented.",No objective findings documented.,No diagnosis documented.,"Follow-up:
+- see a GP if shortness of breath worsens or there is a sudden change in breathlessness
+- contact a medical professional if symptoms do not improve
+Advice:
+- take paracetamol
+- drink plenty of fluids
+- rest"
+C00043,0.75,0.5,0.5,0.75,0.6,"[""Family history of father's suicide (psychiatric history)"", ""Patient denied suicidal ideation"", ""No vision changes reported""]","[""Absence of morning erections for two months (duration not specified in transcript)"", ""Family History: None documented (transcript indicates family psychiatric history)""]","[""Family history incorrectly stated as none despite known paternal suicide""]","[""Accurately captures primary symptoms (fatigue, low energy, sleep difficulty, low mood, decreased appetite, shortness of breath)"", ""Includes relevant contextual factors (new job, marital status, medication, hypothyroidism)"", ""Provides clear plan for investigations and follow‑up""]","[""Missing important family psychiatric history"", ""Introduces unsupported detail about morning erections and misstates family history"", ""Duplicate symptom entry for decreased sex drive"", ""No provisional assessment or diagnosis documented""]","
+Symptoms:
+- difficulty waking up in the mornings for two months
+- low energy for two months
+- reduced appetite / not eating much for two months
+- difficulty sleeping (trouble sleeping at all) for two months
+- lower mood for two months
+- difficulty focusing / easily distracted for two months
+- decreased sex drive for two months
+- absence of morning erections for two months
+- decreased sex drive for last few months
+- low mood
+- shortness of breath on exertion for last few months
+
+Relevant Clinical Context:
+- started a new job two months ago, which may be related to symptoms
+- married for many years
+- father committed suicide fifteen years ago
+- only child
+
+Allergies:
+- none known
+
+Medical History:
+- hypothyroidism
+
+Family History:
+- None documented.
+
+Social History:
+- married
+- only child
+
+Current Medications:
+- Thyrocsin",No objective findings documented.,No diagnosis documented.,"Investigations/Tests:
+- blood tests
+- physical examination
+Follow-up:
+- book an appointment with GP in the next few days for examination and investigations"
+C00044,0.5,1.0,1.0,0.75,0.75,"[""Prescription for Ventolin inhaler"", ""Prescription for Clenil inhaler"", ""Provision of spacer device""]",[],"[""Current medications listed in Subjective instead of Objective""]","[""Accurately captures patient's symptoms and duration"", ""Includes relevant past medical and family history"", ""Provides appropriate steroid prescription and safety advice""]","[""Missing prescriptions for inhalers"", ""Does not explicitly note provision of spacer"", ""Medication list placed in Subjective section""]","Patient Information:
+- Age: 26
+
+Symptoms:
+- tight chest for three hours
+- shortness of breath
+- wheeze
+- cough
+- sore throat
+- runny nose
+- tight chest
+- shortness of breath on exertion (when walking up stairs)
+
+Relevant Clinical Context:
+- patient ran out of Ventolin and Clenil inhalers and has not used them for about a week
+- cough gets a little worse at night
+- patient wants to avoid intubation again
+- patient has a spacer but does not regularly use it
+
+Allergies:
+- dust
+- milk protein
+
+Medical History:
+- asthma
+- hayfever
+- eczema
+- milk protein allergy
+- hospitalization for asthma with intubation at age 16-17
+- previous use of oral steroids (unspecified)
+
+Family History:
+- mother has eczema
+- father has asthma
+
+Social History:
+- None documented.
+
+Current Medications:
+- Clenil
+- Salbutamol",No objective findings documented.,asthma.,"Medications:
+- oral steroids - two tablets in the morning for five days
+Follow-up:
+- seek medical attention anytime if symptoms worsen or if using Ventolin more than every three hours
+Advice:
+- rest a little bit until feeling better
+- read the label for steroid side effects
+- use the spacer as instructed with couple of puffs to prime and breathe in and out for five to ten breaths
+- self‑certify first seven days off work"
+C00045,0.5,0.75,0.75,0.75,0.75,"[""absence of vomiting"", ""absence of fever/temperature"", ""absence of urinary pain or dysuria"", ""absence of urinary urgency"", ""absence of vaginal discharge"", ""negative review of other medical problems"", ""negative review of current medications beyond contraceptive implant""]","[""spotting between periods (pink urine was reported, not vaginal spotting)""]",[],"[""Accurately records age, gender, and key symptoms (nausea, abdominal ache, hot/sweaty, increased urinary frequency, pink urine, recent constipation)."", ""Includes relevant contraceptive use (Implanon) and allergy to amoxicillin."", ""Documents family history of type 1 diabetes and social context (living with boyfriend, non‑smoker)."", ""Provides clear plan: pregnancy test, face‑to‑face GP review, and advice to seek urgent care if symptoms worsen.""]","[""Omits several negative findings that were explicitly stated (no vomiting, no fever, no dysuria, no urgency, no discharge)."", ""Assessment limited to \""possible constipation\"" despite clinician discussing multiple differentials and need to rule out pregnancy."", ""Includes a minor unsupported statement about spotting between periods."", ""Redundant duplicate symptom entries in the subjective section.""]","Patient Information:
+- Age: 31
+- Gender: female
+
+Symptoms:
+- nausea for three days
+- lower abdominal dull ache for three days
+- feeling hot and sweaty for three days
+- increased urinary frequency
+- pink urine
+- constipation for about a week ago (Resolved)
+- abdominal pain (horrible ache) for last two days
+- nausea
+- feeling hot and sweaty
+- spotting between periods
+
+Relevant Clinical Context:
+- patient uses Implanon contraceptive implant
+- patient expecting period soon
+
+Allergies:
+- Amoxicillin
+
+Medical History:
+- None documented.
+
+Family History:
+- brother has type 1 diabetes
+
+Social History:
+- sexually active with one regular partner
+- uses contraceptive implant
+- drinks lots of water
+- lives with boyfriend
+- non-smoker
+
+Current Medications:
+- None documented.",No objective findings documented.,Possible constipation.,"Investigations/Tests:
+- pregnancy test
+Follow-up:
+- see GP face-to-face today if possible
+- if symptoms worsen or develop concerning symptoms, seek urgent medical review
+Advice:
+- take concerning symptoms seriously and seek urgent medical review if they develop"
+C00046,0.75,1.0,1.0,1.0,0.75,"[""No nausea or vomiting reported"", ""No visual changes or eye symptoms"", ""No fever or temperature checked"", ""No weakness, tingling, or numbness"", ""No prior history of headaches"", ""No association with menstrual cycle"", ""Recent blood pressure not checked (patient last checked ~6 months ago)"", ""Negative review of other systemic symptoms (e.g., cold symptoms, skin changes)""]",[],[],"[""Accurately captures headache characteristics (location, quality, intensity, photophobia, duration)"", ""Includes relevant triggers (bright light, stress) and relieving factor (lying down)"", ""Documents allergy to aspirin, current medications, and contraception use"", ""Records family history of hypertension and migraines"", ""Provides appropriate assessment (possible migraine) and clear plan (ibuprofen, BP check, temperature monitoring, hydration, when to seek care)""]","[""Omits several negative findings from the review of systems that are clinically relevant for headache evaluation"", ""Does not note the lack of prior headache history or menstrual relation"", ""Fails to mention that the patient has not had a recent blood pressure measurement""]","
+Symptoms:
+- headache, throbbing, left side, intense, comes and goes, sensitive to light for about a day (Severity: quite intense)
+
+Relevant Clinical Context:
+- headache worsens in bright light or sunlight and improves when lying down
+- patient reports stress at work may have triggered the headache
+- patient has been staying at home and taking painkillers
+
+Allergies:
+- Aspirin
+
+Medical History:
+- None documented.
+
+Family History:
+- mother had high blood pressure
+- mother had migraines
+
+Social History:
+- lives with housemates
+- drinks a few drinks on weekends
+- non-smoker
+- no illicit drug use
+
+Current Medications:
+- Paracetamol
+- Microgynon",No objective findings documented.,Possible migraine.,"Medications:
+- Ibuprofen
+Investigations/Tests:
+- blood pressure check
+- home temperature measurement
+Advice:
+- stay well hydrated
+- use a home thermometer to monitor temperature
+- if temperature rises, headache worsens, or you develop a rash, contact the doctor immediately"
+C00047,0.75,1.0,1.0,1.0,0.75,"[""absence of fever"", ""absence of back or loin pain"", ""absence of vaginal discharge"", ""no prior urinary infections"", ""no recent sexual activity or dehydration"", ""no weight loss"", ""no change in bowel habits"", ""no other medical problems or surgeries""]",[],[],"[""Accurately records chief complaint details (dysuria, odor, abdominal pain, hematuria) with duration and severity"", ""Includes relevant past medical history (IBS) and current medication (Mebeverine)"", ""Documents allergies, social history, and living situation"", ""Provides clear assessment and appropriate treatment plan with antibiotics, fluid intake, cranberry juice, urinary acidity sachets, and follow‑up instructions""]","[""Omits several negative findings that are clinically relevant for a urinary infection assessment (no fever, no back pain, no vaginal discharge, etc.)"", ""Objective section left blank despite the conversation indicating no vital signs were taken; could note that no objective data were obtained""]","Patient Information:
+- Age: 30
+
+Symptoms:
+- pain when urinating for six days
+- unpleasant smell when urinating for six days
+- lower abdominal pain for six days (Severity: 7/10)
+- spotted blood in urine for six days
+
+Relevant Clinical Context:
+- abdominal pain is intermittent (comes and goes)
+- patient reports regular menstrual periods
+
+Allergies:
+- Clindamycin
+
+Medical History:
+- IBS
+
+Family History:
+- None documented.
+
+Social History:
+- lives with friends
+- works as a support worker
+- occasionally drinks alcohol (one glass of wine per week)
+- does not smoke
+
+Current Medications:
+- Mebeverine - 200 mg, three times a day",No objective findings documented.,Possible urinary infection.,"Medications:
+- antibiotics for three days
+Follow-up:
+- seek medical review if pain worsens, develops back pain, high temperature, or difficulty passing urine
+- contact doctor if symptoms do not improve or recur after treatment
+Advice:
+- drink two and a half to three litres of water per day
+- drink cranberry juice
+- use urinary acidity sachets as advised
+- obtain a thermometer and check temperature at home
+- take the prescribed antibiotics for three days as soon as possible"
+C00048,0.75,1.0,1.0,0.75,0.75,"[""Formal diagnostic impression (e.g., anxiety disorder/adjustment disorder)"", ""Negative suicidal ideation assessment"", ""Specific sleep quantity details (3‑4 hours per night)"", ""Absence of missed work days""]",[],"[""Assessment section is empty; no diagnosis recorded""]","[""Comprehensive capture of subjective symptoms (anxiety, insomnia, palpitations, low mood, social avoidance)"", ""Accurate representation of social history (new job stress, living with parents, alcohol use, occasional smoking)"", ""Plan aligns with clinician's recommendations (talking therapy referral, blood tests, follow‑up, sleep hygiene advice)"", ""No hallucinated or inaccurate statements""]","[""Missing diagnostic label in Assessment"", ""Did not document negative screen for suicidal thoughts"", ""Lacks detail on exact sleep duration reported by patient"", ""Assessment of work attendance (no missed days) not noted""]","
+Symptoms:
+- anxiety for past few months
+- difficulty falling asleep and staying asleep (insomnia) for past few months
+- palpitations (irregular rapid heart beating) for couple months
+- chest discomfort associated with palpitations
+- fatigue/low energy for past few months
+- loss of enjoyment (anhedonia) for past few months
+- social avoidance (avoiding friends) for past few months
+- panic episodes on waking with racing heart for past few months
+- anxiety for past couple of months
+- low mood / feeling down and unhappy
+
+Relevant Clinical Context:
+- new job started two months ago in a fashion retail head office, stressful work environment with difficult boss
+- patient reports good support system from family
+- public transport is a trigger for anxiety
+- life currently focused around work
+
+Allergies:
+- None documented.
+
+Medical History:
+- None documented.
+
+Family History:
+- mother depression
+
+Social History:
+- occupation: fashion retailer head office team
+- avoids social contact with friends
+- lives with parents
+- occasionally smokes
+- drinks alcohol heavily on Fridays and Saturdays
+- does not use drugs
+
+Current Medications:
+- None documented.",No objective findings documented.,No diagnosis documented.,"Investigations/Tests:
+- basic blood tests
+Follow-up:
+- GP follow-up a week after blood tests
+- call the doctor if anxiety worsens to the point you cannot cope with work or daily activities
+Advice:
+- self‑refer for talking therapy via NHS
+- use online resources for anxiety management
+- sleep hygiene information will be provided
+- contact us if anxiety is not improving"
+C00049,0.75,0.75,0.75,1.0,0.75,"[""Exact timing and nature of last menstrual period (normal vs irregular)"", ""Statement that period stopped two weeks ago and current bleeding is different"", ""Result and timing of previous pregnancy test (performed a month ago)"", ""Negative review of systems: no fever, no urinary symptoms, no weight loss, no vomiting, no fainting"", ""Smoking and alcohol use (patient unsure)"", ""Drug use (none)"", ""Amount of fluid intake and hydration status"", ""Recent travel clarification (travel was a year ago, not recent)"", ""Sexual activity details (frequency)"", ""Any other systemic symptoms (e.g., shoulder pain, shortness of breath)""]","[""Characterization of travel as \""recent\"" when it was a year ago""]",[],"[""Accurately records age, primary abdominal pain location, severity, and duration"", ""Includes associated symptoms: light pink vaginal bleeding, nausea, small discharge, resolved constipation"", ""Documents contraceptive method (Implanon) and its duration"", ""Notes amoxicillin allergy"", ""Provides clear plan for pregnancy testing and face‑to‑face examination""]","[""Missing detailed menstrual history and clarification of abnormal bleeding"", ""Does not mention prior pregnancy test performed a month ago"", ""Lacks negative review of systems (fever, urinary, weight loss, vomiting, etc.)"", ""Mischaracterizes travel timing as recent"", ""Omits smoking/alcohol status and fluid intake information"", ""No objective findings recorded (though none were provided in transcript)"", ""Medical history section left blank despite known allergy""]","Patient Information:
+- Age: 23
+
+Symptoms:
+- abdominal pain (lower abdomen) for few days (Severity: 8/10)
+- light pink vaginal bleeding
+- nausea
+- small vaginal discharge
+- constipation for a week (Resolved)
+
+Relevant Clinical Context:
+- Implanon contraceptive implant placed one year ago
+
+Allergies:
+- amoxicillin
+
+Medical History:
+- None documented.
+
+Family History:
+- None documented.
+
+Social History:
+- school teacher
+- lives with husband and his family
+- recent travel abroad a year ago
+
+Current Medications:
+- Implanon",No objective findings documented.,No diagnosis documented.,"Investigations/Tests:
+- pregnancy test
+- face-to-face abdominal examination
+Follow-up:
+- call the support line to arrange a face-to-face appointment
+- if symptoms worsen or you cannot keep fluids down, seek immediate review
+- if pregnancy test is positive, call immediately
+Advice:
+- perform a pregnancy test today"
+C00050,0.75,1.0,1.0,1.0,0.9,"[""absence of vomiting"", ""absence of dysuria (pain when urinating)"", ""absence of back pain"", ""normal temperature noted as no fever"", ""no recent travel"", ""no prior similar episodes""]",[],[],"[""Accurately captures primary symptoms (lower abdominal pain, feverish feeling, nausea, recent constipation, hematuria, increased urinary frequency and thirst)"", ""Includes relevant allergy (amoxicillin) and past contraceptive implant"", ""Documents family history of breast cancer and social history (living with parents, alcohol use, non‑smoker)"", ""Records temperature measurement"", ""Provides clear assessment of possible urinary infection and appropriate antibiotic plan with follow‑up instructions""]","[""Omits documentation of negative findings (no vomiting, no dysuria, no back pain, no fever despite feeling hot)"", ""Does not note lack of recent travel or prior similar urinary issues"", ""Missing explicit statement that patient has no regular medications (though implied)""]","
+Symptoms:
+- lower abdominal pain for two days
+- feeling hot and sweaty
+- nausea
+- constipation for last week (Resolved)
+- blood in urine (hematuria)
+- increased urinary frequency
+- increased thirst
+
+Allergies:
+- amoxycillin
+
+Medical History:
+- past internal contraceptive implant (used for one year)
+
+Family History:
+- mother had breast cancer
+
+Social History:
+- lives with parents
+- drinks alcohol four times per week (approximately one beer each time)
+- does not smoke
+
+Current Medications:
+- None documented.","Vital Signs:
+- Temperature: 37",Possible urinary infection.,"Medications:
+- antibiotic, twice a day for three days
+Follow-up:
+- contact us immediately if pain worsens, you develop high temperature, back pain, or any new symptoms; we may need to see you face‑to‑face for examination"
+C00051,0.75,0.75,0.75,1.0,0.75,"[""No blood in stool or urine"", ""No prior abdominal surgeries or other medical problems"", ""Normal urination details (frequency, color)"", ""Absence of rash or other associated symptoms"", ""Menstrual history (last period 2 weeks ago)"", ""Contraception status (none) and sexual activity (none)"", ""Frequency and duration of oral rehydration salts use (three times daily for two days)"", ""Exact temperature measurement (none recorded)""]","[""Unable to retain any fluids for 2 hours (duration not stated in transcript)""]",[],"[""Accurately captures main presenting symptoms (diarrhea, vomiting, fever, abdominal pain)"", ""Includes relevant exposure (brother with similar illness)"", ""Documents social history and occupation"", ""Lists current medications and supplements"", ""Provides clear assessment and management plan with investigations, follow‑up instructions, and dietary advice""]","[""Omitted several pertinent negative findings (no blood, no rash, no prior abdominal issues)"", ""Missing menstrual, contraception, and sexual history details"", ""Did not note normal urination details"", ""Minor unsupported detail about fluid retention duration""]","Patient Information:
+- Gender: female
+
+Symptoms:
+- diarrhoea, very loose/watery stools for three days (Severity: serious)
+- fever, high temperature (Severity: serious)
+- vomiting, unable to retain any fluids for 2 hours
+- abdominal pain around navel, sore, worsened by touch
+- vomiting
+
+Relevant Clinical Context:
+- contact with brother who has similar symptoms
+- normal bowel habit is once daily in the morning
+- working from home because unable to go out due to vomiting
+
+Allergies:
+- None documented.
+
+Medical History:
+- None documented.
+
+Family History:
+- None documented.
+
+Social History:
+- lives with brother and mother
+- occasionally drinks a pint of alcohol
+- does not smoke
+- works as a graphics designer
+
+Current Medications:
+- vitamin D
+- ibuprofen
+- oral rehydration salts",No objective findings documented.,Possible gastroenteritis.,"Investigations/Tests:
+- stool sample
+Follow-up:
+- book urgent appointment for stool sample and hydration assessment
+- call us back in the meantime
+- go to A&E if feeling more unwell
+Advice:
+- continue taking oral rehydration salts in very small, frequent sips
+- avoid fruit, vegetables, milk and heavy foods; have simple foods like toast or biscuits
+- stay hydrated by drinking small amounts regularly"
+C00052,0.5,0.5,0.5,0.5,0.5,"[""Assessment/diagnosis (e.g., likely viral upper respiratory infection)"", ""Allergy to hay fever not listed under allergies"", ""Smoking status unknown (cannot assume non‑smoker)"", ""Recent blood test results (normal) and diabetes risk discussion""]","[""Allergies: none known (patient reports hay fever)"", ""Social History: does not smoke (patient did not state smoking status)""]","[""Assessment section left empty (no diagnosis documented)"", ""Allergy information incorrectly placed as 'none known' despite patient reporting hay fever""]","[""Accurately captures core symptoms (dry cough, green nasal discharge, feverish feeling, achy muscles)"", ""Correct medication list with dosage"", ""Includes appropriate management plan (temperature monitoring, paracetamol warning, cough syrup guidance, fluid intake)"", ""Documents relevant social history (living situation, occupation, alcohol use)""]","[""Missing formal assessment/diagnosis"", ""Incorrectly states no allergies despite reported hay fever"", ""Assumes patient is a non‑smoker without evidence"", ""Omission of recent lab results and discussion of diabetes as a risk factor""]","
+Symptoms:
+- dry cough, coughing every 20-30 minutes for five days (Severity: quite bad)
+- constant green nasal discharge for five days
+- feeling hot with chills, needing a blanket
+- achy muscles
+
+Relevant Clinical Context:
+- patient reports occasional hay fever
+
+Allergies:
+- none known
+
+Medical History:
+- diabetes
+- hypertension
+
+Family History:
+- None documented.
+
+Social History:
+- does not smoke
+- occasionally drinks alcohol (odd cherry)
+- lives with partner and dog
+- works as an office manager
+
+Current Medications:
+- metformin
+- lisinopril - 200",No objective findings documented.,No diagnosis documented.,"Follow-up:
+- contact the doctor if temperature remains above 37.5 °C, worsens, or cough produces phlegm/blood, or you develop shortness of breath or chest pain
+Advice:
+- take your temperature with a thermometer
+- do not take any other paracetamol‑containing products while using Lemsip
+- use cough syrup at night only if you cannot sleep
+- continue drinking fluids as you are
+- ensure regular diabetes and blood pressure check‑ups as advised by your GP
+- monitor for worsening fever above 37.5 °C, worsening cough, blood in sputum or nose, shortness of breath or chest pain and seek medical review if these occur
+- continue using lemon sips (Lemsip) 2–3 times daily to soothe throat"
+C00053,0.75,1.0,1.0,1.0,0.85,"[""prescription of a spacer for inhaler use""]",[],[],"[""Accurately captures all reported symptoms and their duration"", ""Includes relevant past asthma history, hospital visits, and comorbidities (hay fever, eczema)"", ""Correctly records social history, medication use, and lack of allergies"", ""Provides clear plan with inhaler dosing, antihistamine, peak flow meter, follow‑up timing, and safety instructions""]","[""Omitted the recommendation to provide a spacer, which was discussed in the consultation""]","
+Symptoms:
+- wheezing for two to three days
+- shortness of breath for two to three days
+- cough
+- fever
+- inability to exercise
+- difficulty completing sentences
+
+Relevant Clinical Context:
+- patient had asthma as a child, described as quite bad
+- stopped regular asthma medication three to four years ago
+- currently uses salbutamol inhaler as needed, approximately every few weeks
+- uses inhaler during exercise
+- has a history of hay fever and eczema
+- occasionally required hospital visits for asthma
+- patient has been working from home or on sick leave in recent days due to asthma
+
+Allergies:
+- none known
+
+Medical History:
+- asthma
+- hay fever
+- eczema
+
+Family History:
+- None documented.
+
+Social History:
+- non-smoker
+- drinks one glass of wine every two to three days
+- lives with partner
+- engineer
+
+Current Medications:
+- salbutamol","Vital Signs:
+- Temperature: 37",asthma.,"Medications:
+- asthma inhaler - 2-4 puffs every 4 hours
+- antihistamine
+Investigations/Tests:
+- peak flow meter
+Follow-up:
+- review in a week
+- call us back straightaway if temperature high or wheezing worsens
+Advice:
+- take inhaler more regularly
+- increase inhaler to 2-4 puffs every 4 hours
+- record peak flow values first thing in the morning and in the evening
+- if high temperature or wheezing worsens, call us back straightaway
+- take a regular antihistamine"
+C00054,0.75,0.75,0.75,1.0,0.8,"[""absence of recent infections"", ""no weight change reported"", ""no joint swelling or swelling of hands/wrists/ankles"", ""mental health status (patient reports feeling pretty good)"", ""reduced exercise/exercise intolerance"", ""details of asthma medication use (preventer inhaler used daily, no rescue inhaler use)"", ""absence of fever""]","[""non‑smoker""]",[],"[""captures primary symptoms of widespread aching and fatigue"", ""includes rash description and timeline"", ""documents relevant past medical history (asthma, hay fever)"", ""lists current medications (preventative inhaler, antihistamine)"", ""provides clear investigation plan (full blood panel, Lyme serology) and follow‑up instructions""]","[""includes unsupported claim of non‑smoking status"", ""omits several negative findings that were discussed (no recent infection, no weight change, no joint swelling, mental health, exercise level)"", ""does not note the occasional alcohol use context""]","
+Symptoms:
+- aching all over (shoulders, back, hips, knees) for six weeks
+- tiredness and feeling run down for six weeks
+- rash on calf for a couple weeks (Resolved)
+- reduced appetite / eating smaller portions
+- headache
+- sore throat (Resolved)
+
+Allergies:
+- None documented.
+
+Medical History:
+- asthma
+- hay fever
+
+Family History:
+- None documented.
+
+Social History:
+- lives with wife
+- works for a health technology company
+- occasional alcohol consumption
+- non‑smoker
+
+Current Medications:
+- preventative inhaler
+- antihistamine",No objective findings documented.,No diagnosis documented.,"Investigations/Tests:
+- full blood tests (liver, kidneys, blood count, etc.)
+- Lyme disease serology test
+Follow-up:
+- phone follow‑up about a week after blood test
+Advice:
+- book blood tests through the support line"
+C00055,0.75,0.75,0.75,1.0,0.75,"[""absence of nausea/vomiting"", ""absence of fever"", ""absence of sinus symptoms (cough, nasal discharge, ear pain)"", ""absence of tingling, numbness, or weakness"", ""absence of smell or taste changes"", ""no recent changes in vision on eye exam"", ""normal blood pressure noted a year ago"", ""past headache pattern (on/off, responded to ibuprofen)"", ""no recent travel abroad""]","[""nausea (patient reported no nausea, only feeling a bit sick)""]",[],"[""Accurately captures key positive symptoms: severe blinding headache, photophobia, visual disturbances, stabbing pain on positional changes, fatigue, work impact."", ""Includes relevant social and family history (mother with migraines, alcohol use, living alone)."", ""Correctly documents current medications and allergy status."", ""Provides a clear assessment (possible migraine) and appropriate plan with medications, investigations, and safety instructions.""]","[""Includes unsupported statement of nausea."", ""Omits several negative findings that are clinically relevant (no vomiting, no fever, no sinus symptoms, no neurological deficits, no smell/taste changes)."", ""Does not mention prior normal blood pressure reading or past headache response to ibuprofen.""]","
+Symptoms:
+- blinding headache for three days (Severity: 8/10)
+- photophobia (light sensitivity)
+- visual disturbances (shooting lights, weird vision)
+- nausea
+- stabbing pain on standing up quickly or moving head
+- fatigue (lack of energy)
+- headache for three days
+- visual aura (altered light in front of eyes)
+
+Relevant Clinical Context:
+- difficulty focusing on work due to constant headache
+- missed a full day of work because of headache
+
+Allergies:
+- none known
+
+Medical History:
+- unspecified childhood pain
+
+Family History:
+- mother has migraines
+
+Social History:
+- works from home
+- lives alone
+- drinks alcohol about three units once a week
+- does not smoke
+
+Current Medications:
+- the pill
+- Ibuprofen",No objective findings documented.,Possible migraine.,"Medications:
+- Paracetamol
+- stronger NSAID (unspecified)
+Investigations/Tests:
+- neurological examination
+- ophthalmologic examination (fundoscopy)
+- blood pressure measurement
+- full examination appointment
+Follow-up:
+- book appointment with support team for full examination
+- if headache becomes unbearable, worsening, or changing, go to A&E
+- call us for further advice
+Advice:
+- take prescribed medication with food"
+C00056,0.75,1.0,1.0,1.0,0.75,"[""No mention of absence of back pain or other joint problems""]",[],[],"[""Accurately captures key symptoms, timeline, and aggravating factors"", ""Includes relevant past medical and social history, including cannabis use"", ""Lists current medications as reported by the patient"", ""Reflects the clinician's plan: ice therapy, activity modification, physiotherapy referral, possible imaging, and urgent red‑flag instructions""]","[""Does not note the patient's denial of back pain or other joint issues"", ""Assessment section is empty (no provisional diagnosis), though the original consult also lacked a formal diagnosis""]","Patient Information:
+- Age: 46
+
+Symptoms:
+- knee pain (right knee) for two weeks
+- knee clicking (right knee) for two weeks
+- knee swelling (Resolved)
+- tingling in toes
+- knee effusion (fluid accumulation)
+- swelling of feet/legs after standing for a long time, noted as indentation when socks come off
+- tingling in right toes occurring once after a run, lasted a while (Resolved)
+
+Relevant Clinical Context:
+- training for a marathon in June, currently running 7-8 miles per run
+- increased mileage over the past month with longer runs
+- previous ice hockey injury with a large bruise a few months ago
+- uses ice on knee swelling which resolved
+- pain starts after about 20 minutes or 2‑3 miles of running
+- pain worsens with continued running, sometimes requires stopping
+- clicking occurs during gym exercises involving knee flexion/extension
+- no pain or swelling at rest currently
+- no giving way, locking, or difficulty standing, walking, or climbing stairs
+- left knee asymptomatic
+
+Allergies:
+- None documented.
+
+Medical History:
+- ice hockey injury with a large bruise a few months ago
+- colds
+- far-sightedness
+- Lasik surgery
+- UTI
+- suspected kidney stones
+- ER visit for UTI/kidney stones
+
+Family History:
+- None documented.
+
+Social History:
+- training for a marathon, runs 7‑8 miles per session, gym several times a week
+- cannabis use (smokes a joint)
+- training for marathon
+
+Current Medications:
+- Ibuprofen - 400 mg max
+- Vitamin D
+- Melatonin
+- Aleve
+- Xanax",No objective findings documented.,No diagnosis documented.,"Investigations/Tests:
+- knee imaging
+Follow-up:
+- see physiotherapist for knee assessment
+- if persistent swelling, heat, redness, fever, feeling unwell, or knee locking occurs, call the doctor urgently
+- if physiotherapy appointment wait is too long, can be seen in clinic
+Advice:
+- continue ice therapy as much as possible
+- ease up on running; stop if painful
+- take ibuprofen with food
+- use the prescribed stronger anti-inflammatory instead of ibuprofen"
+C00057,0.25,1.0,1.0,0.75,0.5,"[""Patient took Nurofen (ibuprofen) yesterday with no relief"", ""Absence of prior headache history"", ""Negative review of associated symptoms (no nausea, vomiting, visual changes, fever, rash, etc.)"", ""No other medical problems or chronic conditions"", ""Doctor's recommendation of a stronger pain relief medication similar to ibuprofen"", ""Current medication list should include recent Nurofen use""]",[],[],"[""Accurately records age, gender, and chief complaint details (location, severity, onset)"", ""Includes relevant family history (mother hypertension and migraines)"", ""Documents social history (living with partner, occupation, non-smoker, no alcohol, no drugs)"", ""Provides clear plan for rest, hydration, and follow‑up instructions""]","[""Omitted recent use of Nurofen and its lack of effect"", ""Did not note the absence of associated symptoms or prior headache history"", ""Failed to list current medications (Nurofen) and other medical problems"", ""Plan missing the suggested stronger NSAID regimen discussed by the doctor"", ""Overall missing several clinically relevant details, reducing completeness""]","Patient Information:
+- Age: 28
+
+Symptoms:
+- headache, left side at the back, intense throbbing for yesterday (Severity: 8/10)
+
+Relevant Clinical Context:
+- patient reports difficulty performing work due to headache
+
+Allergies:
+- none known
+
+Medical History:
+- None documented.
+
+Family History:
+- mother has hypertension
+- mother has migraines
+
+Social History:
+- lives with partner
+- designer (occupation)
+- does not smoke
+- does not drink alcohol
+- does not use other drugs
+
+Current Medications:
+- None documented.",No objective findings documented.,No diagnosis documented.,"Medications:
+- Paracetamol
+Follow-up:
+- call back if pain worsens or does not settle in the next day or two
+- contact the doctor if new symptoms develop such as fever, rash, vomiting, or neck stiffness
+Advice:
+- take rest
+- stay well hydrated
+- take prescribed pain relief with food"
