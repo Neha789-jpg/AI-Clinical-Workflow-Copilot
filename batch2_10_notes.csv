@@ -1,0 +1,437 @@
+consultation_id,subjective,objective,assessment,plan
+C00004,"Patient Information:
+- Gender: male
+
+Symptoms:
+- sore throat
+- runny nose and nasal congestion for four days
+- dry cough
+- night sweats for four days
+- fever for four days (Resolved)
+- fatigue for four days
+- shortness of breath on exertion for four days
+- intermittent headache
+- runny nose for four days
+- muscle pain for four days
+- weakness for four days
+
+Pertinent Negatives:
+- no chest pain
+- no ear pain
+- no ear blockage
+- no ear discharge
+- no shortness of breath at rest
+- no vision problems
+- no nausea
+- no vomiting
+- no rash
+
+Relevant Clinical Context:
+- possible exposure to viral infection from colleague who was sneezing
+- patient taking paracetamol and ibuprofen for fever
+- patient reports increased fluid intake
+- patient reports eating slightly less than usual
+
+Allergies:
+- none known
+
+Medical History:
+- None documented.
+
+Family History:
+- grandmother has type 2 diabetes
+- great-grandfather had eczema
+
+Social History:
+- lives alone
+- accountant
+- occasional cigar smoking
+- occasional alcohol consumption
+
+Current Medications:
+- Paracetamol
+- Ibuprofen",No objective findings documented.,"Possible viral upper respiratory tract infection, Possible influenza.","Medications:
+- Paracetamol
+- Ibuprofen
+Follow-up:
+- return next week if symptoms not improved
+- call doctor sooner if high fever, worsening breathing, or chest pain
+Advice:
+- rest
+- take a day or two off work
+- stay well-hydrated"
+C00010,"Patient Information:
+- Age: 19
+
+Symptoms:
+- burning pain when urinating for just under a week
+- increased urinary frequency for just under a week
+- pink urine for today
+- lower abdominal ache for just under a week
+
+Pertinent Negatives:
+- no nausea
+- no vomiting
+- no fever
+- no frank blood in urine
+- no vaginal discharge
+- no back pain
+- no new bowel symptoms
+- no other medical conditions
+
+Relevant Clinical Context:
+- history of IBS
+- on combined oral contraceptive pill
+- sexually active with long-term boyfriend
+- last unprotected intercourse about a week ago
+- last menstrual period two weeks ago
+- eating and drinking OK
+
+Allergies:
+- Clindamycin
+
+Medical History:
+- IBS
+- irritable bowel syndrome
+
+Family History:
+- None documented.
+
+Social History:
+- sexually active with long-term boyfriend
+- living in university halls with a flatmate
+- studying English at university
+- occasional social alcohol consumption
+- first cannabis use a week and a half ago
+
+Current Medications:
+- combined oral contraceptive pill
+- combined pill",No objective findings documented.,Possible urinary tract infection.,"Investigations/Tests:
+- urine sample for laboratory analysis
+Follow-up:
+- return next week if symptoms do not improve
+- call doctor if fever, back pain, or vomiting develop
+Advice:
+- avoid cannabis use
+- stay hydrated and drink plenty of fluids
+- take paracetamol for pain if needed
+- provide urine sample for testing
+- choice of Trimethoprim or Nitrofurantoin, three day course"
+C00017,"Patient Information:
+- Age: 53
+
+Symptoms:
+- swelling on left elbow for about a week
+- warmth of left elbow
+- intermittent joint pain
+- weird feeling on tip of elbow with swelling
+- dry skin
+
+Pertinent Negatives:
+- no pain in elbow
+- no recent injury to elbow
+- no prior episodes of elbow swelling
+- no family history of rheumatologic disease
+- no medication allergies
+- no regular medications
+- no other illnesses
+- no eczema
+- no dry skin elsewhere
+
+Relevant Clinical Context:
+- doctor explained bursitis as inflammation of a fluid sac around the joint
+
+Allergies:
+- peanuts
+
+Medical History:
+- osteoarthritis
+
+Family History:
+- None documented.
+
+Social History:
+- desk job
+- runs 2-3 times a week
+- does sports
+
+Current Medications:
+- None documented.",No objective findings documented.,Possible bursitis.,"Medications:
+- Ibuprofen - 400 mg, twice a day
+Investigations/Tests:
+- blood tests for inflammatory markers, infection, rheumatological antibodies, and gout
+Follow-up:
+- follow-up appointment after blood test results, can be phone or video
+- contact us after blood test done
+Advice:
+- take ibuprofen after food, not on an empty stomach; stop if heartburn occurs
+- seek immediate medical attention if elbow becomes very red, very painful, or redness spreads
+- contact the clinic if symptoms worsen"
+C00019,"Patient Information:
+- Age: 45
+
+Symptoms:
+- shortness of breath for today
+- pain in right side of back when breathing deeply for today
+- slight fever
+- coughing up blood (hemoptysis)
+- feeling heart beating faster (palpitations)
+- fatigue and reduced exercise tolerance for couple of weeks
+- coughing up blood
+- fever for one day
+- slight pain for one day
+
+Pertinent Negatives:
+- no recent long-haul flight
+- no clots in legs or lungs
+- no family history of clots
+- no allergies to antibiotics
+- no enlarged neck glands
+
+Allergies:
+- none known
+
+Medical History:
+- systemic lupus erythematosus
+
+Family History:
+- None documented.
+
+Social History:
+- office desk job
+- lives alone in a flat
+- has a cat
+- non-smoker
+
+Current Medications:
+- Methotrexate",No objective findings documented.,"Possible chest infection, Possible pneumonia.","Investigations/Tests:
+- chest auscultation
+- blood pressure measurement
+- pulse measurement
+- temperature measurement
+- chest X-ray
+Follow-up:
+- review in clinic today
+- follow-up chest X-ray if symptoms persist"
+C00025,"
+Symptoms:
+- left-sided headache for since this morning (Severity: horrible)
+- sensitivity to bright lights
+- dizziness for this morning (Resolved)
+
+Relevant Clinical Context:
+- headache initially worsens when lying down but then improves with time
+- work-related stress for about two months
+
+Allergies:
+- none known
+
+Medical History:
+- anxiety
+
+Family History:
+- mother has anxiety
+
+Social History:
+- lives with partner
+- has a cat
+- non-smoker
+- runs three times a week
+- diet described as okay
+
+Current Medications:
+- Sertraline
+- Paracetamol",No objective findings documented.,"Possible tension headache, Possible migraine.","Medications:
+- Ibuprofen
+Investigations/Tests:
+- blood tests
+Follow-up:
+- follow-up appointment in one week
+- contact doctor if symptoms worsen or do not improve
+Advice:
+- consider taking a week off work to reduce stress
+- explore counselling services and self‑refer
+- ensure 7–8 hours of sleep each night
+- drink 1.5–2 litres of water or fluids daily, excluding coffee/tea
+- maintain a low threshold for calling back if symptoms change or worsen
+- read the provided information on danger signs of headaches"
+C00026,"
+Symptoms:
+- lip swelling on upper lip for about half an hour
+- difficulty breathing
+- chest tightness or feeling of difficulty in chest
+- dizziness
+
+Relevant Clinical Context:
+- possible allergic trigger: prawn soup
+
+Allergies:
+- peanut
+
+Medical History:
+- asthma
+- previous severe allergic reaction in childhood
+- previous allergic reaction after curry a year ago
+
+Family History:
+- None documented.
+
+Social History:
+- None documented.
+
+Current Medications:
+- Salbutamol inhaler",No objective findings documented.,Possible anaphylactic reaction.,"Medications:
+- antihistamine
+Follow-up:
+- call back after hospital discharge to arrange further treatment
+Advice:
+- take antihistamines while waiting for ambulance
+- stay with someone until ambulance arrives"
+C00029,"
+Symptoms:
+- shortness of breath for two to three days
+- wheezing
+- coughing
+
+Relevant Clinical Context:
+- patient reports using blue inhaler (Salbutamol) as needed and also morning/evening preventive
+- patient reports using Clenil inhaler twice daily (three puffs)
+- patient reports peak flow reading of 380 (normal)
+- last asthma attack was 3-4 years ago
+- last asthma review was about two years ago
+- no prior hospital admissions for asthma
+- no prior oral steroid use
+
+Allergies:
+- hay fever
+
+Medical History:
+- asthma
+- eczema
+
+Family History:
+- brother has asthma
+- sister has eczema
+
+Social History:
+- None documented.
+
+Current Medications:
+- Salbutamol, as needed, also morning and evening
+- Flanel Bactroban
+- Hydrocortisone
+- Cetraben
+- Clenil, three puffs twice a day",No objective findings documented.,asthma exacerbation.,"Medications:
+- Clenil, four puffs twice a day
+- Salbutamol, every 2-4 hours as needed
+Follow-up:
+- see GP in the next few days
+Advice:
+- if breathing gets worse, go to A&E immediately"
+C00033,"
+Symptoms:
+- dry cough for five days
+- runny nose for five days
+- occasional headache
+- muscle aches
+- chills
+
+Relevant Clinical Context:
+- patient monitors blood sugars at home and reports them as normal
+- patient's blood pressure this morning was within normal range
+
+Allergies:
+- None documented.
+
+Medical History:
+- diabetes
+- hypertension
+
+Family History:
+- None documented.
+
+Social History:
+- None documented.
+
+Current Medications:
+- metformin
+- lisinopril
+- paracetamol",No objective findings documented.,viral infection.,"Follow-up:
+- contact us if symptoms last more than three weeks or develop shortness of breath
+Advice:
+- use Night Nurse
+- use Day Nurse"
+C00036,"
+Symptoms:
+- chest discomfort (pressure) for a couple of hours (Severity: 7/10)
+- shortness of breath
+- light-headedness
+- nausea
+- calf pain
+- leg swelling
+- pain in left shoulder and arm
+- difficulty climbing stairs
+
+Allergies:
+- None documented.
+
+Medical History:
+- high cholesterol
+- hypertension
+
+Family History:
+- None documented.
+
+Social History:
+- smokes
+- lives with wife at home
+
+Current Medications:
+- None documented.",No objective findings documented.,No diagnosis documented.,"Follow-up:
+- schedule a follow-up appointment after hospital visit
+Advice:
+- stay calm
+- have some water if you need to
+- do not take any medications
+- let your wife know and have her gather your things
+- limit daily activity to moving around the house, avoid strenuous activity"
+C00047,"Patient Information:
+- Age: 30
+
+Symptoms:
+- pain when urinating for six days
+- unpleasant smell when urinating for six days
+- lower abdominal pain for six days (Severity: 7/10)
+- spotted blood in urine for six days
+
+Relevant Clinical Context:
+- abdominal pain is intermittent (comes and goes)
+- patient reports regular menstrual periods
+
+Allergies:
+- Clindamycin
+
+Medical History:
+- IBS
+
+Family History:
+- None documented.
+
+Social History:
+- lives with friends
+- works as a support worker
+- occasionally drinks alcohol (one glass of wine per week)
+- does not smoke
+
+Current Medications:
+- Mebeverine - 200 mg, three times a day",No objective findings documented.,Possible urinary infection.,"Medications:
+- antibiotics for three days
+Follow-up:
+- seek medical review if pain worsens, develops back pain, high temperature, or difficulty passing urine
+- contact doctor if symptoms do not improve or recur after treatment
+Advice:
+- drink two and a half to three litres of water per day
+- drink cranberry juice
+- use urinary acidity sachets as advised
+- obtain a thermometer and check temperature at home
+- take the prescribed antibiotics for three days as soon as possible"

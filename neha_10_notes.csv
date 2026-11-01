@@ -1,0 +1,500 @@
+consultation_id,subjective,objective,assessment,plan
+C00002,"Patient Information:
+- Age: 31
+- Gender: male
+
+Symptoms:
+- itchy skin for four days
+- sore skin for four days
+- cracked skin
+- dry skin
+- insomnia due to itching for four days
+- difficulty focusing at work for four days
+
+Pertinent Negatives:
+- no fever
+- no cough
+- no breathing difficulties
+- no discharge from skin
+- no pus
+- no blood
+- no temperature
+
+Relevant Clinical Context:
+- patient lives with flatmates
+- patient works as a project manager at a pharmaceutical company
+- patient drinks a few beers per week and used to drink more when younger
+- patient does not smoke
+- patient had eczema previously limited to arms
+- patient previously used steroid cream which helped initially but not now
+- patient previously tried antihistamines without relief
+
+Allergies:
+- none known
+
+Medical History:
+- asthma (past)
+- eczema (previous)
+
+Family History:
+- None documented.
+
+Social History:
+- lives with flatmates
+- project manager at pharmaceutical company
+- drinks a few beers per week
+- does not smoke
+
+Current Medications:
+- None documented.",No objective findings documented.,Possible eczema.,"Medications:
+- prescription topical steroid cream for seven to ten days
+- emollient (bath and shower) for seven to ten days
+- Fexofenadine
+Follow-up:
+- return next week if symptoms do not improve
+Advice:
+- use emollient in bath and shower for first 7-10 days
+- keep a diary of any triggers such as clothing or shower gels
+- use over-the-counter antihistamines like Loratadine or Piriton for itchiness
+- use stronger antihistamine Fexofenadine as prescribed
+- apply prescribed steroid cream regularly over next week to ten days"
+C00007,"Patient Information:
+- Age: 50
+- Gender: male
+
+Symptoms:
+- run-down feeling for few days
+- dry cough
+- runny nose
+- sore throat
+- hoarseness
+- ear dullness/blocked ears
+- shortness of breath for few days
+- feeling hot and cold, sweaty
+- diarrhoea (Resolved)
+- muscle and joint stiffness in elbows and knees, all over
+- not feeling great for five days
+
+Pertinent Negatives:
+- no breathlessness
+- no sputum production
+- no chest pain
+- no nausea
+- no vomiting
+- no tummy pain
+- no measured fever
+
+Relevant Clinical Context:
+- hoarseness possibly due to frequent shouting at football matches
+- patient reports hearing not as good as it used to be
+- symptoms began after dinner outing on Saturday
+- patient reports being overweight
+
+Allergies:
+- none known
+
+Medical History:
+- type 2 diabetes
+- hypertension
+
+Family History:
+- None documented.
+
+Social History:
+- lives with wife, no children at home
+- currently employed
+- works in a steel parts manufacturing factory
+- drinks approximately nine pints of alcohol per week
+- occasionally smokes cigarettes
+- uses a vaporiser to reduce smoking
+- plays football
+
+Current Medications:
+- Metformin
+- Lisinopril",No objective findings documented.,"high blood pressure, Possible viral illness, Possible influenza.","Medications:
+- Amoxicillin - one tablet, three times a day
+Follow-up:
+- if not better by next week, return for review
+Advice:
+- keep fluids up
+- stay rested
+- drink plenty of fluids
+- take regular Paracetamol"
+C00008,"Patient Information:
+- Age: 26
+
+Symptoms:
+- dry itchy skin for few days
+- red skin
+- tiredness
+- dry itchy rash on hands and arms for a few days
+
+Pertinent Negatives:
+- no spots
+- no fever
+- no sweating
+- no vomiting
+- no loose stools
+- no bleeding or discharge from skin
+- no other medications
+- no skin problems in the past
+- no smoking
+- no alcohol
+- no recreational drugs
+
+Relevant Clinical Context:
+- stress at work for the past few days
+- symptoms started after swimming a few days ago
+- using coconut butter for the past few days without improvement
+- patient reports possible lactose intolerance
+- patient lives alone
+- patient works as a primary school teacher
+- patient reports increased stress recently
+
+Allergies:
+- None documented.
+
+Medical History:
+- None documented.
+
+Family History:
+- father has asthma
+- mother has hayfever
+
+Social History:
+- teacher
+- lives alone
+- primary school teacher
+- increased stress recently
+
+Current Medications:
+- Microgynon",No objective findings documented.,Possible dermatitis.,"Medications:
+- steroid cream, throughout the day for next few days
+- emollient, throughout the day for next few days
+Follow-up:
+- return next week if symptoms do not improve
+Advice:
+- try over-the-counter antihistamines such as Piriton or Loratadine for itchiness"
+C00009,"Patient Information:
+- Age: 19
+- Gender: female
+
+Symptoms:
+- pain when urinating (dysuria) for a few days
+- lower abdominal cramping pain when urinating for a few days
+- blood in urine (hematuria) for earlier today
+- urine has a weird smell
+- burning pain on passing urine for three days
+- crampy lower abdominal pain for three days
+
+Pertinent Negatives:
+- no fever
+- no nausea
+- no vomiting
+- no diarrhea
+- no increased urinary frequency
+- no flank pain
+- no back pain
+- no vaginal discharge
+
+Relevant Clinical Context:
+- sexually active, uses condoms
+- last menstrual period was three weeks ago
+- has not had an STD screen
+- tried over-the-counter bicarbonate a couple of days ago without relief
+
+Allergies:
+- Clindamycin
+
+Medical History:
+- irritable bowel syndrome
+
+Family History:
+- None documented.
+
+Social History:
+- sexually active with a boyfriend for a couple of months
+- uses condoms
+- student
+- drinks alcohol on weekends
+- does not smoke
+- lives in flat with friends
+
+Current Medications:
+- None documented.",No objective findings documented.,urinary tract infection.,"Follow-up:
+- call or return if symptoms not improved by end of week
+- call if any concerns or signs of infection spreading
+Advice:
+- drink plenty of fluids
+- try cranberry juice
+- continue using barrier contraception
+- avoid sexual intercourse while symptoms clear
+- monitor for high temperature, back pain, or feeling more unwell
+- choice of Nitrofurantoin or Trimethoprim offered"
+C00015,"Patient Information:
+- Age: 45
+
+Symptoms:
+- cracked skin on hands for 3-4 months (Severity: severe)
+- dryness of skin on hands and legs
+- itchiness in palms
+- bleeding from scratched skin when scratched
+- soreness in fingers for 3-4 months (Severity: severe)
+
+Pertinent Negatives:
+- no fever
+- no nausea
+- no vomiting
+- no bowel problems
+- no urinary problems
+- no asthma
+
+Relevant Clinical Context:
+- unable to work for the past three days due to hand symptoms
+- does not consistently wear gloves while cleaning
+- changed jobs four months ago to hotel housekeeping
+- uses cleaning products for bathrooms and bedrooms
+- drinks a couple of pints of alcohol per week
+- minimal alcohol consumption
+- no smoking
+
+Allergies:
+- none known
+
+Medical History:
+- type 2 diabetes
+
+Family History:
+- diabetes
+
+Social History:
+- works as a housekeeper at a hotel
+- does not always wear gloves while cleaning
+- changed jobs four months ago
+- drinks a couple of pints of alcohol per week
+- does not smoke
+
+Current Medications:
+- Metformin",No objective findings documented.,Possible contact dermatitis.,"Medications:
+- steroid cream
+- stronger emollient, 3-4 times a day for 10-14 days
+Follow-up:
+- if symptoms have not improved within one to two weeks, return for review
+- if symptoms worsen or spread, return sooner
+Advice:
+- wear gloves when cleaning at all times
+- apply emollient 3-4 times a day for 10-14 days
+- use prescribed steroid cream as directed
+- avoid cleaning product triggers"
+C00016,"
+Symptoms:
+- hearing difficulty in left ear for six weeks
+- ringing in left ear (tinnitus) for six weeks
+- dizziness (off balance)
+
+Pertinent Negatives:
+- no ear pain
+- no ear discharge
+- no fever
+- no chest pain
+- no palpitations
+
+Relevant Clinical Context:
+- ringing in ear is triggered by watching TV or listening to music
+- dizziness described as mild off-balance without nausea or true spinning
+
+Allergies:
+- None documented.
+
+Medical History:
+- transient hearing problem about a year ago lasting a couple of days
+
+Family History:
+- None documented.
+
+Social History:
+- None documented.
+
+Current Medications:
+- None documented.",No objective findings documented.,tinnitus.,"Investigations/Tests:
+- ear examination (otoscopy) in clinic
+Follow-up:
+- attend ear examination appointment in 4-5 days
+- book another appointment if any issues arise before the clinic visit
+- contact support team via phone number in notes if needed
+Advice:
+- avoid using cotton buds to clean ears
+- read the provided leaflet about tinnitus"
+C00018,"Patient Information:
+- Age: 40
+
+Symptoms:
+- hearing loss left side for three weeks
+- numbness of left side of face around ear and jawline for three weeks
+- ringing in left ear
+- occasional ringing in ears (tinnitus)
+- dizziness
+- hearing loss
+- numbness
+
+Pertinent Negatives:
+- no weakness
+- no numbness elsewhere
+- no difficulty swallowing
+- no difficulty speaking
+- no vision problems
+- no ear discharge
+- no ear pain
+- no fever
+- no ear itchiness
+- no use of cotton buds
+- no other medication
+- no other allergies
+
+Relevant Clinical Context:
+- history of nasal polyps, uses nasal spray as needed
+- takes Rennie's antacid as needed
+- previous diagnosis of labyrinthitis, not ongoing
+- symptoms affecting ability to train as a jockey
+
+Allergies:
+- latex
+
+Medical History:
+- nasal polyps
+- labyrinthitis (past)
+
+Family History:
+- brother had neurofibromatosis
+
+Social History:
+- jockey
+- lives with partner
+- no pets
+
+Current Medications:
+- nasal spray
+- Rennie's",No objective findings documented.,Possible Bell's Palsy.,"Follow-up:
+- attend face-to-face clinic appointment today"
+C00041,"
+Symptoms:
+- strong unilateral left-sided headache for four hours (Severity: 6)
+- dizziness
+- blurred vision with zigzag lines
+- nausea
+- vomiting (two episodes)
+- headache on left side of head for about four hours
+- blurry vision with visual disturbances
+
+Relevant Clinical Context:
+- headache worsens with movement
+- cannot stand screens due to headache
+- patient expresses concern about serious causes such as brain tumour or stroke
+- patient describes themselves as a hypochondriac
+
+Allergies:
+- none known
+
+Medical History:
+- kidney stones
+
+Family History:
+- mother has migraines
+- mother has hypothyroidism
+- mother has migraine
+
+Social History:
+- None documented.
+
+Current Medications:
+- paracetamol",No objective findings documented.,migraine.,"Medications:
+- ibuprofen
+Follow-up:
+- appointment today for neurological assessment
+- call to cancel appointment if feeling better
+- contact us if further problems arise
+Advice:
+- take ibuprofen
+- take anti‑sickness medication
+- drink sugary carbonated drinks such as Coke"
+C00048,"
+Symptoms:
+- anxiety for past few months
+- difficulty falling asleep and staying asleep (insomnia) for past few months
+- palpitations (irregular rapid heart beating) for couple months
+- chest discomfort associated with palpitations
+- fatigue/low energy for past few months
+- loss of enjoyment (anhedonia) for past few months
+- social avoidance (avoiding friends) for past few months
+- panic episodes on waking with racing heart for past few months
+- anxiety for past couple of months
+- low mood / feeling down and unhappy
+
+Relevant Clinical Context:
+- new job started two months ago in a fashion retail head office, stressful work environment with difficult boss
+- patient reports good support system from family
+- public transport is a trigger for anxiety
+- life currently focused around work
+
+Allergies:
+- None documented.
+
+Medical History:
+- None documented.
+
+Family History:
+- mother depression
+
+Social History:
+- occupation: fashion retailer head office team
+- avoids social contact with friends
+- lives with parents
+- occasionally smokes
+- drinks alcohol heavily on Fridays and Saturdays
+- does not use drugs
+
+Current Medications:
+- None documented.",No objective findings documented.,No diagnosis documented.,"Investigations/Tests:
+- basic blood tests
+Follow-up:
+- GP follow-up a week after blood tests
+- call the doctor if anxiety worsens to the point you cannot cope with work or daily activities
+Advice:
+- self‑refer for talking therapy via NHS
+- use online resources for anxiety management
+- sleep hygiene information will be provided
+- contact us if anxiety is not improving"
+C00054,"
+Symptoms:
+- aching all over (shoulders, back, hips, knees) for six weeks
+- tiredness and feeling run down for six weeks
+- rash on calf for a couple weeks (Resolved)
+- reduced appetite / eating smaller portions
+- headache
+- sore throat (Resolved)
+
+Allergies:
+- None documented.
+
+Medical History:
+- asthma
+- hay fever
+
+Family History:
+- None documented.
+
+Social History:
+- lives with wife
+- works for a health technology company
+- occasional alcohol consumption
+- non‑smoker
+
+Current Medications:
+- preventative inhaler
+- antihistamine",No objective findings documented.,No diagnosis documented.,"Investigations/Tests:
+- full blood tests (liver, kidneys, blood count, etc.)
+- Lyme disease serology test
+Follow-up:
+- phone follow‑up about a week after blood test
+Advice:
+- book blood tests through the support line"
